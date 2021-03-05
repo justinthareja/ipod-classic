@@ -65,15 +65,24 @@ body {
 
 .menu-item {
     padding: 0 6px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
+
+.menu-item .cheveron-right {
+    height: 10px;
+    fill: hsl(219deg 89% 18%);
+}
+
 
 .menu-item.is-active {
     color: hsl(219deg 89% 92%);
     background-color: hsl(219deg 89% 18%);
 }
 
-.menu-item--active {
-
+.menu-item.is-active .cheveron-right {
+    fill: hsl(219deg 89% 92%);
 }
 
 .header-icon {
