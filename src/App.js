@@ -1,102 +1,95 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="style.css" />
-    <title>iPod Classic</title>
-  </head>
-  <body>
-    <div class="ipod">
-      <div class="screen-container">
-        <div class="screen">
-          <div class="screen-header">
-            <div class="header-icon">
-              <!-- Status -->
+import './App.css';
+
+function App() {
+  return (
+    <div className="ipod">
+      <div className="screen-container">
+        <div className="screen">
+          <div className="screen-header">
+            <div className="header-icon">
+              {/* Status */}
             </div>
-            <div class="title">iPod</div>
-            <div class="header-icon">
+            <div className="title">iPod</div>
+            <div className="header-icon">
               <svg
+                className="icon battery"
                 xmlns="http://www.w3.org/2000/svg"
                 viewBox="0 0 24 24"
-                class="icon battery"
               >
                 <path
-                  class="primary"
+                  className="primary"
                   d="M20 9h1a1 1 0 0 1 1 1v4a1 1 0 0 1-1 1h-1v1a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V8c0-1.1.9-2 2-2h14a2 2 0 0 1 2 2v1zM4 8v8h14V8H4z"
                 />
-                <rect width="6" height="4" x="6" y="10" class="secondary" />
+                <rect width="6" height="4" x="6" y="10" className="secondary" />
               </svg>
             </div>
           </div>
-          <div class="screen-content">
-            <ul class="screen-menu">
-              <li class="menu-item is-active">
+          <div className="screen-content">
+            <ul className="screen-menu">
+              <li className="menu-item is-active">
                 <span>Playlists</span>
                 <svg
-                  class="icon cheveron-right"
+                  className="icon cheveron-right"
                   viewBox="0 0 5.8859 9.8"
                   xmlns="http://www.w3.org/2000/svg"
                 >
                   <path
-                    class="primary"
+                    className="primary"
                     d="m0.2 8.2a1 1 0 0 0 1.4 1.4l4-4a1 1 0 0 0 0-1.4l-4-4a1 1 0 0 0-1.4 1.4l3.29 3.3-3.3 3.3z"
                   />
                 </svg>
               </li>
-              <li class="menu-item">
+              <li className="menu-item">
                 <span>Browse</span>
                 <svg
-                  class="icon cheveron-right"
+                  className="icon cheveron-right"
                   viewBox="0 0 5.8859 9.8"
                   xmlns="http://www.w3.org/2000/svg"
                 >
                   <path
-                    class="primary"
+                    className="primary"
                     d="m0.2 8.2a1 1 0 0 0 1.4 1.4l4-4a1 1 0 0 0 0-1.4l-4-4a1 1 0 0 0-1.4 1.4l3.29 3.3-3.3 3.3z"
                   />
                 </svg>
               </li>
-              <li class="menu-item">
+              <li className="menu-item">
                 <span>Extras</span>
                 <svg
-                  class="icon cheveron-right"
+                  className="icon cheveron-right"
                   viewBox="0 0 5.8859 9.8"
                   xmlns="http://www.w3.org/2000/svg"
                 >
                   <path
-                    class="primary"
+                    className="primary"
                     d="m0.2 8.2a1 1 0 0 0 1.4 1.4l4-4a1 1 0 0 0 0-1.4l-4-4a1 1 0 0 0-1.4 1.4l3.29 3.3-3.3 3.3z"
                   />
                 </svg>
               </li>
-              <li class="menu-item">
+              <li className="menu-item">
                 <span>Settings</span>
                 <svg
-                  class="icon cheveron-right"
+                  className="icon cheveron-right"
                   viewBox="0 0 5.8859 9.8"
                   xmlns="http://www.w3.org/2000/svg"
                 >
                   <path
-                    class="primary"
+                    className="primary"
                     d="m0.2 8.2a1 1 0 0 0 1.4 1.4l4-4a1 1 0 0 0 0-1.4l-4-4a1 1 0 0 0-1.4 1.4l3.29 3.3-3.3 3.3z"
                   />
                 </svg>
               </li>
-              <li class="menu-item">
+              <li className="menu-item">
                 <span>Backlight</span>
               </li>
             </ul>
           </div>
         </div>
       </div>
-      <div class="controls">
-        <div class="control">
+      <div className="controls">
+        <div className="control">
           <svg
             xmlns="http://www.w3.org/2000/svg"
-            class="icon rewind"
-            xmlns="http://www.w3.org/2000/svg"
+            className="icon rewind"
             viewBox="0 0 100 125"
           >
             <g>
@@ -109,10 +102,10 @@
             </g>
           </svg>
         </div>
-        <div class="control">MENU</div>
-        <div class="control">
+        <div className="control">MENU</div>
+        <div className="control">
           <svg
-            class="icon playpause"
+            className="icon playpause"
             xmlns="http://www.w3.org/2000/svg"
             viewBox="0 0 100 125"
           >
@@ -121,9 +114,9 @@
             <rect x="80.77" y="21.713" width="15.48" height="56.573" />
           </svg>
         </div>
-        <div class="control">
+        <div className="control">
           <svg
-            class="icon fast-forward"
+            className="icon fast-forward"
             xmlns="http://www.w3.org/2000/svg"
             viewBox="0 0 100 125"
           >
@@ -138,9 +131,11 @@
           </svg>
         </div>
       </div>
-      <div class="wheel">
-        <div class="wheel-inner"></div>
+      <div className="wheel">
+        <div className="wheel-inner"></div>
       </div>
     </div>
-  </body>
-</html>
+  );
+}
+
+export default App;
