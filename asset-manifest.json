@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/ipod-classic/static/css/main.e126bf2c.chunk.css",
+    "main.css": "/ipod-classic/static/css/main.5e65a0c3.chunk.css",
     "main.js": "/ipod-classic/static/js/main.fd1e7f20.chunk.js",
     "main.js.map": "/ipod-classic/static/js/main.fd1e7f20.chunk.js.map",
     "runtime-main.js": "/ipod-classic/static/js/runtime-main.36834732.js",
@@ -10,7 +10,7 @@
     "static/js/3.361d1013.chunk.js": "/ipod-classic/static/js/3.361d1013.chunk.js",
     "static/js/3.361d1013.chunk.js.map": "/ipod-classic/static/js/3.361d1013.chunk.js.map",
     "index.html": "/ipod-classic/index.html",
-    "static/css/main.e126bf2c.chunk.css.map": "/ipod-classic/static/css/main.e126bf2c.chunk.css.map",
+    "static/css/main.5e65a0c3.chunk.css.map": "/ipod-classic/static/css/main.5e65a0c3.chunk.css.map",
     "static/js/2.ccd6b6e4.chunk.js.LICENSE.txt": "/ipod-classic/static/js/2.ccd6b6e4.chunk.js.LICENSE.txt",
     "static/media/App.css": "/ipod-classic/static/media/Chicago.4b7dabec.woff",
     "static/media/tick.cb29c599.m4a": "/ipod-classic/static/media/tick.cb29c599.m4a"
@@ -18,7 +18,7 @@
   "entrypoints": [
     "static/js/runtime-main.36834732.js",
     "static/js/2.ccd6b6e4.chunk.js",
-    "static/css/main.e126bf2c.chunk.css",
+    "static/css/main.5e65a0c3.chunk.css",
     "static/js/main.fd1e7f20.chunk.js"
   ]
 }
