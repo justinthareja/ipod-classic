@@ -1,4 +1,9 @@
-@import url(//db.onlinewebfonts.com/c/53dc764fd0dbbb3140b7909afd437722?family=Chicago);
+@font-face {
+    font-family: 'Chicago';
+    font-style: normal;
+    font-weight: normal;
+    src: url("./assets/Chicago.woff") format("woff");
+}
 
 * {
     margin: 0;

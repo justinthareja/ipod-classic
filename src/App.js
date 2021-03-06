@@ -3,7 +3,7 @@ import "./App.css";
 import TouchWheel from "./TouchWheel";
 import Controls from "./Controls";
 import Screen from "./Screen";
-import tickSrc from './tick.m4a'
+import tickSrc from './assets/tick.m4a'
 
 function App() {
   const tick = new Audio(tickSrc);
