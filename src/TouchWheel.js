@@ -1,4 +1,5 @@
 import { throttle } from "lodash";
+import EVT from './lib/EVT';
 
 // degrees needed to scroll before a tick
 const TICK_STEP = 50;
@@ -10,8 +11,6 @@ let angleChange = 0;
 let totalRotation = 0;
 
 function TouchWheel(props) {
-  const { onTick, onClick } = props;
-
   const handleMouseDown = (e) => {
     mouseDown = true;
   };
@@ -40,12 +39,16 @@ function TouchWheel(props) {
     checkTick();
   };
 
+  function handleClick() {
+    EVT.emit("wheel:click");
+  }
+
   function checkTick() {
     if (angleChange < 0 && totalRotation <= nextTick) {
-      onTick({ direction: "anticlockwise" });
+      EVT.emit("wheel:tick", { direction: "anticlockwise" });
       nextTick = totalRotation - TICK_STEP;
     } else if (angleChange > 0 && totalRotation >= nextTick) {
-      onTick({ direction: "clockwise" });
+      EVT.emit("wheel:tick", { direction: "clockwise" });
       nextTick = totalRotation + TICK_STEP;
     }
   }
@@ -105,7 +108,7 @@ function TouchWheel(props) {
       onMouseDown={handleMouseDown}
       onMouseMove={throttle(handleMouseMove, 100)}
     >
-      <div className="js-wheel-inner wheel-inner" onClick={onClick}></div>
+      <div className="js-wheel-inner wheel-inner" onClick={handleClick}></div>
     </div>
   );
 }
