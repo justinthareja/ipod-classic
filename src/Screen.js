@@ -1,5 +1,5 @@
 function Screen(props) {
-  const { type, header, statusIcon, menuItems, selectedIndex } = props;
+  const { header, statusIcon, menuItems, selectedIndex } = props;
   return (
     <div className="screen-container">
       <div className="screen">

@@ -13,10 +13,10 @@ function App() {
     statusIcon: null,
     selectedIndex: 0,
     menuItems: [
-      { name: "Playlists", hasSubMenu: true },
-      { name: "Browse", hasSubMenu: true },
+      { name: "Music", hasSubMenu: true },
       { name: "Extras", hasSubMenu: true },
-      { name: "Settings", hasSubMenu: true },
+      { name: "Voice Memos", hasSubMenu: true },
+      { name: "Shuffle Songs", hasSubMenu: false },
       { name: "Backlight", hasSubMenu: false },
     ],
   });
