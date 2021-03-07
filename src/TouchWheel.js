@@ -10,6 +10,8 @@ let angleChange = 0;
 let totalRotation = 0;
 
 function TouchWheel(props) {
+  const { onTick, onClick } = props;
+
   const handleMouseDown = (e) => {
     mouseDown = true;
   };
@@ -39,8 +41,6 @@ function TouchWheel(props) {
   };
 
   function checkTick() {
-    const { onTick } = props;
-
     if (angleChange < 0 && totalRotation <= nextTick) {
       onTick({ direction: "anticlockwise" });
       nextTick = totalRotation - TICK_STEP;
@@ -105,7 +105,7 @@ function TouchWheel(props) {
       onMouseDown={handleMouseDown}
       onMouseMove={throttle(handleMouseMove, 100)}
     >
-      <div className="js-wheel-inner wheel-inner"></div>
+      <div className="js-wheel-inner wheel-inner" onClick={onClick}></div>
     </div>
   );
 }

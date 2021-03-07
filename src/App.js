@@ -34,11 +34,16 @@ function App() {
     tick.play();
   }
 
+  function handleClick() {
+    const { selectedIndex, menuItems } = screenProps;
+    console.log("clicked", menuItems[selectedIndex].name);
+  }
+
   return (
     <div className="ipod">
       <Screen {...screenProps}/>
       <Controls />
-      <TouchWheel onTick={handleTick} />
+      <TouchWheel onTick={handleTick} onClick={handleClick} />
     </div>
   );
 }
