@@ -23,11 +23,23 @@ function MenuScreen(props) {
       navigate(path);
     }
 
-    return function cleanup () {
+    return function cleanup() {
       EVT.removeListener("wheel:tick");
       EVT.removeListener("wheel:click");
-    }
+    };
   }, [selectedIndex, menuItems]);
+
+  useEffect(() => {
+    EVT.on("controls:menu", handleMenuClick);
+
+    function handleMenuClick() {
+      navigate(-1);
+    }
+
+    return function cleanup() {
+      EVT.removeListener("controls:menu");
+    };
+  });
 
   return (
     <div className="screen-container">

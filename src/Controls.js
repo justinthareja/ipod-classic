@@ -1,4 +1,5 @@
 function Controls(props) {
+  const { onMenuClick } = props;
   return (
     <div className="controls">
       <div className="control">
@@ -13,7 +14,9 @@ function Controls(props) {
           </g>
         </svg>
       </div>
-      <div className="control">MENU</div>
+      <div className="control" onClick={onMenuClick}>
+        MENU
+      </div>
       <div className="control">
         <svg
           className="icon playpause"
