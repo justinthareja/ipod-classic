@@ -5,11 +5,13 @@ function Music(props) {
     <MenuScreen
       header="Music"
       menuItems={[
-        { name: "Playlists", hasSubMenu: true },
-        { name: "Artists", hasSubMenu: true },
-        { name: "Albums", hasSubMenu: true },
-        { name: "Shows", hasSubMenu: true },
-        { name: "Songs", hasSubMenu: true },
+        { name: "Playlists" },
+        { name: "Artists" },
+        { name: "Albums" },
+        { name: "Shows" },
+        { name: "Songs" },
+        { name: "Genres" },
+        { name: "Composers" },
       ]}
     />
   );

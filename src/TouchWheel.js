@@ -1,7 +1,7 @@
 import { throttle } from "lodash";
 
 // degrees needed to scroll before a tick
-const TICK_STEP = 50;
+const TICK_STEP = 35;
 
 let nextTick = TICK_STEP;
 let mouseDown = false;

@@ -1,22 +1,41 @@
-import { useState, useEffect } from "react";
+import { useState, useEffect, useRef, useLayoutEffect } from "react";
 import { navigate } from "@reach/router";
 import EVT from "./lib/EVT";
+import tickSrc from "./assets/tick.m4a";
 
 function MenuScreen(props) {
+  const NUM_ITEMS = 6;
+  const ITEM_HEIGHT = 19; // px
   const { header, statusIcon, menuItems } = props;
+  const contentRef = useRef(null);
+  const tickAudio = useRef(new Audio(tickSrc));
   const [selectedIndex, setSeletedIndex] = useState(0);
+  const [visibleRange, setVisibleRange] = useState([0, NUM_ITEMS - 1]);
 
   useEffect(() => {
     EVT.on("wheel:tick", handleTick);
-    EVT.on("wheel:click", handleClick);
 
     function handleTick({ direction }) {
-      if (direction === "clockwise" && selectedIndex < menuItems.length - 1) {
-        setSeletedIndex(selectedIndex + 1);
-      } else if (direction === "anticlockwise" && selectedIndex > 0) {
-        setSeletedIndex(selectedIndex - 1);
+      if (direction === "clockwise") {
+        if (selectedIndex < menuItems.length - 1) {
+          setSeletedIndex(selectedIndex + 1);
+          tickAudio.current.play();
+        }
+      } else if (direction === "anticlockwise") {
+        if (selectedIndex > 0) {
+          setSeletedIndex(selectedIndex - 1);
+          tickAudio.current.play();
+        }
       }
     }
+
+    return function cleanup() {
+      EVT.removeListener("wheel:tick");
+    };
+  }, [selectedIndex, menuItems]);
+
+  useEffect(() => {
+    EVT.on("wheel:click", handleClick);
 
     function handleClick() {
       const path = menuItems[selectedIndex].path;
@@ -24,10 +43,9 @@ function MenuScreen(props) {
     }
 
     return function cleanup() {
-      EVT.removeListener("wheel:tick");
       EVT.removeListener("wheel:click");
     };
-  }, [selectedIndex, menuItems]);
+  });
 
   useEffect(() => {
     EVT.on("controls:menu", handleMenuClick);
@@ -40,6 +58,34 @@ function MenuScreen(props) {
       EVT.removeListener("controls:menu");
     };
   });
+
+  useEffect(() => {
+    const $content = contentRef.current;
+    const handleWheel = (e) => {
+      e.preventDefault();
+      e.stopPropagation();
+      e.stopImmediatePropagation();
+    };
+
+    $content.addEventListener("wheel", handleWheel);
+
+    return function () {
+      $content.removeEventListener("wheel", handleWheel);
+    };
+  }, []);
+
+  useLayoutEffect(() => {
+    const $content = contentRef.current;
+    const [top, bottom] = visibleRange;
+
+    if (selectedIndex > bottom) {
+      setVisibleRange(visibleRange.map((n) => n + 1));
+      $content.scrollTop = $content.scrollTop + ITEM_HEIGHT;
+    } else if (selectedIndex < top) {
+      setVisibleRange(visibleRange.map((n) => n - 1));
+      $content.scrollTop = $content.scrollTop - ITEM_HEIGHT;
+    }
+  }, [selectedIndex, visibleRange]);
 
   return (
     <div className="screen-container">
@@ -61,17 +107,17 @@ function MenuScreen(props) {
             </svg>
           </div>
         </div>
-        <div className="screen-content">
+        <div className="screen-content" ref={contentRef}>
           <ul className="screen-menu">
             {menuItems.map(({ name, path }, i) => (
               <li
-                key={name}
+                key={`${name}-${i}`}
                 className={`menu-item ${
                   i === selectedIndex ? "is-active" : ""
                 }`}
               >
                 <span>{name}</span>
-                {path !== "" && (
+                {path && (
                   <svg
                     className="icon cheveron-right"
                     viewBox="0 0 5.8859 9.8"
