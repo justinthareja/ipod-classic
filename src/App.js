@@ -5,6 +5,7 @@ import TouchWheel from "./TouchWheel";
 import Controls from "./Controls";
 import Home from "./Home";
 import Music from "./Music";
+import NotFound from "./NotFound";
 
 function App() {
   function handleTouchWheelClick() {
@@ -24,6 +25,7 @@ function App() {
       <Router>
         <Home path="/" />
         <Music path="/music" />
+        <NotFound default />
       </Router>
       <Controls onMenuClick={handleMenuClick} />
       <TouchWheel
