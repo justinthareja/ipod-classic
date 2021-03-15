@@ -1,4 +1,4 @@
-import MenuScreen from "./MenuScreen";
+import MenuScreen from "../components/MenuScreen";
 
 function Music(props) {
   return (

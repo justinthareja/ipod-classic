@@ -1,6 +1,6 @@
 import { useEffect } from "react";
 import { useNavigate } from "@reach/router";
-import EVT from "./lib/EVT";
+import EVT from "../lib/EVT";
 
 function Screen({ children }) {
   const navigate = useNavigate();

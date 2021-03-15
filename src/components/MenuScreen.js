@@ -1,8 +1,8 @@
 import { useState, useEffect, useRef, useLayoutEffect } from "react";
 import { navigate } from "@reach/router";
-import EVT from "./lib/EVT";
+import EVT from "../lib/EVT";
+import tickSrc from "../assets/tick.m4a";
 import Screen from "./Screen";
-import tickSrc from "./assets/tick.m4a";
 
 function MenuScreen(props) {
   const NUM_ITEMS = 6;

@@ -1,11 +1,11 @@
 import { Router } from "@reach/router";
 import EVT from "./lib/EVT";
 import "./App.css";
-import TouchWheel from "./TouchWheel";
-import Controls from "./Controls";
-import Home from "./Home";
-import Music from "./Music";
-import NotFound from "./NotFound";
+import TouchWheel from "./components/TouchWheel";
+import Controls from "./components/Controls";
+import Home from "./pages/Home";
+import Music from "./pages/Music";
+import NotFound from "./pages/NotFound";
 
 function App() {
   function handleTouchWheelClick() {
