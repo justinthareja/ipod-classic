@@ -1,0 +1,656 @@
+{
+  "collaborative": false,
+  "description": "",
+  "external_urls": {
+    "spotify": "https://open.spotify.com/playlist/0UJnJV9pe9aCyHXYKW8U1E"
+  },
+  "followers": {
+    "href": null,
+    "total": 0
+  },
+  "href": "https://api.spotify.com/v1/playlists/0UJnJV9pe9aCyHXYKW8U1E",
+  "id": "0UJnJV9pe9aCyHXYKW8U1E",
+  "images": [
+    {
+      "height": 640,
+      "url": "https://mosaic.scdn.co/640/ab67616d0000b2735ccd022a69a4da9551efd988ab67616d0000b2736e5689a9d09ac1fc2cba2ab0ab67616d0000b2738fc0ee2f829a7138af579c97ab67616d0000b2739e447b59bd3e2cbefaa31d91",
+      "width": 640
+    },
+    {
+      "height": 300,
+      "url": "https://mosaic.scdn.co/300/ab67616d0000b2735ccd022a69a4da9551efd988ab67616d0000b2736e5689a9d09ac1fc2cba2ab0ab67616d0000b2738fc0ee2f829a7138af579c97ab67616d0000b2739e447b59bd3e2cbefaa31d91",
+      "width": 300
+    },
+    {
+      "height": 60,
+      "url": "https://mosaic.scdn.co/60/ab67616d0000b2735ccd022a69a4da9551efd988ab67616d0000b2736e5689a9d09ac1fc2cba2ab0ab67616d0000b2738fc0ee2f829a7138af579c97ab67616d0000b2739e447b59bd3e2cbefaa31d91",
+      "width": 60
+    }
+  ],
+  "name": "church of 8 wheels",
+  "owner": {
+    "display_name": "Justin Thareja",
+    "external_urls": {
+      "spotify": "https://open.spotify.com/user/1240637656"
+    },
+    "href": "https://api.spotify.com/v1/users/1240637656",
+    "id": "1240637656",
+    "type": "user",
+    "uri": "spotify:user:1240637656"
+  },
+  "primary_color": null,
+  "public": true,
+  "snapshot_id": "NyxmMWM3NmM1ZjJlMWQzZDc4YTMwMmVjNGFkMzJiMmUwMjY0ODM0YWM3",
+  "tracks": {
+    "href": "https://api.spotify.com/v1/playlists/0UJnJV9pe9aCyHXYKW8U1E/tracks?offset=0&limit=100&market=us",
+    "items": [
+      {
+        "added_at": "2020-09-24T00:54:39Z",
+        "added_by": {
+          "external_urls": {
+            "spotify": "https://open.spotify.com/user/1240637656"
+          },
+          "href": "https://api.spotify.com/v1/users/1240637656",
+          "id": "1240637656",
+          "type": "user",
+          "uri": "spotify:user:1240637656"
+        },
+        "is_local": false,
+        "primary_color": null,
+        "track": {
+          "album": {
+            "album_type": "single",
+            "artists": [
+              {
+                "external_urls": {
+                  "spotify": "https://open.spotify.com/artist/23fqKkggKUBHNkbKtXEls4"
+                },
+                "href": "https://api.spotify.com/v1/artists/23fqKkggKUBHNkbKtXEls4",
+                "id": "23fqKkggKUBHNkbKtXEls4",
+                "name": "Kygo",
+                "type": "artist",
+                "uri": "spotify:artist:23fqKkggKUBHNkbKtXEls4"
+              },
+              {
+                "external_urls": {
+                  "spotify": "https://open.spotify.com/artist/2eogQKWWoohI3BSnoG7E2U"
+                },
+                "href": "https://api.spotify.com/v1/artists/2eogQKWWoohI3BSnoG7E2U",
+                "id": "2eogQKWWoohI3BSnoG7E2U",
+                "name": "Donna Summer",
+                "type": "artist",
+                "uri": "spotify:artist:2eogQKWWoohI3BSnoG7E2U"
+              }
+            ],
+            "external_urls": {
+              "spotify": "https://open.spotify.com/album/6t95dMgjNYMtwXTKlISI42"
+            },
+            "href": "https://api.spotify.com/v1/albums/6t95dMgjNYMtwXTKlISI42",
+            "id": "6t95dMgjNYMtwXTKlISI42",
+            "images": [
+              {
+                "height": 640,
+                "url": "https://i.scdn.co/image/ab67616d0000b2738fc0ee2f829a7138af579c97",
+                "width": 640
+              },
+              {
+                "height": 300,
+                "url": "https://i.scdn.co/image/ab67616d00001e028fc0ee2f829a7138af579c97",
+                "width": 300
+              },
+              {
+                "height": 64,
+                "url": "https://i.scdn.co/image/ab67616d000048518fc0ee2f829a7138af579c97",
+                "width": 64
+              }
+            ],
+            "name": "Hot Stuff",
+            "release_date": "2020-09-18",
+            "release_date_precision": "day",
+            "total_tracks": 1,
+            "type": "album",
+            "uri": "spotify:album:6t95dMgjNYMtwXTKlISI42"
+          },
+          "artists": [
+            {
+              "external_urls": {
+                "spotify": "https://open.spotify.com/artist/23fqKkggKUBHNkbKtXEls4"
+              },
+              "href": "https://api.spotify.com/v1/artists/23fqKkggKUBHNkbKtXEls4",
+              "id": "23fqKkggKUBHNkbKtXEls4",
+              "name": "Kygo",
+              "type": "artist",
+              "uri": "spotify:artist:23fqKkggKUBHNkbKtXEls4"
+            },
+            {
+              "external_urls": {
+                "spotify": "https://open.spotify.com/artist/2eogQKWWoohI3BSnoG7E2U"
+              },
+              "href": "https://api.spotify.com/v1/artists/2eogQKWWoohI3BSnoG7E2U",
+              "id": "2eogQKWWoohI3BSnoG7E2U",
+              "name": "Donna Summer",
+              "type": "artist",
+              "uri": "spotify:artist:2eogQKWWoohI3BSnoG7E2U"
+            }
+          ],
+          "disc_number": 1,
+          "duration_ms": 199007,
+          "episode": false,
+          "explicit": false,
+          "external_ids": {
+            "isrc": "SEBGA2000777"
+          },
+          "external_urls": {
+            "spotify": "https://open.spotify.com/track/00ETaeHUQ6lops3oWU1Wrt"
+          },
+          "href": "https://api.spotify.com/v1/tracks/00ETaeHUQ6lops3oWU1Wrt",
+          "id": "00ETaeHUQ6lops3oWU1Wrt",
+          "is_local": false,
+          "is_playable": true,
+          "name": "Hot Stuff",
+          "popularity": 74,
+          "preview_url": "https://p.scdn.co/mp3-preview/374b473ad21a2f7e5cc43140960f919d92ec387e?cid=774b29d4f13844c495f206cafdad9c86",
+          "track": true,
+          "track_number": 1,
+          "type": "track",
+          "uri": "spotify:track:00ETaeHUQ6lops3oWU1Wrt"
+        },
+        "video_thumbnail": {
+          "url": null
+        }
+      },
+      {
+        "added_at": "2020-11-02T02:12:44Z",
+        "added_by": {
+          "external_urls": {
+            "spotify": "https://open.spotify.com/user/1240637656"
+          },
+          "href": "https://api.spotify.com/v1/users/1240637656",
+          "id": "1240637656",
+          "type": "user",
+          "uri": "spotify:user:1240637656"
+        },
+        "is_local": false,
+        "primary_color": null,
+        "track": {
+          "album": {
+            "album_type": "compilation",
+            "artists": [
+              {
+                "external_urls": {
+                  "spotify": "https://open.spotify.com/artist/4QQgXkCYTt3BlENzhyNETg"
+                },
+                "href": "https://api.spotify.com/v1/artists/4QQgXkCYTt3BlENzhyNETg",
+                "id": "4QQgXkCYTt3BlENzhyNETg",
+                "name": "Earth, Wind & Fire",
+                "type": "artist",
+                "uri": "spotify:artist:4QQgXkCYTt3BlENzhyNETg"
+              }
+            ],
+            "external_urls": {
+              "spotify": "https://open.spotify.com/album/4MgtwNYjD89Oj2km6eFRYd"
+            },
+            "href": "https://api.spotify.com/v1/albums/4MgtwNYjD89Oj2km6eFRYd",
+            "id": "4MgtwNYjD89Oj2km6eFRYd",
+            "images": [
+              {
+                "height": 640,
+                "url": "https://i.scdn.co/image/ab67616d0000b2736e5689a9d09ac1fc2cba2ab0",
+                "width": 640
+              },
+              {
+                "height": 300,
+                "url": "https://i.scdn.co/image/ab67616d00001e026e5689a9d09ac1fc2cba2ab0",
+                "width": 300
+              },
+              {
+                "height": 64,
+                "url": "https://i.scdn.co/image/ab67616d000048516e5689a9d09ac1fc2cba2ab0",
+                "width": 64
+              }
+            ],
+            "name": "September",
+            "release_date": "2018-04-17",
+            "release_date_precision": "day",
+            "total_tracks": 15,
+            "type": "album",
+            "uri": "spotify:album:4MgtwNYjD89Oj2km6eFRYd"
+          },
+          "artists": [
+            {
+              "external_urls": {
+                "spotify": "https://open.spotify.com/artist/4QQgXkCYTt3BlENzhyNETg"
+              },
+              "href": "https://api.spotify.com/v1/artists/4QQgXkCYTt3BlENzhyNETg",
+              "id": "4QQgXkCYTt3BlENzhyNETg",
+              "name": "Earth, Wind & Fire",
+              "type": "artist",
+              "uri": "spotify:artist:4QQgXkCYTt3BlENzhyNETg"
+            }
+          ],
+          "disc_number": 1,
+          "duration_ms": 215080,
+          "episode": false,
+          "explicit": false,
+          "external_ids": {
+            "isrc": "USSM17800845"
+          },
+          "external_urls": {
+            "spotify": "https://open.spotify.com/track/7Cuk8jsPPoNYQWXK9XRFvG"
+          },
+          "href": "https://api.spotify.com/v1/tracks/7Cuk8jsPPoNYQWXK9XRFvG",
+          "id": "7Cuk8jsPPoNYQWXK9XRFvG",
+          "is_local": false,
+          "is_playable": true,
+          "name": "September",
+          "popularity": 70,
+          "preview_url": "https://p.scdn.co/mp3-preview/ae4aa51502978e1a866375fd9c397007c546d12a?cid=774b29d4f13844c495f206cafdad9c86",
+          "track": true,
+          "track_number": 1,
+          "type": "track",
+          "uri": "spotify:track:7Cuk8jsPPoNYQWXK9XRFvG"
+        },
+        "video_thumbnail": {
+          "url": null
+        }
+      },
+      {
+        "added_at": "2020-11-02T03:27:21Z",
+        "added_by": {
+          "external_urls": {
+            "spotify": "https://open.spotify.com/user/1240637656"
+          },
+          "href": "https://api.spotify.com/v1/users/1240637656",
+          "id": "1240637656",
+          "type": "user",
+          "uri": "spotify:user:1240637656"
+        },
+        "is_local": false,
+        "primary_color": null,
+        "track": {
+          "album": {
+            "album_type": "album",
+            "artists": [
+              {
+                "external_urls": {
+                  "spotify": "https://open.spotify.com/artist/4QQgXkCYTt3BlENzhyNETg"
+                },
+                "href": "https://api.spotify.com/v1/artists/4QQgXkCYTt3BlENzhyNETg",
+                "id": "4QQgXkCYTt3BlENzhyNETg",
+                "name": "Earth, Wind & Fire",
+                "type": "artist",
+                "uri": "spotify:artist:4QQgXkCYTt3BlENzhyNETg"
+              }
+            ],
+            "external_urls": {
+              "spotify": "https://open.spotify.com/album/4RLVTxnuVN5ZWZqBFnaaQt"
+            },
+            "href": "https://api.spotify.com/v1/albums/4RLVTxnuVN5ZWZqBFnaaQt",
+            "id": "4RLVTxnuVN5ZWZqBFnaaQt",
+            "images": [
+              {
+                "height": 640,
+                "url": "https://i.scdn.co/image/ab67616d0000b2735ccd022a69a4da9551efd988",
+                "width": 640
+              },
+              {
+                "height": 300,
+                "url": "https://i.scdn.co/image/ab67616d00001e025ccd022a69a4da9551efd988",
+                "width": 300
+              },
+              {
+                "height": 64,
+                "url": "https://i.scdn.co/image/ab67616d000048515ccd022a69a4da9551efd988",
+                "width": 64
+              }
+            ],
+            "name": "I Am",
+            "release_date": "1979-06",
+            "release_date_precision": "month",
+            "total_tracks": 9,
+            "type": "album",
+            "uri": "spotify:album:4RLVTxnuVN5ZWZqBFnaaQt"
+          },
+          "artists": [
+            {
+              "external_urls": {
+                "spotify": "https://open.spotify.com/artist/4QQgXkCYTt3BlENzhyNETg"
+              },
+              "href": "https://api.spotify.com/v1/artists/4QQgXkCYTt3BlENzhyNETg",
+              "id": "4QQgXkCYTt3BlENzhyNETg",
+              "name": "Earth, Wind & Fire",
+              "type": "artist",
+              "uri": "spotify:artist:4QQgXkCYTt3BlENzhyNETg"
+            },
+            {
+              "external_urls": {
+                "spotify": "https://open.spotify.com/artist/64CuUOOirKmdAYLQSfaOyr"
+              },
+              "href": "https://api.spotify.com/v1/artists/64CuUOOirKmdAYLQSfaOyr",
+              "id": "64CuUOOirKmdAYLQSfaOyr",
+              "name": "The Emotions",
+              "type": "artist",
+              "uri": "spotify:artist:64CuUOOirKmdAYLQSfaOyr"
+            }
+          ],
+          "disc_number": 1,
+          "duration_ms": 288293,
+          "episode": false,
+          "explicit": false,
+          "external_ids": {
+            "isrc": "USSM19922860"
+          },
+          "external_urls": {
+            "spotify": "https://open.spotify.com/track/6ztstiyZL6FXzh4aG46ZPD"
+          },
+          "href": "https://api.spotify.com/v1/tracks/6ztstiyZL6FXzh4aG46ZPD",
+          "id": "6ztstiyZL6FXzh4aG46ZPD",
+          "is_local": false,
+          "is_playable": true,
+          "name": "Boogie Wonderland",
+          "popularity": 74,
+          "preview_url": "https://p.scdn.co/mp3-preview/b2d590fb86a0424a3f959033df1a92f9a6c325d4?cid=774b29d4f13844c495f206cafdad9c86",
+          "track": true,
+          "track_number": 5,
+          "type": "track",
+          "uri": "spotify:track:6ztstiyZL6FXzh4aG46ZPD"
+        },
+        "video_thumbnail": {
+          "url": null
+        }
+      },
+      {
+        "added_at": "2020-11-03T17:41:52Z",
+        "added_by": {
+          "external_urls": {
+            "spotify": "https://open.spotify.com/user/1240637656"
+          },
+          "href": "https://api.spotify.com/v1/users/1240637656",
+          "id": "1240637656",
+          "type": "user",
+          "uri": "spotify:user:1240637656"
+        },
+        "is_local": false,
+        "primary_color": null,
+        "track": {
+          "album": {
+            "album_type": "compilation",
+            "artists": [
+              {
+                "external_urls": {
+                  "spotify": "https://open.spotify.com/artist/7guDJrEfX3qb6FEbdPA5qi"
+                },
+                "href": "https://api.spotify.com/v1/artists/7guDJrEfX3qb6FEbdPA5qi",
+                "id": "7guDJrEfX3qb6FEbdPA5qi",
+                "name": "Stevie Wonder",
+                "type": "artist",
+                "uri": "spotify:artist:7guDJrEfX3qb6FEbdPA5qi"
+              }
+            ],
+            "external_urls": {
+              "spotify": "https://open.spotify.com/album/4E1itnJOhTMRSATNaxh0Sq"
+            },
+            "href": "https://api.spotify.com/v1/albums/4E1itnJOhTMRSATNaxh0Sq",
+            "id": "4E1itnJOhTMRSATNaxh0Sq",
+            "images": [
+              {
+                "height": 640,
+                "url": "https://i.scdn.co/image/ab67616d0000b2739e447b59bd3e2cbefaa31d91",
+                "width": 640
+              },
+              {
+                "height": 300,
+                "url": "https://i.scdn.co/image/ab67616d00001e029e447b59bd3e2cbefaa31d91",
+                "width": 300
+              },
+              {
+                "height": 64,
+                "url": "https://i.scdn.co/image/ab67616d000048519e447b59bd3e2cbefaa31d91",
+                "width": 64
+              }
+            ],
+            "name": "The Definitive Collection",
+            "release_date": "2002-10-29",
+            "release_date_precision": "day",
+            "total_tracks": 21,
+            "type": "album",
+            "uri": "spotify:album:4E1itnJOhTMRSATNaxh0Sq"
+          },
+          "artists": [
+            {
+              "external_urls": {
+                "spotify": "https://open.spotify.com/artist/7guDJrEfX3qb6FEbdPA5qi"
+              },
+              "href": "https://api.spotify.com/v1/artists/7guDJrEfX3qb6FEbdPA5qi",
+              "id": "7guDJrEfX3qb6FEbdPA5qi",
+              "name": "Stevie Wonder",
+              "type": "artist",
+              "uri": "spotify:artist:7guDJrEfX3qb6FEbdPA5qi"
+            }
+          ],
+          "disc_number": 1,
+          "duration_ms": 245493,
+          "episode": false,
+          "explicit": false,
+          "external_ids": {
+            "isrc": "USMO10000310"
+          },
+          "external_urls": {
+            "spotify": "https://open.spotify.com/track/1h2xVEoJORqrg71HocgqXd"
+          },
+          "href": "https://api.spotify.com/v1/tracks/1h2xVEoJORqrg71HocgqXd",
+          "id": "1h2xVEoJORqrg71HocgqXd",
+          "is_local": false,
+          "is_playable": true,
+          "name": "Superstition - Single Version",
+          "popularity": 76,
+          "preview_url": "https://p.scdn.co/mp3-preview/bba36675a46b2734756bf3ae80d73e3eca4cc0cb?cid=774b29d4f13844c495f206cafdad9c86",
+          "track": true,
+          "track_number": 9,
+          "type": "track",
+          "uri": "spotify:track:1h2xVEoJORqrg71HocgqXd"
+        },
+        "video_thumbnail": {
+          "url": null
+        }
+      },
+      {
+        "added_at": "2020-11-27T16:15:04Z",
+        "added_by": {
+          "external_urls": {
+            "spotify": "https://open.spotify.com/user/1240637656"
+          },
+          "href": "https://api.spotify.com/v1/users/1240637656",
+          "id": "1240637656",
+          "type": "user",
+          "uri": "spotify:user:1240637656"
+        },
+        "is_local": false,
+        "primary_color": null,
+        "track": {
+          "album": {
+            "album_type": "single",
+            "artists": [
+              {
+                "external_urls": {
+                  "spotify": "https://open.spotify.com/artist/3VNITwohbvU5Wuy5PC6dsI"
+                },
+                "href": "https://api.spotify.com/v1/artists/3VNITwohbvU5Wuy5PC6dsI",
+                "id": "3VNITwohbvU5Wuy5PC6dsI",
+                "name": "Kool & The Gang",
+                "type": "artist",
+                "uri": "spotify:artist:3VNITwohbvU5Wuy5PC6dsI"
+              }
+            ],
+            "external_urls": {
+              "spotify": "https://open.spotify.com/album/02ez6TRQvxsxdA2LaCK5BU"
+            },
+            "href": "https://api.spotify.com/v1/albums/02ez6TRQvxsxdA2LaCK5BU",
+            "id": "02ez6TRQvxsxdA2LaCK5BU",
+            "images": [
+              {
+                "height": 640,
+                "url": "https://i.scdn.co/image/ab67616d0000b2738a69fee00426f311d0056151",
+                "width": 640
+              },
+              {
+                "height": 300,
+                "url": "https://i.scdn.co/image/ab67616d00001e028a69fee00426f311d0056151",
+                "width": 300
+              },
+              {
+                "height": 64,
+                "url": "https://i.scdn.co/image/ab67616d000048518a69fee00426f311d0056151",
+                "width": 64
+              }
+            ],
+            "name": "Celebration / Morning Star",
+            "release_date": "2009-01-01",
+            "release_date_precision": "day",
+            "total_tracks": 2,
+            "type": "album",
+            "uri": "spotify:album:02ez6TRQvxsxdA2LaCK5BU"
+          },
+          "artists": [
+            {
+              "external_urls": {
+                "spotify": "https://open.spotify.com/artist/3VNITwohbvU5Wuy5PC6dsI"
+              },
+              "href": "https://api.spotify.com/v1/artists/3VNITwohbvU5Wuy5PC6dsI",
+              "id": "3VNITwohbvU5Wuy5PC6dsI",
+              "name": "Kool & The Gang",
+              "type": "artist",
+              "uri": "spotify:artist:3VNITwohbvU5Wuy5PC6dsI"
+            }
+          ],
+          "disc_number": 1,
+          "duration_ms": 215653,
+          "episode": false,
+          "explicit": false,
+          "external_ids": {
+            "isrc": "USPR38007166"
+          },
+          "external_urls": {
+            "spotify": "https://open.spotify.com/track/6CSLNGruNhqpb5zhfs5n3i"
+          },
+          "href": "https://api.spotify.com/v1/tracks/6CSLNGruNhqpb5zhfs5n3i",
+          "id": "6CSLNGruNhqpb5zhfs5n3i",
+          "is_local": false,
+          "is_playable": true,
+          "name": "Celebration - Single Version",
+          "popularity": 67,
+          "preview_url": "https://p.scdn.co/mp3-preview/94eb2a3a4f926ea49bda1822e5fe917ad7ae5202?cid=774b29d4f13844c495f206cafdad9c86",
+          "track": true,
+          "track_number": 1,
+          "type": "track",
+          "uri": "spotify:track:6CSLNGruNhqpb5zhfs5n3i"
+        },
+        "video_thumbnail": {
+          "url": null
+        }
+      },
+      {
+        "added_at": "2020-11-27T16:16:08Z",
+        "added_by": {
+          "external_urls": {
+            "spotify": "https://open.spotify.com/user/1240637656"
+          },
+          "href": "https://api.spotify.com/v1/users/1240637656",
+          "id": "1240637656",
+          "type": "user",
+          "uri": "spotify:user:1240637656"
+        },
+        "is_local": false,
+        "primary_color": null,
+        "track": {
+          "album": {
+            "album_type": "album",
+            "artists": [
+              {
+                "external_urls": {
+                  "spotify": "https://open.spotify.com/artist/3fMbdgg4jU18AjLCKBhRSm"
+                },
+                "href": "https://api.spotify.com/v1/artists/3fMbdgg4jU18AjLCKBhRSm",
+                "id": "3fMbdgg4jU18AjLCKBhRSm",
+                "name": "Michael Jackson",
+                "type": "artist",
+                "uri": "spotify:artist:3fMbdgg4jU18AjLCKBhRSm"
+              }
+            ],
+            "external_urls": {
+              "spotify": "https://open.spotify.com/album/1C2h7mLntPSeVYciMRTF4a"
+            },
+            "href": "https://api.spotify.com/v1/albums/1C2h7mLntPSeVYciMRTF4a",
+            "id": "1C2h7mLntPSeVYciMRTF4a",
+            "images": [
+              {
+                "height": 640,
+                "url": "https://i.scdn.co/image/ab67616d0000b2734121faee8df82c526cbab2be",
+                "width": 640
+              },
+              {
+                "height": 300,
+                "url": "https://i.scdn.co/image/ab67616d00001e024121faee8df82c526cbab2be",
+                "width": 300
+              },
+              {
+                "height": 64,
+                "url": "https://i.scdn.co/image/ab67616d000048514121faee8df82c526cbab2be",
+                "width": 64
+              }
+            ],
+            "name": "Thriller 25 Super Deluxe Edition",
+            "release_date": "1982-11-30",
+            "release_date_precision": "day",
+            "total_tracks": 30,
+            "type": "album",
+            "uri": "spotify:album:1C2h7mLntPSeVYciMRTF4a"
+          },
+          "artists": [
+            {
+              "external_urls": {
+                "spotify": "https://open.spotify.com/artist/3fMbdgg4jU18AjLCKBhRSm"
+              },
+              "href": "https://api.spotify.com/v1/artists/3fMbdgg4jU18AjLCKBhRSm",
+              "id": "3fMbdgg4jU18AjLCKBhRSm",
+              "name": "Michael Jackson",
+              "type": "artist",
+              "uri": "spotify:artist:3fMbdgg4jU18AjLCKBhRSm"
+            }
+          ],
+          "disc_number": 1,
+          "duration_ms": 258040,
+          "episode": false,
+          "explicit": false,
+          "external_ids": {
+            "isrc": "USSM19902990"
+          },
+          "external_urls": {
+            "spotify": "https://open.spotify.com/track/1OOtq8tRnDM8kG2gqUPjAj"
+          },
+          "href": "https://api.spotify.com/v1/tracks/1OOtq8tRnDM8kG2gqUPjAj",
+          "id": "1OOtq8tRnDM8kG2gqUPjAj",
+          "is_local": false,
+          "is_playable": true,
+          "name": "Beat It",
+          "popularity": 79,
+          "preview_url": "https://p.scdn.co/mp3-preview/4901df6e0f8bf6ce93e08df7d98a50e220c45799?cid=774b29d4f13844c495f206cafdad9c86",
+          "track": true,
+          "track_number": 5,
+          "type": "track",
+          "uri": "spotify:track:1OOtq8tRnDM8kG2gqUPjAj"
+        },
+        "video_thumbnail": {
+          "url": null
+        }
+      }
+    ],
+    "limit": 100,
+    "next": null,
+    "offset": 0,
+    "previous": null,
+    "total": 6
+  },
+  "type": "playlist",
+  "uri": "spotify:playlist:0UJnJV9pe9aCyHXYKW8U1E"
+}

@@ -7,9 +7,10 @@ function Home(props) {
       menuItems={[
         { name: "Music", path: "/music" },
         { name: "Extras", path: "/extras" },
-        { name: "Voice Memos", path: "/voice-memos" },
+        { name: "Settings", path: "/settings" },
         { name: "Shuffle Songs" },
         { name: "Backlight" },
+        { name: "Now Playing", path: "/now-playing" },
       ]}
     />
   );

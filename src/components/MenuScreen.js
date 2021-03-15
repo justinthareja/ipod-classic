@@ -80,7 +80,7 @@ function MenuScreen(props) {
     <Screen>
       <div className="screen-header">
         <div className="header-icon">{statusIcon}</div>
-        <div className="title">{header}</div>
+        <div className="title truncate">{header}</div>
         <div className="header-icon">
           <svg
             className="icon battery"
@@ -102,7 +102,7 @@ function MenuScreen(props) {
               key={`${name}-${i}`}
               className={`menu-item ${i === selectedIndex ? "is-active" : ""}`}
             >
-              <span>{name}</span>
+              <span className="truncate">{name}</span>
               {path && (
                 <svg
                   className="icon cheveron-right"
