@@ -1,19 +1,21 @@
 import MenuScreen from "./MenuScreen";
+import Screen from "./Screen";
+import ScreenHeader from "./ScreenHeader";
 
 function Music(props) {
   return (
-    <MenuScreen
-      header="Music"
-      menuItems={[
-        { name: "Playlists" },
-        { name: "Artists" },
-        { name: "Albums" },
-        { name: "Shows" },
-        { name: "Songs" },
-        { name: "Genres" },
-        { name: "Composers" },
-      ]}
-    />
+    <Screen>
+      <ScreenHeader header="Music" />
+      <MenuScreen
+        menuItems={[
+          { name: "Playlists", path: "/playlists" },
+          { name: "Albums", path: "/albums" },
+          { name: "Songs", path: "/songs" },
+          { name: "Shows", path: "/shows" },
+          { name: "Episodes", path: "/episodes" },
+        ]}
+      />
+    </Screen>
   );
 }
 

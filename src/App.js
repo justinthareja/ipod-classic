@@ -3,8 +3,8 @@ import EVT from "./lib/EVT";
 import "./App.css";
 import TouchWheel from "./TouchWheel";
 import Controls from "./Controls";
-import Home from "./Home";
 import Music from "./Music";
+import Playlists from "./Playlists";
 
 function App() {
   function handleTouchWheelClick() {
@@ -22,8 +22,8 @@ function App() {
   return (
     <div className="ipod">
       <Router>
-        <Home path="/" />
-        <Music path="/music" />
+        <Music path="/" />
+        <Playlists path="/playlists" />
       </Router>
       <Controls onMenuClick={handleMenuClick} />
       <TouchWheel
