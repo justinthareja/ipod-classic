@@ -1,4 +1,4 @@
-import MenuScreen from "../components/MenuScreen";
+import MenuScreen from "./MenuScreen";
 
 function Home(props) {
   return (
@@ -7,10 +7,9 @@ function Home(props) {
       menuItems={[
         { name: "Music", path: "/music" },
         { name: "Extras", path: "/extras" },
-        { name: "Settings", path: "/settings" },
+        { name: "Voice Memos", path: "/voice-memos" },
         { name: "Shuffle Songs" },
         { name: "Backlight" },
-        { name: "Now Playing", path: "/now-playing" },
       ]}
     />
   );

@@ -1,7 +1,8 @@
-function Controls({ onMenuClick, onPlayClick, onPreviousClick, onNextClick }) {
+function Controls(props) {
+  const { onMenuClick } = props;
   return (
     <div className="controls">
-      <div className="control" onClick={onPreviousClick}>
+      <div className="control">
         <svg
           xmlns="http://www.w3.org/2000/svg"
           className="icon rewind"
@@ -16,7 +17,7 @@ function Controls({ onMenuClick, onPlayClick, onPreviousClick, onNextClick }) {
       <div className="control" onClick={onMenuClick}>
         MENU
       </div>
-      <div className="control" onClick={onPlayClick}>
+      <div className="control">
         <svg
           className="icon playpause"
           xmlns="http://www.w3.org/2000/svg"
@@ -27,7 +28,7 @@ function Controls({ onMenuClick, onPlayClick, onPreviousClick, onNextClick }) {
           <rect x="80.77" y="21.713" width="15.48" height="56.573" />
         </svg>
       </div>
-      <div className="control" onClick={onNextClick}>
+      <div className="control">
         <svg
           className="icon fast-forward"
           xmlns="http://www.w3.org/2000/svg"
