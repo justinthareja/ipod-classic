@@ -1,0 +1,116 @@
+{
+  "timestamp": 1615852469887,
+  "context": {
+    "external_urls": {
+      "spotify": "https://open.spotify.com/playlist/0UJnJV9pe9aCyHXYKW8U1E"
+    },
+    "href": "https://api.spotify.com/v1/playlists/0UJnJV9pe9aCyHXYKW8U1E",
+    "type": "playlist",
+    "uri": "spotify:user:1240637656:playlist:0UJnJV9pe9aCyHXYKW8U1E"
+  },
+  "progress_ms": 19280,
+  "item": {
+    "album": {
+      "album_type": "single",
+      "artists": [
+        {
+          "external_urls": {
+            "spotify": "https://open.spotify.com/artist/23fqKkggKUBHNkbKtXEls4"
+          },
+          "href": "https://api.spotify.com/v1/artists/23fqKkggKUBHNkbKtXEls4",
+          "id": "23fqKkggKUBHNkbKtXEls4",
+          "name": "Kygo",
+          "type": "artist",
+          "uri": "spotify:artist:23fqKkggKUBHNkbKtXEls4"
+        },
+        {
+          "external_urls": {
+            "spotify": "https://open.spotify.com/artist/2eogQKWWoohI3BSnoG7E2U"
+          },
+          "href": "https://api.spotify.com/v1/artists/2eogQKWWoohI3BSnoG7E2U",
+          "id": "2eogQKWWoohI3BSnoG7E2U",
+          "name": "Donna Summer",
+          "type": "artist",
+          "uri": "spotify:artist:2eogQKWWoohI3BSnoG7E2U"
+        }
+      ],
+      "external_urls": {
+        "spotify": "https://open.spotify.com/album/6t95dMgjNYMtwXTKlISI42"
+      },
+      "href": "https://api.spotify.com/v1/albums/6t95dMgjNYMtwXTKlISI42",
+      "id": "6t95dMgjNYMtwXTKlISI42",
+      "images": [
+        {
+          "height": 640,
+          "url": "https://i.scdn.co/image/ab67616d0000b2738fc0ee2f829a7138af579c97",
+          "width": 640
+        },
+        {
+          "height": 300,
+          "url": "https://i.scdn.co/image/ab67616d00001e028fc0ee2f829a7138af579c97",
+          "width": 300
+        },
+        {
+          "height": 64,
+          "url": "https://i.scdn.co/image/ab67616d000048518fc0ee2f829a7138af579c97",
+          "width": 64
+        }
+      ],
+      "name": "Hot Stuff",
+      "release_date": "2020-09-18",
+      "release_date_precision": "day",
+      "total_tracks": 1,
+      "type": "album",
+      "uri": "spotify:album:6t95dMgjNYMtwXTKlISI42"
+    },
+    "artists": [
+      {
+        "external_urls": {
+          "spotify": "https://open.spotify.com/artist/23fqKkggKUBHNkbKtXEls4"
+        },
+        "href": "https://api.spotify.com/v1/artists/23fqKkggKUBHNkbKtXEls4",
+        "id": "23fqKkggKUBHNkbKtXEls4",
+        "name": "Kygo",
+        "type": "artist",
+        "uri": "spotify:artist:23fqKkggKUBHNkbKtXEls4"
+      },
+      {
+        "external_urls": {
+          "spotify": "https://open.spotify.com/artist/2eogQKWWoohI3BSnoG7E2U"
+        },
+        "href": "https://api.spotify.com/v1/artists/2eogQKWWoohI3BSnoG7E2U",
+        "id": "2eogQKWWoohI3BSnoG7E2U",
+        "name": "Donna Summer",
+        "type": "artist",
+        "uri": "spotify:artist:2eogQKWWoohI3BSnoG7E2U"
+      }
+    ],
+    "disc_number": 1,
+    "duration_ms": 199007,
+    "explicit": false,
+    "external_ids": {
+      "isrc": "SEBGA2000777"
+    },
+    "external_urls": {
+      "spotify": "https://open.spotify.com/track/00ETaeHUQ6lops3oWU1Wrt"
+    },
+    "href": "https://api.spotify.com/v1/tracks/00ETaeHUQ6lops3oWU1Wrt",
+    "id": "00ETaeHUQ6lops3oWU1Wrt",
+    "is_local": false,
+    "is_playable": true,
+    "name": "Hot Stuff",
+    "popularity": 74,
+    "preview_url": "https://p.scdn.co/mp3-preview/374b473ad21a2f7e5cc43140960f919d92ec387e?cid=774b29d4f13844c495f206cafdad9c86",
+    "track_number": 1,
+    "type": "track",
+    "uri": "spotify:track:00ETaeHUQ6lops3oWU1Wrt"
+  },
+  "currently_playing_type": "track",
+  "actions": {
+    "disallows": {
+      "resuming": true,
+      "skipping_prev": true
+    }
+  },
+  "is_playing": true
+}

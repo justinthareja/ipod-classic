@@ -10,6 +10,7 @@ import Games from "./pages/Games";
 import Playlists from "./pages/Playlists";
 import PlaylistDetails from "./pages/PlaylistDetails";
 import NotFound from "./pages/NotFound";
+import NowPlaying from "./pages/NowPlaying";
 
 function App() {
   function handleTouchWheelClick() {
@@ -33,6 +34,7 @@ function App() {
         <PlaylistDetails path="/playlists/:id" />
         <Extras path="/extras" />
         <Games path="/games" />
+        <NowPlaying path="/songs/:id" />
         <NotFound default />
       </Router>
       <Controls onMenuClick={handleMenuClick} />
