@@ -7,10 +7,6 @@ import Music from "./Music";
 import Playlists from "./Playlists";
 
 function App() {
-  function handleTouchWheelClick() {
-    EVT.emit("wheel:click");
-  }
-
   function handleMenuClick() {
     EVT.emit("controls:menu");
   }
@@ -23,7 +19,7 @@ function App() {
           <Playlists path="/playlists" />
         </Router>
         <Controls onMenuClick={handleMenuClick} />
-        <TouchWheel onClick={handleTouchWheelClick} />
+        <TouchWheel />
       </div>
     </TouchWheelProvider>
   );
