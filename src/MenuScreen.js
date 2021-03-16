@@ -2,6 +2,7 @@ import { useState, useEffect, useRef, useLayoutEffect } from "react";
 import { navigate } from "@reach/router";
 import EVT from "./lib/EVT";
 import tickSrc from "./assets/tick.m4a";
+import { useTouchWheel } from "./TouchWheel";
 
 function MenuScreen({ menuItems }) {
   const NUM_ITEMS = 6;
@@ -11,27 +12,21 @@ function MenuScreen({ menuItems }) {
   const [selectedIndex, setSeletedIndex] = useState(0);
   const [visibleRange, setVisibleRange] = useState([0, NUM_ITEMS - 1]);
 
-  useEffect(() => {
-    EVT.on("wheel:tick", handleTick);
+  useTouchWheel({ onTick: handleTick });
 
-    function handleTick({ direction }) {
-      if (direction === "clockwise") {
-        if (selectedIndex < menuItems.length - 1) {
-          setSeletedIndex(selectedIndex + 1);
-          tickAudio.current.play();
-        }
-      } else if (direction === "anticlockwise") {
-        if (selectedIndex > 0) {
-          setSeletedIndex(selectedIndex - 1);
-          tickAudio.current.play();
-        }
+  function handleTick({ direction }) {
+    if (direction === "clockwise") {
+      if (selectedIndex < menuItems.length - 1) {
+        setSeletedIndex(selectedIndex + 1);
+        tickAudio.current.play();
+      }
+    } else if (direction === "anticlockwise") {
+      if (selectedIndex > 0) {
+        setSeletedIndex(selectedIndex - 1);
+        tickAudio.current.play();
       }
     }
-
-    return function cleanup() {
-      EVT.removeListener("wheel:tick");
-    };
-  }, [selectedIndex, menuItems]);
+  }
 
   useEffect(() => {
     EVT.on("wheel:click", handleClick);

@@ -1,34 +1,40 @@
 import { throttle } from "lodash";
+import { useEffect, createContext, useContext, useState } from "react";
 
 // degrees needed to scroll before a tick
 const TICK_STEP = 35;
+const TouchWheelContext = createContext();
 
-let nextTick = TICK_STEP;
-let mouseDown = false;
-let lastCoords = [0, 0];
-let angleChange = 0;
-let totalRotation = 0;
+export default function TouchWheel({ onClick }) {
+  const context = useContext(TouchWheelContext);
+  const {
+    setAngleChange,
+    setNextTick,
+    totalRotation,
+    setTotalRotation,
+  } = context;
 
-function TouchWheel(props) {
-  const { onClick, onTick } = props;
+  const [mouseDown, setMouseDown] = useState(false);
+  const [lastCoords, setLastCoords] = useState([0, 0]);
+
   const handleMouseDown = (e) => {
-    mouseDown = true;
+    setMouseDown(true);
   };
 
   const handleMouseUp = (e) => {
-    mouseDown = false;
-    totalRotation = 0;
-    lastCoords = [0, 0];
-    nextTick = TICK_STEP;
-    angleChange = 0;
+    setMouseDown(false);
+    setTotalRotation(0);
+    setLastCoords([0, 0]);
+    setNextTick(TICK_STEP);
+    setAngleChange(0);
   };
 
   const handleMouseOut = (e) => {
-    mouseDown = false;
-    totalRotation = 0;
-    lastCoords = [0, 0];
-    nextTick = TICK_STEP;
-    angleChange = 0;
+    setMouseDown(false);
+    setTotalRotation(0);
+    setLastCoords([0, 0]);
+    setNextTick(TICK_STEP);
+    setAngleChange(0);
   };
 
   const handleMouseMove = (e) => {
@@ -36,18 +42,7 @@ function TouchWheel(props) {
     if (!mouseDown) return;
 
     updateRotation(e.clientX, e.clientY);
-    checkTick();
   };
-
-  function checkTick() {
-    if (angleChange < 0 && totalRotation <= nextTick) {
-      onTick({ direction: "anticlockwise" });
-      nextTick = totalRotation - TICK_STEP;
-    } else if (angleChange > 0 && totalRotation >= nextTick) {
-      onTick({ direction: "clockwise" });
-      nextTick = totalRotation + TICK_STEP;
-    }
-  }
 
   function updateRotation(currentX, currentY) {
     const $innerButton = document.querySelector(".js-wheel-inner");
@@ -55,7 +50,7 @@ function TouchWheel(props) {
     const [lastX, lastY] = lastCoords;
 
     if (lastX === 0 || lastY === 0) {
-      lastCoords = [currentY, currentY];
+      setLastCoords([currentY, currentY]);
       return;
     }
 
@@ -64,11 +59,11 @@ function TouchWheel(props) {
     );
 
     if (change !== 0) {
-      angleChange = change;
-      totalRotation = totalRotation + change;
+      setAngleChange(change);
+      setTotalRotation(totalRotation + change);
     }
 
-    lastCoords = [currentX, currentY];
+    setLastCoords([currentX, currentY]);
   }
 
   // The function will return a negative change in angle if counter clockwise and positive if clockwise.
@@ -109,4 +104,38 @@ function TouchWheel(props) {
   );
 }
 
-export default TouchWheel;
+export function TouchWheelProvider(props) {
+  const [angleChange, setAngleChange] = useState(0);
+  const [totalRotation, setTotalRotation] = useState(0);
+  const [nextTick, setNextTick] = useState(TICK_STEP);
+
+  return (
+    <TouchWheelContext.Provider
+      value={{
+        angleChange,
+        setAngleChange,
+        totalRotation,
+        setTotalRotation,
+        nextTick,
+        setNextTick,
+      }}
+      {...props}
+    />
+  );
+}
+
+export function useTouchWheel({ onTick }) {
+  // this needs to call onTick at the appropriate time
+  const context = useContext(TouchWheelContext);
+  const { angleChange, totalRotation, nextTick, setNextTick } = context;
+
+  useEffect(() => {
+    if (angleChange < 0 && totalRotation <= nextTick) {
+      onTick({ direction: "anticlockwise" });
+      setNextTick(totalRotation - TICK_STEP);
+    } else if (angleChange > 0 && totalRotation >= nextTick) {
+      onTick({ direction: "clockwise" });
+      setNextTick(totalRotation + TICK_STEP);
+    }
+  }, [angleChange, totalRotation, nextTick, setNextTick, onTick]);
+}
