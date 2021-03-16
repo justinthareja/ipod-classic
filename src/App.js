@@ -25,6 +25,18 @@ function App() {
     EVT.emit("controls:menu");
   }
 
+  function handlePlayClick() {
+    EVT.emit("controls:play");
+  }
+
+  function handleNextClick() {
+    EVT.emit("controls:next");
+  }
+
+  function handlePreviousClick() {
+    EVT.emit("controls:prev");
+  }
+
   return (
     <div className="ipod">
       <Router>
@@ -37,7 +49,12 @@ function App() {
         <NowPlaying path="/songs/:id" />
         <NotFound default />
       </Router>
-      <Controls onMenuClick={handleMenuClick} />
+      <Controls
+        onMenuClick={handleMenuClick}
+        onPlayClick={handlePlayClick}
+        onNextClick={handleNextClick}
+        onPreviousClick={handlePreviousClick}
+      />
       <TouchWheel
         onClick={handleTouchWheelClick}
         onTick={handleTouchWheelTick}

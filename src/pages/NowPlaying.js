@@ -1,10 +1,15 @@
-import { useState, useEffect } from "react";
+import { useState, useEffect, useRef } from "react";
+import EVT from "../lib/EVT";
 import Screen from "../components/Screen";
 import ScreenHeader from "../components/ScreenHeader";
+import PlayIcon from "../components/PlayIcon";
+import PauseIcon from "../components/PauseIcon";
 import nowPlaying from "../stubs/nowPlaying.json";
 
 function NowPlaying({ trackNumber = 4, totalTracks = 10 }) {
+  const timeoutRef = useRef(null);
   const [progress, setProgress] = useState(nowPlaying.progress_ms);
+  const [isPlaying, setIsPlaying] = useState(nowPlaying.is_playing);
 
   function formatTime(ms) {
     const date = new Date(ms);
@@ -15,23 +20,48 @@ function NowPlaying({ trackNumber = 4, totalTracks = 10 }) {
   }
 
   useEffect(() => {
-    const progressTimeout = setTimeout(() => {
+    timeoutRef.current = setTimeout(() => {
       setProgress(Math.min(progress + 1000, nowPlaying.item.duration_ms));
     }, 1000);
 
     if (progress >= nowPlaying.item.duration_ms) {
-      clearTimeout(progressTimeout);
+      clearTimeout(timeoutRef.current);
       // go to next song
     }
 
     return function cleanup() {
-      clearTimeout(progressTimeout);
+      clearTimeout(timeoutRef.current);
     };
   }, [progress]);
 
+  useEffect(() => {
+    EVT.on("controls:play", handlePlayClick);
+
+    function handlePlayClick() {
+      setIsPlaying(!isPlaying);
+    }
+
+    return function cleanup() {
+      EVT.removeListener("controls:play");
+    };
+  }, [isPlaying]);
+
+  useEffect(() => {
+    if (!isPlaying) {
+      clearTimeout(timeoutRef.current);
+    } else {
+      timeoutRef.current = setTimeout(() => {
+        setProgress((p) => Math.min(p + 1000, nowPlaying.item.duration_ms));
+      }, 1000);
+    }
+  }, [isPlaying]);
+
   return (
     <Screen>
-      <ScreenHeader header={nowPlaying.item.artists[0].name} />
+      <ScreenHeader
+        header={nowPlaying.item.artists[0].name}
+        statusIcon={isPlaying ? <PlayIcon /> : <PauseIcon />}
+      />
       <div className="now-playing">
         <div className="count">
           {trackNumber} of {totalTracks}

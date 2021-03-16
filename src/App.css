@@ -119,6 +119,11 @@ body {
   fill: var(--screen-color);
 }
 
+.icon-play .primary,
+.icon-pause .primary {
+  fill: var(--screen-bg-color);
+}
+
 .icon.battery {
   height: inherit;
   width: inherit;
