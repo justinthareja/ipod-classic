@@ -4,7 +4,6 @@ import ScreenHeader from "./ScreenHeader";
 import playlists from "./stubs/playlists.json";
 
 function Playlists(props) {
-  console.log(playlists);
   return (
     <Screen>
       <ScreenHeader header="Playlists" />

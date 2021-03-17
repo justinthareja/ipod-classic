@@ -6,51 +6,43 @@ import {
   useCallback,
 } from "react";
 import { navigate } from "@reach/router";
-import EVT from "./lib/EVT";
-import tickSrc from "./assets/tick.m4a";
 import { useTouchWheelTick, useTouchWheelClick } from "./TouchWheel";
+import { useMenu } from "./Controls";
 
 function MenuScreen({ menuItems }) {
   const NUM_ITEMS = 6;
   const ITEM_HEIGHT = 19; // px
   const contentRef = useRef(null);
-  const tickAudio = useRef(new Audio(tickSrc));
   const [selectedIndex, setSeletedIndex] = useState(0);
   const [visibleRange, setVisibleRange] = useState([0, NUM_ITEMS - 1]);
 
-  function handleTick({ direction }) {
-    if (direction === "clockwise") {
-      if (selectedIndex < menuItems.length - 1) {
-        setSeletedIndex(selectedIndex + 1);
-        tickAudio.current.play();
+  const handleTick = useCallback(
+    ({ direction }) => {
+      if (direction === "clockwise") {
+        if (selectedIndex < menuItems.length - 1) {
+          setSeletedIndex(selectedIndex + 1);
+        }
+      } else if (direction === "anticlockwise") {
+        if (selectedIndex > 0) {
+          setSeletedIndex(selectedIndex - 1);
+        }
       }
-    } else if (direction === "anticlockwise") {
-      if (selectedIndex > 0) {
-        setSeletedIndex(selectedIndex - 1);
-        tickAudio.current.play();
-      }
-    }
-  }
+    },
+    [menuItems.length, selectedIndex]
+  );
 
   const handleClick = useCallback(() => {
     const path = menuItems[selectedIndex].path;
     navigate(path);
   }, [menuItems, selectedIndex]);
 
+  const handleMenuClick = useCallback(() => {
+    navigate(-1);
+  }, []);
+
   useTouchWheelTick(handleTick);
   useTouchWheelClick(handleClick);
-
-  useEffect(() => {
-    EVT.on("controls:menu", handleMenuClick);
-
-    function handleMenuClick() {
-      navigate(-1);
-    }
-
-    return function cleanup() {
-      EVT.removeListener("controls:menu");
-    };
-  });
+  useMenu(handleMenuClick);
 
   useEffect(() => {
     const $content = contentRef.current;

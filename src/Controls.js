@@ -1,5 +1,10 @@
-function Controls(props) {
-  const { onMenuClick } = props;
+import { useContext, createContext, useState, useEffect, useMemo } from "react";
+
+const ControlsContext = createContext();
+
+export default function Controls(props) {
+  const context = useContext(ControlsContext);
+  const { handleMenu } = context;
   return (
     <div className="controls">
       <div className="control">
@@ -14,7 +19,7 @@ function Controls(props) {
           </g>
         </svg>
       </div>
-      <div className="control" onClick={onMenuClick}>
+      <div className="control" onClick={handleMenu}>
         MENU
       </div>
       <div className="control">
@@ -44,4 +49,24 @@ function Controls(props) {
   );
 }
 
-export default Controls;
+export function ControlsProvider(props) {
+  const [handleMenu, setHandleMenu] = useState(null);
+  const value = useMemo(
+    () => ({
+      handleMenu,
+      setHandleMenu,
+    }),
+    [handleMenu]
+  );
+
+  return <ControlsContext.Provider value={value} {...props} />;
+}
+
+export function useMenu(handleMenu) {
+  const context = useContext(ControlsContext);
+  const { setHandleMenu } = context;
+
+  useEffect(() => {
+    setHandleMenu(() => handleMenu);
+  }, [handleMenu, setHandleMenu]);
+}
