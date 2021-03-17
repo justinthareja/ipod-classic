@@ -3,6 +3,7 @@ import TouchWheel, { TouchWheelProvider } from "./TouchWheel";
 import Controls, { ControlsProvider } from "./Controls";
 import Music from "./Music";
 import Playlists from "./Playlists";
+import PlaylistDetails from "./PlaylistDetails";
 import Albums from "./Albums";
 import AlbumDetails from "./AlbumDetails";
 import Songs from "./Songs";
@@ -20,6 +21,7 @@ function App() {
           <Router>
             <Music path="/" />
             <Playlists path="/playlists" />
+            <PlaylistDetails path="/playlists/:id" />
             <Albums path="/albums" />
             <AlbumDetails path="/albums/:id" />
             <Songs path="/songs" />
