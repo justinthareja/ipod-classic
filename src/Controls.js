@@ -7,7 +7,7 @@ export default function Controls(props) {
   const { handleMenu } = context;
   return (
     <div className="controls">
-      <div className="control">
+      <button className="control">
         <svg
           xmlns="http://www.w3.org/2000/svg"
           className="icon rewind"
@@ -18,11 +18,11 @@ export default function Controls(props) {
             <polygon points="56.025,30.239 39.101,40.451 22.107,49.83 22.107,30.239 10.25,30.239 10.25,69.761 22.107,69.761 22.107,50.17    39.101,59.553 56.025,69.761 55.639,50  " />
           </g>
         </svg>
-      </div>
-      <div className="control" onClick={handleMenu}>
+      </button>
+      <button className="control" onClick={handleMenu}>
         MENU
-      </div>
-      <div className="control">
+      </button>
+      <button className="control">
         <svg
           className="icon playpause"
           xmlns="http://www.w3.org/2000/svg"
@@ -32,8 +32,8 @@ export default function Controls(props) {
           <rect x="53.945" y="21.713" width="15.478" height="56.573" />
           <rect x="80.77" y="21.713" width="15.48" height="56.573" />
         </svg>
-      </div>
-      <div className="control">
+      </button>
+      <button className="control">
         <svg
           className="icon fast-forward"
           xmlns="http://www.w3.org/2000/svg"
@@ -44,7 +44,7 @@ export default function Controls(props) {
             <polygon points="44.475,69.761 61.399,59.549 78.393,50.169 78.393,69.761 90.25,69.761 90.25,30.239 78.393,30.239 78.393,49.83    61.399,40.447 44.475,30.239 44.861,50  " />
           </g>
         </svg>
-      </div>
+      </button>
     </div>
   );
 }

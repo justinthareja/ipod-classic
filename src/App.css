@@ -65,22 +65,35 @@ body {
   align-items: center;
 }
 
-.screen-content {
+.header-icon {
+  width: 20px;
+  height: 20px;
+}
+
+.header-icon .icon {
+  fill: var(--screen-color);
+}
+
+.icon.battery {
+  width: inherit;
+}
+
+.screen-menu-container {
   height: 114px;
   overflow-y: auto;
   scrollbar-width: thin;
   scrollbar-color: var(--screen-color) var(--screen-bg-color);
 }
 
-.screen-content::-webkit-scrollbar {
+.screen-menu-container::-webkit-scrollbar {
   width: 9px;
 }
 
-.screen-content::-webkit-scrollbar-track {
+.screen-menu-container::-webkit-scrollbar-track {
   background: var(--screen-bg-color);
 }
 
-.screen-content::-webkit-scrollbar-thumb {
+.screen-menu-container::-webkit-scrollbar-thumb {
   background-color: var(--screen-color);
   border: 1px solid var(--screen-bg-color);
 }
@@ -111,19 +124,7 @@ body {
   fill: var(--screen-bg-color);
 }
 
-.header-icon {
-  width: 20px;
-  height: 20px;
-}
 
-.header-icon .icon {
-  fill: var(--screen-color);
-}
-
-.icon.battery {
-  height: inherit;
-  width: inherit;
-}
 
 .controls {
   margin-top: 15px;
@@ -142,8 +143,11 @@ body {
   font-size: 9px;
   font-weight: bold;
   color: tomato;
+  border: none;
+  outline: none;
   border-radius: 50%;
   box-shadow: 1px 1px 4px hsla(0, 0%, 0%, 0.2) inset;
+  cursor: pointer;
 }
 
 .control .icon {
@@ -175,6 +179,9 @@ body {
 .wheel-inner {
   width: 60px;
   height: 60px;
+  border: none;
+  outline: none;
   border-radius: 50%;
   box-shadow: 1px 1px 4px hsla(0, 0%, 0%, 0.2) inset;
+  cursor: pointer;
 }

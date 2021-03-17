@@ -1,4 +1,4 @@
-import MenuScreen from "./MenuScreen";
+import ScreenMenu from "./ScreenMenu";
 import Screen from "./Screen";
 import ScreenHeader from "./ScreenHeader";
 
@@ -6,7 +6,7 @@ function Music(props) {
   return (
     <Screen>
       <ScreenHeader header="Music" />
-      <MenuScreen
+      <ScreenMenu
         menuItems={[
           { name: "Playlists", path: "/playlists" },
           { name: "Albums", path: "/albums" },

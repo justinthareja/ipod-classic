@@ -100,7 +100,10 @@ export default function TouchWheel() {
       onMouseDown={handleMouseDown}
       onMouseMove={throttle(handleMouseMove, 100)}
     >
-      <div className="js-wheel-inner wheel-inner" onClick={handleClick}></div>
+      <button
+        className="js-wheel-inner wheel-inner"
+        onClick={handleClick}
+      ></button>
     </div>
   );
 }

@@ -9,32 +9,32 @@ import { navigate } from "@reach/router";
 import { useTouchWheelTick, useTouchWheelClick } from "./TouchWheel";
 import { useMenu } from "./Controls";
 
-function MenuScreen({ menuItems }) {
+function ScreenMenu({ menuItems }) {
   const NUM_ITEMS = 6;
   const ITEM_HEIGHT = 19; // px
   const contentRef = useRef(null);
-  const [selectedIndex, setSeletedIndex] = useState(0);
+  const [activeIndex, setActiveIndex] = useState(0);
   const [visibleRange, setVisibleRange] = useState([0, NUM_ITEMS - 1]);
 
   const handleTick = useCallback(
     ({ direction }) => {
       if (direction === "clockwise") {
-        if (selectedIndex < menuItems.length - 1) {
-          setSeletedIndex(selectedIndex + 1);
+        if (activeIndex < menuItems.length - 1) {
+          setActiveIndex(activeIndex + 1);
         }
       } else if (direction === "anticlockwise") {
-        if (selectedIndex > 0) {
-          setSeletedIndex(selectedIndex - 1);
+        if (activeIndex > 0) {
+          setActiveIndex(activeIndex - 1);
         }
       }
     },
-    [menuItems.length, selectedIndex]
+    [menuItems.length, activeIndex]
   );
 
   const handleClick = useCallback(() => {
-    const path = menuItems[selectedIndex].path;
+    const path = menuItems[activeIndex].path;
     navigate(path);
-  }, [menuItems, selectedIndex]);
+  }, [menuItems, activeIndex]);
 
   const handleMenuClick = useCallback(() => {
     navigate(-1);
@@ -63,22 +63,22 @@ function MenuScreen({ menuItems }) {
     const $content = contentRef.current;
     const [top, bottom] = visibleRange;
 
-    if (selectedIndex > bottom) {
+    if (activeIndex > bottom) {
       setVisibleRange(visibleRange.map((n) => n + 1));
       $content.scrollTop = $content.scrollTop + ITEM_HEIGHT;
-    } else if (selectedIndex < top) {
+    } else if (activeIndex < top) {
       setVisibleRange(visibleRange.map((n) => n - 1));
       $content.scrollTop = $content.scrollTop - ITEM_HEIGHT;
     }
-  }, [selectedIndex, visibleRange]);
+  }, [activeIndex, visibleRange]);
 
   return (
-    <div className="screen-content" ref={contentRef}>
+    <div className="screen-menu-container" ref={contentRef}>
       <ul className="screen-menu">
         {menuItems.map(({ name, path }, i) => (
           <li
             key={`${name}-${i}`}
-            className={`menu-item ${i === selectedIndex ? "is-active" : ""}`}
+            className={`menu-item ${i === activeIndex ? "is-active" : ""}`}
           >
             <span className="truncate">{name}</span>
             {path && (
@@ -100,4 +100,4 @@ function MenuScreen({ menuItems }) {
   );
 }
 
-export default MenuScreen;
+export default ScreenMenu;
