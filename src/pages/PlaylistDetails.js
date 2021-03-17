@@ -1,13 +1,12 @@
-import ScreenMenu from "./ScreenMenu";
-import Screen from "./Screen";
-import ScreenHeader from "./ScreenHeader";
-import result from "./stubs/playlist.json";
+import ScreenMenu from "../ScreenMenu";
+import Screen from "../Screen";
+import ScreenHeader from "../ScreenHeader";
+import result from "../stubs/playlist.json";
 
 function Playlists(props) {
-  console.log(result);
   return (
     <Screen>
-      <ScreenHeader header="Playlists" />
+      <ScreenHeader header={result.name} />
       <ScreenMenu
         menuItems={result.tracks.items.map((item) => ({
           name: item.track.name,

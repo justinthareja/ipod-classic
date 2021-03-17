@@ -1,10 +1,9 @@
-import ScreenMenu from "./ScreenMenu";
-import Screen from "./Screen";
-import ScreenHeader from "./ScreenHeader";
-import result from "./stubs/episodes.json";
+import ScreenMenu from "../ScreenMenu";
+import Screen from "../Screen";
+import ScreenHeader from "../ScreenHeader";
+import result from "../stubs/episodes.json";
 
 function Shows(props) {
-  console.log(result);
   return (
     <Screen>
       <ScreenHeader header="Episodes" />

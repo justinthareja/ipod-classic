@@ -1,7 +1,7 @@
-import ScreenMenu from "./ScreenMenu";
-import Screen from "./Screen";
-import ScreenHeader from "./ScreenHeader";
-import result from "./stubs/tracks.json";
+import ScreenMenu from "../ScreenMenu";
+import Screen from "../Screen";
+import ScreenHeader from "../ScreenHeader";
+import result from "../stubs/tracks.json";
 
 function Songs(props) {
   return (

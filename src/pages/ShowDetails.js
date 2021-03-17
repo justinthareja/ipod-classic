@@ -1,7 +1,7 @@
-import ScreenMenu from "./ScreenMenu";
-import Screen from "./Screen";
-import ScreenHeader from "./ScreenHeader";
-import result from "./stubs/show.json";
+import ScreenMenu from "../ScreenMenu";
+import Screen from "../Screen";
+import ScreenHeader from "../ScreenHeader";
+import result from "../stubs/show.json";
 
 function ShowDetails(props) {
   return (

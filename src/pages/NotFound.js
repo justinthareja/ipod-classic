@@ -1,5 +1,5 @@
-import Screen from "./Screen";
-import ScreenHeader from "./ScreenHeader";
+import Screen from "../Screen";
+import ScreenHeader from "../ScreenHeader";
 
 function NotFound(props) {
   return (

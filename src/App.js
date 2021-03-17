@@ -1,16 +1,16 @@
 import { Router } from "@reach/router";
 import TouchWheel, { TouchWheelProvider } from "./TouchWheel";
 import Controls, { ControlsProvider } from "./Controls";
-import Music from "./Music";
+import Music from "./pages/Music";
 import Playlists from "./Playlists";
-import PlaylistDetails from "./PlaylistDetails";
-import Albums from "./Albums";
-import AlbumDetails from "./AlbumDetails";
-import Songs from "./Songs";
-import Shows from "./Shows";
-import ShowDetails from "./ShowDetails";
-import Episodes from "./Episodes.js";
-import NotFound from "./NotFound";
+import PlaylistDetails from "./pages/PlaylistDetails";
+import Albums from "./pages/Albums";
+import AlbumDetails from "./pages/AlbumDetails";
+import Songs from "./pages/Songs";
+import Shows from "./pages/Shows";
+import ShowDetails from "./pages/ShowDetails";
+import Episodes from "./pages/Episodes.js";
+import NotFound from "./pages/NotFound";
 import "./App.css";
 
 function App() {
