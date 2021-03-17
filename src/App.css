@@ -125,6 +125,13 @@ body {
 }
 
 
+.not-found {
+  height: 114px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 
 .controls {
   margin-top: 15px;

@@ -3,6 +3,7 @@ import TouchWheel, { TouchWheelProvider } from "./TouchWheel";
 import Controls, { ControlsProvider } from "./Controls";
 import Music from "./Music";
 import Playlists from "./Playlists";
+import NotFound from "./NotFound";
 import "./App.css";
 
 function App() {
@@ -13,6 +14,7 @@ function App() {
           <Router>
             <Music path="/" />
             <Playlists path="/playlists" />
+            <NotFound default />
           </Router>
           <Controls />
           <TouchWheel />
