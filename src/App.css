@@ -74,8 +74,11 @@ body {
   fill: var(--screen-color);
 }
 
-.icon.battery {
-  width: inherit;
+.icon.play,
+.icon.pause {
+  width: 10px;
+  margin-left: 5px;
+  margin-top: 4px;
 }
 
 .screen-menu-container {
@@ -124,7 +127,6 @@ body {
   fill: var(--screen-bg-color);
 }
 
-
 .not-found {
   height: 114px;
   display: flex;
@@ -132,6 +134,44 @@ body {
   align-items: center;
 }
 
+.now-playing {
+  display: flex;
+  padding: 0px 6px;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.now-playing .track-count {
+  font-size: 0.7rem;
+  align-self: flex-start;
+  margin-bottom: 4px;
+}
+
+.now-playing .track-info {
+  margin-bottom: 8px;
+}
+
+.now-playing .playback {
+  height: 8px;
+  width: 100%;
+  margin-bottom: 2px;
+  border: 1px solid var(--screen-color);
+  border-radius: 4px;
+}
+
+.now-playing .playback-progress {
+  height: 100%;
+  width: 50%;
+  background-color: var(--screen-color);
+}
+
+.now-playing .timestamps {
+  align-self: stretch;
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.8rem;
+}
 
 .controls {
   margin-top: 15px;

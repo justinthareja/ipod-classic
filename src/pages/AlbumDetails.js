@@ -10,7 +10,7 @@ function Albums(props) {
       <ScreenMenu
         menuItems={result.tracks.items.map((item) => ({
           name: item.name,
-          path: `/tracks/${item.id}`,
+          path: `/songs/${item.id}`,
         }))}
       />
     </Screen>

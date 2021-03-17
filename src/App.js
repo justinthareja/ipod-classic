@@ -7,6 +7,7 @@ import PlaylistDetails from "./pages/PlaylistDetails";
 import Albums from "./pages/Albums";
 import AlbumDetails from "./pages/AlbumDetails";
 import Songs from "./pages/Songs";
+import NowPlaying from "./NowPlaying";
 import Shows from "./pages/Shows";
 import ShowDetails from "./pages/ShowDetails";
 import Episodes from "./pages/Episodes.js";
@@ -25,7 +26,7 @@ function App() {
             <Albums path="/albums" />
             <AlbumDetails path="/albums/:id" />
             <Songs path="/songs" />
-            {/* TODO <NowPlaying path="/songs/:id" />  */}
+            <NowPlaying path="/songs/:id" />
             <Shows path="/shows" />
             <ShowDetails path="/shows/:id" />
             <Episodes path="/episodes" />
