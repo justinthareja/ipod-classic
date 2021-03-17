@@ -1,7 +1,7 @@
-import ScreenMenu from "./ScreenMenu";
-import Screen from "./Screen";
-import ScreenHeader from "./ScreenHeader";
-import result from "./stubs/playlists.json";
+import ScreenMenu from "../ScreenMenu";
+import Screen from "../Screen";
+import ScreenHeader from "../ScreenHeader";
+import result from "../stubs/playlists.json";
 
 function Playlists(props) {
   return (
@@ -11,6 +11,7 @@ function Playlists(props) {
         menuItems={result.items.map((playlist) => ({
           name: playlist.name,
           path: `/playlists/${playlist.id}`,
+          showArrow: true,
         }))}
       />
     </Screen>

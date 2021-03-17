@@ -2,7 +2,7 @@ import { Router } from "@reach/router";
 import TouchWheel, { TouchWheelProvider } from "./TouchWheel";
 import Controls, { ControlsProvider } from "./Controls";
 import Music from "./pages/Music";
-import Playlists from "./Playlists";
+import Playlists from "./pages/Playlists";
 import PlaylistDetails from "./pages/PlaylistDetails";
 import Albums from "./pages/Albums";
 import AlbumDetails from "./pages/AlbumDetails";

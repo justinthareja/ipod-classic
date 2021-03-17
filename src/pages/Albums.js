@@ -11,6 +11,7 @@ function Albums(props) {
         menuItems={result.items.map((item) => ({
           name: item.album.name,
           path: `/albums/${item.album.id}`,
+          showArrow: true,
         }))}
       />
     </Screen>

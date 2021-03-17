@@ -81,13 +81,13 @@ function ScreenMenu({ menuItems }) {
   return (
     <div className="screen-menu-container" ref={contentRef}>
       <ul className="screen-menu">
-        {menuItems.map(({ name, path }, i) => (
+        {menuItems.map(({ name, showArrow }, i) => (
           <li
             key={`${name}-${i}`}
             className={`menu-item ${i === activeIndex ? "is-active" : ""}`}
           >
             <span className="truncate">{name}</span>
-            {path && (
+            {showArrow && (
               <svg
                 className="icon cheveron-right"
                 viewBox="0 0 5.8859 9.8"

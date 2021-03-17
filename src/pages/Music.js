@@ -8,11 +8,11 @@ function Music(props) {
       <ScreenHeader header="Music" />
       <ScreenMenu
         menuItems={[
-          { name: "Playlists", path: "/playlists" },
-          { name: "Albums", path: "/albums" },
-          { name: "Songs", path: "/songs" },
-          { name: "Shows", path: "/shows" },
-          { name: "Episodes", path: "/episodes" },
+          { name: "Playlists", path: "/playlists", showArrow: true },
+          { name: "Albums", path: "/albums", showArrow: true },
+          { name: "Songs", path: "/songs", showArrow: true },
+          { name: "Shows", path: "/shows", showArrow: true },
+          { name: "Episodes", path: "/episodes", showArrow: true },
         ]}
       />
     </Screen>

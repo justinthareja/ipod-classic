@@ -11,6 +11,7 @@ function Shows(props) {
         menuItems={result.items.map((item) => ({
           name: item.show.name,
           path: `/shows/${item.show.id}`,
+          showArrow: true,
         }))}
       />
     </Screen>
