@@ -1,0 +1,820 @@
+{
+  "href": "https://api.spotify.com/v1/me/tracks?offset=0&limit=10&market=us",
+  "items": [
+    {
+      "added_at": "2021-03-06T23:18:06Z",
+      "track": {
+        "album": {
+          "album_type": "single",
+          "artists": [
+            {
+              "external_urls": {
+                "spotify": "https://open.spotify.com/artist/6dgSiYNST9AWofoxzLI9q0"
+              },
+              "href": "https://api.spotify.com/v1/artists/6dgSiYNST9AWofoxzLI9q0",
+              "id": "6dgSiYNST9AWofoxzLI9q0",
+              "name": "Noah Park",
+              "type": "artist",
+              "uri": "spotify:artist:6dgSiYNST9AWofoxzLI9q0"
+            }
+          ],
+          "external_urls": {
+            "spotify": "https://open.spotify.com/album/1NgqDmoT8td7RFxsCuHoHl"
+          },
+          "href": "https://api.spotify.com/v1/albums/1NgqDmoT8td7RFxsCuHoHl",
+          "id": "1NgqDmoT8td7RFxsCuHoHl",
+          "images": [
+            {
+              "height": 640,
+              "url": "https://i.scdn.co/image/ab67616d0000b273d1e62326624689edf5f1aa73",
+              "width": 640
+            },
+            {
+              "height": 300,
+              "url": "https://i.scdn.co/image/ab67616d00001e02d1e62326624689edf5f1aa73",
+              "width": 300
+            },
+            {
+              "height": 64,
+              "url": "https://i.scdn.co/image/ab67616d00004851d1e62326624689edf5f1aa73",
+              "width": 64
+            }
+          ],
+          "name": "Elegant Departure",
+          "release_date": "2021-02-16",
+          "release_date_precision": "day",
+          "total_tracks": 1,
+          "type": "album",
+          "uri": "spotify:album:1NgqDmoT8td7RFxsCuHoHl"
+        },
+        "artists": [
+          {
+            "external_urls": {
+              "spotify": "https://open.spotify.com/artist/6dgSiYNST9AWofoxzLI9q0"
+            },
+            "href": "https://api.spotify.com/v1/artists/6dgSiYNST9AWofoxzLI9q0",
+            "id": "6dgSiYNST9AWofoxzLI9q0",
+            "name": "Noah Park",
+            "type": "artist",
+            "uri": "spotify:artist:6dgSiYNST9AWofoxzLI9q0"
+          }
+        ],
+        "disc_number": 1,
+        "duration_ms": 149250,
+        "explicit": false,
+        "external_ids": {
+          "isrc": "SE6RU2018601"
+        },
+        "external_urls": {
+          "spotify": "https://open.spotify.com/track/1wYkrQ1ZmIALJY9uGTLT6M"
+        },
+        "href": "https://api.spotify.com/v1/tracks/1wYkrQ1ZmIALJY9uGTLT6M",
+        "id": "1wYkrQ1ZmIALJY9uGTLT6M",
+        "is_local": false,
+        "is_playable": true,
+        "name": "Elegant Departure",
+        "popularity": 55,
+        "preview_url": "https://p.scdn.co/mp3-preview/f875d8c7004073aa4e5b3dbf3a4213e58f634a57?cid=774b29d4f13844c495f206cafdad9c86",
+        "track_number": 1,
+        "type": "track",
+        "uri": "spotify:track:1wYkrQ1ZmIALJY9uGTLT6M"
+      }
+    },
+    {
+      "added_at": "2020-12-14T14:07:05Z",
+      "track": {
+        "album": {
+          "album_type": "album",
+          "artists": [
+            {
+              "external_urls": {
+                "spotify": "https://open.spotify.com/artist/5oOhM2DFWab8XhSdQiITry"
+              },
+              "href": "https://api.spotify.com/v1/artists/5oOhM2DFWab8XhSdQiITry",
+              "id": "5oOhM2DFWab8XhSdQiITry",
+              "name": "Tycho",
+              "type": "artist",
+              "uri": "spotify:artist:5oOhM2DFWab8XhSdQiITry"
+            }
+          ],
+          "external_urls": {
+            "spotify": "https://open.spotify.com/album/1mRyfDR7Dc55GbC8V3kVis"
+          },
+          "href": "https://api.spotify.com/v1/albums/1mRyfDR7Dc55GbC8V3kVis",
+          "id": "1mRyfDR7Dc55GbC8V3kVis",
+          "images": [
+            {
+              "height": 640,
+              "url": "https://i.scdn.co/image/ab67616d0000b273547cb092e368868150105bb2",
+              "width": 640
+            },
+            {
+              "height": 300,
+              "url": "https://i.scdn.co/image/ab67616d00001e02547cb092e368868150105bb2",
+              "width": 300
+            },
+            {
+              "height": 64,
+              "url": "https://i.scdn.co/image/ab67616d00004851547cb092e368868150105bb2",
+              "width": 64
+            }
+          ],
+          "name": "Weather",
+          "release_date": "2019-07-12",
+          "release_date_precision": "day",
+          "total_tracks": 8,
+          "type": "album",
+          "uri": "spotify:album:1mRyfDR7Dc55GbC8V3kVis"
+        },
+        "artists": [
+          {
+            "external_urls": {
+              "spotify": "https://open.spotify.com/artist/5oOhM2DFWab8XhSdQiITry"
+            },
+            "href": "https://api.spotify.com/v1/artists/5oOhM2DFWab8XhSdQiITry",
+            "id": "5oOhM2DFWab8XhSdQiITry",
+            "name": "Tycho",
+            "type": "artist",
+            "uri": "spotify:artist:5oOhM2DFWab8XhSdQiITry"
+          },
+          {
+            "external_urls": {
+              "spotify": "https://open.spotify.com/artist/0DoWlk1NzQp1VWVFtZOb8Y"
+            },
+            "href": "https://api.spotify.com/v1/artists/0DoWlk1NzQp1VWVFtZOb8Y",
+            "id": "0DoWlk1NzQp1VWVFtZOb8Y",
+            "name": "Saint Sinner",
+            "type": "artist",
+            "uri": "spotify:artist:0DoWlk1NzQp1VWVFtZOb8Y"
+          }
+        ],
+        "disc_number": 1,
+        "duration_ms": 187340,
+        "explicit": false,
+        "external_ids": {
+          "isrc": "GBCFB1900068"
+        },
+        "external_urls": {
+          "spotify": "https://open.spotify.com/track/566w1sloS9qx61zl7bN9GE"
+        },
+        "href": "https://api.spotify.com/v1/tracks/566w1sloS9qx61zl7bN9GE",
+        "id": "566w1sloS9qx61zl7bN9GE",
+        "is_local": false,
+        "is_playable": true,
+        "name": "Skate",
+        "popularity": 41,
+        "preview_url": "https://p.scdn.co/mp3-preview/39e71473f4c2f22da88b5607968da3a453446c8a?cid=774b29d4f13844c495f206cafdad9c86",
+        "track_number": 5,
+        "type": "track",
+        "uri": "spotify:track:566w1sloS9qx61zl7bN9GE"
+      }
+    },
+    {
+      "added_at": "2020-12-05T01:04:25Z",
+      "track": {
+        "album": {
+          "album_type": "album",
+          "artists": [
+            {
+              "external_urls": {
+                "spotify": "https://open.spotify.com/artist/3gd8FJtBJtkRxdfbTu19U2"
+              },
+              "href": "https://api.spotify.com/v1/artists/3gd8FJtBJtkRxdfbTu19U2",
+              "id": "3gd8FJtBJtkRxdfbTu19U2",
+              "name": "Mumford & Sons",
+              "type": "artist",
+              "uri": "spotify:artist:3gd8FJtBJtkRxdfbTu19U2"
+            }
+          ],
+          "external_urls": {
+            "spotify": "https://open.spotify.com/album/6w5W6ZGTvDsppKUOiGMuMo"
+          },
+          "href": "https://api.spotify.com/v1/albums/6w5W6ZGTvDsppKUOiGMuMo",
+          "id": "6w5W6ZGTvDsppKUOiGMuMo",
+          "images": [
+            {
+              "height": 640,
+              "url": "https://i.scdn.co/image/ab67616d0000b2736d0a13a643d83342430c07da",
+              "width": 640
+            },
+            {
+              "height": 300,
+              "url": "https://i.scdn.co/image/ab67616d00001e026d0a13a643d83342430c07da",
+              "width": 300
+            },
+            {
+              "height": 64,
+              "url": "https://i.scdn.co/image/ab67616d000048516d0a13a643d83342430c07da",
+              "width": 64
+            }
+          ],
+          "name": "Sigh No More",
+          "release_date": "2009-10-02",
+          "release_date_precision": "day",
+          "total_tracks": 12,
+          "type": "album",
+          "uri": "spotify:album:6w5W6ZGTvDsppKUOiGMuMo"
+        },
+        "artists": [
+          {
+            "external_urls": {
+              "spotify": "https://open.spotify.com/artist/3gd8FJtBJtkRxdfbTu19U2"
+            },
+            "href": "https://api.spotify.com/v1/artists/3gd8FJtBJtkRxdfbTu19U2",
+            "id": "3gd8FJtBJtkRxdfbTu19U2",
+            "name": "Mumford & Sons",
+            "type": "artist",
+            "uri": "spotify:artist:3gd8FJtBJtkRxdfbTu19U2"
+          }
+        ],
+        "disc_number": 1,
+        "duration_ms": 217986,
+        "explicit": false,
+        "external_ids": {
+          "isrc": "GBUM70909075"
+        },
+        "external_urls": {
+          "spotify": "https://open.spotify.com/track/7IxVWmdabNVhfLBV3JD0nJ"
+        },
+        "href": "https://api.spotify.com/v1/tracks/7IxVWmdabNVhfLBV3JD0nJ",
+        "id": "7IxVWmdabNVhfLBV3JD0nJ",
+        "is_local": false,
+        "is_playable": true,
+        "name": "The Cave",
+        "popularity": 67,
+        "preview_url": "https://p.scdn.co/mp3-preview/06cc742469a2a4e6fff0f25b00f64c2339112170?cid=774b29d4f13844c495f206cafdad9c86",
+        "track_number": 2,
+        "type": "track",
+        "uri": "spotify:track:7IxVWmdabNVhfLBV3JD0nJ"
+      }
+    },
+    {
+      "added_at": "2020-12-03T21:00:40Z",
+      "track": {
+        "album": {
+          "album_type": "album",
+          "artists": [
+            {
+              "external_urls": {
+                "spotify": "https://open.spotify.com/artist/6S2OmqARrzebs0tKUEyXyp"
+              },
+              "href": "https://api.spotify.com/v1/artists/6S2OmqARrzebs0tKUEyXyp",
+              "id": "6S2OmqARrzebs0tKUEyXyp",
+              "name": "Demi Lovato",
+              "type": "artist",
+              "uri": "spotify:artist:6S2OmqARrzebs0tKUEyXyp"
+            }
+          ],
+          "external_urls": {
+            "spotify": "https://open.spotify.com/album/1MI6gNg0plcEOgs8aezsjH"
+          },
+          "href": "https://api.spotify.com/v1/albums/1MI6gNg0plcEOgs8aezsjH",
+          "id": "1MI6gNg0plcEOgs8aezsjH",
+          "images": [
+            {
+              "height": 640,
+              "url": "https://i.scdn.co/image/ab67616d0000b2734122abdb126fc17db275f710",
+              "width": 640
+            },
+            {
+              "height": 300,
+              "url": "https://i.scdn.co/image/ab67616d00001e024122abdb126fc17db275f710",
+              "width": 300
+            },
+            {
+              "height": 64,
+              "url": "https://i.scdn.co/image/ab67616d000048514122abdb126fc17db275f710",
+              "width": 64
+            }
+          ],
+          "name": "Tell Me You Love Me (Deluxe)",
+          "release_date": "2017-09-29",
+          "release_date_precision": "day",
+          "total_tracks": 15,
+          "type": "album",
+          "uri": "spotify:album:1MI6gNg0plcEOgs8aezsjH"
+        },
+        "artists": [
+          {
+            "external_urls": {
+              "spotify": "https://open.spotify.com/artist/6S2OmqARrzebs0tKUEyXyp"
+            },
+            "href": "https://api.spotify.com/v1/artists/6S2OmqARrzebs0tKUEyXyp",
+            "id": "6S2OmqARrzebs0tKUEyXyp",
+            "name": "Demi Lovato",
+            "type": "artist",
+            "uri": "spotify:artist:6S2OmqARrzebs0tKUEyXyp"
+          }
+        ],
+        "disc_number": 1,
+        "duration_ms": 203760,
+        "explicit": true,
+        "external_ids": {
+          "isrc": "USUM71707196"
+        },
+        "external_urls": {
+          "spotify": "https://open.spotify.com/track/7gvd8xj4QgPqbQSsn5pV7d"
+        },
+        "href": "https://api.spotify.com/v1/tracks/7gvd8xj4QgPqbQSsn5pV7d",
+        "id": "7gvd8xj4QgPqbQSsn5pV7d",
+        "is_local": false,
+        "is_playable": true,
+        "name": "Sorry Not Sorry",
+        "popularity": 79,
+        "preview_url": "https://p.scdn.co/mp3-preview/4b32ff10f00af6a41a9073aa55de37fed8620939?cid=774b29d4f13844c495f206cafdad9c86",
+        "track_number": 1,
+        "type": "track",
+        "uri": "spotify:track:7gvd8xj4QgPqbQSsn5pV7d"
+      }
+    },
+    {
+      "added_at": "2020-11-03T17:41:43Z",
+      "track": {
+        "album": {
+          "album_type": "compilation",
+          "artists": [
+            {
+              "external_urls": {
+                "spotify": "https://open.spotify.com/artist/7guDJrEfX3qb6FEbdPA5qi"
+              },
+              "href": "https://api.spotify.com/v1/artists/7guDJrEfX3qb6FEbdPA5qi",
+              "id": "7guDJrEfX3qb6FEbdPA5qi",
+              "name": "Stevie Wonder",
+              "type": "artist",
+              "uri": "spotify:artist:7guDJrEfX3qb6FEbdPA5qi"
+            }
+          ],
+          "external_urls": {
+            "spotify": "https://open.spotify.com/album/4E1itnJOhTMRSATNaxh0Sq"
+          },
+          "href": "https://api.spotify.com/v1/albums/4E1itnJOhTMRSATNaxh0Sq",
+          "id": "4E1itnJOhTMRSATNaxh0Sq",
+          "images": [
+            {
+              "height": 640,
+              "url": "https://i.scdn.co/image/ab67616d0000b2739e447b59bd3e2cbefaa31d91",
+              "width": 640
+            },
+            {
+              "height": 300,
+              "url": "https://i.scdn.co/image/ab67616d00001e029e447b59bd3e2cbefaa31d91",
+              "width": 300
+            },
+            {
+              "height": 64,
+              "url": "https://i.scdn.co/image/ab67616d000048519e447b59bd3e2cbefaa31d91",
+              "width": 64
+            }
+          ],
+          "name": "The Definitive Collection",
+          "release_date": "2002-10-29",
+          "release_date_precision": "day",
+          "total_tracks": 21,
+          "type": "album",
+          "uri": "spotify:album:4E1itnJOhTMRSATNaxh0Sq"
+        },
+        "artists": [
+          {
+            "external_urls": {
+              "spotify": "https://open.spotify.com/artist/7guDJrEfX3qb6FEbdPA5qi"
+            },
+            "href": "https://api.spotify.com/v1/artists/7guDJrEfX3qb6FEbdPA5qi",
+            "id": "7guDJrEfX3qb6FEbdPA5qi",
+            "name": "Stevie Wonder",
+            "type": "artist",
+            "uri": "spotify:artist:7guDJrEfX3qb6FEbdPA5qi"
+          }
+        ],
+        "disc_number": 1,
+        "duration_ms": 245493,
+        "explicit": false,
+        "external_ids": {
+          "isrc": "USMO10000310"
+        },
+        "external_urls": {
+          "spotify": "https://open.spotify.com/track/1h2xVEoJORqrg71HocgqXd"
+        },
+        "href": "https://api.spotify.com/v1/tracks/1h2xVEoJORqrg71HocgqXd",
+        "id": "1h2xVEoJORqrg71HocgqXd",
+        "is_local": false,
+        "is_playable": true,
+        "name": "Superstition - Single Version",
+        "popularity": 76,
+        "preview_url": "https://p.scdn.co/mp3-preview/bba36675a46b2734756bf3ae80d73e3eca4cc0cb?cid=774b29d4f13844c495f206cafdad9c86",
+        "track_number": 9,
+        "type": "track",
+        "uri": "spotify:track:1h2xVEoJORqrg71HocgqXd"
+      }
+    },
+    {
+      "added_at": "2020-10-26T21:26:45Z",
+      "track": {
+        "album": {
+          "album_type": "album",
+          "artists": [
+            {
+              "external_urls": {
+                "spotify": "https://open.spotify.com/artist/4iVhFmG8YCCEHANGeUUS9q"
+              },
+              "href": "https://api.spotify.com/v1/artists/4iVhFmG8YCCEHANGeUUS9q",
+              "id": "4iVhFmG8YCCEHANGeUUS9q",
+              "name": "Pretty Lights",
+              "type": "artist",
+              "uri": "spotify:artist:4iVhFmG8YCCEHANGeUUS9q"
+            }
+          ],
+          "external_urls": {
+            "spotify": "https://open.spotify.com/album/0pbCJhGv304qQ16xWvqyBH"
+          },
+          "href": "https://api.spotify.com/v1/albums/0pbCJhGv304qQ16xWvqyBH",
+          "id": "0pbCJhGv304qQ16xWvqyBH",
+          "images": [
+            {
+              "height": 640,
+              "url": "https://i.scdn.co/image/ab67616d0000b27325a3c060f6f40c66ca383379",
+              "width": 640
+            },
+            {
+              "height": 300,
+              "url": "https://i.scdn.co/image/ab67616d00001e0225a3c060f6f40c66ca383379",
+              "width": 300
+            },
+            {
+              "height": 64,
+              "url": "https://i.scdn.co/image/ab67616d0000485125a3c060f6f40c66ca383379",
+              "width": 64
+            }
+          ],
+          "name": "A Color Map of the Sun (Remixes)",
+          "release_date": "2013-12-10",
+          "release_date_precision": "day",
+          "total_tracks": 16,
+          "type": "album",
+          "uri": "spotify:album:0pbCJhGv304qQ16xWvqyBH"
+        },
+        "artists": [
+          {
+            "external_urls": {
+              "spotify": "https://open.spotify.com/artist/4iVhFmG8YCCEHANGeUUS9q"
+            },
+            "href": "https://api.spotify.com/v1/artists/4iVhFmG8YCCEHANGeUUS9q",
+            "id": "4iVhFmG8YCCEHANGeUUS9q",
+            "name": "Pretty Lights",
+            "type": "artist",
+            "uri": "spotify:artist:4iVhFmG8YCCEHANGeUUS9q"
+          }
+        ],
+        "disc_number": 1,
+        "duration_ms": 260571,
+        "explicit": false,
+        "external_ids": {
+          "isrc": "USA2P1389556"
+        },
+        "external_urls": {
+          "spotify": "https://open.spotify.com/track/4n6z0yh2ZpoGh0RNyGVu52"
+        },
+        "href": "https://api.spotify.com/v1/tracks/4n6z0yh2ZpoGh0RNyGVu52",
+        "id": "4n6z0yh2ZpoGh0RNyGVu52",
+        "is_local": false,
+        "is_playable": true,
+        "name": "One Day They'll Know (ODESZA Remix)",
+        "popularity": 57,
+        "preview_url": "https://p.scdn.co/mp3-preview/2050d9368f5f654446fa36d93038553567cc2e5e?cid=774b29d4f13844c495f206cafdad9c86",
+        "track_number": 2,
+        "type": "track",
+        "uri": "spotify:track:4n6z0yh2ZpoGh0RNyGVu52"
+      }
+    },
+    {
+      "added_at": "2020-10-22T15:30:09Z",
+      "track": {
+        "album": {
+          "album_type": "single",
+          "artists": [
+            {
+              "external_urls": {
+                "spotify": "https://open.spotify.com/artist/7vk5e3vY1uw9plTHJAMwjN"
+              },
+              "href": "https://api.spotify.com/v1/artists/7vk5e3vY1uw9plTHJAMwjN",
+              "id": "7vk5e3vY1uw9plTHJAMwjN",
+              "name": "Alan Walker",
+              "type": "artist",
+              "uri": "spotify:artist:7vk5e3vY1uw9plTHJAMwjN"
+            }
+          ],
+          "external_urls": {
+            "spotify": "https://open.spotify.com/album/5hVzpu6c6YFYRxMeqlKGSY"
+          },
+          "href": "https://api.spotify.com/v1/albums/5hVzpu6c6YFYRxMeqlKGSY",
+          "id": "5hVzpu6c6YFYRxMeqlKGSY",
+          "images": [
+            {
+              "height": 640,
+              "url": "https://i.scdn.co/image/ab67616d0000b273c14faf86691dc794c3819738",
+              "width": 640
+            },
+            {
+              "height": 300,
+              "url": "https://i.scdn.co/image/ab67616d00001e02c14faf86691dc794c3819738",
+              "width": 300
+            },
+            {
+              "height": 64,
+              "url": "https://i.scdn.co/image/ab67616d00004851c14faf86691dc794c3819738",
+              "width": 64
+            }
+          ],
+          "name": "Fade",
+          "release_date": "2014-11-19",
+          "release_date_precision": "day",
+          "total_tracks": 1,
+          "type": "album",
+          "uri": "spotify:album:5hVzpu6c6YFYRxMeqlKGSY"
+        },
+        "artists": [
+          {
+            "external_urls": {
+              "spotify": "https://open.spotify.com/artist/7vk5e3vY1uw9plTHJAMwjN"
+            },
+            "href": "https://api.spotify.com/v1/artists/7vk5e3vY1uw9plTHJAMwjN",
+            "id": "7vk5e3vY1uw9plTHJAMwjN",
+            "name": "Alan Walker",
+            "type": "artist",
+            "uri": "spotify:artist:7vk5e3vY1uw9plTHJAMwjN"
+          }
+        ],
+        "disc_number": 1,
+        "duration_ms": 264013,
+        "explicit": false,
+        "external_ids": {
+          "isrc": "GB2LD0901822"
+        },
+        "external_urls": {
+          "spotify": "https://open.spotify.com/track/2lfPecqFbH8X4lHSpTxt8l"
+        },
+        "href": "https://api.spotify.com/v1/tracks/2lfPecqFbH8X4lHSpTxt8l",
+        "id": "2lfPecqFbH8X4lHSpTxt8l",
+        "is_local": false,
+        "is_playable": true,
+        "name": "Fade",
+        "popularity": 65,
+        "preview_url": "https://p.scdn.co/mp3-preview/a8e418621817fc8fb15880a038eb14d4df236d22?cid=774b29d4f13844c495f206cafdad9c86",
+        "track_number": 1,
+        "type": "track",
+        "uri": "spotify:track:2lfPecqFbH8X4lHSpTxt8l"
+      }
+    },
+    {
+      "added_at": "2020-10-15T21:19:03Z",
+      "track": {
+        "album": {
+          "album_type": "album",
+          "artists": [
+            {
+              "external_urls": {
+                "spotify": "https://open.spotify.com/artist/6fSNDuge2fLINdnCCbpZx6"
+              },
+              "href": "https://api.spotify.com/v1/artists/6fSNDuge2fLINdnCCbpZx6",
+              "id": "6fSNDuge2fLINdnCCbpZx6",
+              "name": "Omar LinX",
+              "type": "artist",
+              "uri": "spotify:artist:6fSNDuge2fLINdnCCbpZx6"
+            }
+          ],
+          "external_urls": {
+            "spotify": "https://open.spotify.com/album/6PyecfGFBBIuSPfMAv2JTm"
+          },
+          "href": "https://api.spotify.com/v1/albums/6PyecfGFBBIuSPfMAv2JTm",
+          "id": "6PyecfGFBBIuSPfMAv2JTm",
+          "images": [
+            {
+              "height": 640,
+              "url": "https://i.scdn.co/image/ab67616d0000b2731966929ddfd382b29b0d8ede",
+              "width": 640
+            },
+            {
+              "height": 300,
+              "url": "https://i.scdn.co/image/ab67616d00001e021966929ddfd382b29b0d8ede",
+              "width": 300
+            },
+            {
+              "height": 64,
+              "url": "https://i.scdn.co/image/ab67616d000048511966929ddfd382b29b0d8ede",
+              "width": 64
+            }
+          ],
+          "name": "City Of Ommz",
+          "release_date": "2011-07-12",
+          "release_date_precision": "day",
+          "total_tracks": 14,
+          "type": "album",
+          "uri": "spotify:album:6PyecfGFBBIuSPfMAv2JTm"
+        },
+        "artists": [
+          {
+            "external_urls": {
+              "spotify": "https://open.spotify.com/artist/6fSNDuge2fLINdnCCbpZx6"
+            },
+            "href": "https://api.spotify.com/v1/artists/6fSNDuge2fLINdnCCbpZx6",
+            "id": "6fSNDuge2fLINdnCCbpZx6",
+            "name": "Omar LinX",
+            "type": "artist",
+            "uri": "spotify:artist:6fSNDuge2fLINdnCCbpZx6"
+          }
+        ],
+        "disc_number": 1,
+        "duration_ms": 261260,
+        "explicit": true,
+        "external_ids": {
+          "isrc": "CA5CL1000006"
+        },
+        "external_urls": {
+          "spotify": "https://open.spotify.com/track/1Mw6WD0r5baOugpV2SEmtk"
+        },
+        "href": "https://api.spotify.com/v1/tracks/1Mw6WD0r5baOugpV2SEmtk",
+        "id": "1Mw6WD0r5baOugpV2SEmtk",
+        "is_local": false,
+        "is_playable": true,
+        "name": "Cowboy",
+        "popularity": 38,
+        "preview_url": "https://p.scdn.co/mp3-preview/eb138e0becf0cf7e6850191a5da94d148992145e?cid=774b29d4f13844c495f206cafdad9c86",
+        "track_number": 6,
+        "type": "track",
+        "uri": "spotify:track:1Mw6WD0r5baOugpV2SEmtk"
+      }
+    },
+    {
+      "added_at": "2020-10-15T19:17:07Z",
+      "track": {
+        "album": {
+          "album_type": "album",
+          "artists": [
+            {
+              "external_urls": {
+                "spotify": "https://open.spotify.com/artist/1O9rhv6tMHchfb6Qx2yd6O"
+              },
+              "href": "https://api.spotify.com/v1/artists/1O9rhv6tMHchfb6Qx2yd6O",
+              "id": "1O9rhv6tMHchfb6Qx2yd6O",
+              "name": "Break Science",
+              "type": "artist",
+              "uri": "spotify:artist:1O9rhv6tMHchfb6Qx2yd6O"
+            }
+          ],
+          "external_urls": {
+            "spotify": "https://open.spotify.com/album/4p8bsXV9k5qarnHBK2azlN"
+          },
+          "href": "https://api.spotify.com/v1/albums/4p8bsXV9k5qarnHBK2azlN",
+          "id": "4p8bsXV9k5qarnHBK2azlN",
+          "images": [
+            {
+              "height": 640,
+              "url": "https://i.scdn.co/image/ab67616d0000b273c510f792af1bbc5103e0afae",
+              "width": 640
+            },
+            {
+              "height": 300,
+              "url": "https://i.scdn.co/image/ab67616d00001e02c510f792af1bbc5103e0afae",
+              "width": 300
+            },
+            {
+              "height": 64,
+              "url": "https://i.scdn.co/image/ab67616d00004851c510f792af1bbc5103e0afae",
+              "width": 64
+            }
+          ],
+          "name": "Seven Bridges",
+          "release_date": "2013-10-01",
+          "release_date_precision": "day",
+          "total_tracks": 13,
+          "type": "album",
+          "uri": "spotify:album:4p8bsXV9k5qarnHBK2azlN"
+        },
+        "artists": [
+          {
+            "external_urls": {
+              "spotify": "https://open.spotify.com/artist/1O9rhv6tMHchfb6Qx2yd6O"
+            },
+            "href": "https://api.spotify.com/v1/artists/1O9rhv6tMHchfb6Qx2yd6O",
+            "id": "1O9rhv6tMHchfb6Qx2yd6O",
+            "name": "Break Science",
+            "type": "artist",
+            "uri": "spotify:artist:1O9rhv6tMHchfb6Qx2yd6O"
+          },
+          {
+            "external_urls": {
+              "spotify": "https://open.spotify.com/artist/3PihHGdkeI7CBvqoMUIMdT"
+            },
+            "href": "https://api.spotify.com/v1/artists/3PihHGdkeI7CBvqoMUIMdT",
+            "id": "3PihHGdkeI7CBvqoMUIMdT",
+            "name": "Sonya Kitchell",
+            "type": "artist",
+            "uri": "spotify:artist:3PihHGdkeI7CBvqoMUIMdT"
+          }
+        ],
+        "disc_number": 1,
+        "duration_ms": 193411,
+        "explicit": false,
+        "external_ids": {
+          "isrc": "TCABQ1396307"
+        },
+        "external_urls": {
+          "spotify": "https://open.spotify.com/track/286jgoLB1dXQSFbcbWsiBX"
+        },
+        "href": "https://api.spotify.com/v1/tracks/286jgoLB1dXQSFbcbWsiBX",
+        "id": "286jgoLB1dXQSFbcbWsiBX",
+        "is_local": false,
+        "is_playable": true,
+        "name": "Once in a While",
+        "popularity": 46,
+        "preview_url": "https://p.scdn.co/mp3-preview/5df1f300e071b7e90248f578244e74af31e17a66?cid=774b29d4f13844c495f206cafdad9c86",
+        "track_number": 12,
+        "type": "track",
+        "uri": "spotify:track:286jgoLB1dXQSFbcbWsiBX"
+      }
+    },
+    {
+      "added_at": "2020-10-09T21:44:49Z",
+      "track": {
+        "album": {
+          "album_type": "single",
+          "artists": [
+            {
+              "external_urls": {
+                "spotify": "https://open.spotify.com/artist/4sTQVOfp9vEMCemLw50sbu"
+              },
+              "href": "https://api.spotify.com/v1/artists/4sTQVOfp9vEMCemLw50sbu",
+              "id": "4sTQVOfp9vEMCemLw50sbu",
+              "name": "Galantis",
+              "type": "artist",
+              "uri": "spotify:artist:4sTQVOfp9vEMCemLw50sbu"
+            }
+          ],
+          "external_urls": {
+            "spotify": "https://open.spotify.com/album/2f7kOrpFos0njurSOi2zqL"
+          },
+          "href": "https://api.spotify.com/v1/albums/2f7kOrpFos0njurSOi2zqL",
+          "id": "2f7kOrpFos0njurSOi2zqL",
+          "images": [
+            {
+              "height": 640,
+              "url": "https://i.scdn.co/image/ab67616d0000b273119cb56f073efd326643dcfe",
+              "width": 640
+            },
+            {
+              "height": 300,
+              "url": "https://i.scdn.co/image/ab67616d00001e02119cb56f073efd326643dcfe",
+              "width": 300
+            },
+            {
+              "height": 64,
+              "url": "https://i.scdn.co/image/ab67616d00004851119cb56f073efd326643dcfe",
+              "width": 64
+            }
+          ],
+          "name": "No Money",
+          "release_date": "2016-04-01",
+          "release_date_precision": "day",
+          "total_tracks": 1,
+          "type": "album",
+          "uri": "spotify:album:2f7kOrpFos0njurSOi2zqL"
+        },
+        "artists": [
+          {
+            "external_urls": {
+              "spotify": "https://open.spotify.com/artist/4sTQVOfp9vEMCemLw50sbu"
+            },
+            "href": "https://api.spotify.com/v1/artists/4sTQVOfp9vEMCemLw50sbu",
+            "id": "4sTQVOfp9vEMCemLw50sbu",
+            "name": "Galantis",
+            "type": "artist",
+            "uri": "spotify:artist:4sTQVOfp9vEMCemLw50sbu"
+          }
+        ],
+        "disc_number": 1,
+        "duration_ms": 189126,
+        "explicit": false,
+        "external_ids": {
+          "isrc": "USAT21600941"
+        },
+        "external_urls": {
+          "spotify": "https://open.spotify.com/track/0gb1J5UrTpzaU1s3nupgCd"
+        },
+        "href": "https://api.spotify.com/v1/tracks/0gb1J5UrTpzaU1s3nupgCd",
+        "id": "0gb1J5UrTpzaU1s3nupgCd",
+        "is_local": false,
+        "is_playable": true,
+        "name": "No Money",
+        "popularity": 70,
+        "preview_url": "https://p.scdn.co/mp3-preview/fe269d15b08ee08b10c9fc04c5ed06decaf90ea8?cid=774b29d4f13844c495f206cafdad9c86",
+        "track_number": 1,
+        "type": "track",
+        "uri": "spotify:track:0gb1J5UrTpzaU1s3nupgCd"
+      }
+    }
+  ],
+  "limit": 10,
+  "next": "https://api.spotify.com/v1/me/tracks?offset=10&limit=10&market=us",
+  "offset": 0,
+  "previous": null,
+  "total": 813
+}

@@ -1,0 +1,4499 @@
+{
+  "href": "https://api.spotify.com/v1/me/albums?offset=0&limit=10&market=us",
+  "items": [
+    {
+      "added_at": "2020-11-03T21:13:30Z",
+      "album": {
+        "album_type": "single",
+        "artists": [
+          {
+            "external_urls": {
+              "spotify": "https://open.spotify.com/artist/4V8LLVI7PbaPR0K2TGSxFF"
+            },
+            "href": "https://api.spotify.com/v1/artists/4V8LLVI7PbaPR0K2TGSxFF",
+            "id": "4V8LLVI7PbaPR0K2TGSxFF",
+            "name": "Tyler, The Creator",
+            "type": "artist",
+            "uri": "spotify:artist:4V8LLVI7PbaPR0K2TGSxFF"
+          }
+        ],
+        "copyrights": [
+          {
+            "text": "2011 XL Recordings Ltd.",
+            "type": "C"
+          },
+          {
+            "text": "2011 XL Recordings Ltd.",
+            "type": "P"
+          }
+        ],
+        "external_ids": {
+          "upc": "634904953164"
+        },
+        "external_urls": {
+          "spotify": "https://open.spotify.com/album/1rHPGCGcTUUzeFtGs2SGPZ"
+        },
+        "genres": [],
+        "href": "https://api.spotify.com/v1/albums/1rHPGCGcTUUzeFtGs2SGPZ",
+        "id": "1rHPGCGcTUUzeFtGs2SGPZ",
+        "images": [
+          {
+            "height": 640,
+            "url": "https://i.scdn.co/image/ab67616d0000b273dcca5df377eaaaeb8de47631",
+            "width": 640
+          },
+          {
+            "height": 300,
+            "url": "https://i.scdn.co/image/ab67616d00001e02dcca5df377eaaaeb8de47631",
+            "width": 300
+          },
+          {
+            "height": 64,
+            "url": "https://i.scdn.co/image/ab67616d00004851dcca5df377eaaaeb8de47631",
+            "width": 64
+          }
+        ],
+        "label": "XL",
+        "name": "Yonkers",
+        "popularity": 9,
+        "release_date": "2011-02-15",
+        "release_date_precision": "day",
+        "total_tracks": 1,
+        "tracks": {
+          "href": "https://api.spotify.com/v1/albums/1rHPGCGcTUUzeFtGs2SGPZ/tracks?offset=0&limit=50&market=us",
+          "items": [
+            {
+              "artists": [
+                {
+                  "external_urls": {
+                    "spotify": "https://open.spotify.com/artist/4V8LLVI7PbaPR0K2TGSxFF"
+                  },
+                  "href": "https://api.spotify.com/v1/artists/4V8LLVI7PbaPR0K2TGSxFF",
+                  "id": "4V8LLVI7PbaPR0K2TGSxFF",
+                  "name": "Tyler, The Creator",
+                  "type": "artist",
+                  "uri": "spotify:artist:4V8LLVI7PbaPR0K2TGSxFF"
+                }
+              ],
+              "disc_number": 1,
+              "duration_ms": 249333,
+              "explicit": true,
+              "external_urls": {
+                "spotify": "https://open.spotify.com/track/1nwkSqzTyXBk6XF796EOav"
+              },
+              "href": "https://api.spotify.com/v1/tracks/1nwkSqzTyXBk6XF796EOav",
+              "id": "1nwkSqzTyXBk6XF796EOav",
+              "is_local": false,
+              "is_playable": true,
+              "linked_from": {
+                "external_urls": {
+                  "spotify": "https://open.spotify.com/track/2QloUyCqK1enErCSmUniNu"
+                },
+                "href": "https://api.spotify.com/v1/tracks/2QloUyCqK1enErCSmUniNu",
+                "id": "2QloUyCqK1enErCSmUniNu",
+                "type": "track",
+                "uri": "spotify:track:2QloUyCqK1enErCSmUniNu"
+              },
+              "name": "Yonkers",
+              "preview_url": "https://p.scdn.co/mp3-preview/1a379f80ec3fe7c21781f5a99fa2e2e8624cec79?cid=774b29d4f13844c495f206cafdad9c86",
+              "track_number": 2,
+              "type": "track",
+              "uri": "spotify:track:1nwkSqzTyXBk6XF796EOav"
+            }
+          ],
+          "limit": 50,
+          "next": null,
+          "offset": 0,
+          "previous": null,
+          "total": 1
+        },
+        "type": "album",
+        "uri": "spotify:album:1rHPGCGcTUUzeFtGs2SGPZ"
+      }
+    },
+    {
+      "added_at": "2020-10-09T01:14:25Z",
+      "album": {
+        "album_type": "album",
+        "artists": [
+          {
+            "external_urls": {
+              "spotify": "https://open.spotify.com/artist/1anyVhU62p31KFi8MEzkbf"
+            },
+            "href": "https://api.spotify.com/v1/artists/1anyVhU62p31KFi8MEzkbf",
+            "id": "1anyVhU62p31KFi8MEzkbf",
+            "name": "Chance the Rapper",
+            "type": "artist",
+            "uri": "spotify:artist:1anyVhU62p31KFi8MEzkbf"
+          }
+        ],
+        "copyrights": [
+          {
+            "text": "2019 Chance The Rapper LLC",
+            "type": "C"
+          },
+          {
+            "text": "2019 Chance The Rapper LLC",
+            "type": "P"
+          }
+        ],
+        "external_ids": {
+          "upc": "5059033597358"
+        },
+        "external_urls": {
+          "spotify": "https://open.spotify.com/album/2VBcztE58pBKjIDS5oEgFh"
+        },
+        "genres": [],
+        "href": "https://api.spotify.com/v1/albums/2VBcztE58pBKjIDS5oEgFh",
+        "id": "2VBcztE58pBKjIDS5oEgFh",
+        "images": [
+          {
+            "height": 640,
+            "url": "https://i.scdn.co/image/ab67616d0000b273d95ab48a8a9de3c4a2cbfe80",
+            "width": 640
+          },
+          {
+            "height": 300,
+            "url": "https://i.scdn.co/image/ab67616d00001e02d95ab48a8a9de3c4a2cbfe80",
+            "width": 300
+          },
+          {
+            "height": 64,
+            "url": "https://i.scdn.co/image/ab67616d00004851d95ab48a8a9de3c4a2cbfe80",
+            "width": 64
+          }
+        ],
+        "label": "Chance the Rapper",
+        "name": "Acid Rap",
+        "popularity": 74,
+        "release_date": "2013-04-30",
+        "release_date_precision": "day",
+        "total_tracks": 14,
+        "tracks": {
+          "href": "https://api.spotify.com/v1/albums/2VBcztE58pBKjIDS5oEgFh/tracks?offset=0&limit=50&market=us",
+          "items": [
+            {
+              "artists": [
+                {
+                  "external_urls": {
+                    "spotify": "https://open.spotify.com/artist/1anyVhU62p31KFi8MEzkbf"
+                  },
+                  "href": "https://api.spotify.com/v1/artists/1anyVhU62p31KFi8MEzkbf",
+                  "id": "1anyVhU62p31KFi8MEzkbf",
+                  "name": "Chance the Rapper",
+                  "type": "artist",
+                  "uri": "spotify:artist:1anyVhU62p31KFi8MEzkbf"
+                },
+                {
+                  "external_urls": {
+                    "spotify": "https://open.spotify.com/artist/07d5etnpjriczFBB8pxmRe"
+                  },
+                  "href": "https://api.spotify.com/v1/artists/07d5etnpjriczFBB8pxmRe",
+                  "id": "07d5etnpjriczFBB8pxmRe",
+                  "name": "BJ The Chicago Kid",
+                  "type": "artist",
+                  "uri": "spotify:artist:07d5etnpjriczFBB8pxmRe"
+                },
+                {
+                  "external_urls": {
+                    "spotify": "https://open.spotify.com/artist/7AguDSkWdr8NzTOvpTID4W"
+                  },
+                  "href": "https://api.spotify.com/v1/artists/7AguDSkWdr8NzTOvpTID4W",
+                  "id": "7AguDSkWdr8NzTOvpTID4W",
+                  "name": "Lili K",
+                  "type": "artist",
+                  "uri": "spotify:artist:7AguDSkWdr8NzTOvpTID4W"
+                }
+              ],
+              "disc_number": 1,
+              "duration_ms": 239250,
+              "explicit": true,
+              "external_urls": {
+                "spotify": "https://open.spotify.com/track/23Ij3xEFmYkRl00dDJCVMP"
+              },
+              "href": "https://api.spotify.com/v1/tracks/23Ij3xEFmYkRl00dDJCVMP",
+              "id": "23Ij3xEFmYkRl00dDJCVMP",
+              "is_local": false,
+              "is_playable": true,
+              "name": "Good Ass Intro",
+              "preview_url": "https://p.scdn.co/mp3-preview/8e86091e0ac6cec903e1e47955b48aebc80f5f70?cid=774b29d4f13844c495f206cafdad9c86",
+              "track_number": 1,
+              "type": "track",
+              "uri": "spotify:track:23Ij3xEFmYkRl00dDJCVMP"
+            },
+            {
+              "artists": [
+                {
+                  "external_urls": {
+                    "spotify": "https://open.spotify.com/artist/1anyVhU62p31KFi8MEzkbf"
+                  },
+                  "href": "https://api.spotify.com/v1/artists/1anyVhU62p31KFi8MEzkbf",
+                  "id": "1anyVhU62p31KFi8MEzkbf",
+                  "name": "Chance the Rapper",
+                  "type": "artist",
+                  "uri": "spotify:artist:1anyVhU62p31KFi8MEzkbf"
+                },
+                {
+                  "external_urls": {
+                    "spotify": "https://open.spotify.com/artist/7xDiCwbxPFkL5mFgjirxpV"
+                  },
+                  "href": "https://api.spotify.com/v1/artists/7xDiCwbxPFkL5mFgjirxpV",
+                  "id": "7xDiCwbxPFkL5mFgjirxpV",
+                  "name": "Nate Fox",
+                  "type": "artist",
+                  "uri": "spotify:artist:7xDiCwbxPFkL5mFgjirxpV"
+                }
+              ],
+              "disc_number": 1,
+              "duration_ms": 139406,
+              "explicit": true,
+              "external_urls": {
+                "spotify": "https://open.spotify.com/track/4ygQUye7obtqhSltSxp18H"
+              },
+              "href": "https://api.spotify.com/v1/tracks/4ygQUye7obtqhSltSxp18H",
+              "id": "4ygQUye7obtqhSltSxp18H",
+              "is_local": false,
+              "is_playable": true,
+              "name": "Pusha Man",
+              "preview_url": "https://p.scdn.co/mp3-preview/944ce8ed860ff5ca7273adcb13f4b831c6498f51?cid=774b29d4f13844c495f206cafdad9c86",
+              "track_number": 2,
+              "type": "track",
+              "uri": "spotify:track:4ygQUye7obtqhSltSxp18H"
+            },
+            {
+              "artists": [
+                {
+                  "external_urls": {
+                    "spotify": "https://open.spotify.com/artist/1anyVhU62p31KFi8MEzkbf"
+                  },
+                  "href": "https://api.spotify.com/v1/artists/1anyVhU62p31KFi8MEzkbf",
+                  "id": "1anyVhU62p31KFi8MEzkbf",
+                  "name": "Chance the Rapper",
+                  "type": "artist",
+                  "uri": "spotify:artist:1anyVhU62p31KFi8MEzkbf"
+                },
+                {
+                  "external_urls": {
+                    "spotify": "https://open.spotify.com/artist/0IVapwlnM3dEOiMsHXsghT"
+                  },
+                  "href": "https://api.spotify.com/v1/artists/0IVapwlnM3dEOiMsHXsghT",
+                  "id": "0IVapwlnM3dEOiMsHXsghT",
+                  "name": "Nosaj Thing",
+                  "type": "artist",
+                  "uri": "spotify:artist:0IVapwlnM3dEOiMsHXsghT"
+                }
+              ],
+              "disc_number": 1,
+              "duration_ms": 275281,
+              "explicit": true,
+              "external_urls": {
+                "spotify": "https://open.spotify.com/track/6Oe5tmI1bfguCp6dKHbSj6"
+              },
+              "href": "https://api.spotify.com/v1/tracks/6Oe5tmI1bfguCp6dKHbSj6",
+              "id": "6Oe5tmI1bfguCp6dKHbSj6",
+              "is_local": false,
+              "is_playable": true,
+              "name": "Paranoia",
+              "preview_url": "https://p.scdn.co/mp3-preview/42cd8fbf173166024c9de364ad499ef1844534c4?cid=774b29d4f13844c495f206cafdad9c86",
+              "track_number": 3,
+              "type": "track",
+              "uri": "spotify:track:6Oe5tmI1bfguCp6dKHbSj6"
+            },
+            {
+              "artists": [
+                {
+                  "external_urls": {
+                    "spotify": "https://open.spotify.com/artist/1anyVhU62p31KFi8MEzkbf"
+                  },
+                  "href": "https://api.spotify.com/v1/artists/1anyVhU62p31KFi8MEzkbf",
+                  "id": "1anyVhU62p31KFi8MEzkbf",
+                  "name": "Chance the Rapper",
+                  "type": "artist",
+                  "uri": "spotify:artist:1anyVhU62p31KFi8MEzkbf"
+                },
+                {
+                  "external_urls": {
+                    "spotify": "https://open.spotify.com/artist/27w1NoOLMX7tJMYqcetPyG"
+                  },
+                  "href": "https://api.spotify.com/v1/artists/27w1NoOLMX7tJMYqcetPyG",
+                  "id": "27w1NoOLMX7tJMYqcetPyG",
+                  "name": "VIC MENSA",
+                  "type": "artist",
+                  "uri": "spotify:artist:27w1NoOLMX7tJMYqcetPyG"
+                },
+                {
+                  "external_urls": {
+                    "spotify": "https://open.spotify.com/artist/6vbY3hOaCAhC7VjucswgdS"
+                  },
+                  "href": "https://api.spotify.com/v1/artists/6vbY3hOaCAhC7VjucswgdS",
+                  "id": "6vbY3hOaCAhC7VjucswgdS",
+                  "name": "Twista",
+                  "type": "artist",
+                  "uri": "spotify:artist:6vbY3hOaCAhC7VjucswgdS"
+                }
+              ],
+              "disc_number": 1,
+              "duration_ms": 307187,
+              "explicit": true,
+              "external_urls": {
+                "spotify": "https://open.spotify.com/track/0aMHIW1lqrulVCx0LLlr6a"
+              },
+              "href": "https://api.spotify.com/v1/tracks/0aMHIW1lqrulVCx0LLlr6a",
+              "id": "0aMHIW1lqrulVCx0LLlr6a",
+              "is_local": false,
+              "is_playable": true,
+              "name": "Cocoa Butter Kisses",
+              "preview_url": "https://p.scdn.co/mp3-preview/bd18e76c2bf858e96e5cd4e72bc7702dc05b495e?cid=774b29d4f13844c495f206cafdad9c86",
+              "track_number": 4,
+              "type": "track",
+              "uri": "spotify:track:0aMHIW1lqrulVCx0LLlr6a"
+            },
+            {
+              "artists": [
+                {
+                  "external_urls": {
+                    "spotify": "https://open.spotify.com/artist/1anyVhU62p31KFi8MEzkbf"
+                  },
+                  "href": "https://api.spotify.com/v1/artists/1anyVhU62p31KFi8MEzkbf",
+                  "id": "1anyVhU62p31KFi8MEzkbf",
+                  "name": "Chance the Rapper",
+                  "type": "artist",
+                  "uri": "spotify:artist:1anyVhU62p31KFi8MEzkbf"
+                }
+              ],
+              "disc_number": 1,
+              "duration_ms": 30300,
+              "explicit": false,
+              "external_urls": {
+                "spotify": "https://open.spotify.com/track/3VhGbMpUONRwUIvgFoF14b"
+              },
+              "href": "https://api.spotify.com/v1/tracks/3VhGbMpUONRwUIvgFoF14b",
+              "id": "3VhGbMpUONRwUIvgFoF14b",
+              "is_local": false,
+              "is_playable": true,
+              "name": "Juice",
+              "preview_url": "https://p.scdn.co/mp3-preview/25519416081c3cf06338c98aad26720291da7cb3?cid=774b29d4f13844c495f206cafdad9c86",
+              "track_number": 5,
+              "type": "track",
+              "uri": "spotify:track:3VhGbMpUONRwUIvgFoF14b"
+            },
+            {
+              "artists": [
+                {
+                  "external_urls": {
+                    "spotify": "https://open.spotify.com/artist/1anyVhU62p31KFi8MEzkbf"
+                  },
+                  "href": "https://api.spotify.com/v1/artists/1anyVhU62p31KFi8MEzkbf",
+                  "id": "1anyVhU62p31KFi8MEzkbf",
+                  "name": "Chance the Rapper",
+                  "type": "artist",
+                  "uri": "spotify:artist:1anyVhU62p31KFi8MEzkbf"
+                },
+                {
+                  "external_urls": {
+                    "spotify": "https://open.spotify.com/artist/1EpyA68dKpjf7jXmQL88Hy"
+                  },
+                  "href": "https://api.spotify.com/v1/artists/1EpyA68dKpjf7jXmQL88Hy",
+                  "id": "1EpyA68dKpjf7jXmQL88Hy",
+                  "name": "Noname",
+                  "type": "artist",
+                  "uri": "spotify:artist:1EpyA68dKpjf7jXmQL88Hy"
+                }
+              ],
+              "disc_number": 1,
+              "duration_ms": 184562,
+              "explicit": true,
+              "external_urls": {
+                "spotify": "https://open.spotify.com/track/5v2ePUTZiv1mPDCD1nSbfF"
+              },
+              "href": "https://api.spotify.com/v1/tracks/5v2ePUTZiv1mPDCD1nSbfF",
+              "id": "5v2ePUTZiv1mPDCD1nSbfF",
+              "is_local": false,
+              "is_playable": true,
+              "name": "Lost",
+              "preview_url": "https://p.scdn.co/mp3-preview/865a89adfe30a842029b41f0e57b3b758b17f5a6?cid=774b29d4f13844c495f206cafdad9c86",
+              "track_number": 6,
+              "type": "track",
+              "uri": "spotify:track:5v2ePUTZiv1mPDCD1nSbfF"
+            },
+            {
+              "artists": [
+                {
+                  "external_urls": {
+                    "spotify": "https://open.spotify.com/artist/1anyVhU62p31KFi8MEzkbf"
+                  },
+                  "href": "https://api.spotify.com/v1/artists/1anyVhU62p31KFi8MEzkbf",
+                  "id": "1anyVhU62p31KFi8MEzkbf",
+                  "name": "Chance the Rapper",
+                  "type": "artist",
+                  "uri": "spotify:artist:1anyVhU62p31KFi8MEzkbf"
+                },
+                {
+                  "external_urls": {
+                    "spotify": "https://open.spotify.com/artist/7Hjbimq43OgxaBRpFXic4x"
+                  },
+                  "href": "https://api.spotify.com/v1/artists/7Hjbimq43OgxaBRpFXic4x",
+                  "id": "7Hjbimq43OgxaBRpFXic4x",
+                  "name": "Saba",
+                  "type": "artist",
+                  "uri": "spotify:artist:7Hjbimq43OgxaBRpFXic4x"
+                },
+                {
+                  "external_urls": {
+                    "spotify": "https://open.spotify.com/artist/07d5etnpjriczFBB8pxmRe"
+                  },
+                  "href": "https://api.spotify.com/v1/artists/07d5etnpjriczFBB8pxmRe",
+                  "id": "07d5etnpjriczFBB8pxmRe",
+                  "name": "BJ The Chicago Kid",
+                  "type": "artist",
+                  "uri": "spotify:artist:07d5etnpjriczFBB8pxmRe"
+                }
+              ],
+              "disc_number": 1,
+              "duration_ms": 276937,
+              "explicit": true,
+              "external_urls": {
+                "spotify": "https://open.spotify.com/track/4NBQVFmu2R7lmRU3yoSMm4"
+              },
+              "href": "https://api.spotify.com/v1/tracks/4NBQVFmu2R7lmRU3yoSMm4",
+              "id": "4NBQVFmu2R7lmRU3yoSMm4",
+              "is_local": false,
+              "is_playable": true,
+              "name": "Everybody's Something",
+              "preview_url": "https://p.scdn.co/mp3-preview/2e4bf9b132d5549b5beca326db69c966cab37ac6?cid=774b29d4f13844c495f206cafdad9c86",
+              "track_number": 7,
+              "type": "track",
+              "uri": "spotify:track:4NBQVFmu2R7lmRU3yoSMm4"
+            },
+            {
+              "artists": [
+                {
+                  "external_urls": {
+                    "spotify": "https://open.spotify.com/artist/1anyVhU62p31KFi8MEzkbf"
+                  },
+                  "href": "https://api.spotify.com/v1/artists/1anyVhU62p31KFi8MEzkbf",
+                  "id": "1anyVhU62p31KFi8MEzkbf",
+                  "name": "Chance the Rapper",
+                  "type": "artist",
+                  "uri": "spotify:artist:1anyVhU62p31KFi8MEzkbf"
+                }
+              ],
+              "disc_number": 1,
+              "duration_ms": 149875,
+              "explicit": false,
+              "external_urls": {
+                "spotify": "https://open.spotify.com/track/7nrraHMpSbyJJoN3unjjoJ"
+              },
+              "href": "https://api.spotify.com/v1/tracks/7nrraHMpSbyJJoN3unjjoJ",
+              "id": "7nrraHMpSbyJJoN3unjjoJ",
+              "is_local": false,
+              "is_playable": true,
+              "name": "Interlude (That's Love)",
+              "preview_url": "https://p.scdn.co/mp3-preview/caca84f589a78fa4699d022851f7f476b1f52fb7?cid=774b29d4f13844c495f206cafdad9c86",
+              "track_number": 8,
+              "type": "track",
+              "uri": "spotify:track:7nrraHMpSbyJJoN3unjjoJ"
+            },
+            {
+              "artists": [
+                {
+                  "external_urls": {
+                    "spotify": "https://open.spotify.com/artist/1anyVhU62p31KFi8MEzkbf"
+                  },
+                  "href": "https://api.spotify.com/v1/artists/1anyVhU62p31KFi8MEzkbf",
+                  "id": "1anyVhU62p31KFi8MEzkbf",
+                  "name": "Chance the Rapper",
+                  "type": "artist",
+                  "uri": "spotify:artist:1anyVhU62p31KFi8MEzkbf"
+                },
+                {
+                  "external_urls": {
+                    "spotify": "https://open.spotify.com/artist/73sIBHcqh3Z3NyqHKZ7FOL"
+                  },
+                  "href": "https://api.spotify.com/v1/artists/73sIBHcqh3Z3NyqHKZ7FOL",
+                  "id": "73sIBHcqh3Z3NyqHKZ7FOL",
+                  "name": "Childish Gambino",
+                  "type": "artist",
+                  "uri": "spotify:artist:73sIBHcqh3Z3NyqHKZ7FOL"
+                }
+              ],
+              "disc_number": 1,
+              "duration_ms": 185062,
+              "explicit": true,
+              "external_urls": {
+                "spotify": "https://open.spotify.com/track/1sFstGV1Z3Aw5TDFCiT7vK"
+              },
+              "href": "https://api.spotify.com/v1/tracks/1sFstGV1Z3Aw5TDFCiT7vK",
+              "id": "1sFstGV1Z3Aw5TDFCiT7vK",
+              "is_local": false,
+              "is_playable": true,
+              "name": "Favorite Song",
+              "preview_url": "https://p.scdn.co/mp3-preview/e994eb34cd53b94ec5a2542a5032f4c98b387bca?cid=774b29d4f13844c495f206cafdad9c86",
+              "track_number": 9,
+              "type": "track",
+              "uri": "spotify:track:1sFstGV1Z3Aw5TDFCiT7vK"
+            },
+            {
+              "artists": [
+                {
+                  "external_urls": {
+                    "spotify": "https://open.spotify.com/artist/1anyVhU62p31KFi8MEzkbf"
+                  },
+                  "href": "https://api.spotify.com/v1/artists/1anyVhU62p31KFi8MEzkbf",
+                  "id": "1anyVhU62p31KFi8MEzkbf",
+                  "name": "Chance the Rapper",
+                  "type": "artist",
+                  "uri": "spotify:artist:1anyVhU62p31KFi8MEzkbf"
+                },
+                {
+                  "external_urls": {
+                    "spotify": "https://open.spotify.com/artist/7BMccF0hQFBpP6417k1OtQ"
+                  },
+                  "href": "https://api.spotify.com/v1/artists/7BMccF0hQFBpP6417k1OtQ",
+                  "id": "7BMccF0hQFBpP6417k1OtQ",
+                  "name": "Action Bronson",
+                  "type": "artist",
+                  "uri": "spotify:artist:7BMccF0hQFBpP6417k1OtQ"
+                }
+              ],
+              "disc_number": 1,
+              "duration_ms": 200625,
+              "explicit": true,
+              "external_urls": {
+                "spotify": "https://open.spotify.com/track/5l08slmvFRUseHpq85neke"
+              },
+              "href": "https://api.spotify.com/v1/tracks/5l08slmvFRUseHpq85neke",
+              "id": "5l08slmvFRUseHpq85neke",
+              "is_local": false,
+              "is_playable": true,
+              "name": "NaNa",
+              "preview_url": "https://p.scdn.co/mp3-preview/cac0145131738833b92bfbb4ead8a21898666dda?cid=774b29d4f13844c495f206cafdad9c86",
+              "track_number": 10,
+              "type": "track",
+              "uri": "spotify:track:5l08slmvFRUseHpq85neke"
+            },
+            {
+              "artists": [
+                {
+                  "external_urls": {
+                    "spotify": "https://open.spotify.com/artist/1anyVhU62p31KFi8MEzkbf"
+                  },
+                  "href": "https://api.spotify.com/v1/artists/1anyVhU62p31KFi8MEzkbf",
+                  "id": "1anyVhU62p31KFi8MEzkbf",
+                  "name": "Chance the Rapper",
+                  "type": "artist",
+                  "uri": "spotify:artist:1anyVhU62p31KFi8MEzkbf"
+                },
+                {
+                  "external_urls": {
+                    "spotify": "https://open.spotify.com/artist/0g9vAlRPK9Gt3FKCekk4TW"
+                  },
+                  "href": "https://api.spotify.com/v1/artists/0g9vAlRPK9Gt3FKCekk4TW",
+                  "id": "0g9vAlRPK9Gt3FKCekk4TW",
+                  "name": "Ab-Soul",
+                  "type": "artist",
+                  "uri": "spotify:artist:0g9vAlRPK9Gt3FKCekk4TW"
+                }
+              ],
+              "disc_number": 1,
+              "duration_ms": 272562,
+              "explicit": true,
+              "external_urls": {
+                "spotify": "https://open.spotify.com/track/0oeqJpFHNRjxa0kOMh4eQY"
+              },
+              "href": "https://api.spotify.com/v1/tracks/0oeqJpFHNRjxa0kOMh4eQY",
+              "id": "0oeqJpFHNRjxa0kOMh4eQY",
+              "is_local": false,
+              "is_playable": true,
+              "name": "Smoke Again",
+              "preview_url": "https://p.scdn.co/mp3-preview/6df7edb94cff7ec91a9090b7d3e641874d49e238?cid=774b29d4f13844c495f206cafdad9c86",
+              "track_number": 11,
+              "type": "track",
+              "uri": "spotify:track:0oeqJpFHNRjxa0kOMh4eQY"
+            },
+            {
+              "artists": [
+                {
+                  "external_urls": {
+                    "spotify": "https://open.spotify.com/artist/1anyVhU62p31KFi8MEzkbf"
+                  },
+                  "href": "https://api.spotify.com/v1/artists/1anyVhU62p31KFi8MEzkbf",
+                  "id": "1anyVhU62p31KFi8MEzkbf",
+                  "name": "Chance the Rapper",
+                  "type": "artist",
+                  "uri": "spotify:artist:1anyVhU62p31KFi8MEzkbf"
+                }
+              ],
+              "disc_number": 1,
+              "duration_ms": 216312,
+              "explicit": true,
+              "external_urls": {
+                "spotify": "https://open.spotify.com/track/0yLsJKNJHmSnmSGl3ZodYn"
+              },
+              "href": "https://api.spotify.com/v1/tracks/0yLsJKNJHmSnmSGl3ZodYn",
+              "id": "0yLsJKNJHmSnmSGl3ZodYn",
+              "is_local": false,
+              "is_playable": true,
+              "name": "Acid Rain",
+              "preview_url": "https://p.scdn.co/mp3-preview/275230db624d2b9d99a7b03ffed2debf0a89cd72?cid=774b29d4f13844c495f206cafdad9c86",
+              "track_number": 12,
+              "type": "track",
+              "uri": "spotify:track:0yLsJKNJHmSnmSGl3ZodYn"
+            },
+            {
+              "artists": [
+                {
+                  "external_urls": {
+                    "spotify": "https://open.spotify.com/artist/1anyVhU62p31KFi8MEzkbf"
+                  },
+                  "href": "https://api.spotify.com/v1/artists/1anyVhU62p31KFi8MEzkbf",
+                  "id": "1anyVhU62p31KFi8MEzkbf",
+                  "name": "Chance the Rapper",
+                  "type": "artist",
+                  "uri": "spotify:artist:1anyVhU62p31KFi8MEzkbf"
+                }
+              ],
+              "disc_number": 1,
+              "duration_ms": 210562,
+              "explicit": true,
+              "external_urls": {
+                "spotify": "https://open.spotify.com/track/4Jh8aypoHtCqv5GPzZxPsz"
+              },
+              "href": "https://api.spotify.com/v1/tracks/4Jh8aypoHtCqv5GPzZxPsz",
+              "id": "4Jh8aypoHtCqv5GPzZxPsz",
+              "is_local": false,
+              "is_playable": true,
+              "name": "Chain Smoker",
+              "preview_url": "https://p.scdn.co/mp3-preview/47176b4b17fdc599560d9ea34ed9f03f8c3ff705?cid=774b29d4f13844c495f206cafdad9c86",
+              "track_number": 13,
+              "type": "track",
+              "uri": "spotify:track:4Jh8aypoHtCqv5GPzZxPsz"
+            },
+            {
+              "artists": [
+                {
+                  "external_urls": {
+                    "spotify": "https://open.spotify.com/artist/1anyVhU62p31KFi8MEzkbf"
+                  },
+                  "href": "https://api.spotify.com/v1/artists/1anyVhU62p31KFi8MEzkbf",
+                  "id": "1anyVhU62p31KFi8MEzkbf",
+                  "name": "Chance the Rapper",
+                  "type": "artist",
+                  "uri": "spotify:artist:1anyVhU62p31KFi8MEzkbf"
+                }
+              ],
+              "disc_number": 1,
+              "duration_ms": 333379,
+              "explicit": true,
+              "external_urls": {
+                "spotify": "https://open.spotify.com/track/2f4K9nhN2RaRsMGaXTO3zt"
+              },
+              "href": "https://api.spotify.com/v1/tracks/2f4K9nhN2RaRsMGaXTO3zt",
+              "id": "2f4K9nhN2RaRsMGaXTO3zt",
+              "is_local": false,
+              "is_playable": true,
+              "name": "Everything's Good (Good Ass Outro)",
+              "preview_url": "https://p.scdn.co/mp3-preview/a9c9056562197bcb23dcb105d085a698786c0714?cid=774b29d4f13844c495f206cafdad9c86",
+              "track_number": 14,
+              "type": "track",
+              "uri": "spotify:track:2f4K9nhN2RaRsMGaXTO3zt"
+            }
+          ],
+          "limit": 50,
+          "next": null,
+          "offset": 0,
+          "previous": null,
+          "total": 14
+        },
+        "type": "album",
+        "uri": "spotify:album:2VBcztE58pBKjIDS5oEgFh"
+      }
+    },
+    {
+      "added_at": "2020-02-17T04:10:45Z",
+      "album": {
+        "album_type": "album",
+        "artists": [
+          {
+            "external_urls": {
+              "spotify": "https://open.spotify.com/artist/3Rq3YOF9YG9YfCWD4D56RZ"
+            },
+            "href": "https://api.spotify.com/v1/artists/3Rq3YOF9YG9YfCWD4D56RZ",
+            "id": "3Rq3YOF9YG9YfCWD4D56RZ",
+            "name": "Nujabes",
+            "type": "artist",
+            "uri": "spotify:artist:3Rq3YOF9YG9YfCWD4D56RZ"
+          }
+        ],
+        "copyrights": [
+          {
+            "text": "Hydeout Productions",
+            "type": "C"
+          },
+          {
+            "text": "Hydeout Productions",
+            "type": "P"
+          }
+        ],
+        "external_ids": {
+          "upc": "4997184924726"
+        },
+        "external_urls": {
+          "spotify": "https://open.spotify.com/album/724juUMeWRW82bDoyH91Vd"
+        },
+        "genres": [],
+        "href": "https://api.spotify.com/v1/albums/724juUMeWRW82bDoyH91Vd",
+        "id": "724juUMeWRW82bDoyH91Vd",
+        "images": [
+          {
+            "height": 640,
+            "url": "https://i.scdn.co/image/ab67616d0000b2739bad5ebfe556fa260f31bedd",
+            "width": 640
+          },
+          {
+            "height": 300,
+            "url": "https://i.scdn.co/image/ab67616d00001e029bad5ebfe556fa260f31bedd",
+            "width": 300
+          },
+          {
+            "height": 64,
+            "url": "https://i.scdn.co/image/ab67616d000048519bad5ebfe556fa260f31bedd",
+            "width": 64
+          }
+        ],
+        "label": "Hydeout Productions",
+        "name": "Spiritual State",
+        "popularity": 60,
+        "release_date": "2011-12-03",
+        "release_date_precision": "day",
+        "total_tracks": 14,
+        "tracks": {
+          "href": "https://api.spotify.com/v1/albums/724juUMeWRW82bDoyH91Vd/tracks?offset=0&limit=50&market=us",
+          "items": [
+            {
+              "artists": [
+                {
+                  "external_urls": {
+                    "spotify": "https://open.spotify.com/artist/3Rq3YOF9YG9YfCWD4D56RZ"
+                  },
+                  "href": "https://api.spotify.com/v1/artists/3Rq3YOF9YG9YfCWD4D56RZ",
+                  "id": "3Rq3YOF9YG9YfCWD4D56RZ",
+                  "name": "Nujabes",
+                  "type": "artist",
+                  "uri": "spotify:artist:3Rq3YOF9YG9YfCWD4D56RZ"
+                },
+                {
+                  "external_urls": {
+                    "spotify": "https://open.spotify.com/artist/6AE5XsUcbWE2XrQccVVJyd"
+                  },
+                  "href": "https://api.spotify.com/v1/artists/6AE5XsUcbWE2XrQccVVJyd",
+                  "id": "6AE5XsUcbWE2XrQccVVJyd",
+                  "name": "Uyama Hiroto",
+                  "type": "artist",
+                  "uri": "spotify:artist:6AE5XsUcbWE2XrQccVVJyd"
+                }
+              ],
+              "disc_number": 1,
+              "duration_ms": 391893,
+              "explicit": false,
+              "external_urls": {
+                "spotify": "https://open.spotify.com/track/0jkaVZIYepDPnB140eR1Uc"
+              },
+              "href": "https://api.spotify.com/v1/tracks/0jkaVZIYepDPnB140eR1Uc",
+              "id": "0jkaVZIYepDPnB140eR1Uc",
+              "is_local": false,
+              "is_playable": true,
+              "name": "Spiritual State (feat. Uyama Hiroto)",
+              "preview_url": "https://p.scdn.co/mp3-preview/756759f7a809c74a8b6702f751799282306a4bac?cid=774b29d4f13844c495f206cafdad9c86",
+              "track_number": 1,
+              "type": "track",
+              "uri": "spotify:track:0jkaVZIYepDPnB140eR1Uc"
+            },
+            {
+              "artists": [
+                {
+                  "external_urls": {
+                    "spotify": "https://open.spotify.com/artist/3Rq3YOF9YG9YfCWD4D56RZ"
+                  },
+                  "href": "https://api.spotify.com/v1/artists/3Rq3YOF9YG9YfCWD4D56RZ",
+                  "id": "3Rq3YOF9YG9YfCWD4D56RZ",
+                  "name": "Nujabes",
+                  "type": "artist",
+                  "uri": "spotify:artist:3Rq3YOF9YG9YfCWD4D56RZ"
+                },
+                {
+                  "external_urls": {
+                    "spotify": "https://open.spotify.com/artist/2TNEM4mfjaTeGw8dBTyxsj"
+                  },
+                  "href": "https://api.spotify.com/v1/artists/2TNEM4mfjaTeGw8dBTyxsj",
+                  "id": "2TNEM4mfjaTeGw8dBTyxsj",
+                  "name": "Cise Star",
+                  "type": "artist",
+                  "uri": "spotify:artist:2TNEM4mfjaTeGw8dBTyxsj"
+                }
+              ],
+              "disc_number": 1,
+              "duration_ms": 269360,
+              "explicit": false,
+              "external_urls": {
+                "spotify": "https://open.spotify.com/track/3vEAOJD6HXhKiEq6ALYFVd"
+              },
+              "href": "https://api.spotify.com/v1/tracks/3vEAOJD6HXhKiEq6ALYFVd",
+              "id": "3vEAOJD6HXhKiEq6ALYFVd",
+              "is_local": false,
+              "is_playable": true,
+              "name": "Sky is Tumbling (feat. Cise Star)",
+              "preview_url": "https://p.scdn.co/mp3-preview/5a2d82c062d3f11c915b7a906be886b66b57607b?cid=774b29d4f13844c495f206cafdad9c86",
+              "track_number": 2,
+              "type": "track",
+              "uri": "spotify:track:3vEAOJD6HXhKiEq6ALYFVd"
+            },
+            {
+              "artists": [
+                {
+                  "external_urls": {
+                    "spotify": "https://open.spotify.com/artist/3Rq3YOF9YG9YfCWD4D56RZ"
+                  },
+                  "href": "https://api.spotify.com/v1/artists/3Rq3YOF9YG9YfCWD4D56RZ",
+                  "id": "3Rq3YOF9YG9YfCWD4D56RZ",
+                  "name": "Nujabes",
+                  "type": "artist",
+                  "uri": "spotify:artist:3Rq3YOF9YG9YfCWD4D56RZ"
+                },
+                {
+                  "external_urls": {
+                    "spotify": "https://open.spotify.com/artist/6AE5XsUcbWE2XrQccVVJyd"
+                  },
+                  "href": "https://api.spotify.com/v1/artists/6AE5XsUcbWE2XrQccVVJyd",
+                  "id": "6AE5XsUcbWE2XrQccVVJyd",
+                  "name": "Uyama Hiroto",
+                  "type": "artist",
+                  "uri": "spotify:artist:6AE5XsUcbWE2XrQccVVJyd"
+                }
+              ],
+              "disc_number": 1,
+              "duration_ms": 362226,
+              "explicit": false,
+              "external_urls": {
+                "spotify": "https://open.spotify.com/track/6d6ieoeAHeWr2Uo7XlD4S3"
+              },
+              "href": "https://api.spotify.com/v1/tracks/6d6ieoeAHeWr2Uo7XlD4S3",
+              "id": "6d6ieoeAHeWr2Uo7XlD4S3",
+              "is_local": false,
+              "is_playable": true,
+              "name": "Gone Are The Days (feat. Uyama Hiroto)",
+              "preview_url": "https://p.scdn.co/mp3-preview/90e6eadfa6720a7711944e319e1edc3e8dd7df60?cid=774b29d4f13844c495f206cafdad9c86",
+              "track_number": 3,
+              "type": "track",
+              "uri": "spotify:track:6d6ieoeAHeWr2Uo7XlD4S3"
+            },
+            {
+              "artists": [
+                {
+                  "external_urls": {
+                    "spotify": "https://open.spotify.com/artist/3Rq3YOF9YG9YfCWD4D56RZ"
+                  },
+                  "href": "https://api.spotify.com/v1/artists/3Rq3YOF9YG9YfCWD4D56RZ",
+                  "id": "3Rq3YOF9YG9YfCWD4D56RZ",
+                  "name": "Nujabes",
+                  "type": "artist",
+                  "uri": "spotify:artist:3Rq3YOF9YG9YfCWD4D56RZ"
+                }
+              ],
+              "disc_number": 1,
+              "duration_ms": 220866,
+              "explicit": false,
+              "external_urls": {
+                "spotify": "https://open.spotify.com/track/401EJO6SRKjlg5CZpo2SEl"
+              },
+              "href": "https://api.spotify.com/v1/tracks/401EJO6SRKjlg5CZpo2SEl",
+              "id": "401EJO6SRKjlg5CZpo2SEl",
+              "is_local": false,
+              "is_playable": true,
+              "name": "Spiral",
+              "preview_url": "https://p.scdn.co/mp3-preview/050c8c9d03f20cef613b73604b051cd324dbe244?cid=774b29d4f13844c495f206cafdad9c86",
+              "track_number": 4,
+              "type": "track",
+              "uri": "spotify:track:401EJO6SRKjlg5CZpo2SEl"
+            },
+            {
+              "artists": [
+                {
+                  "external_urls": {
+                    "spotify": "https://open.spotify.com/artist/3Rq3YOF9YG9YfCWD4D56RZ"
+                  },
+                  "href": "https://api.spotify.com/v1/artists/3Rq3YOF9YG9YfCWD4D56RZ",
+                  "id": "3Rq3YOF9YG9YfCWD4D56RZ",
+                  "name": "Nujabes",
+                  "type": "artist",
+                  "uri": "spotify:artist:3Rq3YOF9YG9YfCWD4D56RZ"
+                },
+                {
+                  "external_urls": {
+                    "spotify": "https://open.spotify.com/artist/7DziQHfQYLS6Iv018KLOVo"
+                  },
+                  "href": "https://api.spotify.com/v1/artists/7DziQHfQYLS6Iv018KLOVo",
+                  "id": "7DziQHfQYLS6Iv018KLOVo",
+                  "name": "Pase Rock",
+                  "type": "artist",
+                  "uri": "spotify:artist:7DziQHfQYLS6Iv018KLOVo"
+                },
+                {
+                  "external_urls": {
+                    "spotify": "https://open.spotify.com/artist/5FmThJ74ycmeBdQnu4Cfcw"
+                  },
+                  "href": "https://api.spotify.com/v1/artists/5FmThJ74ycmeBdQnu4Cfcw",
+                  "id": "5FmThJ74ycmeBdQnu4Cfcw",
+                  "name": "Substantial",
+                  "type": "artist",
+                  "uri": "spotify:artist:5FmThJ74ycmeBdQnu4Cfcw"
+                }
+              ],
+              "disc_number": 1,
+              "duration_ms": 194293,
+              "explicit": false,
+              "external_urls": {
+                "spotify": "https://open.spotify.com/track/0fbnqrpTlUdy0PUwMdU8Pl"
+              },
+              "href": "https://api.spotify.com/v1/tracks/0fbnqrpTlUdy0PUwMdU8Pl",
+              "id": "0fbnqrpTlUdy0PUwMdU8Pl",
+              "is_local": false,
+              "is_playable": true,
+              "name": "City Lights (feat. Pase Rock & Substantial)",
+              "preview_url": "https://p.scdn.co/mp3-preview/53b4878ae6d0a0c86f4c59d77d0ea4c4ca361311?cid=774b29d4f13844c495f206cafdad9c86",
+              "track_number": 5,
+              "type": "track",
+              "uri": "spotify:track:0fbnqrpTlUdy0PUwMdU8Pl"
+            },
+            {
+              "artists": [
+                {
+                  "external_urls": {
+                    "spotify": "https://open.spotify.com/artist/3Rq3YOF9YG9YfCWD4D56RZ"
+                  },
+                  "href": "https://api.spotify.com/v1/artists/3Rq3YOF9YG9YfCWD4D56RZ",
+                  "id": "3Rq3YOF9YG9YfCWD4D56RZ",
+                  "name": "Nujabes",
+                  "type": "artist",
+                  "uri": "spotify:artist:3Rq3YOF9YG9YfCWD4D56RZ"
+                }
+              ],
+              "disc_number": 1,
+              "duration_ms": 103813,
+              "explicit": false,
+              "external_urls": {
+                "spotify": "https://open.spotify.com/track/2u93OtblDZphLnmRFjBeeg"
+              },
+              "href": "https://api.spotify.com/v1/tracks/2u93OtblDZphLnmRFjBeeg",
+              "id": "2u93OtblDZphLnmRFjBeeg",
+              "is_local": false,
+              "is_playable": true,
+              "name": "Color of Autumn",
+              "preview_url": "https://p.scdn.co/mp3-preview/e4a9eeb055f22c2b00e6512409831e1c3052da3c?cid=774b29d4f13844c495f206cafdad9c86",
+              "track_number": 6,
+              "type": "track",
+              "uri": "spotify:track:2u93OtblDZphLnmRFjBeeg"
+            },
+            {
+              "artists": [
+                {
+                  "external_urls": {
+                    "spotify": "https://open.spotify.com/artist/3Rq3YOF9YG9YfCWD4D56RZ"
+                  },
+                  "href": "https://api.spotify.com/v1/artists/3Rq3YOF9YG9YfCWD4D56RZ",
+                  "id": "3Rq3YOF9YG9YfCWD4D56RZ",
+                  "name": "Nujabes",
+                  "type": "artist",
+                  "uri": "spotify:artist:3Rq3YOF9YG9YfCWD4D56RZ"
+                }
+              ],
+              "disc_number": 1,
+              "duration_ms": 315453,
+              "explicit": false,
+              "external_urls": {
+                "spotify": "https://open.spotify.com/track/764QZXmgb5fDwh1NU8pYcd"
+              },
+              "href": "https://api.spotify.com/v1/tracks/764QZXmgb5fDwh1NU8pYcd",
+              "id": "764QZXmgb5fDwh1NU8pYcd",
+              "is_local": false,
+              "is_playable": true,
+              "name": "Dawn on the Side",
+              "preview_url": "https://p.scdn.co/mp3-preview/2239f8c7e993724e335525bd67d51672b37fb795?cid=774b29d4f13844c495f206cafdad9c86",
+              "track_number": 7,
+              "type": "track",
+              "uri": "spotify:track:764QZXmgb5fDwh1NU8pYcd"
+            },
+            {
+              "artists": [
+                {
+                  "external_urls": {
+                    "spotify": "https://open.spotify.com/artist/3Rq3YOF9YG9YfCWD4D56RZ"
+                  },
+                  "href": "https://api.spotify.com/v1/artists/3Rq3YOF9YG9YfCWD4D56RZ",
+                  "id": "3Rq3YOF9YG9YfCWD4D56RZ",
+                  "name": "Nujabes",
+                  "type": "artist",
+                  "uri": "spotify:artist:3Rq3YOF9YG9YfCWD4D56RZ"
+                },
+                {
+                  "external_urls": {
+                    "spotify": "https://open.spotify.com/artist/7DziQHfQYLS6Iv018KLOVo"
+                  },
+                  "href": "https://api.spotify.com/v1/artists/7DziQHfQYLS6Iv018KLOVo",
+                  "id": "7DziQHfQYLS6Iv018KLOVo",
+                  "name": "Pase Rock",
+                  "type": "artist",
+                  "uri": "spotify:artist:7DziQHfQYLS6Iv018KLOVo"
+                }
+              ],
+              "disc_number": 1,
+              "duration_ms": 471000,
+              "explicit": false,
+              "external_urls": {
+                "spotify": "https://open.spotify.com/track/2XaW5xe9iGD6cypnNvoWke"
+              },
+              "href": "https://api.spotify.com/v1/tracks/2XaW5xe9iGD6cypnNvoWke",
+              "id": "2XaW5xe9iGD6cypnNvoWke",
+              "is_local": false,
+              "is_playable": true,
+              "name": "Yes (feat. Pase Rock)",
+              "preview_url": "https://p.scdn.co/mp3-preview/9101cc283197ad4f2222a28070f4996440fa0188?cid=774b29d4f13844c495f206cafdad9c86",
+              "track_number": 8,
+              "type": "track",
+              "uri": "spotify:track:2XaW5xe9iGD6cypnNvoWke"
+            },
+            {
+              "artists": [
+                {
+                  "external_urls": {
+                    "spotify": "https://open.spotify.com/artist/3Rq3YOF9YG9YfCWD4D56RZ"
+                  },
+                  "href": "https://api.spotify.com/v1/artists/3Rq3YOF9YG9YfCWD4D56RZ",
+                  "id": "3Rq3YOF9YG9YfCWD4D56RZ",
+                  "name": "Nujabes",
+                  "type": "artist",
+                  "uri": "spotify:artist:3Rq3YOF9YG9YfCWD4D56RZ"
+                }
+              ],
+              "disc_number": 1,
+              "duration_ms": 156480,
+              "explicit": false,
+              "external_urls": {
+                "spotify": "https://open.spotify.com/track/0GR0uFHhHoOA9mYToXhZ42"
+              },
+              "href": "https://api.spotify.com/v1/tracks/0GR0uFHhHoOA9mYToXhZ42",
+              "id": "0GR0uFHhHoOA9mYToXhZ42",
+              "is_local": false,
+              "is_playable": true,
+              "name": "Rainyway Back Home",
+              "preview_url": "https://p.scdn.co/mp3-preview/1230f9d51a8881419a80475293a1202eecb9d445?cid=774b29d4f13844c495f206cafdad9c86",
+              "track_number": 9,
+              "type": "track",
+              "uri": "spotify:track:0GR0uFHhHoOA9mYToXhZ42"
+            },
+            {
+              "artists": [
+                {
+                  "external_urls": {
+                    "spotify": "https://open.spotify.com/artist/3Rq3YOF9YG9YfCWD4D56RZ"
+                  },
+                  "href": "https://api.spotify.com/v1/artists/3Rq3YOF9YG9YfCWD4D56RZ",
+                  "id": "3Rq3YOF9YG9YfCWD4D56RZ",
+                  "name": "Nujabes",
+                  "type": "artist",
+                  "uri": "spotify:artist:3Rq3YOF9YG9YfCWD4D56RZ"
+                }
+              ],
+              "disc_number": 1,
+              "duration_ms": 264680,
+              "explicit": false,
+              "external_urls": {
+                "spotify": "https://open.spotify.com/track/4eoRzZzyJ229aP2amYCbmn"
+              },
+              "href": "https://api.spotify.com/v1/tracks/4eoRzZzyJ229aP2amYCbmn",
+              "id": "4eoRzZzyJ229aP2amYCbmn",
+              "is_local": false,
+              "is_playable": true,
+              "name": "Far Fowls",
+              "preview_url": "https://p.scdn.co/mp3-preview/0685cbd256d1238495b4226688b7941879d399da?cid=774b29d4f13844c495f206cafdad9c86",
+              "track_number": 10,
+              "type": "track",
+              "uri": "spotify:track:4eoRzZzyJ229aP2amYCbmn"
+            },
+            {
+              "artists": [
+                {
+                  "external_urls": {
+                    "spotify": "https://open.spotify.com/artist/3Rq3YOF9YG9YfCWD4D56RZ"
+                  },
+                  "href": "https://api.spotify.com/v1/artists/3Rq3YOF9YG9YfCWD4D56RZ",
+                  "id": "3Rq3YOF9YG9YfCWD4D56RZ",
+                  "name": "Nujabes",
+                  "type": "artist",
+                  "uri": "spotify:artist:3Rq3YOF9YG9YfCWD4D56RZ"
+                }
+              ],
+              "disc_number": 1,
+              "duration_ms": 123866,
+              "explicit": false,
+              "external_urls": {
+                "spotify": "https://open.spotify.com/track/1APsoIIoBiiDCBkkdTQY82"
+              },
+              "href": "https://api.spotify.com/v1/tracks/1APsoIIoBiiDCBkkdTQY82",
+              "id": "1APsoIIoBiiDCBkkdTQY82",
+              "is_local": false,
+              "is_playable": true,
+              "name": "Fellows",
+              "preview_url": "https://p.scdn.co/mp3-preview/265ece7d5d0b95678ce798fdbcf92ce2dfc509c7?cid=774b29d4f13844c495f206cafdad9c86",
+              "track_number": 11,
+              "type": "track",
+              "uri": "spotify:track:1APsoIIoBiiDCBkkdTQY82"
+            },
+            {
+              "artists": [
+                {
+                  "external_urls": {
+                    "spotify": "https://open.spotify.com/artist/3Rq3YOF9YG9YfCWD4D56RZ"
+                  },
+                  "href": "https://api.spotify.com/v1/artists/3Rq3YOF9YG9YfCWD4D56RZ",
+                  "id": "3Rq3YOF9YG9YfCWD4D56RZ",
+                  "name": "Nujabes",
+                  "type": "artist",
+                  "uri": "spotify:artist:3Rq3YOF9YG9YfCWD4D56RZ"
+                },
+                {
+                  "external_urls": {
+                    "spotify": "https://open.spotify.com/artist/5FmThJ74ycmeBdQnu4Cfcw"
+                  },
+                  "href": "https://api.spotify.com/v1/artists/5FmThJ74ycmeBdQnu4Cfcw",
+                  "id": "5FmThJ74ycmeBdQnu4Cfcw",
+                  "name": "Substantial",
+                  "type": "artist",
+                  "uri": "spotify:artist:5FmThJ74ycmeBdQnu4Cfcw"
+                }
+              ],
+              "disc_number": 1,
+              "duration_ms": 232306,
+              "explicit": false,
+              "external_urls": {
+                "spotify": "https://open.spotify.com/track/3K0vUiZNaeJTLDK4GUicl9"
+              },
+              "href": "https://api.spotify.com/v1/tracks/3K0vUiZNaeJTLDK4GUicl9",
+              "id": "3K0vUiZNaeJTLDK4GUicl9",
+              "is_local": false,
+              "is_playable": true,
+              "name": "Waiting For The Clouds (feat. Substantial)",
+              "preview_url": "https://p.scdn.co/mp3-preview/775515d4eae1699f88bf2c3722015e0291b25bdb?cid=774b29d4f13844c495f206cafdad9c86",
+              "track_number": 12,
+              "type": "track",
+              "uri": "spotify:track:3K0vUiZNaeJTLDK4GUicl9"
+            },
+            {
+              "artists": [
+                {
+                  "external_urls": {
+                    "spotify": "https://open.spotify.com/artist/3Rq3YOF9YG9YfCWD4D56RZ"
+                  },
+                  "href": "https://api.spotify.com/v1/artists/3Rq3YOF9YG9YfCWD4D56RZ",
+                  "id": "3Rq3YOF9YG9YfCWD4D56RZ",
+                  "name": "Nujabes",
+                  "type": "artist",
+                  "uri": "spotify:artist:3Rq3YOF9YG9YfCWD4D56RZ"
+                }
+              ],
+              "disc_number": 1,
+              "duration_ms": 209266,
+              "explicit": false,
+              "external_urls": {
+                "spotify": "https://open.spotify.com/track/6HdAw1lbXOaLNQw18s6yds"
+              },
+              "href": "https://api.spotify.com/v1/tracks/6HdAw1lbXOaLNQw18s6yds",
+              "id": "6HdAw1lbXOaLNQw18s6yds",
+              "is_local": false,
+              "is_playable": true,
+              "name": "Prayer",
+              "preview_url": "https://p.scdn.co/mp3-preview/806369e1c7e3d8a0f1d41cd40fa72ba4885361c6?cid=774b29d4f13844c495f206cafdad9c86",
+              "track_number": 13,
+              "type": "track",
+              "uri": "spotify:track:6HdAw1lbXOaLNQw18s6yds"
+            },
+            {
+              "artists": [
+                {
+                  "external_urls": {
+                    "spotify": "https://open.spotify.com/artist/3Rq3YOF9YG9YfCWD4D56RZ"
+                  },
+                  "href": "https://api.spotify.com/v1/artists/3Rq3YOF9YG9YfCWD4D56RZ",
+                  "id": "3Rq3YOF9YG9YfCWD4D56RZ",
+                  "name": "Nujabes",
+                  "type": "artist",
+                  "uri": "spotify:artist:3Rq3YOF9YG9YfCWD4D56RZ"
+                },
+                {
+                  "external_urls": {
+                    "spotify": "https://open.spotify.com/artist/6AE5XsUcbWE2XrQccVVJyd"
+                  },
+                  "href": "https://api.spotify.com/v1/artists/6AE5XsUcbWE2XrQccVVJyd",
+                  "id": "6AE5XsUcbWE2XrQccVVJyd",
+                  "name": "Uyama Hiroto",
+                  "type": "artist",
+                  "uri": "spotify:artist:6AE5XsUcbWE2XrQccVVJyd"
+                },
+                {
+                  "external_urls": {
+                    "spotify": "https://open.spotify.com/artist/52R2tXlJMDDDYcpBSnn3k4"
+                  },
+                  "href": "https://api.spotify.com/v1/artists/52R2tXlJMDDDYcpBSnn3k4",
+                  "id": "52R2tXlJMDDDYcpBSnn3k4",
+                  "name": "haruka nakamura",
+                  "type": "artist",
+                  "uri": "spotify:artist:52R2tXlJMDDDYcpBSnn3k4"
+                }
+              ],
+              "disc_number": 1,
+              "duration_ms": 307466,
+              "explicit": false,
+              "external_urls": {
+                "spotify": "https://open.spotify.com/track/3G0RBe3ZhkDUBh30WVV1hX"
+              },
+              "href": "https://api.spotify.com/v1/tracks/3G0RBe3ZhkDUBh30WVV1hX",
+              "id": "3G0RBe3ZhkDUBh30WVV1hX",
+              "is_local": false,
+              "is_playable": true,
+              "name": "Island (feat. Uyama Hiroto & haruka nakamura)",
+              "preview_url": "https://p.scdn.co/mp3-preview/c53d1d9aa53601a560c7141d698df7ed2bc8f49e?cid=774b29d4f13844c495f206cafdad9c86",
+              "track_number": 14,
+              "type": "track",
+              "uri": "spotify:track:3G0RBe3ZhkDUBh30WVV1hX"
+            }
+          ],
+          "limit": 50,
+          "next": null,
+          "offset": 0,
+          "previous": null,
+          "total": 14
+        },
+        "type": "album",
+        "uri": "spotify:album:724juUMeWRW82bDoyH91Vd"
+      }
+    },
+    {
+      "added_at": "2020-02-17T04:10:43Z",
+      "album": {
+        "album_type": "album",
+        "artists": [
+          {
+            "external_urls": {
+              "spotify": "https://open.spotify.com/artist/3Rq3YOF9YG9YfCWD4D56RZ"
+            },
+            "href": "https://api.spotify.com/v1/artists/3Rq3YOF9YG9YfCWD4D56RZ",
+            "id": "3Rq3YOF9YG9YfCWD4D56RZ",
+            "name": "Nujabes",
+            "type": "artist",
+            "uri": "spotify:artist:3Rq3YOF9YG9YfCWD4D56RZ"
+          }
+        ],
+        "copyrights": [
+          {
+            "text": "Hydeout Productions",
+            "type": "C"
+          },
+          {
+            "text": "Hydeout Productions",
+            "type": "P"
+          }
+        ],
+        "external_ids": {
+          "upc": "4997184920704"
+        },
+        "external_urls": {
+          "spotify": "https://open.spotify.com/album/5FrjDW96mCYw9ECc74c637"
+        },
+        "genres": [],
+        "href": "https://api.spotify.com/v1/albums/5FrjDW96mCYw9ECc74c637",
+        "id": "5FrjDW96mCYw9ECc74c637",
+        "images": [
+          {
+            "height": 640,
+            "url": "https://i.scdn.co/image/ab67616d0000b273a1a897ee5e642da6d945bcd7",
+            "width": 640
+          },
+          {
+            "height": 300,
+            "url": "https://i.scdn.co/image/ab67616d00001e02a1a897ee5e642da6d945bcd7",
+            "width": 300
+          },
+          {
+            "height": 64,
+            "url": "https://i.scdn.co/image/ab67616d00004851a1a897ee5e642da6d945bcd7",
+            "width": 64
+          }
+        ],
+        "label": "Hydeout Productions",
+        "name": "Metaphorical Music",
+        "popularity": 63,
+        "release_date": "2003-08-21",
+        "release_date_precision": "day",
+        "total_tracks": 15,
+        "tracks": {
+          "href": "https://api.spotify.com/v1/albums/5FrjDW96mCYw9ECc74c637/tracks?offset=0&limit=50&market=us",
+          "items": [
+            {
+              "artists": [
+                {
+                  "external_urls": {
+                    "spotify": "https://open.spotify.com/artist/3Rq3YOF9YG9YfCWD4D56RZ"
+                  },
+                  "href": "https://api.spotify.com/v1/artists/3Rq3YOF9YG9YfCWD4D56RZ",
+                  "id": "3Rq3YOF9YG9YfCWD4D56RZ",
+                  "name": "Nujabes",
+                  "type": "artist",
+                  "uri": "spotify:artist:3Rq3YOF9YG9YfCWD4D56RZ"
+                },
+                {
+                  "external_urls": {
+                    "spotify": "https://open.spotify.com/artist/5FmThJ74ycmeBdQnu4Cfcw"
+                  },
+                  "href": "https://api.spotify.com/v1/artists/5FmThJ74ycmeBdQnu4Cfcw",
+                  "id": "5FmThJ74ycmeBdQnu4Cfcw",
+                  "name": "Substantial",
+                  "type": "artist",
+                  "uri": "spotify:artist:5FmThJ74ycmeBdQnu4Cfcw"
+                },
+                {
+                  "external_urls": {
+                    "spotify": "https://open.spotify.com/artist/7DziQHfQYLS6Iv018KLOVo"
+                  },
+                  "href": "https://api.spotify.com/v1/artists/7DziQHfQYLS6Iv018KLOVo",
+                  "id": "7DziQHfQYLS6Iv018KLOVo",
+                  "name": "Pase Rock",
+                  "type": "artist",
+                  "uri": "spotify:artist:7DziQHfQYLS6Iv018KLOVo"
+                }
+              ],
+              "disc_number": 1,
+              "duration_ms": 203706,
+              "explicit": false,
+              "external_urls": {
+                "spotify": "https://open.spotify.com/track/4MbUcaX58NkUmKXe6FuBaV"
+              },
+              "href": "https://api.spotify.com/v1/tracks/4MbUcaX58NkUmKXe6FuBaV",
+              "id": "4MbUcaX58NkUmKXe6FuBaV",
+              "is_local": false,
+              "is_playable": true,
+              "name": "Blessing It -remix (feat. Substantial & Pase Rock from Five Deez)",
+              "preview_url": "https://p.scdn.co/mp3-preview/e775877b6c2e4929c5207c442e7f4c9f557999fd?cid=774b29d4f13844c495f206cafdad9c86",
+              "track_number": 1,
+              "type": "track",
+              "uri": "spotify:track:4MbUcaX58NkUmKXe6FuBaV"
+            },
+            {
+              "artists": [
+                {
+                  "external_urls": {
+                    "spotify": "https://open.spotify.com/artist/3Rq3YOF9YG9YfCWD4D56RZ"
+                  },
+                  "href": "https://api.spotify.com/v1/artists/3Rq3YOF9YG9YfCWD4D56RZ",
+                  "id": "3Rq3YOF9YG9YfCWD4D56RZ",
+                  "name": "Nujabes",
+                  "type": "artist",
+                  "uri": "spotify:artist:3Rq3YOF9YG9YfCWD4D56RZ"
+                }
+              ],
+              "disc_number": 1,
+              "duration_ms": 248600,
+              "explicit": false,
+              "external_urls": {
+                "spotify": "https://open.spotify.com/track/2rnAYh7REAMGYqJUXJKZZK"
+              },
+              "href": "https://api.spotify.com/v1/tracks/2rnAYh7REAMGYqJUXJKZZK",
+              "id": "2rnAYh7REAMGYqJUXJKZZK",
+              "is_local": false,
+              "is_playable": true,
+              "name": "Horn in the middle",
+              "preview_url": "https://p.scdn.co/mp3-preview/2d423e511c1a459f75c75ebc9cac8c92e72d8600?cid=774b29d4f13844c495f206cafdad9c86",
+              "track_number": 2,
+              "type": "track",
+              "uri": "spotify:track:2rnAYh7REAMGYqJUXJKZZK"
+            },
+            {
+              "artists": [
+                {
+                  "external_urls": {
+                    "spotify": "https://open.spotify.com/artist/3Rq3YOF9YG9YfCWD4D56RZ"
+                  },
+                  "href": "https://api.spotify.com/v1/artists/3Rq3YOF9YG9YfCWD4D56RZ",
+                  "id": "3Rq3YOF9YG9YfCWD4D56RZ",
+                  "name": "Nujabes",
+                  "type": "artist",
+                  "uri": "spotify:artist:3Rq3YOF9YG9YfCWD4D56RZ"
+                },
+                {
+                  "external_urls": {
+                    "spotify": "https://open.spotify.com/artist/2Xavhsn8y9Yrr7N08OxvKF"
+                  },
+                  "href": "https://api.spotify.com/v1/artists/2Xavhsn8y9Yrr7N08OxvKF",
+                  "id": "2Xavhsn8y9Yrr7N08OxvKF",
+                  "name": "Cise Starr",
+                  "type": "artist",
+                  "uri": "spotify:artist:2Xavhsn8y9Yrr7N08OxvKF"
+                }
+              ],
+              "disc_number": 1,
+              "duration_ms": 199160,
+              "explicit": false,
+              "external_urls": {
+                "spotify": "https://open.spotify.com/track/0JL9TZip7mL7iwC5EOkALS"
+              },
+              "href": "https://api.spotify.com/v1/tracks/0JL9TZip7mL7iwC5EOkALS",
+              "id": "0JL9TZip7mL7iwC5EOkALS",
+              "is_local": false,
+              "is_playable": true,
+              "name": "Lady Brown (feat. Cise Starr from CYNE)",
+              "preview_url": "https://p.scdn.co/mp3-preview/19cd8f71f04387eba4cfa89273d9a1652e0e8a4a?cid=774b29d4f13844c495f206cafdad9c86",
+              "track_number": 3,
+              "type": "track",
+              "uri": "spotify:track:0JL9TZip7mL7iwC5EOkALS"
+            },
+            {
+              "artists": [
+                {
+                  "external_urls": {
+                    "spotify": "https://open.spotify.com/artist/3Rq3YOF9YG9YfCWD4D56RZ"
+                  },
+                  "href": "https://api.spotify.com/v1/artists/3Rq3YOF9YG9YfCWD4D56RZ",
+                  "id": "3Rq3YOF9YG9YfCWD4D56RZ",
+                  "name": "Nujabes",
+                  "type": "artist",
+                  "uri": "spotify:artist:3Rq3YOF9YG9YfCWD4D56RZ"
+                }
+              ],
+              "disc_number": 1,
+              "duration_ms": 233626,
+              "explicit": false,
+              "external_urls": {
+                "spotify": "https://open.spotify.com/track/3GUqoL8LDEpw2GH6G9onE0"
+              },
+              "href": "https://api.spotify.com/v1/tracks/3GUqoL8LDEpw2GH6G9onE0",
+              "id": "3GUqoL8LDEpw2GH6G9onE0",
+              "is_local": false,
+              "is_playable": true,
+              "name": "Kumomi",
+              "preview_url": "https://p.scdn.co/mp3-preview/b731d856ef9965ca023cbc926286f30c75729b70?cid=774b29d4f13844c495f206cafdad9c86",
+              "track_number": 4,
+              "type": "track",
+              "uri": "spotify:track:3GUqoL8LDEpw2GH6G9onE0"
+            },
+            {
+              "artists": [
+                {
+                  "external_urls": {
+                    "spotify": "https://open.spotify.com/artist/3Rq3YOF9YG9YfCWD4D56RZ"
+                  },
+                  "href": "https://api.spotify.com/v1/artists/3Rq3YOF9YG9YfCWD4D56RZ",
+                  "id": "3Rq3YOF9YG9YfCWD4D56RZ",
+                  "name": "Nujabes",
+                  "type": "artist",
+                  "uri": "spotify:artist:3Rq3YOF9YG9YfCWD4D56RZ"
+                },
+                {
+                  "external_urls": {
+                    "spotify": "https://open.spotify.com/artist/2Xavhsn8y9Yrr7N08OxvKF"
+                  },
+                  "href": "https://api.spotify.com/v1/artists/2Xavhsn8y9Yrr7N08OxvKF",
+                  "id": "2Xavhsn8y9Yrr7N08OxvKF",
+                  "name": "Cise Starr",
+                  "type": "artist",
+                  "uri": "spotify:artist:2Xavhsn8y9Yrr7N08OxvKF"
+                }
+              ],
+              "disc_number": 1,
+              "duration_ms": 277960,
+              "explicit": false,
+              "external_urls": {
+                "spotify": "https://open.spotify.com/track/3yKLskgaU2py5ET4OBDQmg"
+              },
+              "href": "https://api.spotify.com/v1/tracks/3yKLskgaU2py5ET4OBDQmg",
+              "id": "3yKLskgaU2py5ET4OBDQmg",
+              "is_local": false,
+              "is_playable": true,
+              "name": "Highs 2 Lows (feat. Cise Starr from CYNE)",
+              "preview_url": "https://p.scdn.co/mp3-preview/3f43ae3e672062320f3c40ea908e4d58a550ad30?cid=774b29d4f13844c495f206cafdad9c86",
+              "track_number": 5,
+              "type": "track",
+              "uri": "spotify:track:3yKLskgaU2py5ET4OBDQmg"
+            },
+            {
+              "artists": [
+                {
+                  "external_urls": {
+                    "spotify": "https://open.spotify.com/artist/3Rq3YOF9YG9YfCWD4D56RZ"
+                  },
+                  "href": "https://api.spotify.com/v1/artists/3Rq3YOF9YG9YfCWD4D56RZ",
+                  "id": "3Rq3YOF9YG9YfCWD4D56RZ",
+                  "name": "Nujabes",
+                  "type": "artist",
+                  "uri": "spotify:artist:3Rq3YOF9YG9YfCWD4D56RZ"
+                }
+              ],
+              "disc_number": 1,
+              "duration_ms": 263373,
+              "explicit": false,
+              "external_urls": {
+                "spotify": "https://open.spotify.com/track/5tO3pr49SdxO05TNlYHfHT"
+              },
+              "href": "https://api.spotify.com/v1/tracks/5tO3pr49SdxO05TNlYHfHT",
+              "id": "5tO3pr49SdxO05TNlYHfHT",
+              "is_local": false,
+              "is_playable": true,
+              "name": "Beat laments the world",
+              "preview_url": "https://p.scdn.co/mp3-preview/f816f3e8ca844d22fb032e74aa9b50c78fa59bf4?cid=774b29d4f13844c495f206cafdad9c86",
+              "track_number": 6,
+              "type": "track",
+              "uri": "spotify:track:5tO3pr49SdxO05TNlYHfHT"
+            },
+            {
+              "artists": [
+                {
+                  "external_urls": {
+                    "spotify": "https://open.spotify.com/artist/3Rq3YOF9YG9YfCWD4D56RZ"
+                  },
+                  "href": "https://api.spotify.com/v1/artists/3Rq3YOF9YG9YfCWD4D56RZ",
+                  "id": "3Rq3YOF9YG9YfCWD4D56RZ",
+                  "name": "Nujabes",
+                  "type": "artist",
+                  "uri": "spotify:artist:3Rq3YOF9YG9YfCWD4D56RZ"
+                }
+              ],
+              "disc_number": 1,
+              "duration_ms": 189346,
+              "explicit": false,
+              "external_urls": {
+                "spotify": "https://open.spotify.com/track/68hjxmQouj1VRaUg8BHWAV"
+              },
+              "href": "https://api.spotify.com/v1/tracks/68hjxmQouj1VRaUg8BHWAV",
+              "id": "68hjxmQouj1VRaUg8BHWAV",
+              "is_local": false,
+              "is_playable": true,
+              "name": "Letter from Yokosuka",
+              "preview_url": "https://p.scdn.co/mp3-preview/0cde8e3f0519790634969f4bb9f4d47370d86f46?cid=774b29d4f13844c495f206cafdad9c86",
+              "track_number": 7,
+              "type": "track",
+              "uri": "spotify:track:68hjxmQouj1VRaUg8BHWAV"
+            },
+            {
+              "artists": [
+                {
+                  "external_urls": {
+                    "spotify": "https://open.spotify.com/artist/3Rq3YOF9YG9YfCWD4D56RZ"
+                  },
+                  "href": "https://api.spotify.com/v1/artists/3Rq3YOF9YG9YfCWD4D56RZ",
+                  "id": "3Rq3YOF9YG9YfCWD4D56RZ",
+                  "name": "Nujabes",
+                  "type": "artist",
+                  "uri": "spotify:artist:3Rq3YOF9YG9YfCWD4D56RZ"
+                },
+                {
+                  "external_urls": {
+                    "spotify": "https://open.spotify.com/artist/5FmThJ74ycmeBdQnu4Cfcw"
+                  },
+                  "href": "https://api.spotify.com/v1/artists/5FmThJ74ycmeBdQnu4Cfcw",
+                  "id": "5FmThJ74ycmeBdQnu4Cfcw",
+                  "name": "Substantial",
+                  "type": "artist",
+                  "uri": "spotify:artist:5FmThJ74ycmeBdQnu4Cfcw"
+                }
+              ],
+              "disc_number": 1,
+              "duration_ms": 197293,
+              "explicit": false,
+              "external_urls": {
+                "spotify": "https://open.spotify.com/track/0rKR7VLBxqVQAz2UEe3D8N"
+              },
+              "href": "https://api.spotify.com/v1/tracks/0rKR7VLBxqVQAz2UEe3D8N",
+              "id": "0rKR7VLBxqVQAz2UEe3D8N",
+              "is_local": false,
+              "is_playable": true,
+              "name": "Think Different (feat. Substantial)",
+              "preview_url": "https://p.scdn.co/mp3-preview/e93df1b9f9d83d8e4faa6f49bd44af542da0842c?cid=774b29d4f13844c495f206cafdad9c86",
+              "track_number": 8,
+              "type": "track",
+              "uri": "spotify:track:0rKR7VLBxqVQAz2UEe3D8N"
+            },
+            {
+              "artists": [
+                {
+                  "external_urls": {
+                    "spotify": "https://open.spotify.com/artist/3Rq3YOF9YG9YfCWD4D56RZ"
+                  },
+                  "href": "https://api.spotify.com/v1/artists/3Rq3YOF9YG9YfCWD4D56RZ",
+                  "id": "3Rq3YOF9YG9YfCWD4D56RZ",
+                  "name": "Nujabes",
+                  "type": "artist",
+                  "uri": "spotify:artist:3Rq3YOF9YG9YfCWD4D56RZ"
+                }
+              ],
+              "disc_number": 1,
+              "duration_ms": 239693,
+              "explicit": false,
+              "external_urls": {
+                "spotify": "https://open.spotify.com/track/07JIJUJdAP9LiyYS5rS8cR"
+              },
+              "href": "https://api.spotify.com/v1/tracks/07JIJUJdAP9LiyYS5rS8cR",
+              "id": "07JIJUJdAP9LiyYS5rS8cR",
+              "is_local": false,
+              "is_playable": true,
+              "name": "A day by atmosphere supreme",
+              "preview_url": "https://p.scdn.co/mp3-preview/6861f9eb066b4e163c0db9d2e92fddacedfba48a?cid=774b29d4f13844c495f206cafdad9c86",
+              "track_number": 9,
+              "type": "track",
+              "uri": "spotify:track:07JIJUJdAP9LiyYS5rS8cR"
+            },
+            {
+              "artists": [
+                {
+                  "external_urls": {
+                    "spotify": "https://open.spotify.com/artist/3Rq3YOF9YG9YfCWD4D56RZ"
+                  },
+                  "href": "https://api.spotify.com/v1/artists/3Rq3YOF9YG9YfCWD4D56RZ",
+                  "id": "3Rq3YOF9YG9YfCWD4D56RZ",
+                  "name": "Nujabes",
+                  "type": "artist",
+                  "uri": "spotify:artist:3Rq3YOF9YG9YfCWD4D56RZ"
+                },
+                {
+                  "external_urls": {
+                    "spotify": "https://open.spotify.com/artist/6AE5XsUcbWE2XrQccVVJyd"
+                  },
+                  "href": "https://api.spotify.com/v1/artists/6AE5XsUcbWE2XrQccVVJyd",
+                  "id": "6AE5XsUcbWE2XrQccVVJyd",
+                  "name": "Uyama Hiroto",
+                  "type": "artist",
+                  "uri": "spotify:artist:6AE5XsUcbWE2XrQccVVJyd"
+                }
+              ],
+              "disc_number": 1,
+              "duration_ms": 275693,
+              "explicit": false,
+              "external_urls": {
+                "spotify": "https://open.spotify.com/track/2csdd679hni5tQsW8lkEV1"
+              },
+              "href": "https://api.spotify.com/v1/tracks/2csdd679hni5tQsW8lkEV1",
+              "id": "2csdd679hni5tQsW8lkEV1",
+              "is_local": false,
+              "is_playable": true,
+              "name": "Next view (feat. Uyama Hiroto)",
+              "preview_url": "https://p.scdn.co/mp3-preview/643776fc7b22083076ca1a5240fe063892318185?cid=774b29d4f13844c495f206cafdad9c86",
+              "track_number": 10,
+              "type": "track",
+              "uri": "spotify:track:2csdd679hni5tQsW8lkEV1"
+            },
+            {
+              "artists": [
+                {
+                  "external_urls": {
+                    "spotify": "https://open.spotify.com/artist/3Rq3YOF9YG9YfCWD4D56RZ"
+                  },
+                  "href": "https://api.spotify.com/v1/artists/3Rq3YOF9YG9YfCWD4D56RZ",
+                  "id": "3Rq3YOF9YG9YfCWD4D56RZ",
+                  "name": "Nujabes",
+                  "type": "artist",
+                  "uri": "spotify:artist:3Rq3YOF9YG9YfCWD4D56RZ"
+                },
+                {
+                  "external_urls": {
+                    "spotify": "https://open.spotify.com/artist/2fxf19eScHHFOfmTwxWcGz"
+                  },
+                  "href": "https://api.spotify.com/v1/artists/2fxf19eScHHFOfmTwxWcGz",
+                  "id": "2fxf19eScHHFOfmTwxWcGz",
+                  "name": "Five Deez",
+                  "type": "artist",
+                  "uri": "spotify:artist:2fxf19eScHHFOfmTwxWcGz"
+                }
+              ],
+              "disc_number": 1,
+              "duration_ms": 236533,
+              "explicit": false,
+              "external_urls": {
+                "spotify": "https://open.spotify.com/track/65u7IbuZ4viAlVBHxnpos1"
+              },
+              "href": "https://api.spotify.com/v1/tracks/65u7IbuZ4viAlVBHxnpos1",
+              "id": "65u7IbuZ4viAlVBHxnpos1",
+              "is_local": false,
+              "is_playable": true,
+              "name": "Latitude -remix (feat. Five Deez)",
+              "preview_url": "https://p.scdn.co/mp3-preview/3864147e837a98ffaf633807e9026a83ad2b6f8d?cid=774b29d4f13844c495f206cafdad9c86",
+              "track_number": 11,
+              "type": "track",
+              "uri": "spotify:track:65u7IbuZ4viAlVBHxnpos1"
+            },
+            {
+              "artists": [
+                {
+                  "external_urls": {
+                    "spotify": "https://open.spotify.com/artist/3Rq3YOF9YG9YfCWD4D56RZ"
+                  },
+                  "href": "https://api.spotify.com/v1/artists/3Rq3YOF9YG9YfCWD4D56RZ",
+                  "id": "3Rq3YOF9YG9YfCWD4D56RZ",
+                  "name": "Nujabes",
+                  "type": "artist",
+                  "uri": "spotify:artist:3Rq3YOF9YG9YfCWD4D56RZ"
+                },
+                {
+                  "external_urls": {
+                    "spotify": "https://open.spotify.com/artist/7cPrSQ6qQEsfg4XbCcotlc"
+                  },
+                  "href": "https://api.spotify.com/v1/artists/7cPrSQ6qQEsfg4XbCcotlc",
+                  "id": "7cPrSQ6qQEsfg4XbCcotlc",
+                  "name": "shing02",
+                  "type": "artist",
+                  "uri": "spotify:artist:7cPrSQ6qQEsfg4XbCcotlc"
+                }
+              ],
+              "disc_number": 1,
+              "duration_ms": 211226,
+              "explicit": false,
+              "external_urls": {
+                "spotify": "https://open.spotify.com/track/43pWChQ7AOab9wlSGy0dN6"
+              },
+              "href": "https://api.spotify.com/v1/tracks/43pWChQ7AOab9wlSGy0dN6",
+              "id": "43pWChQ7AOab9wlSGy0dN6",
+              "is_local": false,
+              "is_playable": true,
+              "name": "F.I.L.O. (feat. Shing02)",
+              "preview_url": "https://p.scdn.co/mp3-preview/49d875700d50476fb16269eddf30a09246ff24aa?cid=774b29d4f13844c495f206cafdad9c86",
+              "track_number": 12,
+              "type": "track",
+              "uri": "spotify:track:43pWChQ7AOab9wlSGy0dN6"
+            },
+            {
+              "artists": [
+                {
+                  "external_urls": {
+                    "spotify": "https://open.spotify.com/artist/3Rq3YOF9YG9YfCWD4D56RZ"
+                  },
+                  "href": "https://api.spotify.com/v1/artists/3Rq3YOF9YG9YfCWD4D56RZ",
+                  "id": "3Rq3YOF9YG9YfCWD4D56RZ",
+                  "name": "Nujabes",
+                  "type": "artist",
+                  "uri": "spotify:artist:3Rq3YOF9YG9YfCWD4D56RZ"
+                }
+              ],
+              "disc_number": 1,
+              "duration_ms": 259586,
+              "explicit": false,
+              "external_urls": {
+                "spotify": "https://open.spotify.com/track/2NgInslT2bXxgqeCaoyX2z"
+              },
+              "href": "https://api.spotify.com/v1/tracks/2NgInslT2bXxgqeCaoyX2z",
+              "id": "2NgInslT2bXxgqeCaoyX2z",
+              "is_local": false,
+              "is_playable": true,
+              "name": "Summer Gypsy",
+              "preview_url": "https://p.scdn.co/mp3-preview/6fe7950e4e214496005d1e1b0007dd17882347e4?cid=774b29d4f13844c495f206cafdad9c86",
+              "track_number": 13,
+              "type": "track",
+              "uri": "spotify:track:2NgInslT2bXxgqeCaoyX2z"
+            },
+            {
+              "artists": [
+                {
+                  "external_urls": {
+                    "spotify": "https://open.spotify.com/artist/3Rq3YOF9YG9YfCWD4D56RZ"
+                  },
+                  "href": "https://api.spotify.com/v1/artists/3Rq3YOF9YG9YfCWD4D56RZ",
+                  "id": "3Rq3YOF9YG9YfCWD4D56RZ",
+                  "name": "Nujabes",
+                  "type": "artist",
+                  "uri": "spotify:artist:3Rq3YOF9YG9YfCWD4D56RZ"
+                }
+              ],
+              "disc_number": 1,
+              "duration_ms": 214946,
+              "explicit": false,
+              "external_urls": {
+                "spotify": "https://open.spotify.com/track/3MZHDutJalh9C4DNLptn2v"
+              },
+              "href": "https://api.spotify.com/v1/tracks/3MZHDutJalh9C4DNLptn2v",
+              "id": "3MZHDutJalh9C4DNLptn2v",
+              "is_local": false,
+              "is_playable": true,
+              "name": "The Final View",
+              "preview_url": "https://p.scdn.co/mp3-preview/ebfe73310a4736754f9279b65be4fb03bab2d97f?cid=774b29d4f13844c495f206cafdad9c86",
+              "track_number": 14,
+              "type": "track",
+              "uri": "spotify:track:3MZHDutJalh9C4DNLptn2v"
+            },
+            {
+              "artists": [
+                {
+                  "external_urls": {
+                    "spotify": "https://open.spotify.com/artist/3Rq3YOF9YG9YfCWD4D56RZ"
+                  },
+                  "href": "https://api.spotify.com/v1/artists/3Rq3YOF9YG9YfCWD4D56RZ",
+                  "id": "3Rq3YOF9YG9YfCWD4D56RZ",
+                  "name": "Nujabes",
+                  "type": "artist",
+                  "uri": "spotify:artist:3Rq3YOF9YG9YfCWD4D56RZ"
+                }
+              ],
+              "disc_number": 1,
+              "duration_ms": 499120,
+              "explicit": false,
+              "external_urls": {
+                "spotify": "https://open.spotify.com/track/4pVwc3fU2RqL7l7L0fSwaq"
+              },
+              "href": "https://api.spotify.com/v1/tracks/4pVwc3fU2RqL7l7L0fSwaq",
+              "id": "4pVwc3fU2RqL7l7L0fSwaq",
+              "is_local": false,
+              "is_playable": true,
+              "name": "Peaceland",
+              "preview_url": "https://p.scdn.co/mp3-preview/cd2c75b620f284079ebce416c228906685a1131e?cid=774b29d4f13844c495f206cafdad9c86",
+              "track_number": 15,
+              "type": "track",
+              "uri": "spotify:track:4pVwc3fU2RqL7l7L0fSwaq"
+            }
+          ],
+          "limit": 50,
+          "next": null,
+          "offset": 0,
+          "previous": null,
+          "total": 15
+        },
+        "type": "album",
+        "uri": "spotify:album:5FrjDW96mCYw9ECc74c637"
+      }
+    },
+    {
+      "added_at": "2020-02-17T04:10:41Z",
+      "album": {
+        "album_type": "album",
+        "artists": [
+          {
+            "external_urls": {
+              "spotify": "https://open.spotify.com/artist/3Rq3YOF9YG9YfCWD4D56RZ"
+            },
+            "href": "https://api.spotify.com/v1/artists/3Rq3YOF9YG9YfCWD4D56RZ",
+            "id": "3Rq3YOF9YG9YfCWD4D56RZ",
+            "name": "Nujabes",
+            "type": "artist",
+            "uri": "spotify:artist:3Rq3YOF9YG9YfCWD4D56RZ"
+          }
+        ],
+        "copyrights": [
+          {
+            "text": "Hydeout Productions",
+            "type": "C"
+          },
+          {
+            "text": "Hydeout Productions",
+            "type": "P"
+          }
+        ],
+        "external_ids": {
+          "upc": "4997184881425"
+        },
+        "external_urls": {
+          "spotify": "https://open.spotify.com/album/6nVACH6a27eOWiumAJhDWS"
+        },
+        "genres": [],
+        "href": "https://api.spotify.com/v1/albums/6nVACH6a27eOWiumAJhDWS",
+        "id": "6nVACH6a27eOWiumAJhDWS",
+        "images": [
+          {
+            "height": 640,
+            "url": "https://i.scdn.co/image/ab67616d0000b273912cc8fe2e9a53d328757a41",
+            "width": 640
+          },
+          {
+            "height": 300,
+            "url": "https://i.scdn.co/image/ab67616d00001e02912cc8fe2e9a53d328757a41",
+            "width": 300
+          },
+          {
+            "height": 64,
+            "url": "https://i.scdn.co/image/ab67616d00004851912cc8fe2e9a53d328757a41",
+            "width": 64
+          }
+        ],
+        "label": "Hydeout Productions",
+        "name": "Modal Soul",
+        "popularity": 67,
+        "release_date": "2005-11-11",
+        "release_date_precision": "day",
+        "total_tracks": 14,
+        "tracks": {
+          "href": "https://api.spotify.com/v1/albums/6nVACH6a27eOWiumAJhDWS/tracks?offset=0&limit=50&market=us",
+          "items": [
+            {
+              "artists": [
+                {
+                  "external_urls": {
+                    "spotify": "https://open.spotify.com/artist/3Rq3YOF9YG9YfCWD4D56RZ"
+                  },
+                  "href": "https://api.spotify.com/v1/artists/3Rq3YOF9YG9YfCWD4D56RZ",
+                  "id": "3Rq3YOF9YG9YfCWD4D56RZ",
+                  "name": "Nujabes",
+                  "type": "artist",
+                  "uri": "spotify:artist:3Rq3YOF9YG9YfCWD4D56RZ"
+                },
+                {
+                  "external_urls": {
+                    "spotify": "https://open.spotify.com/artist/33U7NALGE1kDIhgwofWG2s"
+                  },
+                  "href": "https://api.spotify.com/v1/artists/33U7NALGE1kDIhgwofWG2s",
+                  "id": "33U7NALGE1kDIhgwofWG2s",
+                  "name": "Cise Star",
+                  "type": "artist",
+                  "uri": "spotify:artist:33U7NALGE1kDIhgwofWG2s"
+                },
+                {
+                  "external_urls": {
+                    "spotify": "https://open.spotify.com/artist/2HTvHHSj0INyoVfW2LDs6X"
+                  },
+                  "href": "https://api.spotify.com/v1/artists/2HTvHHSj0INyoVfW2LDs6X",
+                  "id": "2HTvHHSj0INyoVfW2LDs6X",
+                  "name": "Akin",
+                  "type": "artist",
+                  "uri": "spotify:artist:2HTvHHSj0INyoVfW2LDs6X"
+                }
+              ],
+              "disc_number": 1,
+              "duration_ms": 175360,
+              "explicit": false,
+              "external_urls": {
+                "spotify": "https://open.spotify.com/track/2ej1A2Ze6P2EOW7KfIosZR"
+              },
+              "href": "https://api.spotify.com/v1/tracks/2ej1A2Ze6P2EOW7KfIosZR",
+              "id": "2ej1A2Ze6P2EOW7KfIosZR",
+              "is_local": false,
+              "is_playable": true,
+              "name": "Feather (feat. Cise Starr & Akin from CYNE)",
+              "preview_url": "https://p.scdn.co/mp3-preview/ffdb6a7ce756ff9ff6e1e6c02592c5520cdd869d?cid=774b29d4f13844c495f206cafdad9c86",
+              "track_number": 1,
+              "type": "track",
+              "uri": "spotify:track:2ej1A2Ze6P2EOW7KfIosZR"
+            },
+            {
+              "artists": [
+                {
+                  "external_urls": {
+                    "spotify": "https://open.spotify.com/artist/3Rq3YOF9YG9YfCWD4D56RZ"
+                  },
+                  "href": "https://api.spotify.com/v1/artists/3Rq3YOF9YG9YfCWD4D56RZ",
+                  "id": "3Rq3YOF9YG9YfCWD4D56RZ",
+                  "name": "Nujabes",
+                  "type": "artist",
+                  "uri": "spotify:artist:3Rq3YOF9YG9YfCWD4D56RZ"
+                },
+                {
+                  "external_urls": {
+                    "spotify": "https://open.spotify.com/artist/5cHmjJA9Lo0ga8s8QdxEzs"
+                  },
+                  "href": "https://api.spotify.com/v1/artists/5cHmjJA9Lo0ga8s8QdxEzs",
+                  "id": "5cHmjJA9Lo0ga8s8QdxEzs",
+                  "name": "Terry Callier",
+                  "type": "artist",
+                  "uri": "spotify:artist:5cHmjJA9Lo0ga8s8QdxEzs"
+                }
+              ],
+              "disc_number": 1,
+              "duration_ms": 308040,
+              "explicit": false,
+              "external_urls": {
+                "spotify": "https://open.spotify.com/track/6zYBZOP6SuKa5JszwpAz7Z"
+              },
+              "href": "https://api.spotify.com/v1/tracks/6zYBZOP6SuKa5JszwpAz7Z",
+              "id": "6zYBZOP6SuKa5JszwpAz7Z",
+              "is_local": false,
+              "is_playable": true,
+              "name": "ordinary joe (feat. Terry Callier)",
+              "preview_url": "https://p.scdn.co/mp3-preview/198595459d41f3856ead7242518738941ccd3082?cid=774b29d4f13844c495f206cafdad9c86",
+              "track_number": 2,
+              "type": "track",
+              "uri": "spotify:track:6zYBZOP6SuKa5JszwpAz7Z"
+            },
+            {
+              "artists": [
+                {
+                  "external_urls": {
+                    "spotify": "https://open.spotify.com/artist/3Rq3YOF9YG9YfCWD4D56RZ"
+                  },
+                  "href": "https://api.spotify.com/v1/artists/3Rq3YOF9YG9YfCWD4D56RZ",
+                  "id": "3Rq3YOF9YG9YfCWD4D56RZ",
+                  "name": "Nujabes",
+                  "type": "artist",
+                  "uri": "spotify:artist:3Rq3YOF9YG9YfCWD4D56RZ"
+                }
+              ],
+              "disc_number": 1,
+              "duration_ms": 257893,
+              "explicit": false,
+              "external_urls": {
+                "spotify": "https://open.spotify.com/track/6eGMwVVABqVTe9bWRIm498"
+              },
+              "href": "https://api.spotify.com/v1/tracks/6eGMwVVABqVTe9bWRIm498",
+              "id": "6eGMwVVABqVTe9bWRIm498",
+              "is_local": false,
+              "is_playable": true,
+              "name": "reflection eternal",
+              "preview_url": "https://p.scdn.co/mp3-preview/2983edf95c6c141d6f49bab6f2aa5d13897a817d?cid=774b29d4f13844c495f206cafdad9c86",
+              "track_number": 3,
+              "type": "track",
+              "uri": "spotify:track:6eGMwVVABqVTe9bWRIm498"
+            },
+            {
+              "artists": [
+                {
+                  "external_urls": {
+                    "spotify": "https://open.spotify.com/artist/3Rq3YOF9YG9YfCWD4D56RZ"
+                  },
+                  "href": "https://api.spotify.com/v1/artists/3Rq3YOF9YG9YfCWD4D56RZ",
+                  "id": "3Rq3YOF9YG9YfCWD4D56RZ",
+                  "name": "Nujabes",
+                  "type": "artist",
+                  "uri": "spotify:artist:3Rq3YOF9YG9YfCWD4D56RZ"
+                },
+                {
+                  "external_urls": {
+                    "spotify": "https://open.spotify.com/artist/0FB6beTn4vescDdnHeCUm9"
+                  },
+                  "href": "https://api.spotify.com/v1/artists/0FB6beTn4vescDdnHeCUm9",
+                  "id": "0FB6beTn4vescDdnHeCUm9",
+                  "name": "Shing02",
+                  "type": "artist",
+                  "uri": "spotify:artist:0FB6beTn4vescDdnHeCUm9"
+                }
+              ],
+              "disc_number": 1,
+              "duration_ms": 336866,
+              "explicit": false,
+              "external_urls": {
+                "spotify": "https://open.spotify.com/track/4xlpJ99yL9xYQtzG6c3hwk"
+              },
+              "href": "https://api.spotify.com/v1/tracks/4xlpJ99yL9xYQtzG6c3hwk",
+              "id": "4xlpJ99yL9xYQtzG6c3hwk",
+              "is_local": false,
+              "is_playable": true,
+              "name": "Luv(sic.) pt3 (feat. Shing02)",
+              "preview_url": "https://p.scdn.co/mp3-preview/eb3fb3aee20a93e7f73cc88ac8313b172b1e8338?cid=774b29d4f13844c495f206cafdad9c86",
+              "track_number": 4,
+              "type": "track",
+              "uri": "spotify:track:4xlpJ99yL9xYQtzG6c3hwk"
+            },
+            {
+              "artists": [
+                {
+                  "external_urls": {
+                    "spotify": "https://open.spotify.com/artist/3Rq3YOF9YG9YfCWD4D56RZ"
+                  },
+                  "href": "https://api.spotify.com/v1/artists/3Rq3YOF9YG9YfCWD4D56RZ",
+                  "id": "3Rq3YOF9YG9YfCWD4D56RZ",
+                  "name": "Nujabes",
+                  "type": "artist",
+                  "uri": "spotify:artist:3Rq3YOF9YG9YfCWD4D56RZ"
+                }
+              ],
+              "disc_number": 1,
+              "duration_ms": 260466,
+              "explicit": false,
+              "external_urls": {
+                "spotify": "https://open.spotify.com/track/45ejirK0hfPnsjgzj3s7gP"
+              },
+              "href": "https://api.spotify.com/v1/tracks/45ejirK0hfPnsjgzj3s7gP",
+              "id": "45ejirK0hfPnsjgzj3s7gP",
+              "is_local": false,
+              "is_playable": true,
+              "name": "Music is mine",
+              "preview_url": "https://p.scdn.co/mp3-preview/2aeeb2502a8fb1940d80cb6fc5f45164f39b8e8b?cid=774b29d4f13844c495f206cafdad9c86",
+              "track_number": 5,
+              "type": "track",
+              "uri": "spotify:track:45ejirK0hfPnsjgzj3s7gP"
+            },
+            {
+              "artists": [
+                {
+                  "external_urls": {
+                    "spotify": "https://open.spotify.com/artist/3Rq3YOF9YG9YfCWD4D56RZ"
+                  },
+                  "href": "https://api.spotify.com/v1/artists/3Rq3YOF9YG9YfCWD4D56RZ",
+                  "id": "3Rq3YOF9YG9YfCWD4D56RZ",
+                  "name": "Nujabes",
+                  "type": "artist",
+                  "uri": "spotify:artist:3Rq3YOF9YG9YfCWD4D56RZ"
+                },
+                {
+                  "external_urls": {
+                    "spotify": "https://open.spotify.com/artist/5FmThJ74ycmeBdQnu4Cfcw"
+                  },
+                  "href": "https://api.spotify.com/v1/artists/5FmThJ74ycmeBdQnu4Cfcw",
+                  "id": "5FmThJ74ycmeBdQnu4Cfcw",
+                  "name": "Substantial",
+                  "type": "artist",
+                  "uri": "spotify:artist:5FmThJ74ycmeBdQnu4Cfcw"
+                }
+              ],
+              "disc_number": 1,
+              "duration_ms": 214333,
+              "explicit": false,
+              "external_urls": {
+                "spotify": "https://open.spotify.com/track/7mEPuj0XW6eK14Unu6IUc1"
+              },
+              "href": "https://api.spotify.com/v1/tracks/7mEPuj0XW6eK14Unu6IUc1",
+              "id": "7mEPuj0XW6eK14Unu6IUc1",
+              "is_local": false,
+              "is_playable": true,
+              "name": "Eclipse (feat. Substantial)",
+              "preview_url": "https://p.scdn.co/mp3-preview/4c93e5932996fa15c1cdc107340fb986257240b3?cid=774b29d4f13844c495f206cafdad9c86",
+              "track_number": 6,
+              "type": "track",
+              "uri": "spotify:track:7mEPuj0XW6eK14Unu6IUc1"
+            },
+            {
+              "artists": [
+                {
+                  "external_urls": {
+                    "spotify": "https://open.spotify.com/artist/3Rq3YOF9YG9YfCWD4D56RZ"
+                  },
+                  "href": "https://api.spotify.com/v1/artists/3Rq3YOF9YG9YfCWD4D56RZ",
+                  "id": "3Rq3YOF9YG9YfCWD4D56RZ",
+                  "name": "Nujabes",
+                  "type": "artist",
+                  "uri": "spotify:artist:3Rq3YOF9YG9YfCWD4D56RZ"
+                },
+                {
+                  "external_urls": {
+                    "spotify": "https://open.spotify.com/artist/7DziQHfQYLS6Iv018KLOVo"
+                  },
+                  "href": "https://api.spotify.com/v1/artists/7DziQHfQYLS6Iv018KLOVo",
+                  "id": "7DziQHfQYLS6Iv018KLOVo",
+                  "name": "Pase Rock",
+                  "type": "artist",
+                  "uri": "spotify:artist:7DziQHfQYLS6Iv018KLOVo"
+                }
+              ],
+              "disc_number": 1,
+              "duration_ms": 289800,
+              "explicit": false,
+              "external_urls": {
+                "spotify": "https://open.spotify.com/track/2g8vK3m0npTrzsADQAnbVO"
+              },
+              "href": "https://api.spotify.com/v1/tracks/2g8vK3m0npTrzsADQAnbVO",
+              "id": "2g8vK3m0npTrzsADQAnbVO",
+              "is_local": false,
+              "is_playable": true,
+              "name": "The Sign (feat. Pase Rock)",
+              "preview_url": "https://p.scdn.co/mp3-preview/3e8b1159ba140a96d433d01a13730813d0cd7deb?cid=774b29d4f13844c495f206cafdad9c86",
+              "track_number": 7,
+              "type": "track",
+              "uri": "spotify:track:2g8vK3m0npTrzsADQAnbVO"
+            },
+            {
+              "artists": [
+                {
+                  "external_urls": {
+                    "spotify": "https://open.spotify.com/artist/3Rq3YOF9YG9YfCWD4D56RZ"
+                  },
+                  "href": "https://api.spotify.com/v1/artists/3Rq3YOF9YG9YfCWD4D56RZ",
+                  "id": "3Rq3YOF9YG9YfCWD4D56RZ",
+                  "name": "Nujabes",
+                  "type": "artist",
+                  "uri": "spotify:artist:3Rq3YOF9YG9YfCWD4D56RZ"
+                },
+                {
+                  "external_urls": {
+                    "spotify": "https://open.spotify.com/artist/4zZwqW9MVgUhmpcVeFfPEy"
+                  },
+                  "href": "https://api.spotify.com/v1/artists/4zZwqW9MVgUhmpcVeFfPEy",
+                  "id": "4zZwqW9MVgUhmpcVeFfPEy",
+                  "name": "Apani B",
+                  "type": "artist",
+                  "uri": "spotify:artist:4zZwqW9MVgUhmpcVeFfPEy"
+                }
+              ],
+              "disc_number": 1,
+              "duration_ms": 249373,
+              "explicit": false,
+              "external_urls": {
+                "spotify": "https://open.spotify.com/track/2eej8hyValZva7TdN39zeD"
+              },
+              "href": "https://api.spotify.com/v1/tracks/2eej8hyValZva7TdN39zeD",
+              "id": "2eej8hyValZva7TdN39zeD",
+              "is_local": false,
+              "is_playable": true,
+              "name": "Thank you (feat. Apani B)",
+              "preview_url": "https://p.scdn.co/mp3-preview/dc76bceb36b1ecad4f8053a90aac605672a9a936?cid=774b29d4f13844c495f206cafdad9c86",
+              "track_number": 8,
+              "type": "track",
+              "uri": "spotify:track:2eej8hyValZva7TdN39zeD"
+            },
+            {
+              "artists": [
+                {
+                  "external_urls": {
+                    "spotify": "https://open.spotify.com/artist/3Rq3YOF9YG9YfCWD4D56RZ"
+                  },
+                  "href": "https://api.spotify.com/v1/artists/3Rq3YOF9YG9YfCWD4D56RZ",
+                  "id": "3Rq3YOF9YG9YfCWD4D56RZ",
+                  "name": "Nujabes",
+                  "type": "artist",
+                  "uri": "spotify:artist:3Rq3YOF9YG9YfCWD4D56RZ"
+                }
+              ],
+              "disc_number": 1,
+              "duration_ms": 341200,
+              "explicit": false,
+              "external_urls": {
+                "spotify": "https://open.spotify.com/track/7BBZGDSZbsb4Esi8YB94HT"
+              },
+              "href": "https://api.spotify.com/v1/tracks/7BBZGDSZbsb4Esi8YB94HT",
+              "id": "7BBZGDSZbsb4Esi8YB94HT",
+              "is_local": false,
+              "is_playable": true,
+              "name": "World's end Rhapsody",
+              "preview_url": "https://p.scdn.co/mp3-preview/0d69a1bdae5abc7d2b4bd53c0fd9c832f5222e69?cid=774b29d4f13844c495f206cafdad9c86",
+              "track_number": 9,
+              "type": "track",
+              "uri": "spotify:track:7BBZGDSZbsb4Esi8YB94HT"
+            },
+            {
+              "artists": [
+                {
+                  "external_urls": {
+                    "spotify": "https://open.spotify.com/artist/3Rq3YOF9YG9YfCWD4D56RZ"
+                  },
+                  "href": "https://api.spotify.com/v1/artists/3Rq3YOF9YG9YfCWD4D56RZ",
+                  "id": "3Rq3YOF9YG9YfCWD4D56RZ",
+                  "name": "Nujabes",
+                  "type": "artist",
+                  "uri": "spotify:artist:3Rq3YOF9YG9YfCWD4D56RZ"
+                },
+                {
+                  "external_urls": {
+                    "spotify": "https://open.spotify.com/artist/6AE5XsUcbWE2XrQccVVJyd"
+                  },
+                  "href": "https://api.spotify.com/v1/artists/6AE5XsUcbWE2XrQccVVJyd",
+                  "id": "6AE5XsUcbWE2XrQccVVJyd",
+                  "name": "Uyama Hiroto",
+                  "type": "artist",
+                  "uri": "spotify:artist:6AE5XsUcbWE2XrQccVVJyd"
+                }
+              ],
+              "disc_number": 1,
+              "duration_ms": 281160,
+              "explicit": false,
+              "external_urls": {
+                "spotify": "https://open.spotify.com/track/07JBINIJSHZMkpghrXe2po"
+              },
+              "href": "https://api.spotify.com/v1/tracks/07JBINIJSHZMkpghrXe2po",
+              "id": "07JBINIJSHZMkpghrXe2po",
+              "is_local": false,
+              "is_playable": true,
+              "name": "Modal Soul (feat. Uyama Hiroto)",
+              "preview_url": "https://p.scdn.co/mp3-preview/3e93dc50297e3ea1f801f267693dbcb997a4b742?cid=774b29d4f13844c495f206cafdad9c86",
+              "track_number": 10,
+              "type": "track",
+              "uri": "spotify:track:07JBINIJSHZMkpghrXe2po"
+            },
+            {
+              "artists": [
+                {
+                  "external_urls": {
+                    "spotify": "https://open.spotify.com/artist/3Rq3YOF9YG9YfCWD4D56RZ"
+                  },
+                  "href": "https://api.spotify.com/v1/artists/3Rq3YOF9YG9YfCWD4D56RZ",
+                  "id": "3Rq3YOF9YG9YfCWD4D56RZ",
+                  "name": "Nujabes",
+                  "type": "artist",
+                  "uri": "spotify:artist:3Rq3YOF9YG9YfCWD4D56RZ"
+                }
+              ],
+              "disc_number": 1,
+              "duration_ms": 239666,
+              "explicit": false,
+              "external_urls": {
+                "spotify": "https://open.spotify.com/track/69jGxyfw3lzGGYf78jdkpF"
+              },
+              "href": "https://api.spotify.com/v1/tracks/69jGxyfw3lzGGYf78jdkpF",
+              "id": "69jGxyfw3lzGGYf78jdkpF",
+              "is_local": false,
+              "is_playable": true,
+              "name": "flowers",
+              "preview_url": "https://p.scdn.co/mp3-preview/60aa70adbf4a3d4e3902468db8270d1990ec3d12?cid=774b29d4f13844c495f206cafdad9c86",
+              "track_number": 11,
+              "type": "track",
+              "uri": "spotify:track:69jGxyfw3lzGGYf78jdkpF"
+            },
+            {
+              "artists": [
+                {
+                  "external_urls": {
+                    "spotify": "https://open.spotify.com/artist/3Rq3YOF9YG9YfCWD4D56RZ"
+                  },
+                  "href": "https://api.spotify.com/v1/artists/3Rq3YOF9YG9YfCWD4D56RZ",
+                  "id": "3Rq3YOF9YG9YfCWD4D56RZ",
+                  "name": "Nujabes",
+                  "type": "artist",
+                  "uri": "spotify:artist:3Rq3YOF9YG9YfCWD4D56RZ"
+                }
+              ],
+              "disc_number": 1,
+              "duration_ms": 181773,
+              "explicit": false,
+              "external_urls": {
+                "spotify": "https://open.spotify.com/track/4rAcMik7N6LlIs61u5bzYo"
+              },
+              "href": "https://api.spotify.com/v1/tracks/4rAcMik7N6LlIs61u5bzYo",
+              "id": "4rAcMik7N6LlIs61u5bzYo",
+              "is_local": false,
+              "is_playable": true,
+              "name": "sea of cloud",
+              "preview_url": "https://p.scdn.co/mp3-preview/15c70fcc619f7844b9fe5b997748f6370b986897?cid=774b29d4f13844c495f206cafdad9c86",
+              "track_number": 12,
+              "type": "track",
+              "uri": "spotify:track:4rAcMik7N6LlIs61u5bzYo"
+            },
+            {
+              "artists": [
+                {
+                  "external_urls": {
+                    "spotify": "https://open.spotify.com/artist/3Rq3YOF9YG9YfCWD4D56RZ"
+                  },
+                  "href": "https://api.spotify.com/v1/artists/3Rq3YOF9YG9YfCWD4D56RZ",
+                  "id": "3Rq3YOF9YG9YfCWD4D56RZ",
+                  "name": "Nujabes",
+                  "type": "artist",
+                  "uri": "spotify:artist:3Rq3YOF9YG9YfCWD4D56RZ"
+                }
+              ],
+              "disc_number": 1,
+              "duration_ms": 235000,
+              "explicit": false,
+              "external_urls": {
+                "spotify": "https://open.spotify.com/track/2rUaktaAxshyPzIdAKzk1Y"
+              },
+              "href": "https://api.spotify.com/v1/tracks/2rUaktaAxshyPzIdAKzk1Y",
+              "id": "2rUaktaAxshyPzIdAKzk1Y",
+              "is_local": false,
+              "is_playable": true,
+              "name": "Light on the land",
+              "preview_url": "https://p.scdn.co/mp3-preview/99e0415154a1dd433e41f8df880104f4f19185f1?cid=774b29d4f13844c495f206cafdad9c86",
+              "track_number": 13,
+              "type": "track",
+              "uri": "spotify:track:2rUaktaAxshyPzIdAKzk1Y"
+            },
+            {
+              "artists": [
+                {
+                  "external_urls": {
+                    "spotify": "https://open.spotify.com/artist/3Rq3YOF9YG9YfCWD4D56RZ"
+                  },
+                  "href": "https://api.spotify.com/v1/artists/3Rq3YOF9YG9YfCWD4D56RZ",
+                  "id": "3Rq3YOF9YG9YfCWD4D56RZ",
+                  "name": "Nujabes",
+                  "type": "artist",
+                  "uri": "spotify:artist:3Rq3YOF9YG9YfCWD4D56RZ"
+                }
+              ],
+              "disc_number": 1,
+              "duration_ms": 440093,
+              "explicit": false,
+              "external_urls": {
+                "spotify": "https://open.spotify.com/track/545g4jlvOqZo1sj6k1f9j9"
+              },
+              "href": "https://api.spotify.com/v1/tracks/545g4jlvOqZo1sj6k1f9j9",
+              "id": "545g4jlvOqZo1sj6k1f9j9",
+              "is_local": false,
+              "is_playable": true,
+              "name": "Horizon",
+              "preview_url": "https://p.scdn.co/mp3-preview/0390099ad2c816690331c181323358fe017ee1dc?cid=774b29d4f13844c495f206cafdad9c86",
+              "track_number": 14,
+              "type": "track",
+              "uri": "spotify:track:545g4jlvOqZo1sj6k1f9j9"
+            }
+          ],
+          "limit": 50,
+          "next": null,
+          "offset": 0,
+          "previous": null,
+          "total": 14
+        },
+        "type": "album",
+        "uri": "spotify:album:6nVACH6a27eOWiumAJhDWS"
+      }
+    },
+    {
+      "added_at": "2019-12-25T02:52:23Z",
+      "album": {
+        "album_type": "album",
+        "artists": [
+          {
+            "external_urls": {
+              "spotify": "https://open.spotify.com/artist/4DkYxtaASIKQnk4Gj0TB7k"
+            },
+            "href": "https://api.spotify.com/v1/artists/4DkYxtaASIKQnk4Gj0TB7k",
+            "id": "4DkYxtaASIKQnk4Gj0TB7k",
+            "name": "City of the Sun",
+            "type": "artist",
+            "uri": "spotify:artist:4DkYxtaASIKQnk4Gj0TB7k"
+          }
+        ],
+        "copyrights": [
+          {
+            "text": "2016 Chesky Records",
+            "type": "C"
+          },
+          {
+            "text": "2016 Chesky Records",
+            "type": "P"
+          }
+        ],
+        "external_ids": {
+          "upc": "090368038364"
+        },
+        "external_urls": {
+          "spotify": "https://open.spotify.com/album/578SzhqxPoHnbSLkKvuWaG"
+        },
+        "genres": [],
+        "href": "https://api.spotify.com/v1/albums/578SzhqxPoHnbSLkKvuWaG",
+        "id": "578SzhqxPoHnbSLkKvuWaG",
+        "images": [
+          {
+            "height": 640,
+            "url": "https://i.scdn.co/image/ab67616d0000b273f4f2b671eb4a80838d1addd1",
+            "width": 640
+          },
+          {
+            "height": 300,
+            "url": "https://i.scdn.co/image/ab67616d00001e02f4f2b671eb4a80838d1addd1",
+            "width": 300
+          },
+          {
+            "height": 64,
+            "url": "https://i.scdn.co/image/ab67616d00004851f4f2b671eb4a80838d1addd1",
+            "width": 64
+          }
+        ],
+        "label": "Chesky Records",
+        "name": "To The Sun And All The Cities In Between",
+        "popularity": 41,
+        "release_date": "2016-03-04",
+        "release_date_precision": "day",
+        "total_tracks": 13,
+        "tracks": {
+          "href": "https://api.spotify.com/v1/albums/578SzhqxPoHnbSLkKvuWaG/tracks?offset=0&limit=50&market=us",
+          "items": [
+            {
+              "artists": [
+                {
+                  "external_urls": {
+                    "spotify": "https://open.spotify.com/artist/4DkYxtaASIKQnk4Gj0TB7k"
+                  },
+                  "href": "https://api.spotify.com/v1/artists/4DkYxtaASIKQnk4Gj0TB7k",
+                  "id": "4DkYxtaASIKQnk4Gj0TB7k",
+                  "name": "City of the Sun",
+                  "type": "artist",
+                  "uri": "spotify:artist:4DkYxtaASIKQnk4Gj0TB7k"
+                }
+              ],
+              "disc_number": 1,
+              "duration_ms": 310010,
+              "explicit": false,
+              "external_urls": {
+                "spotify": "https://open.spotify.com/track/5I3dnIoIzVpI2ZbXrVo4Cr"
+              },
+              "href": "https://api.spotify.com/v1/tracks/5I3dnIoIzVpI2ZbXrVo4Cr",
+              "id": "5I3dnIoIzVpI2ZbXrVo4Cr",
+              "is_local": false,
+              "is_playable": true,
+              "name": "Brothers",
+              "preview_url": "https://p.scdn.co/mp3-preview/3129020a7589ddd4eaed6f0c1dbd6f0c801c5b4f?cid=774b29d4f13844c495f206cafdad9c86",
+              "track_number": 1,
+              "type": "track",
+              "uri": "spotify:track:5I3dnIoIzVpI2ZbXrVo4Cr"
+            },
+            {
+              "artists": [
+                {
+                  "external_urls": {
+                    "spotify": "https://open.spotify.com/artist/4DkYxtaASIKQnk4Gj0TB7k"
+                  },
+                  "href": "https://api.spotify.com/v1/artists/4DkYxtaASIKQnk4Gj0TB7k",
+                  "id": "4DkYxtaASIKQnk4Gj0TB7k",
+                  "name": "City of the Sun",
+                  "type": "artist",
+                  "uri": "spotify:artist:4DkYxtaASIKQnk4Gj0TB7k"
+                }
+              ],
+              "disc_number": 1,
+              "duration_ms": 284020,
+              "explicit": false,
+              "external_urls": {
+                "spotify": "https://open.spotify.com/track/1jlJYV0XLxtRAacmdcwoAw"
+              },
+              "href": "https://api.spotify.com/v1/tracks/1jlJYV0XLxtRAacmdcwoAw",
+              "id": "1jlJYV0XLxtRAacmdcwoAw",
+              "is_local": false,
+              "is_playable": true,
+              "name": "To the Sun and All the Cities in Between",
+              "preview_url": "https://p.scdn.co/mp3-preview/93a181402c3af7105d835452e83c0a1780699fc0?cid=774b29d4f13844c495f206cafdad9c86",
+              "track_number": 2,
+              "type": "track",
+              "uri": "spotify:track:1jlJYV0XLxtRAacmdcwoAw"
+            },
+            {
+              "artists": [
+                {
+                  "external_urls": {
+                    "spotify": "https://open.spotify.com/artist/4DkYxtaASIKQnk4Gj0TB7k"
+                  },
+                  "href": "https://api.spotify.com/v1/artists/4DkYxtaASIKQnk4Gj0TB7k",
+                  "id": "4DkYxtaASIKQnk4Gj0TB7k",
+                  "name": "City of the Sun",
+                  "type": "artist",
+                  "uri": "spotify:artist:4DkYxtaASIKQnk4Gj0TB7k"
+                }
+              ],
+              "disc_number": 1,
+              "duration_ms": 343020,
+              "explicit": false,
+              "external_urls": {
+                "spotify": "https://open.spotify.com/track/4wTb3hb5WrqseQ35KxwIvp"
+              },
+              "href": "https://api.spotify.com/v1/tracks/4wTb3hb5WrqseQ35KxwIvp",
+              "id": "4wTb3hb5WrqseQ35KxwIvp",
+              "is_local": false,
+              "is_playable": true,
+              "name": "Those Days Are Now",
+              "preview_url": "https://p.scdn.co/mp3-preview/4af585460617b1ea46ba9fcfbfe7ccb161f6018e?cid=774b29d4f13844c495f206cafdad9c86",
+              "track_number": 3,
+              "type": "track",
+              "uri": "spotify:track:4wTb3hb5WrqseQ35KxwIvp"
+            },
+            {
+              "artists": [
+                {
+                  "external_urls": {
+                    "spotify": "https://open.spotify.com/artist/4DkYxtaASIKQnk4Gj0TB7k"
+                  },
+                  "href": "https://api.spotify.com/v1/artists/4DkYxtaASIKQnk4Gj0TB7k",
+                  "id": "4DkYxtaASIKQnk4Gj0TB7k",
+                  "name": "City of the Sun",
+                  "type": "artist",
+                  "uri": "spotify:artist:4DkYxtaASIKQnk4Gj0TB7k"
+                }
+              ],
+              "disc_number": 1,
+              "duration_ms": 221020,
+              "explicit": false,
+              "external_urls": {
+                "spotify": "https://open.spotify.com/track/2tgdkNtfWNVnmOpHbzgNZq"
+              },
+              "href": "https://api.spotify.com/v1/tracks/2tgdkNtfWNVnmOpHbzgNZq",
+              "id": "2tgdkNtfWNVnmOpHbzgNZq",
+              "is_local": false,
+              "is_playable": true,
+              "name": "Dance of the Dead",
+              "preview_url": "https://p.scdn.co/mp3-preview/0ea6a44bf845c6ac9ebcc850adef7a1d73d4e7bb?cid=774b29d4f13844c495f206cafdad9c86",
+              "track_number": 4,
+              "type": "track",
+              "uri": "spotify:track:2tgdkNtfWNVnmOpHbzgNZq"
+            },
+            {
+              "artists": [
+                {
+                  "external_urls": {
+                    "spotify": "https://open.spotify.com/artist/4DkYxtaASIKQnk4Gj0TB7k"
+                  },
+                  "href": "https://api.spotify.com/v1/artists/4DkYxtaASIKQnk4Gj0TB7k",
+                  "id": "4DkYxtaASIKQnk4Gj0TB7k",
+                  "name": "City of the Sun",
+                  "type": "artist",
+                  "uri": "spotify:artist:4DkYxtaASIKQnk4Gj0TB7k"
+                }
+              ],
+              "disc_number": 1,
+              "duration_ms": 421020,
+              "explicit": false,
+              "external_urls": {
+                "spotify": "https://open.spotify.com/track/7xHMlmomJBin65tKWB65l8"
+              },
+              "href": "https://api.spotify.com/v1/tracks/7xHMlmomJBin65tKWB65l8",
+              "id": "7xHMlmomJBin65tKWB65l8",
+              "is_local": false,
+              "is_playable": true,
+              "name": "Imagination",
+              "preview_url": "https://p.scdn.co/mp3-preview/007c42696bc9d005f7892bdb03f597a766239ea3?cid=774b29d4f13844c495f206cafdad9c86",
+              "track_number": 5,
+              "type": "track",
+              "uri": "spotify:track:7xHMlmomJBin65tKWB65l8"
+            },
+            {
+              "artists": [
+                {
+                  "external_urls": {
+                    "spotify": "https://open.spotify.com/artist/4DkYxtaASIKQnk4Gj0TB7k"
+                  },
+                  "href": "https://api.spotify.com/v1/artists/4DkYxtaASIKQnk4Gj0TB7k",
+                  "id": "4DkYxtaASIKQnk4Gj0TB7k",
+                  "name": "City of the Sun",
+                  "type": "artist",
+                  "uri": "spotify:artist:4DkYxtaASIKQnk4Gj0TB7k"
+                }
+              ],
+              "disc_number": 1,
+              "duration_ms": 264020,
+              "explicit": false,
+              "external_urls": {
+                "spotify": "https://open.spotify.com/track/3rBa4GxjIFUlOZOqfrpnt3"
+              },
+              "href": "https://api.spotify.com/v1/tracks/3rBa4GxjIFUlOZOqfrpnt3",
+              "id": "3rBa4GxjIFUlOZOqfrpnt3",
+              "is_local": false,
+              "is_playable": true,
+              "name": "Interlude",
+              "preview_url": "https://p.scdn.co/mp3-preview/1788bb44149c34279e86505331c632c6b559a7b5?cid=774b29d4f13844c495f206cafdad9c86",
+              "track_number": 6,
+              "type": "track",
+              "uri": "spotify:track:3rBa4GxjIFUlOZOqfrpnt3"
+            },
+            {
+              "artists": [
+                {
+                  "external_urls": {
+                    "spotify": "https://open.spotify.com/artist/4DkYxtaASIKQnk4Gj0TB7k"
+                  },
+                  "href": "https://api.spotify.com/v1/artists/4DkYxtaASIKQnk4Gj0TB7k",
+                  "id": "4DkYxtaASIKQnk4Gj0TB7k",
+                  "name": "City of the Sun",
+                  "type": "artist",
+                  "uri": "spotify:artist:4DkYxtaASIKQnk4Gj0TB7k"
+                }
+              ],
+              "disc_number": 1,
+              "duration_ms": 322020,
+              "explicit": false,
+              "external_urls": {
+                "spotify": "https://open.spotify.com/track/54n5FpYAfM1c8FDaVomrgq"
+              },
+              "href": "https://api.spotify.com/v1/tracks/54n5FpYAfM1c8FDaVomrgq",
+              "id": "54n5FpYAfM1c8FDaVomrgq",
+              "is_local": false,
+              "is_playable": true,
+              "name": "W. 16th St",
+              "preview_url": "https://p.scdn.co/mp3-preview/ad1f057f067fc93a664d6e20450ed4d81035ed6b?cid=774b29d4f13844c495f206cafdad9c86",
+              "track_number": 7,
+              "type": "track",
+              "uri": "spotify:track:54n5FpYAfM1c8FDaVomrgq"
+            },
+            {
+              "artists": [
+                {
+                  "external_urls": {
+                    "spotify": "https://open.spotify.com/artist/4DkYxtaASIKQnk4Gj0TB7k"
+                  },
+                  "href": "https://api.spotify.com/v1/artists/4DkYxtaASIKQnk4Gj0TB7k",
+                  "id": "4DkYxtaASIKQnk4Gj0TB7k",
+                  "name": "City of the Sun",
+                  "type": "artist",
+                  "uri": "spotify:artist:4DkYxtaASIKQnk4Gj0TB7k"
+                }
+              ],
+              "disc_number": 1,
+              "duration_ms": 150020,
+              "explicit": false,
+              "external_urls": {
+                "spotify": "https://open.spotify.com/track/5wYtk27QBTajRUxRuc9xXI"
+              },
+              "href": "https://api.spotify.com/v1/tracks/5wYtk27QBTajRUxRuc9xXI",
+              "id": "5wYtk27QBTajRUxRuc9xXI",
+              "is_local": false,
+              "is_playable": true,
+              "name": "La Puerta Roja",
+              "preview_url": "https://p.scdn.co/mp3-preview/8f684addc7965ac3d8809a2448f5955c21ad889d?cid=774b29d4f13844c495f206cafdad9c86",
+              "track_number": 8,
+              "type": "track",
+              "uri": "spotify:track:5wYtk27QBTajRUxRuc9xXI"
+            },
+            {
+              "artists": [
+                {
+                  "external_urls": {
+                    "spotify": "https://open.spotify.com/artist/4DkYxtaASIKQnk4Gj0TB7k"
+                  },
+                  "href": "https://api.spotify.com/v1/artists/4DkYxtaASIKQnk4Gj0TB7k",
+                  "id": "4DkYxtaASIKQnk4Gj0TB7k",
+                  "name": "City of the Sun",
+                  "type": "artist",
+                  "uri": "spotify:artist:4DkYxtaASIKQnk4Gj0TB7k"
+                }
+              ],
+              "disc_number": 1,
+              "duration_ms": 341020,
+              "explicit": false,
+              "external_urls": {
+                "spotify": "https://open.spotify.com/track/00vQMElKzuj7eOagyMmBKN"
+              },
+              "href": "https://api.spotify.com/v1/tracks/00vQMElKzuj7eOagyMmBKN",
+              "id": "00vQMElKzuj7eOagyMmBKN",
+              "is_local": false,
+              "is_playable": true,
+              "name": "Winter 2011",
+              "preview_url": "https://p.scdn.co/mp3-preview/2fa52a2e069a3d809148da95950ee6915b3fe39c?cid=774b29d4f13844c495f206cafdad9c86",
+              "track_number": 9,
+              "type": "track",
+              "uri": "spotify:track:00vQMElKzuj7eOagyMmBKN"
+            },
+            {
+              "artists": [
+                {
+                  "external_urls": {
+                    "spotify": "https://open.spotify.com/artist/4DkYxtaASIKQnk4Gj0TB7k"
+                  },
+                  "href": "https://api.spotify.com/v1/artists/4DkYxtaASIKQnk4Gj0TB7k",
+                  "id": "4DkYxtaASIKQnk4Gj0TB7k",
+                  "name": "City of the Sun",
+                  "type": "artist",
+                  "uri": "spotify:artist:4DkYxtaASIKQnk4Gj0TB7k"
+                }
+              ],
+              "disc_number": 1,
+              "duration_ms": 292020,
+              "explicit": false,
+              "external_urls": {
+                "spotify": "https://open.spotify.com/track/00OZww5iHUIjl9nUVxX6Ag"
+              },
+              "href": "https://api.spotify.com/v1/tracks/00OZww5iHUIjl9nUVxX6Ag",
+              "id": "00OZww5iHUIjl9nUVxX6Ag",
+              "is_local": false,
+              "is_playable": true,
+              "name": "Paco",
+              "preview_url": "https://p.scdn.co/mp3-preview/c52247d11f93b906aac166a7fc1ddb6788eca3ef?cid=774b29d4f13844c495f206cafdad9c86",
+              "track_number": 10,
+              "type": "track",
+              "uri": "spotify:track:00OZww5iHUIjl9nUVxX6Ag"
+            },
+            {
+              "artists": [
+                {
+                  "external_urls": {
+                    "spotify": "https://open.spotify.com/artist/4DkYxtaASIKQnk4Gj0TB7k"
+                  },
+                  "href": "https://api.spotify.com/v1/artists/4DkYxtaASIKQnk4Gj0TB7k",
+                  "id": "4DkYxtaASIKQnk4Gj0TB7k",
+                  "name": "City of the Sun",
+                  "type": "artist",
+                  "uri": "spotify:artist:4DkYxtaASIKQnk4Gj0TB7k"
+                }
+              ],
+              "disc_number": 1,
+              "duration_ms": 307020,
+              "explicit": false,
+              "external_urls": {
+                "spotify": "https://open.spotify.com/track/7nNCVuSQxuWnLuiMKbsevX"
+              },
+              "href": "https://api.spotify.com/v1/tracks/7nNCVuSQxuWnLuiMKbsevX",
+              "id": "7nNCVuSQxuWnLuiMKbsevX",
+              "is_local": false,
+              "is_playable": true,
+              "name": "You and I...and New York",
+              "preview_url": "https://p.scdn.co/mp3-preview/f179310a75699ca44ecbbbf9f4c10668ffb4d5ad?cid=774b29d4f13844c495f206cafdad9c86",
+              "track_number": 11,
+              "type": "track",
+              "uri": "spotify:track:7nNCVuSQxuWnLuiMKbsevX"
+            },
+            {
+              "artists": [
+                {
+                  "external_urls": {
+                    "spotify": "https://open.spotify.com/artist/4DkYxtaASIKQnk4Gj0TB7k"
+                  },
+                  "href": "https://api.spotify.com/v1/artists/4DkYxtaASIKQnk4Gj0TB7k",
+                  "id": "4DkYxtaASIKQnk4Gj0TB7k",
+                  "name": "City of the Sun",
+                  "type": "artist",
+                  "uri": "spotify:artist:4DkYxtaASIKQnk4Gj0TB7k"
+                }
+              ],
+              "disc_number": 1,
+              "duration_ms": 227020,
+              "explicit": false,
+              "external_urls": {
+                "spotify": "https://open.spotify.com/track/6po33Ea0YeHMWXFDR0Is8B"
+              },
+              "href": "https://api.spotify.com/v1/tracks/6po33Ea0YeHMWXFDR0Is8B",
+              "id": "6po33Ea0YeHMWXFDR0Is8B",
+              "is_local": false,
+              "is_playable": true,
+              "name": "Razon",
+              "preview_url": "https://p.scdn.co/mp3-preview/d806d42234676df30711a25ee5456419c3ba367d?cid=774b29d4f13844c495f206cafdad9c86",
+              "track_number": 12,
+              "type": "track",
+              "uri": "spotify:track:6po33Ea0YeHMWXFDR0Is8B"
+            },
+            {
+              "artists": [
+                {
+                  "external_urls": {
+                    "spotify": "https://open.spotify.com/artist/4DkYxtaASIKQnk4Gj0TB7k"
+                  },
+                  "href": "https://api.spotify.com/v1/artists/4DkYxtaASIKQnk4Gj0TB7k",
+                  "id": "4DkYxtaASIKQnk4Gj0TB7k",
+                  "name": "City of the Sun",
+                  "type": "artist",
+                  "uri": "spotify:artist:4DkYxtaASIKQnk4Gj0TB7k"
+                }
+              ],
+              "disc_number": 1,
+              "duration_ms": 337999,
+              "explicit": false,
+              "external_urls": {
+                "spotify": "https://open.spotify.com/track/25I5OlzgEUCqg0MWLWCZpv"
+              },
+              "href": "https://api.spotify.com/v1/tracks/25I5OlzgEUCqg0MWLWCZpv",
+              "id": "25I5OlzgEUCqg0MWLWCZpv",
+              "is_local": false,
+              "is_playable": true,
+              "name": "Everything",
+              "preview_url": "https://p.scdn.co/mp3-preview/5b70a8572e039acae5ab5dadc3f2634fb804f8b8?cid=774b29d4f13844c495f206cafdad9c86",
+              "track_number": 13,
+              "type": "track",
+              "uri": "spotify:track:25I5OlzgEUCqg0MWLWCZpv"
+            }
+          ],
+          "limit": 50,
+          "next": null,
+          "offset": 0,
+          "previous": null,
+          "total": 13
+        },
+        "type": "album",
+        "uri": "spotify:album:578SzhqxPoHnbSLkKvuWaG"
+      }
+    },
+    {
+      "added_at": "2019-10-11T16:28:26Z",
+      "album": {
+        "album_type": "album",
+        "artists": [
+          {
+            "external_urls": {
+              "spotify": "https://open.spotify.com/artist/35fFUv2850L9CQjjNrLBpb"
+            },
+            "href": "https://api.spotify.com/v1/artists/35fFUv2850L9CQjjNrLBpb",
+            "id": "35fFUv2850L9CQjjNrLBpb",
+            "name": "Nahko And Medicine For The People",
+            "type": "artist",
+            "uri": "spotify:artist:35fFUv2850L9CQjjNrLBpb"
+          }
+        ],
+        "copyrights": [
+          {
+            "text": "2016 SideOneDummy Records Under Exclusive License From Medicine Tribe Records",
+            "type": "C"
+          },
+          {
+            "text": "2016 SideOneDummy Records Under Exclusive License From Medicine Tribe Records",
+            "type": "P"
+          }
+        ],
+        "external_ids": {
+          "upc": "0603967161762"
+        },
+        "external_urls": {
+          "spotify": "https://open.spotify.com/album/3wH1yuFBld6RUYPyJnB60N"
+        },
+        "genres": [],
+        "href": "https://api.spotify.com/v1/albums/3wH1yuFBld6RUYPyJnB60N",
+        "id": "3wH1yuFBld6RUYPyJnB60N",
+        "images": [
+          {
+            "height": 640,
+            "url": "https://i.scdn.co/image/ab67616d0000b2730632b929126be0e80d056ae1",
+            "width": 640
+          },
+          {
+            "height": 300,
+            "url": "https://i.scdn.co/image/ab67616d00001e020632b929126be0e80d056ae1",
+            "width": 300
+          },
+          {
+            "height": 64,
+            "url": "https://i.scdn.co/image/ab67616d000048510632b929126be0e80d056ae1",
+            "width": 64
+          }
+        ],
+        "label": "SideOneDummy Records",
+        "name": "HOKA",
+        "popularity": 53,
+        "release_date": "2016-06-10",
+        "release_date_precision": "day",
+        "total_tracks": 19,
+        "tracks": {
+          "href": "https://api.spotify.com/v1/albums/3wH1yuFBld6RUYPyJnB60N/tracks?offset=0&limit=50&market=us",
+          "items": [
+            {
+              "artists": [
+                {
+                  "external_urls": {
+                    "spotify": "https://open.spotify.com/artist/35fFUv2850L9CQjjNrLBpb"
+                  },
+                  "href": "https://api.spotify.com/v1/artists/35fFUv2850L9CQjjNrLBpb",
+                  "id": "35fFUv2850L9CQjjNrLBpb",
+                  "name": "Nahko And Medicine For The People",
+                  "type": "artist",
+                  "uri": "spotify:artist:35fFUv2850L9CQjjNrLBpb"
+                }
+              ],
+              "disc_number": 1,
+              "duration_ms": 66851,
+              "explicit": false,
+              "external_urls": {
+                "spotify": "https://open.spotify.com/track/5mK7auIX6VYwWGsh4ch6Qb"
+              },
+              "href": "https://api.spotify.com/v1/tracks/5mK7auIX6VYwWGsh4ch6Qb",
+              "id": "5mK7auIX6VYwWGsh4ch6Qb",
+              "is_local": false,
+              "is_playable": true,
+              "name": "Hoka",
+              "preview_url": "https://p.scdn.co/mp3-preview/c9a634b578a73ebeddc877d20f898889b96d34b2?cid=774b29d4f13844c495f206cafdad9c86",
+              "track_number": 1,
+              "type": "track",
+              "uri": "spotify:track:5mK7auIX6VYwWGsh4ch6Qb"
+            },
+            {
+              "artists": [
+                {
+                  "external_urls": {
+                    "spotify": "https://open.spotify.com/artist/35fFUv2850L9CQjjNrLBpb"
+                  },
+                  "href": "https://api.spotify.com/v1/artists/35fFUv2850L9CQjjNrLBpb",
+                  "id": "35fFUv2850L9CQjjNrLBpb",
+                  "name": "Nahko And Medicine For The People",
+                  "type": "artist",
+                  "uri": "spotify:artist:35fFUv2850L9CQjjNrLBpb"
+                },
+                {
+                  "external_urls": {
+                    "spotify": "https://open.spotify.com/artist/5Wfvw7rDz7HA6gE2z6QhqO"
+                  },
+                  "href": "https://api.spotify.com/v1/artists/5Wfvw7rDz7HA6gE2z6QhqO",
+                  "id": "5Wfvw7rDz7HA6gE2z6QhqO",
+                  "name": "JOSEPH",
+                  "type": "artist",
+                  "uri": "spotify:artist:5Wfvw7rDz7HA6gE2z6QhqO"
+                }
+              ],
+              "disc_number": 1,
+              "duration_ms": 261006,
+              "explicit": false,
+              "external_urls": {
+                "spotify": "https://open.spotify.com/track/3wExKuze7J9lHeYCSm713l"
+              },
+              "href": "https://api.spotify.com/v1/tracks/3wExKuze7J9lHeYCSm713l",
+              "id": "3wExKuze7J9lHeYCSm713l",
+              "is_local": false,
+              "is_playable": true,
+              "name": "Directions",
+              "preview_url": "https://p.scdn.co/mp3-preview/c7b2b166256b4bf0db3b265fbc3b22ba4b406b58?cid=774b29d4f13844c495f206cafdad9c86",
+              "track_number": 2,
+              "type": "track",
+              "uri": "spotify:track:3wExKuze7J9lHeYCSm713l"
+            },
+            {
+              "artists": [
+                {
+                  "external_urls": {
+                    "spotify": "https://open.spotify.com/artist/35fFUv2850L9CQjjNrLBpb"
+                  },
+                  "href": "https://api.spotify.com/v1/artists/35fFUv2850L9CQjjNrLBpb",
+                  "id": "35fFUv2850L9CQjjNrLBpb",
+                  "name": "Nahko And Medicine For The People",
+                  "type": "artist",
+                  "uri": "spotify:artist:35fFUv2850L9CQjjNrLBpb"
+                }
+              ],
+              "disc_number": 1,
+              "duration_ms": 337157,
+              "explicit": false,
+              "external_urls": {
+                "spotify": "https://open.spotify.com/track/72NXHZjiNFJy2P6mctCzBB"
+              },
+              "href": "https://api.spotify.com/v1/tracks/72NXHZjiNFJy2P6mctCzBB",
+              "id": "72NXHZjiNFJy2P6mctCzBB",
+              "is_local": false,
+              "is_playable": true,
+              "name": "It Is Written",
+              "preview_url": "https://p.scdn.co/mp3-preview/2e6ec43062d72600b845b7ffb918450153f29b72?cid=774b29d4f13844c495f206cafdad9c86",
+              "track_number": 3,
+              "type": "track",
+              "uri": "spotify:track:72NXHZjiNFJy2P6mctCzBB"
+            },
+            {
+              "artists": [
+                {
+                  "external_urls": {
+                    "spotify": "https://open.spotify.com/artist/35fFUv2850L9CQjjNrLBpb"
+                  },
+                  "href": "https://api.spotify.com/v1/artists/35fFUv2850L9CQjjNrLBpb",
+                  "id": "35fFUv2850L9CQjjNrLBpb",
+                  "name": "Nahko And Medicine For The People",
+                  "type": "artist",
+                  "uri": "spotify:artist:35fFUv2850L9CQjjNrLBpb"
+                }
+              ],
+              "disc_number": 1,
+              "duration_ms": 304073,
+              "explicit": false,
+              "external_urls": {
+                "spotify": "https://open.spotify.com/track/3YT21RG9ZuzEFE4a8FRrPx"
+              },
+              "href": "https://api.spotify.com/v1/tracks/3YT21RG9ZuzEFE4a8FRrPx",
+              "id": "3YT21RG9ZuzEFE4a8FRrPx",
+              "is_local": false,
+              "is_playable": true,
+              "name": "All Can Be Done",
+              "preview_url": "https://p.scdn.co/mp3-preview/911644597fa1b2c9f61f3f4b8c6ceb10b65e963a?cid=774b29d4f13844c495f206cafdad9c86",
+              "track_number": 4,
+              "type": "track",
+              "uri": "spotify:track:3YT21RG9ZuzEFE4a8FRrPx"
+            },
+            {
+              "artists": [
+                {
+                  "external_urls": {
+                    "spotify": "https://open.spotify.com/artist/35fFUv2850L9CQjjNrLBpb"
+                  },
+                  "href": "https://api.spotify.com/v1/artists/35fFUv2850L9CQjjNrLBpb",
+                  "id": "35fFUv2850L9CQjjNrLBpb",
+                  "name": "Nahko And Medicine For The People",
+                  "type": "artist",
+                  "uri": "spotify:artist:35fFUv2850L9CQjjNrLBpb"
+                }
+              ],
+              "disc_number": 1,
+              "duration_ms": 241970,
+              "explicit": false,
+              "external_urls": {
+                "spotify": "https://open.spotify.com/track/776T2b6fZQLOKOfmDakxWN"
+              },
+              "href": "https://api.spotify.com/v1/tracks/776T2b6fZQLOKOfmDakxWN",
+              "id": "776T2b6fZQLOKOfmDakxWN",
+              "is_local": false,
+              "is_playable": true,
+              "name": "San Quentin",
+              "preview_url": "https://p.scdn.co/mp3-preview/424d10f040ea1990e7d79882bca0ae6314cd3113?cid=774b29d4f13844c495f206cafdad9c86",
+              "track_number": 5,
+              "type": "track",
+              "uri": "spotify:track:776T2b6fZQLOKOfmDakxWN"
+            },
+            {
+              "artists": [
+                {
+                  "external_urls": {
+                    "spotify": "https://open.spotify.com/artist/35fFUv2850L9CQjjNrLBpb"
+                  },
+                  "href": "https://api.spotify.com/v1/artists/35fFUv2850L9CQjjNrLBpb",
+                  "id": "35fFUv2850L9CQjjNrLBpb",
+                  "name": "Nahko And Medicine For The People",
+                  "type": "artist",
+                  "uri": "spotify:artist:35fFUv2850L9CQjjNrLBpb"
+                }
+              ],
+              "disc_number": 1,
+              "duration_ms": 343030,
+              "explicit": false,
+              "external_urls": {
+                "spotify": "https://open.spotify.com/track/2D0h2VPK05TUQJYLbVQfXQ"
+              },
+              "href": "https://api.spotify.com/v1/tracks/2D0h2VPK05TUQJYLbVQfXQ",
+              "id": "2D0h2VPK05TUQJYLbVQfXQ",
+              "is_local": false,
+              "is_playable": true,
+              "name": "We Shall Overcome",
+              "preview_url": "https://p.scdn.co/mp3-preview/26b7d8f0ee40f590f16356bb5334dbdb909781dc?cid=774b29d4f13844c495f206cafdad9c86",
+              "track_number": 6,
+              "type": "track",
+              "uri": "spotify:track:2D0h2VPK05TUQJYLbVQfXQ"
+            },
+            {
+              "artists": [
+                {
+                  "external_urls": {
+                    "spotify": "https://open.spotify.com/artist/35fFUv2850L9CQjjNrLBpb"
+                  },
+                  "href": "https://api.spotify.com/v1/artists/35fFUv2850L9CQjjNrLBpb",
+                  "id": "35fFUv2850L9CQjjNrLBpb",
+                  "name": "Nahko And Medicine For The People",
+                  "type": "artist",
+                  "uri": "spotify:artist:35fFUv2850L9CQjjNrLBpb"
+                }
+              ],
+              "disc_number": 1,
+              "duration_ms": 60738,
+              "explicit": false,
+              "external_urls": {
+                "spotify": "https://open.spotify.com/track/74vjJc0a13ACzCdKXyzcut"
+              },
+              "href": "https://api.spotify.com/v1/tracks/74vjJc0a13ACzCdKXyzcut",
+              "id": "74vjJc0a13ACzCdKXyzcut",
+              "is_local": false,
+              "is_playable": true,
+              "name": "Two Wolves",
+              "preview_url": "https://p.scdn.co/mp3-preview/66366bb56992ad6a68af470dbb220e11ea91d256?cid=774b29d4f13844c495f206cafdad9c86",
+              "track_number": 7,
+              "type": "track",
+              "uri": "spotify:track:74vjJc0a13ACzCdKXyzcut"
+            },
+            {
+              "artists": [
+                {
+                  "external_urls": {
+                    "spotify": "https://open.spotify.com/artist/35fFUv2850L9CQjjNrLBpb"
+                  },
+                  "href": "https://api.spotify.com/v1/artists/35fFUv2850L9CQjjNrLBpb",
+                  "id": "35fFUv2850L9CQjjNrLBpb",
+                  "name": "Nahko And Medicine For The People",
+                  "type": "artist",
+                  "uri": "spotify:artist:35fFUv2850L9CQjjNrLBpb"
+                }
+              ],
+              "disc_number": 1,
+              "duration_ms": 372876,
+              "explicit": false,
+              "external_urls": {
+                "spotify": "https://open.spotify.com/track/1tFKM5EUndnb4gh6E1Jn4S"
+              },
+              "href": "https://api.spotify.com/v1/tracks/1tFKM5EUndnb4gh6E1Jn4S",
+              "id": "1tFKM5EUndnb4gh6E1Jn4S",
+              "is_local": false,
+              "is_playable": true,
+              "name": "Great Spirit",
+              "preview_url": "https://p.scdn.co/mp3-preview/7caf545997ed4ebe6ec17fca53058e966bf1f312?cid=774b29d4f13844c495f206cafdad9c86",
+              "track_number": 8,
+              "type": "track",
+              "uri": "spotify:track:1tFKM5EUndnb4gh6E1Jn4S"
+            },
+            {
+              "artists": [
+                {
+                  "external_urls": {
+                    "spotify": "https://open.spotify.com/artist/35fFUv2850L9CQjjNrLBpb"
+                  },
+                  "href": "https://api.spotify.com/v1/artists/35fFUv2850L9CQjjNrLBpb",
+                  "id": "35fFUv2850L9CQjjNrLBpb",
+                  "name": "Nahko And Medicine For The People",
+                  "type": "artist",
+                  "uri": "spotify:artist:35fFUv2850L9CQjjNrLBpb"
+                }
+              ],
+              "disc_number": 1,
+              "duration_ms": 345329,
+              "explicit": false,
+              "external_urls": {
+                "spotify": "https://open.spotify.com/track/0NPL744BUC5eoitcecOCRm"
+              },
+              "href": "https://api.spotify.com/v1/tracks/0NPL744BUC5eoitcecOCRm",
+              "id": "0NPL744BUC5eoitcecOCRm",
+              "is_local": false,
+              "is_playable": true,
+              "name": "We Are On Time",
+              "preview_url": "https://p.scdn.co/mp3-preview/dae38a170d6f0fb07306b1b2603dd9457ad1c54e?cid=774b29d4f13844c495f206cafdad9c86",
+              "track_number": 9,
+              "type": "track",
+              "uri": "spotify:track:0NPL744BUC5eoitcecOCRm"
+            },
+            {
+              "artists": [
+                {
+                  "external_urls": {
+                    "spotify": "https://open.spotify.com/artist/35fFUv2850L9CQjjNrLBpb"
+                  },
+                  "href": "https://api.spotify.com/v1/artists/35fFUv2850L9CQjjNrLBpb",
+                  "id": "35fFUv2850L9CQjjNrLBpb",
+                  "name": "Nahko And Medicine For The People",
+                  "type": "artist",
+                  "uri": "spotify:artist:35fFUv2850L9CQjjNrLBpb"
+                }
+              ],
+              "disc_number": 1,
+              "duration_ms": 331547,
+              "explicit": false,
+              "external_urls": {
+                "spotify": "https://open.spotify.com/track/7KJcNLzUlCYnmTgsyyswOG"
+              },
+              "href": "https://api.spotify.com/v1/tracks/7KJcNLzUlCYnmTgsyyswOG",
+              "id": "7KJcNLzUlCYnmTgsyyswOG",
+              "is_local": false,
+              "is_playable": true,
+              "name": "Love Letters to God",
+              "preview_url": "https://p.scdn.co/mp3-preview/f24a8c0f481a0f967a3098f81871d60af7534dab?cid=774b29d4f13844c495f206cafdad9c86",
+              "track_number": 10,
+              "type": "track",
+              "uri": "spotify:track:7KJcNLzUlCYnmTgsyyswOG"
+            },
+            {
+              "artists": [
+                {
+                  "external_urls": {
+                    "spotify": "https://open.spotify.com/artist/35fFUv2850L9CQjjNrLBpb"
+                  },
+                  "href": "https://api.spotify.com/v1/artists/35fFUv2850L9CQjjNrLBpb",
+                  "id": "35fFUv2850L9CQjjNrLBpb",
+                  "name": "Nahko And Medicine For The People",
+                  "type": "artist",
+                  "uri": "spotify:artist:35fFUv2850L9CQjjNrLBpb"
+                }
+              ],
+              "disc_number": 1,
+              "duration_ms": 10276,
+              "explicit": false,
+              "external_urls": {
+                "spotify": "https://open.spotify.com/track/03sVTIPxogJqxKT7st3aSZ"
+              },
+              "href": "https://api.spotify.com/v1/tracks/03sVTIPxogJqxKT7st3aSZ",
+              "id": "03sVTIPxogJqxKT7st3aSZ",
+              "is_local": false,
+              "is_playable": true,
+              "name": "Heart Forward",
+              "preview_url": null,
+              "track_number": 11,
+              "type": "track",
+              "uri": "spotify:track:03sVTIPxogJqxKT7st3aSZ"
+            },
+            {
+              "artists": [
+                {
+                  "external_urls": {
+                    "spotify": "https://open.spotify.com/artist/35fFUv2850L9CQjjNrLBpb"
+                  },
+                  "href": "https://api.spotify.com/v1/artists/35fFUv2850L9CQjjNrLBpb",
+                  "id": "35fFUv2850L9CQjjNrLBpb",
+                  "name": "Nahko And Medicine For The People",
+                  "type": "artist",
+                  "uri": "spotify:artist:35fFUv2850L9CQjjNrLBpb"
+                }
+              ],
+              "disc_number": 1,
+              "duration_ms": 321388,
+              "explicit": false,
+              "external_urls": {
+                "spotify": "https://open.spotify.com/track/01O8dSJn4lQLfdi72yL8Qf"
+              },
+              "href": "https://api.spotify.com/v1/tracks/01O8dSJn4lQLfdi72yL8Qf",
+              "id": "01O8dSJn4lQLfdi72yL8Qf",
+              "is_local": false,
+              "is_playable": true,
+              "name": "Tus Pies (Your Feet)",
+              "preview_url": "https://p.scdn.co/mp3-preview/914a2c6c6df72ecaa523869b21436e04a15dc2f8?cid=774b29d4f13844c495f206cafdad9c86",
+              "track_number": 12,
+              "type": "track",
+              "uri": "spotify:track:01O8dSJn4lQLfdi72yL8Qf"
+            },
+            {
+              "artists": [
+                {
+                  "external_urls": {
+                    "spotify": "https://open.spotify.com/artist/35fFUv2850L9CQjjNrLBpb"
+                  },
+                  "href": "https://api.spotify.com/v1/artists/35fFUv2850L9CQjjNrLBpb",
+                  "id": "35fFUv2850L9CQjjNrLBpb",
+                  "name": "Nahko And Medicine For The People",
+                  "type": "artist",
+                  "uri": "spotify:artist:35fFUv2850L9CQjjNrLBpb"
+                }
+              ],
+              "disc_number": 1,
+              "duration_ms": 249979,
+              "explicit": false,
+              "external_urls": {
+                "spotify": "https://open.spotify.com/track/08ViN2Q4Qh54cedx7MGJlo"
+              },
+              "href": "https://api.spotify.com/v1/tracks/08ViN2Q4Qh54cedx7MGJlo",
+              "id": "08ViN2Q4Qh54cedx7MGJlo",
+              "is_local": false,
+              "is_playable": true,
+              "name": "Backbone",
+              "preview_url": "https://p.scdn.co/mp3-preview/7747993aadc052aa0f2919e11331ba535a1d58f9?cid=774b29d4f13844c495f206cafdad9c86",
+              "track_number": 13,
+              "type": "track",
+              "uri": "spotify:track:08ViN2Q4Qh54cedx7MGJlo"
+            },
+            {
+              "artists": [
+                {
+                  "external_urls": {
+                    "spotify": "https://open.spotify.com/artist/35fFUv2850L9CQjjNrLBpb"
+                  },
+                  "href": "https://api.spotify.com/v1/artists/35fFUv2850L9CQjjNrLBpb",
+                  "id": "35fFUv2850L9CQjjNrLBpb",
+                  "name": "Nahko And Medicine For The People",
+                  "type": "artist",
+                  "uri": "spotify:artist:35fFUv2850L9CQjjNrLBpb"
+                },
+                {
+                  "external_urls": {
+                    "spotify": "https://open.spotify.com/artist/4psGCn6OLHgrfwRoH430dO"
+                  },
+                  "href": "https://api.spotify.com/v1/artists/4psGCn6OLHgrfwRoH430dO",
+                  "id": "4psGCn6OLHgrfwRoH430dO",
+                  "name": "Hawane & Pua Case",
+                  "type": "artist",
+                  "uri": "spotify:artist:4psGCn6OLHgrfwRoH430dO"
+                }
+              ],
+              "disc_number": 1,
+              "duration_ms": 42796,
+              "explicit": false,
+              "external_urls": {
+                "spotify": "https://open.spotify.com/track/3wV3q4ZNJl6HlPNHpOWMga"
+              },
+              "href": "https://api.spotify.com/v1/tracks/3wV3q4ZNJl6HlPNHpOWMga",
+              "id": "3wV3q4ZNJl6HlPNHpOWMga",
+              "is_local": false,
+              "is_playable": true,
+              "name": "Ku Kia'i Mauna",
+              "preview_url": "https://p.scdn.co/mp3-preview/7effaa293772fa3b28abfa20d7b0b7f3660a38fa?cid=774b29d4f13844c495f206cafdad9c86",
+              "track_number": 14,
+              "type": "track",
+              "uri": "spotify:track:3wV3q4ZNJl6HlPNHpOWMga"
+            },
+            {
+              "artists": [
+                {
+                  "external_urls": {
+                    "spotify": "https://open.spotify.com/artist/35fFUv2850L9CQjjNrLBpb"
+                  },
+                  "href": "https://api.spotify.com/v1/artists/35fFUv2850L9CQjjNrLBpb",
+                  "id": "35fFUv2850L9CQjjNrLBpb",
+                  "name": "Nahko And Medicine For The People",
+                  "type": "artist",
+                  "uri": "spotify:artist:35fFUv2850L9CQjjNrLBpb"
+                }
+              ],
+              "disc_number": 1,
+              "duration_ms": 360289,
+              "explicit": false,
+              "external_urls": {
+                "spotify": "https://open.spotify.com/track/4hJetX9ArSHynPStEip6wD"
+              },
+              "href": "https://api.spotify.com/v1/tracks/4hJetX9ArSHynPStEip6wD",
+              "id": "4hJetX9ArSHynPStEip6wD",
+              "is_local": false,
+              "is_playable": true,
+              "name": "Build a Bridge",
+              "preview_url": "https://p.scdn.co/mp3-preview/ea8be24cf1d6218aa92846f426df3a3e30b3220b?cid=774b29d4f13844c495f206cafdad9c86",
+              "track_number": 15,
+              "type": "track",
+              "uri": "spotify:track:4hJetX9ArSHynPStEip6wD"
+            },
+            {
+              "artists": [
+                {
+                  "external_urls": {
+                    "spotify": "https://open.spotify.com/artist/35fFUv2850L9CQjjNrLBpb"
+                  },
+                  "href": "https://api.spotify.com/v1/artists/35fFUv2850L9CQjjNrLBpb",
+                  "id": "35fFUv2850L9CQjjNrLBpb",
+                  "name": "Nahko And Medicine For The People",
+                  "type": "artist",
+                  "uri": "spotify:artist:35fFUv2850L9CQjjNrLBpb"
+                },
+                {
+                  "external_urls": {
+                    "spotify": "https://open.spotify.com/artist/100sLnojEpcadRx4edEBA6"
+                  },
+                  "href": "https://api.spotify.com/v1/artists/100sLnojEpcadRx4edEBA6",
+                  "id": "100sLnojEpcadRx4edEBA6",
+                  "name": "Zella Day",
+                  "type": "artist",
+                  "uri": "spotify:artist:100sLnojEpcadRx4edEBA6"
+                }
+              ],
+              "disc_number": 1,
+              "duration_ms": 264697,
+              "explicit": false,
+              "external_urls": {
+                "spotify": "https://open.spotify.com/track/2QLaqq5KdceMYlYG7Davab"
+              },
+              "href": "https://api.spotify.com/v1/tracks/2QLaqq5KdceMYlYG7Davab",
+              "id": "2QLaqq5KdceMYlYG7Davab",
+              "is_local": false,
+              "is_playable": true,
+              "name": "Make a Change",
+              "preview_url": "https://p.scdn.co/mp3-preview/20eb672f402d227aff5adbc69a194e416145c429?cid=774b29d4f13844c495f206cafdad9c86",
+              "track_number": 16,
+              "type": "track",
+              "uri": "spotify:track:2QLaqq5KdceMYlYG7Davab"
+            },
+            {
+              "artists": [
+                {
+                  "external_urls": {
+                    "spotify": "https://open.spotify.com/artist/35fFUv2850L9CQjjNrLBpb"
+                  },
+                  "href": "https://api.spotify.com/v1/artists/35fFUv2850L9CQjjNrLBpb",
+                  "id": "35fFUv2850L9CQjjNrLBpb",
+                  "name": "Nahko And Medicine For The People",
+                  "type": "artist",
+                  "uri": "spotify:artist:35fFUv2850L9CQjjNrLBpb"
+                }
+              ],
+              "disc_number": 1,
+              "duration_ms": 47498,
+              "explicit": false,
+              "external_urls": {
+                "spotify": "https://open.spotify.com/track/5bqGSPiaB2I2I1UTZIj3gr"
+              },
+              "href": "https://api.spotify.com/v1/tracks/5bqGSPiaB2I2I1UTZIj3gr",
+              "id": "5bqGSPiaB2I2I1UTZIj3gr",
+              "is_local": false,
+              "is_playable": true,
+              "name": "Give a Little, Get a Little",
+              "preview_url": "https://p.scdn.co/mp3-preview/07ba6a9c65e5418ebe8a4bc58d667caa3e5fb5d7?cid=774b29d4f13844c495f206cafdad9c86",
+              "track_number": 17,
+              "type": "track",
+              "uri": "spotify:track:5bqGSPiaB2I2I1UTZIj3gr"
+            },
+            {
+              "artists": [
+                {
+                  "external_urls": {
+                    "spotify": "https://open.spotify.com/artist/35fFUv2850L9CQjjNrLBpb"
+                  },
+                  "href": "https://api.spotify.com/v1/artists/35fFUv2850L9CQjjNrLBpb",
+                  "id": "35fFUv2850L9CQjjNrLBpb",
+                  "name": "Nahko And Medicine For The People",
+                  "type": "artist",
+                  "uri": "spotify:artist:35fFUv2850L9CQjjNrLBpb"
+                }
+              ],
+              "disc_number": 1,
+              "duration_ms": 390334,
+              "explicit": false,
+              "external_urls": {
+                "spotify": "https://open.spotify.com/track/2Lbg5rdHDlk1DC19CSGfVA"
+              },
+              "href": "https://api.spotify.com/v1/tracks/2Lbg5rdHDlk1DC19CSGfVA",
+              "id": "2Lbg5rdHDlk1DC19CSGfVA",
+              "is_local": false,
+              "is_playable": true,
+              "name": "Runner",
+              "preview_url": "https://p.scdn.co/mp3-preview/e58621cdcbf8123e6089d2c995c1e31c963fccac?cid=774b29d4f13844c495f206cafdad9c86",
+              "track_number": 18,
+              "type": "track",
+              "uri": "spotify:track:2Lbg5rdHDlk1DC19CSGfVA"
+            },
+            {
+              "artists": [
+                {
+                  "external_urls": {
+                    "spotify": "https://open.spotify.com/artist/35fFUv2850L9CQjjNrLBpb"
+                  },
+                  "href": "https://api.spotify.com/v1/artists/35fFUv2850L9CQjjNrLBpb",
+                  "id": "35fFUv2850L9CQjjNrLBpb",
+                  "name": "Nahko And Medicine For The People",
+                  "type": "artist",
+                  "uri": "spotify:artist:35fFUv2850L9CQjjNrLBpb"
+                },
+                {
+                  "external_urls": {
+                    "spotify": "https://open.spotify.com/artist/5Wfvw7rDz7HA6gE2z6QhqO"
+                  },
+                  "href": "https://api.spotify.com/v1/artists/5Wfvw7rDz7HA6gE2z6QhqO",
+                  "id": "5Wfvw7rDz7HA6gE2z6QhqO",
+                  "name": "JOSEPH",
+                  "type": "artist",
+                  "uri": "spotify:artist:5Wfvw7rDz7HA6gE2z6QhqO"
+                },
+                {
+                  "external_urls": {
+                    "spotify": "https://open.spotify.com/artist/2aYGkbB8xdACbyp7BYR8Gv"
+                  },
+                  "href": "https://api.spotify.com/v1/artists/2aYGkbB8xdACbyp7BYR8Gv",
+                  "id": "2aYGkbB8xdACbyp7BYR8Gv",
+                  "name": "Leah Song",
+                  "type": "artist",
+                  "uri": "spotify:artist:2aYGkbB8xdACbyp7BYR8Gv"
+                },
+                {
+                  "external_urls": {
+                    "spotify": "https://open.spotify.com/artist/3RMHexittaAZkf8zukkZB8"
+                  },
+                  "href": "https://api.spotify.com/v1/artists/3RMHexittaAZkf8zukkZB8",
+                  "id": "3RMHexittaAZkf8zukkZB8",
+                  "name": "Trevor Hall",
+                  "type": "artist",
+                  "uri": "spotify:artist:3RMHexittaAZkf8zukkZB8"
+                },
+                {
+                  "external_urls": {
+                    "spotify": "https://open.spotify.com/artist/5lbM4g6bhxjNX7R5QHP2nD"
+                  },
+                  "href": "https://api.spotify.com/v1/artists/5lbM4g6bhxjNX7R5QHP2nD",
+                  "id": "5lbM4g6bhxjNX7R5QHP2nD",
+                  "name": "Xavier Rudd",
+                  "type": "artist",
+                  "uri": "spotify:artist:5lbM4g6bhxjNX7R5QHP2nD"
+                }
+              ],
+              "disc_number": 1,
+              "duration_ms": 372521,
+              "explicit": false,
+              "external_urls": {
+                "spotify": "https://open.spotify.com/track/0L7BjvOx9V8t1nvcEh79hN"
+              },
+              "href": "https://api.spotify.com/v1/tracks/0L7BjvOx9V8t1nvcEh79hN",
+              "id": "0L7BjvOx9V8t1nvcEh79hN",
+              "is_local": false,
+              "is_playable": true,
+              "name": "The Wolves Have Returned",
+              "preview_url": "https://p.scdn.co/mp3-preview/aeab83892e628ad35562408c48251c18d5a58649?cid=774b29d4f13844c495f206cafdad9c86",
+              "track_number": 19,
+              "type": "track",
+              "uri": "spotify:track:0L7BjvOx9V8t1nvcEh79hN"
+            }
+          ],
+          "limit": 50,
+          "next": null,
+          "offset": 0,
+          "previous": null,
+          "total": 19
+        },
+        "type": "album",
+        "uri": "spotify:album:3wH1yuFBld6RUYPyJnB60N"
+      }
+    },
+    {
+      "added_at": "2019-10-11T16:28:02Z",
+      "album": {
+        "album_type": "album",
+        "artists": [
+          {
+            "external_urls": {
+              "spotify": "https://open.spotify.com/artist/35fFUv2850L9CQjjNrLBpb"
+            },
+            "href": "https://api.spotify.com/v1/artists/35fFUv2850L9CQjjNrLBpb",
+            "id": "35fFUv2850L9CQjjNrLBpb",
+            "name": "Nahko And Medicine For The People",
+            "type": "artist",
+            "uri": "spotify:artist:35fFUv2850L9CQjjNrLBpb"
+          }
+        ],
+        "copyrights": [
+          {
+            "text": "© 2013 Hundred Handed Inc.",
+            "type": "C"
+          },
+          {
+            "text": "℗ 2013 Medicine Tribe, under exclusive license to Hundred Handed Inc.",
+            "type": "P"
+          }
+        ],
+        "external_ids": {
+          "upc": "00881034186546"
+        },
+        "external_urls": {
+          "spotify": "https://open.spotify.com/album/4oL1ZiFzTklfVcaEUDk0xb"
+        },
+        "genres": [],
+        "href": "https://api.spotify.com/v1/albums/4oL1ZiFzTklfVcaEUDk0xb",
+        "id": "4oL1ZiFzTklfVcaEUDk0xb",
+        "images": [
+          {
+            "height": 640,
+            "url": "https://i.scdn.co/image/ab67616d0000b273d9433fa7ef871bd735cee236",
+            "width": 640
+          },
+          {
+            "height": 300,
+            "url": "https://i.scdn.co/image/ab67616d00001e02d9433fa7ef871bd735cee236",
+            "width": 300
+          },
+          {
+            "height": 64,
+            "url": "https://i.scdn.co/image/ab67616d00004851d9433fa7ef871bd735cee236",
+            "width": 64
+          }
+        ],
+        "label": "Jameson Records",
+        "name": "Dark As Night",
+        "popularity": 55,
+        "release_date": "2013-05-21",
+        "release_date_precision": "day",
+        "total_tracks": 12,
+        "tracks": {
+          "href": "https://api.spotify.com/v1/albums/4oL1ZiFzTklfVcaEUDk0xb/tracks?offset=0&limit=50&market=us",
+          "items": [
+            {
+              "artists": [
+                {
+                  "external_urls": {
+                    "spotify": "https://open.spotify.com/artist/35fFUv2850L9CQjjNrLBpb"
+                  },
+                  "href": "https://api.spotify.com/v1/artists/35fFUv2850L9CQjjNrLBpb",
+                  "id": "35fFUv2850L9CQjjNrLBpb",
+                  "name": "Nahko And Medicine For The People",
+                  "type": "artist",
+                  "uri": "spotify:artist:35fFUv2850L9CQjjNrLBpb"
+                }
+              ],
+              "disc_number": 1,
+              "duration_ms": 356625,
+              "explicit": false,
+              "external_urls": {
+                "spotify": "https://open.spotify.com/track/0pv9Mg8pV2mT3gffu2QZkM"
+              },
+              "href": "https://api.spotify.com/v1/tracks/0pv9Mg8pV2mT3gffu2QZkM",
+              "id": "0pv9Mg8pV2mT3gffu2QZkM",
+              "is_local": false,
+              "is_playable": true,
+              "name": "Aloha Ke Akua",
+              "preview_url": "https://p.scdn.co/mp3-preview/ad822b6cae4ad9aa36c5d2f9a7ebfcad8e930d4c?cid=774b29d4f13844c495f206cafdad9c86",
+              "track_number": 1,
+              "type": "track",
+              "uri": "spotify:track:0pv9Mg8pV2mT3gffu2QZkM"
+            },
+            {
+              "artists": [
+                {
+                  "external_urls": {
+                    "spotify": "https://open.spotify.com/artist/35fFUv2850L9CQjjNrLBpb"
+                  },
+                  "href": "https://api.spotify.com/v1/artists/35fFUv2850L9CQjjNrLBpb",
+                  "id": "35fFUv2850L9CQjjNrLBpb",
+                  "name": "Nahko And Medicine For The People",
+                  "type": "artist",
+                  "uri": "spotify:artist:35fFUv2850L9CQjjNrLBpb"
+                }
+              ],
+              "disc_number": 1,
+              "duration_ms": 324750,
+              "explicit": false,
+              "external_urls": {
+                "spotify": "https://open.spotify.com/track/0IsDvY2eXqASI0wrL8MnVq"
+              },
+              "href": "https://api.spotify.com/v1/tracks/0IsDvY2eXqASI0wrL8MnVq",
+              "id": "0IsDvY2eXqASI0wrL8MnVq",
+              "is_local": false,
+              "is_playable": true,
+              "name": "Manifesto II",
+              "preview_url": "https://p.scdn.co/mp3-preview/bd5acf58f1d76d2ab2c6fd21da9da58f231245c8?cid=774b29d4f13844c495f206cafdad9c86",
+              "track_number": 2,
+              "type": "track",
+              "uri": "spotify:track:0IsDvY2eXqASI0wrL8MnVq"
+            },
+            {
+              "artists": [
+                {
+                  "external_urls": {
+                    "spotify": "https://open.spotify.com/artist/35fFUv2850L9CQjjNrLBpb"
+                  },
+                  "href": "https://api.spotify.com/v1/artists/35fFUv2850L9CQjjNrLBpb",
+                  "id": "35fFUv2850L9CQjjNrLBpb",
+                  "name": "Nahko And Medicine For The People",
+                  "type": "artist",
+                  "uri": "spotify:artist:35fFUv2850L9CQjjNrLBpb"
+                }
+              ],
+              "disc_number": 1,
+              "duration_ms": 311279,
+              "explicit": false,
+              "external_urls": {
+                "spotify": "https://open.spotify.com/track/1lLU650ShMor2b7NuUmmCh"
+              },
+              "href": "https://api.spotify.com/v1/tracks/1lLU650ShMor2b7NuUmmCh",
+              "id": "1lLU650ShMor2b7NuUmmCh",
+              "is_local": false,
+              "is_playable": true,
+              "name": "Risk It",
+              "preview_url": "https://p.scdn.co/mp3-preview/bad2903148c7e28ecf93710005d592e1878286d9?cid=774b29d4f13844c495f206cafdad9c86",
+              "track_number": 3,
+              "type": "track",
+              "uri": "spotify:track:1lLU650ShMor2b7NuUmmCh"
+            },
+            {
+              "artists": [
+                {
+                  "external_urls": {
+                    "spotify": "https://open.spotify.com/artist/35fFUv2850L9CQjjNrLBpb"
+                  },
+                  "href": "https://api.spotify.com/v1/artists/35fFUv2850L9CQjjNrLBpb",
+                  "id": "35fFUv2850L9CQjjNrLBpb",
+                  "name": "Nahko And Medicine For The People",
+                  "type": "artist",
+                  "uri": "spotify:artist:35fFUv2850L9CQjjNrLBpb"
+                }
+              ],
+              "disc_number": 1,
+              "duration_ms": 297375,
+              "explicit": false,
+              "external_urls": {
+                "spotify": "https://open.spotify.com/track/3t0iitdgsbsBA8JDvEPzCB"
+              },
+              "href": "https://api.spotify.com/v1/tracks/3t0iitdgsbsBA8JDvEPzCB",
+              "id": "3t0iitdgsbsBA8JDvEPzCB",
+              "is_local": false,
+              "is_playable": true,
+              "name": "Warrior People",
+              "preview_url": "https://p.scdn.co/mp3-preview/c2d04b39d5d0306e1b05cbab09882ede20fbe179?cid=774b29d4f13844c495f206cafdad9c86",
+              "track_number": 4,
+              "type": "track",
+              "uri": "spotify:track:3t0iitdgsbsBA8JDvEPzCB"
+            },
+            {
+              "artists": [
+                {
+                  "external_urls": {
+                    "spotify": "https://open.spotify.com/artist/35fFUv2850L9CQjjNrLBpb"
+                  },
+                  "href": "https://api.spotify.com/v1/artists/35fFUv2850L9CQjjNrLBpb",
+                  "id": "35fFUv2850L9CQjjNrLBpb",
+                  "name": "Nahko And Medicine For The People",
+                  "type": "artist",
+                  "uri": "spotify:artist:35fFUv2850L9CQjjNrLBpb"
+                }
+              ],
+              "disc_number": 1,
+              "duration_ms": 262442,
+              "explicit": false,
+              "external_urls": {
+                "spotify": "https://open.spotify.com/track/5EF4PS7GwtroPK938QMd62"
+              },
+              "href": "https://api.spotify.com/v1/tracks/5EF4PS7GwtroPK938QMd62",
+              "id": "5EF4PS7GwtroPK938QMd62",
+              "is_local": false,
+              "is_playable": true,
+              "name": "So Thankful",
+              "preview_url": "https://p.scdn.co/mp3-preview/efd507985638a1425862037e970c2ecef25d618b?cid=774b29d4f13844c495f206cafdad9c86",
+              "track_number": 5,
+              "type": "track",
+              "uri": "spotify:track:5EF4PS7GwtroPK938QMd62"
+            },
+            {
+              "artists": [
+                {
+                  "external_urls": {
+                    "spotify": "https://open.spotify.com/artist/35fFUv2850L9CQjjNrLBpb"
+                  },
+                  "href": "https://api.spotify.com/v1/artists/35fFUv2850L9CQjjNrLBpb",
+                  "id": "35fFUv2850L9CQjjNrLBpb",
+                  "name": "Nahko And Medicine For The People",
+                  "type": "artist",
+                  "uri": "spotify:artist:35fFUv2850L9CQjjNrLBpb"
+                }
+              ],
+              "disc_number": 1,
+              "duration_ms": 384250,
+              "explicit": false,
+              "external_urls": {
+                "spotify": "https://open.spotify.com/track/3E3I7DBGCIsIgT1a1UJEFK"
+              },
+              "href": "https://api.spotify.com/v1/tracks/3E3I7DBGCIsIgT1a1UJEFK",
+              "id": "3E3I7DBGCIsIgT1a1UJEFK",
+              "is_local": false,
+              "is_playable": true,
+              "name": "Budding Trees",
+              "preview_url": "https://p.scdn.co/mp3-preview/409fb48fb5f93310fb35c14043cea5b7832b87cc?cid=774b29d4f13844c495f206cafdad9c86",
+              "track_number": 6,
+              "type": "track",
+              "uri": "spotify:track:3E3I7DBGCIsIgT1a1UJEFK"
+            },
+            {
+              "artists": [
+                {
+                  "external_urls": {
+                    "spotify": "https://open.spotify.com/artist/35fFUv2850L9CQjjNrLBpb"
+                  },
+                  "href": "https://api.spotify.com/v1/artists/35fFUv2850L9CQjjNrLBpb",
+                  "id": "35fFUv2850L9CQjjNrLBpb",
+                  "name": "Nahko And Medicine For The People",
+                  "type": "artist",
+                  "uri": "spotify:artist:35fFUv2850L9CQjjNrLBpb"
+                }
+              ],
+              "disc_number": 1,
+              "duration_ms": 340377,
+              "explicit": false,
+              "external_urls": {
+                "spotify": "https://open.spotify.com/track/7q0T1aiIqFutngin7DxdcE"
+              },
+              "href": "https://api.spotify.com/v1/tracks/7q0T1aiIqFutngin7DxdcE",
+              "id": "7q0T1aiIqFutngin7DxdcE",
+              "is_local": false,
+              "is_playable": true,
+              "name": "Nyepi",
+              "preview_url": "https://p.scdn.co/mp3-preview/91337ad7a6522993631226003cf2eb06ee900ae3?cid=774b29d4f13844c495f206cafdad9c86",
+              "track_number": 7,
+              "type": "track",
+              "uri": "spotify:track:7q0T1aiIqFutngin7DxdcE"
+            },
+            {
+              "artists": [
+                {
+                  "external_urls": {
+                    "spotify": "https://open.spotify.com/artist/35fFUv2850L9CQjjNrLBpb"
+                  },
+                  "href": "https://api.spotify.com/v1/artists/35fFUv2850L9CQjjNrLBpb",
+                  "id": "35fFUv2850L9CQjjNrLBpb",
+                  "name": "Nahko And Medicine For The People",
+                  "type": "artist",
+                  "uri": "spotify:artist:35fFUv2850L9CQjjNrLBpb"
+                }
+              ],
+              "disc_number": 1,
+              "duration_ms": 271000,
+              "explicit": false,
+              "external_urls": {
+                "spotify": "https://open.spotify.com/track/0U1cae4gRaUY1letpW1p2o"
+              },
+              "href": "https://api.spotify.com/v1/tracks/0U1cae4gRaUY1letpW1p2o",
+              "id": "0U1cae4gRaUY1letpW1p2o",
+              "is_local": false,
+              "is_playable": true,
+              "name": "7 Feathers",
+              "preview_url": "https://p.scdn.co/mp3-preview/20b693e2acc6d25cf3d954948baa4f2a89207f41?cid=774b29d4f13844c495f206cafdad9c86",
+              "track_number": 8,
+              "type": "track",
+              "uri": "spotify:track:0U1cae4gRaUY1letpW1p2o"
+            },
+            {
+              "artists": [
+                {
+                  "external_urls": {
+                    "spotify": "https://open.spotify.com/artist/35fFUv2850L9CQjjNrLBpb"
+                  },
+                  "href": "https://api.spotify.com/v1/artists/35fFUv2850L9CQjjNrLBpb",
+                  "id": "35fFUv2850L9CQjjNrLBpb",
+                  "name": "Nahko And Medicine For The People",
+                  "type": "artist",
+                  "uri": "spotify:artist:35fFUv2850L9CQjjNrLBpb"
+                }
+              ],
+              "disc_number": 1,
+              "duration_ms": 434927,
+              "explicit": false,
+              "external_urls": {
+                "spotify": "https://open.spotify.com/track/7i3XZnT9EZu1m4NUYMuAoG"
+              },
+              "href": "https://api.spotify.com/v1/tracks/7i3XZnT9EZu1m4NUYMuAoG",
+              "id": "7i3XZnT9EZu1m4NUYMuAoG",
+              "is_local": false,
+              "is_playable": true,
+              "name": "Black As Night",
+              "preview_url": "https://p.scdn.co/mp3-preview/67122b0ac219a7236b19ee2f6f393179d3e1be88?cid=774b29d4f13844c495f206cafdad9c86",
+              "track_number": 9,
+              "type": "track",
+              "uri": "spotify:track:7i3XZnT9EZu1m4NUYMuAoG"
+            },
+            {
+              "artists": [
+                {
+                  "external_urls": {
+                    "spotify": "https://open.spotify.com/artist/35fFUv2850L9CQjjNrLBpb"
+                  },
+                  "href": "https://api.spotify.com/v1/artists/35fFUv2850L9CQjjNrLBpb",
+                  "id": "35fFUv2850L9CQjjNrLBpb",
+                  "name": "Nahko And Medicine For The People",
+                  "type": "artist",
+                  "uri": "spotify:artist:35fFUv2850L9CQjjNrLBpb"
+                }
+              ],
+              "disc_number": 1,
+              "duration_ms": 266377,
+              "explicit": false,
+              "external_urls": {
+                "spotify": "https://open.spotify.com/track/0WljZJ4f7OZEHYCKlpJ3JM"
+              },
+              "href": "https://api.spotify.com/v1/tracks/0WljZJ4f7OZEHYCKlpJ3JM",
+              "id": "0WljZJ4f7OZEHYCKlpJ3JM",
+              "is_local": false,
+              "is_playable": true,
+              "name": "On The Verge",
+              "preview_url": "https://p.scdn.co/mp3-preview/7e15fd4d89933b0621f91eb78e9ec1fe88d170a8?cid=774b29d4f13844c495f206cafdad9c86",
+              "track_number": 10,
+              "type": "track",
+              "uri": "spotify:track:0WljZJ4f7OZEHYCKlpJ3JM"
+            },
+            {
+              "artists": [
+                {
+                  "external_urls": {
+                    "spotify": "https://open.spotify.com/artist/35fFUv2850L9CQjjNrLBpb"
+                  },
+                  "href": "https://api.spotify.com/v1/artists/35fFUv2850L9CQjjNrLBpb",
+                  "id": "35fFUv2850L9CQjjNrLBpb",
+                  "name": "Nahko And Medicine For The People",
+                  "type": "artist",
+                  "uri": "spotify:artist:35fFUv2850L9CQjjNrLBpb"
+                }
+              ],
+              "disc_number": 1,
+              "duration_ms": 203875,
+              "explicit": false,
+              "external_urls": {
+                "spotify": "https://open.spotify.com/track/1KIqJBH0FfrZtTH6oJkNOQ"
+              },
+              "href": "https://api.spotify.com/v1/tracks/1KIqJBH0FfrZtTH6oJkNOQ",
+              "id": "1KIqJBH0FfrZtTH6oJkNOQ",
+              "is_local": false,
+              "is_playable": true,
+              "name": "My Country",
+              "preview_url": "https://p.scdn.co/mp3-preview/927008b8a59c62d1d8fef4e2002ff39e4f3ec894?cid=774b29d4f13844c495f206cafdad9c86",
+              "track_number": 11,
+              "type": "track",
+              "uri": "spotify:track:1KIqJBH0FfrZtTH6oJkNOQ"
+            },
+            {
+              "artists": [
+                {
+                  "external_urls": {
+                    "spotify": "https://open.spotify.com/artist/35fFUv2850L9CQjjNrLBpb"
+                  },
+                  "href": "https://api.spotify.com/v1/artists/35fFUv2850L9CQjjNrLBpb",
+                  "id": "35fFUv2850L9CQjjNrLBpb",
+                  "name": "Nahko And Medicine For The People",
+                  "type": "artist",
+                  "uri": "spotify:artist:35fFUv2850L9CQjjNrLBpb"
+                }
+              ],
+              "disc_number": 1,
+              "duration_ms": 329698,
+              "explicit": false,
+              "external_urls": {
+                "spotify": "https://open.spotify.com/track/1IgJAV87SFpZdvtWOirwuY"
+              },
+              "href": "https://api.spotify.com/v1/tracks/1IgJAV87SFpZdvtWOirwuY",
+              "id": "1IgJAV87SFpZdvtWOirwuY",
+              "is_local": false,
+              "is_playable": true,
+              "name": "I Mua",
+              "preview_url": "https://p.scdn.co/mp3-preview/c5bbb2360d090bcace1b08d85ed5302cfdd5cb19?cid=774b29d4f13844c495f206cafdad9c86",
+              "track_number": 12,
+              "type": "track",
+              "uri": "spotify:track:1IgJAV87SFpZdvtWOirwuY"
+            }
+          ],
+          "limit": 50,
+          "next": null,
+          "offset": 0,
+          "previous": null,
+          "total": 12
+        },
+        "type": "album",
+        "uri": "spotify:album:4oL1ZiFzTklfVcaEUDk0xb"
+      }
+    },
+    {
+      "added_at": "2019-08-03T02:40:11Z",
+      "album": {
+        "album_type": "single",
+        "artists": [
+          {
+            "external_urls": {
+              "spotify": "https://open.spotify.com/artist/6TLwD7HPWuiOzvXEa3oCNe"
+            },
+            "href": "https://api.spotify.com/v1/artists/6TLwD7HPWuiOzvXEa3oCNe",
+            "id": "6TLwD7HPWuiOzvXEa3oCNe",
+            "name": "Oliver Tree",
+            "type": "artist",
+            "uri": "spotify:artist:6TLwD7HPWuiOzvXEa3oCNe"
+          }
+        ],
+        "copyrights": [
+          {
+            "text": "2019 Atlantic Recording Corporation for the United States and WEA International Inc. for the world outside of the United States.",
+            "type": "C"
+          },
+          {
+            "text": "2019 Atlantic Recording Corporation for the United States and WEA International Inc. for the world outside of the United States.",
+            "type": "P"
+          }
+        ],
+        "external_ids": {
+          "upc": "075679844200"
+        },
+        "external_urls": {
+          "spotify": "https://open.spotify.com/album/0xr43pVKEXqLZvwlPgr3m9"
+        },
+        "genres": [],
+        "href": "https://api.spotify.com/v1/albums/0xr43pVKEXqLZvwlPgr3m9",
+        "id": "0xr43pVKEXqLZvwlPgr3m9",
+        "images": [
+          {
+            "height": 640,
+            "url": "https://i.scdn.co/image/ab67616d0000b27358c4e97d8748fd351676fbfb",
+            "width": 640
+          },
+          {
+            "height": 300,
+            "url": "https://i.scdn.co/image/ab67616d00001e0258c4e97d8748fd351676fbfb",
+            "width": 300
+          },
+          {
+            "height": 64,
+            "url": "https://i.scdn.co/image/ab67616d0000485158c4e97d8748fd351676fbfb",
+            "width": 64
+          }
+        ],
+        "label": "Atlantic Records",
+        "name": "Miracle Man",
+        "popularity": 0,
+        "release_date": "2019-06-06",
+        "release_date_precision": "day",
+        "total_tracks": 2,
+        "tracks": {
+          "href": "https://api.spotify.com/v1/albums/0xr43pVKEXqLZvwlPgr3m9/tracks?offset=0&limit=50&market=us",
+          "items": [
+            {
+              "artists": [
+                {
+                  "external_urls": {
+                    "spotify": "https://open.spotify.com/artist/6TLwD7HPWuiOzvXEa3oCNe"
+                  },
+                  "href": "https://api.spotify.com/v1/artists/6TLwD7HPWuiOzvXEa3oCNe",
+                  "id": "6TLwD7HPWuiOzvXEa3oCNe",
+                  "name": "Oliver Tree",
+                  "type": "artist",
+                  "uri": "spotify:artist:6TLwD7HPWuiOzvXEa3oCNe"
+                }
+              ],
+              "disc_number": 1,
+              "duration_ms": 125051,
+              "explicit": true,
+              "external_urls": {
+                "spotify": "https://open.spotify.com/track/2PFnwW05Wh0MYkfZxSwfuf"
+              },
+              "href": "https://api.spotify.com/v1/tracks/2PFnwW05Wh0MYkfZxSwfuf",
+              "id": "2PFnwW05Wh0MYkfZxSwfuf",
+              "is_local": false,
+              "is_playable": true,
+              "linked_from": {
+                "external_urls": {
+                  "spotify": "https://open.spotify.com/track/6VWnV3to6fZdaLQyhhLPRE"
+                },
+                "href": "https://api.spotify.com/v1/tracks/6VWnV3to6fZdaLQyhhLPRE",
+                "id": "6VWnV3to6fZdaLQyhhLPRE",
+                "type": "track",
+                "uri": "spotify:track:6VWnV3to6fZdaLQyhhLPRE"
+              },
+              "name": "Miracle Man",
+              "preview_url": "https://p.scdn.co/mp3-preview/0bfbb6a749a8c1753300866fd84360c4c604e1bc?cid=774b29d4f13844c495f206cafdad9c86",
+              "track_number": 5,
+              "type": "track",
+              "uri": "spotify:track:2PFnwW05Wh0MYkfZxSwfuf"
+            },
+            {
+              "artists": [
+                {
+                  "external_urls": {
+                    "spotify": "https://open.spotify.com/artist/6TLwD7HPWuiOzvXEa3oCNe"
+                  },
+                  "href": "https://api.spotify.com/v1/artists/6TLwD7HPWuiOzvXEa3oCNe",
+                  "id": "6TLwD7HPWuiOzvXEa3oCNe",
+                  "name": "Oliver Tree",
+                  "type": "artist",
+                  "uri": "spotify:artist:6TLwD7HPWuiOzvXEa3oCNe"
+                }
+              ],
+              "disc_number": 1,
+              "duration_ms": 145147,
+              "explicit": true,
+              "external_urls": {
+                "spotify": "https://open.spotify.com/track/6Ph8QwsRfZunN5e1GGBIqa"
+              },
+              "href": "https://api.spotify.com/v1/tracks/6Ph8QwsRfZunN5e1GGBIqa",
+              "id": "6Ph8QwsRfZunN5e1GGBIqa",
+              "is_local": false,
+              "is_playable": true,
+              "linked_from": {
+                "external_urls": {
+                  "spotify": "https://open.spotify.com/track/6XriikeVPB82QzzzjFRQBF"
+                },
+                "href": "https://api.spotify.com/v1/tracks/6XriikeVPB82QzzzjFRQBF",
+                "id": "6XriikeVPB82QzzzjFRQBF",
+                "type": "track",
+                "uri": "spotify:track:6XriikeVPB82QzzzjFRQBF"
+              },
+              "name": "Hurt",
+              "preview_url": "https://p.scdn.co/mp3-preview/054591621d0dace68f81395b065845cc81e4f444?cid=774b29d4f13844c495f206cafdad9c86",
+              "track_number": 12,
+              "type": "track",
+              "uri": "spotify:track:6Ph8QwsRfZunN5e1GGBIqa"
+            }
+          ],
+          "limit": 50,
+          "next": null,
+          "offset": 0,
+          "previous": null,
+          "total": 2
+        },
+        "type": "album",
+        "uri": "spotify:album:0xr43pVKEXqLZvwlPgr3m9"
+      }
+    },
+    {
+      "added_at": "2018-12-25T15:54:07Z",
+      "album": {
+        "album_type": "album",
+        "artists": [
+          {
+            "external_urls": {
+              "spotify": "https://open.spotify.com/artist/2mVVjNmdjXZZDvhgQWiakk"
+            },
+            "href": "https://api.spotify.com/v1/artists/2mVVjNmdjXZZDvhgQWiakk",
+            "id": "2mVVjNmdjXZZDvhgQWiakk",
+            "name": "Khruangbin",
+            "type": "artist",
+            "uri": "spotify:artist:2mVVjNmdjXZZDvhgQWiakk"
+          }
+        ],
+        "copyrights": [
+          {
+            "text": "(C) 2015 Night Time Stories Ltd.",
+            "type": "C"
+          }
+        ],
+        "external_ids": {
+          "upc": "5060391091228"
+        },
+        "external_urls": {
+          "spotify": "https://open.spotify.com/album/2OPcQNLP8DQVumD8kBRAH3"
+        },
+        "genres": [],
+        "href": "https://api.spotify.com/v1/albums/2OPcQNLP8DQVumD8kBRAH3",
+        "id": "2OPcQNLP8DQVumD8kBRAH3",
+        "images": [
+          {
+            "height": 640,
+            "url": "https://i.scdn.co/image/ab67616d0000b273bc009dcb7578608697771b74",
+            "width": 640
+          },
+          {
+            "height": 300,
+            "url": "https://i.scdn.co/image/ab67616d00001e02bc009dcb7578608697771b74",
+            "width": 300
+          },
+          {
+            "height": 64,
+            "url": "https://i.scdn.co/image/ab67616d00004851bc009dcb7578608697771b74",
+            "width": 64
+          }
+        ],
+        "label": "Late Night Tales",
+        "name": "The Universe Smiles Upon You",
+        "popularity": 70,
+        "release_date": "2015-11-06",
+        "release_date_precision": "day",
+        "total_tracks": 10,
+        "tracks": {
+          "href": "https://api.spotify.com/v1/albums/2OPcQNLP8DQVumD8kBRAH3/tracks?offset=0&limit=50&market=us",
+          "items": [
+            {
+              "artists": [
+                {
+                  "external_urls": {
+                    "spotify": "https://open.spotify.com/artist/2mVVjNmdjXZZDvhgQWiakk"
+                  },
+                  "href": "https://api.spotify.com/v1/artists/2mVVjNmdjXZZDvhgQWiakk",
+                  "id": "2mVVjNmdjXZZDvhgQWiakk",
+                  "name": "Khruangbin",
+                  "type": "artist",
+                  "uri": "spotify:artist:2mVVjNmdjXZZDvhgQWiakk"
+                }
+              ],
+              "disc_number": 1,
+              "duration_ms": 298440,
+              "explicit": false,
+              "external_urls": {
+                "spotify": "https://open.spotify.com/track/5EqGquh3ajBQjudpLLhJKy"
+              },
+              "href": "https://api.spotify.com/v1/tracks/5EqGquh3ajBQjudpLLhJKy",
+              "id": "5EqGquh3ajBQjudpLLhJKy",
+              "is_local": false,
+              "is_playable": true,
+              "name": "Mr. White",
+              "preview_url": "https://p.scdn.co/mp3-preview/bcd4ee1ead94218913fe216ecf2c944bc52d517c?cid=774b29d4f13844c495f206cafdad9c86",
+              "track_number": 1,
+              "type": "track",
+              "uri": "spotify:track:5EqGquh3ajBQjudpLLhJKy"
+            },
+            {
+              "artists": [
+                {
+                  "external_urls": {
+                    "spotify": "https://open.spotify.com/artist/2mVVjNmdjXZZDvhgQWiakk"
+                  },
+                  "href": "https://api.spotify.com/v1/artists/2mVVjNmdjXZZDvhgQWiakk",
+                  "id": "2mVVjNmdjXZZDvhgQWiakk",
+                  "name": "Khruangbin",
+                  "type": "artist",
+                  "uri": "spotify:artist:2mVVjNmdjXZZDvhgQWiakk"
+                }
+              ],
+              "disc_number": 1,
+              "duration_ms": 213760,
+              "explicit": false,
+              "external_urls": {
+                "spotify": "https://open.spotify.com/track/2kGMBOPXMtb9gxzVYdplg9"
+              },
+              "href": "https://api.spotify.com/v1/tracks/2kGMBOPXMtb9gxzVYdplg9",
+              "id": "2kGMBOPXMtb9gxzVYdplg9",
+              "is_local": false,
+              "is_playable": true,
+              "name": "Two Fish and an Elephant",
+              "preview_url": "https://p.scdn.co/mp3-preview/2a059e08fe06f48939fbf8187178d235770cadfc?cid=774b29d4f13844c495f206cafdad9c86",
+              "track_number": 2,
+              "type": "track",
+              "uri": "spotify:track:2kGMBOPXMtb9gxzVYdplg9"
+            },
+            {
+              "artists": [
+                {
+                  "external_urls": {
+                    "spotify": "https://open.spotify.com/artist/2mVVjNmdjXZZDvhgQWiakk"
+                  },
+                  "href": "https://api.spotify.com/v1/artists/2mVVjNmdjXZZDvhgQWiakk",
+                  "id": "2mVVjNmdjXZZDvhgQWiakk",
+                  "name": "Khruangbin",
+                  "type": "artist",
+                  "uri": "spotify:artist:2mVVjNmdjXZZDvhgQWiakk"
+                }
+              ],
+              "disc_number": 1,
+              "duration_ms": 219840,
+              "explicit": false,
+              "external_urls": {
+                "spotify": "https://open.spotify.com/track/47FmTHqPWGWEfbgDpLjvCt"
+              },
+              "href": "https://api.spotify.com/v1/tracks/47FmTHqPWGWEfbgDpLjvCt",
+              "id": "47FmTHqPWGWEfbgDpLjvCt",
+              "is_local": false,
+              "is_playable": true,
+              "name": "Dern Kala",
+              "preview_url": "https://p.scdn.co/mp3-preview/606b6e92b2f9f4f04208a1e971d221fb5a547441?cid=774b29d4f13844c495f206cafdad9c86",
+              "track_number": 3,
+              "type": "track",
+              "uri": "spotify:track:47FmTHqPWGWEfbgDpLjvCt"
+            },
+            {
+              "artists": [
+                {
+                  "external_urls": {
+                    "spotify": "https://open.spotify.com/artist/2mVVjNmdjXZZDvhgQWiakk"
+                  },
+                  "href": "https://api.spotify.com/v1/artists/2mVVjNmdjXZZDvhgQWiakk",
+                  "id": "2mVVjNmdjXZZDvhgQWiakk",
+                  "name": "Khruangbin",
+                  "type": "artist",
+                  "uri": "spotify:artist:2mVVjNmdjXZZDvhgQWiakk"
+                }
+              ],
+              "disc_number": 1,
+              "duration_ms": 308066,
+              "explicit": false,
+              "external_urls": {
+                "spotify": "https://open.spotify.com/track/0mzU6qEuvtPrL9UcXAVKKU"
+              },
+              "href": "https://api.spotify.com/v1/tracks/0mzU6qEuvtPrL9UcXAVKKU",
+              "id": "0mzU6qEuvtPrL9UcXAVKKU",
+              "is_local": false,
+              "is_playable": true,
+              "name": "Little Joe & Mary",
+              "preview_url": "https://p.scdn.co/mp3-preview/72274d72c8d0bb2de6c51498bd75162699c0ec10?cid=774b29d4f13844c495f206cafdad9c86",
+              "track_number": 4,
+              "type": "track",
+              "uri": "spotify:track:0mzU6qEuvtPrL9UcXAVKKU"
+            },
+            {
+              "artists": [
+                {
+                  "external_urls": {
+                    "spotify": "https://open.spotify.com/artist/2mVVjNmdjXZZDvhgQWiakk"
+                  },
+                  "href": "https://api.spotify.com/v1/artists/2mVVjNmdjXZZDvhgQWiakk",
+                  "id": "2mVVjNmdjXZZDvhgQWiakk",
+                  "name": "Khruangbin",
+                  "type": "artist",
+                  "uri": "spotify:artist:2mVVjNmdjXZZDvhgQWiakk"
+                }
+              ],
+              "disc_number": 1,
+              "duration_ms": 218306,
+              "explicit": false,
+              "external_urls": {
+                "spotify": "https://open.spotify.com/track/4AKUOaCRcoKTFnVI9LtsrN"
+              },
+              "href": "https://api.spotify.com/v1/tracks/4AKUOaCRcoKTFnVI9LtsrN",
+              "id": "4AKUOaCRcoKTFnVI9LtsrN",
+              "is_local": false,
+              "is_playable": true,
+              "name": "White Gloves",
+              "preview_url": "https://p.scdn.co/mp3-preview/eeddbb752e88a11287f6e0927daf215e5f6f4c21?cid=774b29d4f13844c495f206cafdad9c86",
+              "track_number": 5,
+              "type": "track",
+              "uri": "spotify:track:4AKUOaCRcoKTFnVI9LtsrN"
+            },
+            {
+              "artists": [
+                {
+                  "external_urls": {
+                    "spotify": "https://open.spotify.com/artist/2mVVjNmdjXZZDvhgQWiakk"
+                  },
+                  "href": "https://api.spotify.com/v1/artists/2mVVjNmdjXZZDvhgQWiakk",
+                  "id": "2mVVjNmdjXZZDvhgQWiakk",
+                  "name": "Khruangbin",
+                  "type": "artist",
+                  "uri": "spotify:artist:2mVVjNmdjXZZDvhgQWiakk"
+                }
+              ],
+              "disc_number": 1,
+              "duration_ms": 159013,
+              "explicit": false,
+              "external_urls": {
+                "spotify": "https://open.spotify.com/track/2OQ1V0e2O56AeIo4ywuYKF"
+              },
+              "href": "https://api.spotify.com/v1/tracks/2OQ1V0e2O56AeIo4ywuYKF",
+              "id": "2OQ1V0e2O56AeIo4ywuYKF",
+              "is_local": false,
+              "is_playable": true,
+              "name": "People Everywhere (Still Alive)",
+              "preview_url": "https://p.scdn.co/mp3-preview/2532863ac36fdce27ddd782db00247167991e7bd?cid=774b29d4f13844c495f206cafdad9c86",
+              "track_number": 6,
+              "type": "track",
+              "uri": "spotify:track:2OQ1V0e2O56AeIo4ywuYKF"
+            },
+            {
+              "artists": [
+                {
+                  "external_urls": {
+                    "spotify": "https://open.spotify.com/artist/2mVVjNmdjXZZDvhgQWiakk"
+                  },
+                  "href": "https://api.spotify.com/v1/artists/2mVVjNmdjXZZDvhgQWiakk",
+                  "id": "2mVVjNmdjXZZDvhgQWiakk",
+                  "name": "Khruangbin",
+                  "type": "artist",
+                  "uri": "spotify:artist:2mVVjNmdjXZZDvhgQWiakk"
+                }
+              ],
+              "disc_number": 1,
+              "duration_ms": 133080,
+              "explicit": false,
+              "external_urls": {
+                "spotify": "https://open.spotify.com/track/4ZHRjk3TZeUOG6Ri6sN27u"
+              },
+              "href": "https://api.spotify.com/v1/tracks/4ZHRjk3TZeUOG6Ri6sN27u",
+              "id": "4ZHRjk3TZeUOG6Ri6sN27u",
+              "is_local": false,
+              "is_playable": true,
+              "name": "The Man Who Took My Sunglasses",
+              "preview_url": "https://p.scdn.co/mp3-preview/9b166021d2e7e0f3e97aa8376fe2205d33979ec6?cid=774b29d4f13844c495f206cafdad9c86",
+              "track_number": 7,
+              "type": "track",
+              "uri": "spotify:track:4ZHRjk3TZeUOG6Ri6sN27u"
+            },
+            {
+              "artists": [
+                {
+                  "external_urls": {
+                    "spotify": "https://open.spotify.com/artist/2mVVjNmdjXZZDvhgQWiakk"
+                  },
+                  "href": "https://api.spotify.com/v1/artists/2mVVjNmdjXZZDvhgQWiakk",
+                  "id": "2mVVjNmdjXZZDvhgQWiakk",
+                  "name": "Khruangbin",
+                  "type": "artist",
+                  "uri": "spotify:artist:2mVVjNmdjXZZDvhgQWiakk"
+                }
+              ],
+              "disc_number": 1,
+              "duration_ms": 373653,
+              "explicit": false,
+              "external_urls": {
+                "spotify": "https://open.spotify.com/track/26qIVWus5hMZUcWeJUxeJx"
+              },
+              "href": "https://api.spotify.com/v1/tracks/26qIVWus5hMZUcWeJUxeJx",
+              "id": "26qIVWus5hMZUcWeJUxeJx",
+              "is_local": false,
+              "is_playable": true,
+              "name": "August Twelve",
+              "preview_url": "https://p.scdn.co/mp3-preview/1f2fb7d0ed633efc312441a148e428833bfe14d8?cid=774b29d4f13844c495f206cafdad9c86",
+              "track_number": 8,
+              "type": "track",
+              "uri": "spotify:track:26qIVWus5hMZUcWeJUxeJx"
+            },
+            {
+              "artists": [
+                {
+                  "external_urls": {
+                    "spotify": "https://open.spotify.com/artist/2mVVjNmdjXZZDvhgQWiakk"
+                  },
+                  "href": "https://api.spotify.com/v1/artists/2mVVjNmdjXZZDvhgQWiakk",
+                  "id": "2mVVjNmdjXZZDvhgQWiakk",
+                  "name": "Khruangbin",
+                  "type": "artist",
+                  "uri": "spotify:artist:2mVVjNmdjXZZDvhgQWiakk"
+                }
+              ],
+              "disc_number": 1,
+              "duration_ms": 208653,
+              "explicit": false,
+              "external_urls": {
+                "spotify": "https://open.spotify.com/track/3kkYC1IPmXm5OrPaKFIX1B"
+              },
+              "href": "https://api.spotify.com/v1/tracks/3kkYC1IPmXm5OrPaKFIX1B",
+              "id": "3kkYC1IPmXm5OrPaKFIX1B",
+              "is_local": false,
+              "is_playable": true,
+              "name": "Balls and Pins",
+              "preview_url": "https://p.scdn.co/mp3-preview/d8c5973b4135e8ac9e842a0a7617f37b2054c411?cid=774b29d4f13844c495f206cafdad9c86",
+              "track_number": 9,
+              "type": "track",
+              "uri": "spotify:track:3kkYC1IPmXm5OrPaKFIX1B"
+            },
+            {
+              "artists": [
+                {
+                  "external_urls": {
+                    "spotify": "https://open.spotify.com/artist/2mVVjNmdjXZZDvhgQWiakk"
+                  },
+                  "href": "https://api.spotify.com/v1/artists/2mVVjNmdjXZZDvhgQWiakk",
+                  "id": "2mVVjNmdjXZZDvhgQWiakk",
+                  "name": "Khruangbin",
+                  "type": "artist",
+                  "uri": "spotify:artist:2mVVjNmdjXZZDvhgQWiakk"
+                }
+              ],
+              "disc_number": 1,
+              "duration_ms": 251773,
+              "explicit": false,
+              "external_urls": {
+                "spotify": "https://open.spotify.com/track/1IVgPGfYxyuOLKOYdEBLOW"
+              },
+              "href": "https://api.spotify.com/v1/tracks/1IVgPGfYxyuOLKOYdEBLOW",
+              "id": "1IVgPGfYxyuOLKOYdEBLOW",
+              "is_local": false,
+              "is_playable": true,
+              "name": "Zionsville",
+              "preview_url": "https://p.scdn.co/mp3-preview/e16b7662b038718ab113f557e956138e1afdb844?cid=774b29d4f13844c495f206cafdad9c86",
+              "track_number": 10,
+              "type": "track",
+              "uri": "spotify:track:1IVgPGfYxyuOLKOYdEBLOW"
+            }
+          ],
+          "limit": 50,
+          "next": null,
+          "offset": 0,
+          "previous": null,
+          "total": 10
+        },
+        "type": "album",
+        "uri": "spotify:album:2OPcQNLP8DQVumD8kBRAH3"
+      }
+    }
+  ],
+  "limit": 10,
+  "next": "https://api.spotify.com/v1/me/albums?offset=10&limit=10&market=us",
+  "offset": 0,
+  "previous": null,
+  "total": 49
+}
