@@ -24,6 +24,20 @@ body {
   background-color: black;
 }
 
+.login {
+  position: absolute;
+  top: 12px;
+  left: 12px;
+}
+
+.spotify-logo {
+  height: 30px;
+}
+
+.spotify-logo:hover {
+  opacity: 0.9;
+}
+
 .ipod {
   width: calc(2.4px * 110);
   height: calc(4.1px * 110);

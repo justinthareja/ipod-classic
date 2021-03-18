@@ -1,4 +1,4 @@
-import { Router } from "@reach/router";
+import { Router, Link } from "@reach/router";
 import TouchWheel, { TouchWheelProvider } from "./TouchWheel";
 import Controls, { ControlsProvider } from "./Controls";
 import Music from "./pages/Music";
@@ -11,13 +11,21 @@ import NowPlaying from "./NowPlaying";
 import Shows from "./pages/Shows";
 import ShowDetails from "./pages/ShowDetails";
 import Episodes from "./pages/Episodes.js";
+import AuthCallback from "./pages/AuthCallback";
 import NotFound from "./pages/NotFound";
+import spotifyLogo from "./assets/spotify-logo.png";
+
 import "./App.css";
+
+import spotifyApi, { authorizeURL } from "./api/spotifyApi";
 
 function App() {
   return (
     <TouchWheelProvider>
       <ControlsProvider>
+        <a className="login" href={authorizeURL}>
+          <img className="spotify-logo" src={spotifyLogo} alt="Spotify logo" />
+        </a>
         <div className="ipod">
           <Router>
             <Music path="/" />
@@ -30,6 +38,7 @@ function App() {
             <Shows path="/shows" />
             <ShowDetails path="/shows/:id" />
             <Episodes path="/episodes" />
+            <AuthCallback path="/callback" />
             <NotFound default />
           </Router>
           <Controls />
