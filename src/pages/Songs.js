@@ -1,9 +1,13 @@
-import ScreenMenu from "../ScreenMenu";
-import Screen from "../Screen";
-import ScreenHeader from "../ScreenHeader";
-import result from "../stubs/tracks.json";
+import { useUser } from "../context/UserContext";
+import spotifyApi from "../api/spotifyApi";
+import ScreenMenu from "../components/ScreenMenu";
+import Screen from "../components/Screen";
+import ScreenHeader from "../components/ScreenHeader";
+import ErrorScreen from "../components/ErrorScreen";
+import LoadComponent from "../components/LoadComponent";
+import stub from "../stubs/tracks.json";
 
-function Songs(props) {
+function Songs({ result }) {
   return (
     <Screen>
       <ScreenHeader header="Songs" />
@@ -17,4 +21,23 @@ function Songs(props) {
   );
 }
 
-export default Songs;
+function LoadSongs(props) {
+  const { user } = useUser();
+
+  return user ? (
+    <LoadComponent
+      renderSuccess={({ body }) => <Songs result={body} />}
+      renderError={({ body }) => (
+        <ErrorScreen status={body.error.status} message={body.error.message} />
+      )}
+      query={{
+        queryKey: "songs",
+        queryFn: () => spotifyApi.getMySavedTracks(),
+      }}
+    />
+  ) : (
+    <Songs result={stub} />
+  );
+}
+
+export default LoadSongs;

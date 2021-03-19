@@ -1,0 +1,1010 @@
+{
+  "href": "https://api.spotify.com/v1/artists/5oOhM2DFWab8XhSdQiITry/albums?offset=0&limit=20&include_groups=album,single,compilation,appears_on&market=US",
+  "items": [
+    {
+      "album_group": "album",
+      "album_type": "album",
+      "artists": [
+        {
+          "external_urls": {
+            "spotify": "https://open.spotify.com/artist/5oOhM2DFWab8XhSdQiITry"
+          },
+          "href": "https://api.spotify.com/v1/artists/5oOhM2DFWab8XhSdQiITry",
+          "id": "5oOhM2DFWab8XhSdQiITry",
+          "name": "Tycho",
+          "type": "artist",
+          "uri": "spotify:artist:5oOhM2DFWab8XhSdQiITry"
+        }
+      ],
+      "external_urls": {
+        "spotify": "https://open.spotify.com/album/2n9rUOk5fZmy4qcMjE57jy"
+      },
+      "href": "https://api.spotify.com/v1/albums/2n9rUOk5fZmy4qcMjE57jy",
+      "id": "2n9rUOk5fZmy4qcMjE57jy",
+      "images": [
+        {
+          "height": 640,
+          "url": "https://i.scdn.co/image/ab67616d0000b273dcacf4be57ec9c14b17127e1",
+          "width": 640
+        },
+        {
+          "height": 300,
+          "url": "https://i.scdn.co/image/ab67616d00001e02dcacf4be57ec9c14b17127e1",
+          "width": 300
+        },
+        {
+          "height": 64,
+          "url": "https://i.scdn.co/image/ab67616d00004851dcacf4be57ec9c14b17127e1",
+          "width": 64
+        }
+      ],
+      "name": "Weather Remixes",
+      "release_date": "2020-12-18",
+      "release_date_precision": "day",
+      "total_tracks": 8,
+      "type": "album",
+      "uri": "spotify:album:2n9rUOk5fZmy4qcMjE57jy"
+    },
+    {
+      "album_group": "album",
+      "album_type": "album",
+      "artists": [
+        {
+          "external_urls": {
+            "spotify": "https://open.spotify.com/artist/5oOhM2DFWab8XhSdQiITry"
+          },
+          "href": "https://api.spotify.com/v1/artists/5oOhM2DFWab8XhSdQiITry",
+          "id": "5oOhM2DFWab8XhSdQiITry",
+          "name": "Tycho",
+          "type": "artist",
+          "uri": "spotify:artist:5oOhM2DFWab8XhSdQiITry"
+        }
+      ],
+      "external_urls": {
+        "spotify": "https://open.spotify.com/album/09kooFexe8JArV583iIkaj"
+      },
+      "href": "https://api.spotify.com/v1/albums/09kooFexe8JArV583iIkaj",
+      "id": "09kooFexe8JArV583iIkaj",
+      "images": [
+        {
+          "height": 640,
+          "url": "https://i.scdn.co/image/ab67616d0000b273d80e262389613d93e08d9e7c",
+          "width": 640
+        },
+        {
+          "height": 300,
+          "url": "https://i.scdn.co/image/ab67616d00001e02d80e262389613d93e08d9e7c",
+          "width": 300
+        },
+        {
+          "height": 64,
+          "url": "https://i.scdn.co/image/ab67616d00004851d80e262389613d93e08d9e7c",
+          "width": 64
+        }
+      ],
+      "name": "Simulcast",
+      "release_date": "2020-02-28",
+      "release_date_precision": "day",
+      "total_tracks": 8,
+      "type": "album",
+      "uri": "spotify:album:09kooFexe8JArV583iIkaj"
+    },
+    {
+      "album_group": "album",
+      "album_type": "album",
+      "artists": [
+        {
+          "external_urls": {
+            "spotify": "https://open.spotify.com/artist/5oOhM2DFWab8XhSdQiITry"
+          },
+          "href": "https://api.spotify.com/v1/artists/5oOhM2DFWab8XhSdQiITry",
+          "id": "5oOhM2DFWab8XhSdQiITry",
+          "name": "Tycho",
+          "type": "artist",
+          "uri": "spotify:artist:5oOhM2DFWab8XhSdQiITry"
+        }
+      ],
+      "external_urls": {
+        "spotify": "https://open.spotify.com/album/1mRyfDR7Dc55GbC8V3kVis"
+      },
+      "href": "https://api.spotify.com/v1/albums/1mRyfDR7Dc55GbC8V3kVis",
+      "id": "1mRyfDR7Dc55GbC8V3kVis",
+      "images": [
+        {
+          "height": 640,
+          "url": "https://i.scdn.co/image/ab67616d0000b273547cb092e368868150105bb2",
+          "width": 640
+        },
+        {
+          "height": 300,
+          "url": "https://i.scdn.co/image/ab67616d00001e02547cb092e368868150105bb2",
+          "width": 300
+        },
+        {
+          "height": 64,
+          "url": "https://i.scdn.co/image/ab67616d00004851547cb092e368868150105bb2",
+          "width": 64
+        }
+      ],
+      "name": "Weather",
+      "release_date": "2019-07-12",
+      "release_date_precision": "day",
+      "total_tracks": 8,
+      "type": "album",
+      "uri": "spotify:album:1mRyfDR7Dc55GbC8V3kVis"
+    },
+    {
+      "album_group": "album",
+      "album_type": "album",
+      "artists": [
+        {
+          "external_urls": {
+            "spotify": "https://open.spotify.com/artist/5oOhM2DFWab8XhSdQiITry"
+          },
+          "href": "https://api.spotify.com/v1/artists/5oOhM2DFWab8XhSdQiITry",
+          "id": "5oOhM2DFWab8XhSdQiITry",
+          "name": "Tycho",
+          "type": "artist",
+          "uri": "spotify:artist:5oOhM2DFWab8XhSdQiITry"
+        }
+      ],
+      "external_urls": {
+        "spotify": "https://open.spotify.com/album/0uBMm91ymfxpDUTDmalS1j"
+      },
+      "href": "https://api.spotify.com/v1/albums/0uBMm91ymfxpDUTDmalS1j",
+      "id": "0uBMm91ymfxpDUTDmalS1j",
+      "images": [
+        {
+          "height": 640,
+          "url": "https://i.scdn.co/image/ab67616d0000b2730f51f8713a4431bbfa67888b",
+          "width": 640
+        },
+        {
+          "height": 300,
+          "url": "https://i.scdn.co/image/ab67616d00001e020f51f8713a4431bbfa67888b",
+          "width": 300
+        },
+        {
+          "height": 64,
+          "url": "https://i.scdn.co/image/ab67616d000048510f51f8713a4431bbfa67888b",
+          "width": 64
+        }
+      ],
+      "name": "Epoch (Deluxe Version)",
+      "release_date": "2019-02-15",
+      "release_date_precision": "day",
+      "total_tracks": 15,
+      "type": "album",
+      "uri": "spotify:album:0uBMm91ymfxpDUTDmalS1j"
+    },
+    {
+      "album_group": "album",
+      "album_type": "album",
+      "artists": [
+        {
+          "external_urls": {
+            "spotify": "https://open.spotify.com/artist/5oOhM2DFWab8XhSdQiITry"
+          },
+          "href": "https://api.spotify.com/v1/artists/5oOhM2DFWab8XhSdQiITry",
+          "id": "5oOhM2DFWab8XhSdQiITry",
+          "name": "Tycho",
+          "type": "artist",
+          "uri": "spotify:artist:5oOhM2DFWab8XhSdQiITry"
+        }
+      ],
+      "external_urls": {
+        "spotify": "https://open.spotify.com/album/0GXI4iAc5FshqWgIlaNAXO"
+      },
+      "href": "https://api.spotify.com/v1/albums/0GXI4iAc5FshqWgIlaNAXO",
+      "id": "0GXI4iAc5FshqWgIlaNAXO",
+      "images": [
+        {
+          "height": 640,
+          "url": "https://i.scdn.co/image/ab67616d0000b2735d91c6e082aa6f4d2a871e53",
+          "width": 640
+        },
+        {
+          "height": 300,
+          "url": "https://i.scdn.co/image/ab67616d00001e025d91c6e082aa6f4d2a871e53",
+          "width": 300
+        },
+        {
+          "height": 64,
+          "url": "https://i.scdn.co/image/ab67616d000048515d91c6e082aa6f4d2a871e53",
+          "width": 64
+        }
+      ],
+      "name": "Epoch",
+      "release_date": "2016-09-30",
+      "release_date_precision": "day",
+      "total_tracks": 11,
+      "type": "album",
+      "uri": "spotify:album:0GXI4iAc5FshqWgIlaNAXO"
+    },
+    {
+      "album_group": "album",
+      "album_type": "album",
+      "artists": [
+        {
+          "external_urls": {
+            "spotify": "https://open.spotify.com/artist/5oOhM2DFWab8XhSdQiITry"
+          },
+          "href": "https://api.spotify.com/v1/artists/5oOhM2DFWab8XhSdQiITry",
+          "id": "5oOhM2DFWab8XhSdQiITry",
+          "name": "Tycho",
+          "type": "artist",
+          "uri": "spotify:artist:5oOhM2DFWab8XhSdQiITry"
+        }
+      ],
+      "external_urls": {
+        "spotify": "https://open.spotify.com/album/21dbYScNUKn2Y1Vae8lACJ"
+      },
+      "href": "https://api.spotify.com/v1/albums/21dbYScNUKn2Y1Vae8lACJ",
+      "id": "21dbYScNUKn2Y1Vae8lACJ",
+      "images": [
+        {
+          "height": 640,
+          "url": "https://i.scdn.co/image/ab67616d0000b2734c3668d2c7f24a96c4c7ab0c",
+          "width": 640
+        },
+        {
+          "height": 300,
+          "url": "https://i.scdn.co/image/ab67616d00001e024c3668d2c7f24a96c4c7ab0c",
+          "width": 300
+        },
+        {
+          "height": 64,
+          "url": "https://i.scdn.co/image/ab67616d000048514c3668d2c7f24a96c4c7ab0c",
+          "width": 64
+        }
+      ],
+      "name": "Awake (Deluxe Version)",
+      "release_date": "2016-01-15",
+      "release_date_precision": "day",
+      "total_tracks": 17,
+      "type": "album",
+      "uri": "spotify:album:21dbYScNUKn2Y1Vae8lACJ"
+    },
+    {
+      "album_group": "album",
+      "album_type": "album",
+      "artists": [
+        {
+          "external_urls": {
+            "spotify": "https://open.spotify.com/artist/5oOhM2DFWab8XhSdQiITry"
+          },
+          "href": "https://api.spotify.com/v1/artists/5oOhM2DFWab8XhSdQiITry",
+          "id": "5oOhM2DFWab8XhSdQiITry",
+          "name": "Tycho",
+          "type": "artist",
+          "uri": "spotify:artist:5oOhM2DFWab8XhSdQiITry"
+        }
+      ],
+      "external_urls": {
+        "spotify": "https://open.spotify.com/album/1IfAJS95MDac2dt3bSKwKE"
+      },
+      "href": "https://api.spotify.com/v1/albums/1IfAJS95MDac2dt3bSKwKE",
+      "id": "1IfAJS95MDac2dt3bSKwKE",
+      "images": [
+        {
+          "height": 640,
+          "url": "https://i.scdn.co/image/ab67616d0000b273640a4042bd04c1db48d1ff75",
+          "width": 640
+        },
+        {
+          "height": 300,
+          "url": "https://i.scdn.co/image/ab67616d00001e02640a4042bd04c1db48d1ff75",
+          "width": 300
+        },
+        {
+          "height": 64,
+          "url": "https://i.scdn.co/image/ab67616d00004851640a4042bd04c1db48d1ff75",
+          "width": 64
+        }
+      ],
+      "name": "Awake Remixes",
+      "release_date": "2016-01-15",
+      "release_date_precision": "day",
+      "total_tracks": 9,
+      "type": "album",
+      "uri": "spotify:album:1IfAJS95MDac2dt3bSKwKE"
+    },
+    {
+      "album_group": "album",
+      "album_type": "album",
+      "artists": [
+        {
+          "external_urls": {
+            "spotify": "https://open.spotify.com/artist/5oOhM2DFWab8XhSdQiITry"
+          },
+          "href": "https://api.spotify.com/v1/artists/5oOhM2DFWab8XhSdQiITry",
+          "id": "5oOhM2DFWab8XhSdQiITry",
+          "name": "Tycho",
+          "type": "artist",
+          "uri": "spotify:artist:5oOhM2DFWab8XhSdQiITry"
+        }
+      ],
+      "external_urls": {
+        "spotify": "https://open.spotify.com/album/7HWdGPosPkb9GY5MOgLgSW"
+      },
+      "href": "https://api.spotify.com/v1/albums/7HWdGPosPkb9GY5MOgLgSW",
+      "id": "7HWdGPosPkb9GY5MOgLgSW",
+      "images": [
+        {
+          "height": 640,
+          "url": "https://i.scdn.co/image/ab67616d0000b27344f450eee039b69359699765",
+          "width": 640
+        },
+        {
+          "height": 300,
+          "url": "https://i.scdn.co/image/ab67616d00001e0244f450eee039b69359699765",
+          "width": 300
+        },
+        {
+          "height": 64,
+          "url": "https://i.scdn.co/image/ab67616d0000485144f450eee039b69359699765",
+          "width": 64
+        }
+      ],
+      "name": "Awake",
+      "release_date": "2014-03-18",
+      "release_date_precision": "day",
+      "total_tracks": 8,
+      "type": "album",
+      "uri": "spotify:album:7HWdGPosPkb9GY5MOgLgSW"
+    },
+    {
+      "album_group": "album",
+      "album_type": "album",
+      "artists": [
+        {
+          "external_urls": {
+            "spotify": "https://open.spotify.com/artist/5oOhM2DFWab8XhSdQiITry"
+          },
+          "href": "https://api.spotify.com/v1/artists/5oOhM2DFWab8XhSdQiITry",
+          "id": "5oOhM2DFWab8XhSdQiITry",
+          "name": "Tycho",
+          "type": "artist",
+          "uri": "spotify:artist:5oOhM2DFWab8XhSdQiITry"
+        }
+      ],
+      "external_urls": {
+        "spotify": "https://open.spotify.com/album/66szrvYMqoPm7VkqaFCJ28"
+      },
+      "href": "https://api.spotify.com/v1/albums/66szrvYMqoPm7VkqaFCJ28",
+      "id": "66szrvYMqoPm7VkqaFCJ28",
+      "images": [
+        {
+          "height": 640,
+          "url": "https://i.scdn.co/image/ab67616d0000b273902bc9d7bca27f8355540d69",
+          "width": 640
+        },
+        {
+          "height": 300,
+          "url": "https://i.scdn.co/image/ab67616d00001e02902bc9d7bca27f8355540d69",
+          "width": 300
+        },
+        {
+          "height": 64,
+          "url": "https://i.scdn.co/image/ab67616d00004851902bc9d7bca27f8355540d69",
+          "width": 64
+        }
+      ],
+      "name": "Dive (Deluxe Version)",
+      "release_date": "2012-09-04",
+      "release_date_precision": "day",
+      "total_tracks": 15,
+      "type": "album",
+      "uri": "spotify:album:66szrvYMqoPm7VkqaFCJ28"
+    },
+    {
+      "album_group": "album",
+      "album_type": "album",
+      "artists": [
+        {
+          "external_urls": {
+            "spotify": "https://open.spotify.com/artist/5oOhM2DFWab8XhSdQiITry"
+          },
+          "href": "https://api.spotify.com/v1/artists/5oOhM2DFWab8XhSdQiITry",
+          "id": "5oOhM2DFWab8XhSdQiITry",
+          "name": "Tycho",
+          "type": "artist",
+          "uri": "spotify:artist:5oOhM2DFWab8XhSdQiITry"
+        }
+      ],
+      "external_urls": {
+        "spotify": "https://open.spotify.com/album/3I3PmRvn5iFY8i6zzvEcci"
+      },
+      "href": "https://api.spotify.com/v1/albums/3I3PmRvn5iFY8i6zzvEcci",
+      "id": "3I3PmRvn5iFY8i6zzvEcci",
+      "images": [
+        {
+          "height": 640,
+          "url": "https://i.scdn.co/image/ab67616d0000b2736ce6bb858321ae9bbd66d7a2",
+          "width": 640
+        },
+        {
+          "height": 300,
+          "url": "https://i.scdn.co/image/ab67616d00001e026ce6bb858321ae9bbd66d7a2",
+          "width": 300
+        },
+        {
+          "height": 64,
+          "url": "https://i.scdn.co/image/ab67616d000048516ce6bb858321ae9bbd66d7a2",
+          "width": 64
+        }
+      ],
+      "name": "Dive",
+      "release_date": "2011-10-04",
+      "release_date_precision": "day",
+      "total_tracks": 10,
+      "type": "album",
+      "uri": "spotify:album:3I3PmRvn5iFY8i6zzvEcci"
+    },
+    {
+      "album_group": "album",
+      "album_type": "album",
+      "artists": [
+        {
+          "external_urls": {
+            "spotify": "https://open.spotify.com/artist/5oOhM2DFWab8XhSdQiITry"
+          },
+          "href": "https://api.spotify.com/v1/artists/5oOhM2DFWab8XhSdQiITry",
+          "id": "5oOhM2DFWab8XhSdQiITry",
+          "name": "Tycho",
+          "type": "artist",
+          "uri": "spotify:artist:5oOhM2DFWab8XhSdQiITry"
+        }
+      ],
+      "external_urls": {
+        "spotify": "https://open.spotify.com/album/4ggb2Ec8PqtoPHnpzXwQb6"
+      },
+      "href": "https://api.spotify.com/v1/albums/4ggb2Ec8PqtoPHnpzXwQb6",
+      "id": "4ggb2Ec8PqtoPHnpzXwQb6",
+      "images": [
+        {
+          "height": 640,
+          "url": "https://i.scdn.co/image/ab67616d0000b2739618d5229371308305efecf1",
+          "width": 640
+        },
+        {
+          "height": 300,
+          "url": "https://i.scdn.co/image/ab67616d00001e029618d5229371308305efecf1",
+          "width": 300
+        },
+        {
+          "height": 64,
+          "url": "https://i.scdn.co/image/ab67616d000048519618d5229371308305efecf1",
+          "width": 64
+        }
+      ],
+      "name": "Past Is Prologue",
+      "release_date": "2006-10-25",
+      "release_date_precision": "day",
+      "total_tracks": 16,
+      "type": "album",
+      "uri": "spotify:album:4ggb2Ec8PqtoPHnpzXwQb6"
+    },
+    {
+      "album_group": "single",
+      "album_type": "single",
+      "artists": [
+        {
+          "external_urls": {
+            "spotify": "https://open.spotify.com/artist/5oOhM2DFWab8XhSdQiITry"
+          },
+          "href": "https://api.spotify.com/v1/artists/5oOhM2DFWab8XhSdQiITry",
+          "id": "5oOhM2DFWab8XhSdQiITry",
+          "name": "Tycho",
+          "type": "artist",
+          "uri": "spotify:artist:5oOhM2DFWab8XhSdQiITry"
+        },
+        {
+          "external_urls": {
+            "spotify": "https://open.spotify.com/artist/0DoWlk1NzQp1VWVFtZOb8Y"
+          },
+          "href": "https://api.spotify.com/v1/artists/0DoWlk1NzQp1VWVFtZOb8Y",
+          "id": "0DoWlk1NzQp1VWVFtZOb8Y",
+          "name": "Saint Sinner",
+          "type": "artist",
+          "uri": "spotify:artist:0DoWlk1NzQp1VWVFtZOb8Y"
+        },
+        {
+          "external_urls": {
+            "spotify": "https://open.spotify.com/artist/2wouN3QXejYa5tKetYdcVX"
+          },
+          "href": "https://api.spotify.com/v1/artists/2wouN3QXejYa5tKetYdcVX",
+          "id": "2wouN3QXejYa5tKetYdcVX",
+          "name": "Com Truise",
+          "type": "artist",
+          "uri": "spotify:artist:2wouN3QXejYa5tKetYdcVX"
+        }
+      ],
+      "external_urls": {
+        "spotify": "https://open.spotify.com/album/46W0f5805brSMlT2mRbp8G"
+      },
+      "href": "https://api.spotify.com/v1/albums/46W0f5805brSMlT2mRbp8G",
+      "id": "46W0f5805brSMlT2mRbp8G",
+      "images": [
+        {
+          "height": 640,
+          "url": "https://i.scdn.co/image/ab67616d0000b273ebd005554185135f9f8daf9e",
+          "width": 640
+        },
+        {
+          "height": 300,
+          "url": "https://i.scdn.co/image/ab67616d00001e02ebd005554185135f9f8daf9e",
+          "width": 300
+        },
+        {
+          "height": 64,
+          "url": "https://i.scdn.co/image/ab67616d00004851ebd005554185135f9f8daf9e",
+          "width": 64
+        }
+      ],
+      "name": "No Stress (Com Truise Remix)",
+      "release_date": "2020-12-15",
+      "release_date_precision": "day",
+      "total_tracks": 3,
+      "type": "album",
+      "uri": "spotify:album:46W0f5805brSMlT2mRbp8G"
+    },
+    {
+      "album_group": "single",
+      "album_type": "single",
+      "artists": [
+        {
+          "external_urls": {
+            "spotify": "https://open.spotify.com/artist/5oOhM2DFWab8XhSdQiITry"
+          },
+          "href": "https://api.spotify.com/v1/artists/5oOhM2DFWab8XhSdQiITry",
+          "id": "5oOhM2DFWab8XhSdQiITry",
+          "name": "Tycho",
+          "type": "artist",
+          "uri": "spotify:artist:5oOhM2DFWab8XhSdQiITry"
+        },
+        {
+          "external_urls": {
+            "spotify": "https://open.spotify.com/artist/2uUx46GfX05sy1TrpreIlk"
+          },
+          "href": "https://api.spotify.com/v1/artists/2uUx46GfX05sy1TrpreIlk",
+          "id": "2uUx46GfX05sy1TrpreIlk",
+          "name": "Nitemoves",
+          "type": "artist",
+          "uri": "spotify:artist:2uUx46GfX05sy1TrpreIlk"
+        }
+      ],
+      "external_urls": {
+        "spotify": "https://open.spotify.com/album/1gq8jZDjMm5uxTRyIXHf8r"
+      },
+      "href": "https://api.spotify.com/v1/albums/1gq8jZDjMm5uxTRyIXHf8r",
+      "id": "1gq8jZDjMm5uxTRyIXHf8r",
+      "images": [
+        {
+          "height": 640,
+          "url": "https://i.scdn.co/image/ab67616d0000b273d23cdf3e7b63a6b3db9429f6",
+          "width": 640
+        },
+        {
+          "height": 300,
+          "url": "https://i.scdn.co/image/ab67616d00001e02d23cdf3e7b63a6b3db9429f6",
+          "width": 300
+        },
+        {
+          "height": 64,
+          "url": "https://i.scdn.co/image/ab67616d00004851d23cdf3e7b63a6b3db9429f6",
+          "width": 64
+        }
+      ],
+      "name": "Weather (Nitemoves Remix)",
+      "release_date": "2020-12-08",
+      "release_date_precision": "day",
+      "total_tracks": 2,
+      "type": "album",
+      "uri": "spotify:album:1gq8jZDjMm5uxTRyIXHf8r"
+    },
+    {
+      "album_group": "single",
+      "album_type": "single",
+      "artists": [
+        {
+          "external_urls": {
+            "spotify": "https://open.spotify.com/artist/5oOhM2DFWab8XhSdQiITry"
+          },
+          "href": "https://api.spotify.com/v1/artists/5oOhM2DFWab8XhSdQiITry",
+          "id": "5oOhM2DFWab8XhSdQiITry",
+          "name": "Tycho",
+          "type": "artist",
+          "uri": "spotify:artist:5oOhM2DFWab8XhSdQiITry"
+        },
+        {
+          "external_urls": {
+            "spotify": "https://open.spotify.com/artist/0XHtezS69NYZ51SEFh8WEA"
+          },
+          "href": "https://api.spotify.com/v1/artists/0XHtezS69NYZ51SEFh8WEA",
+          "id": "0XHtezS69NYZ51SEFh8WEA",
+          "name": "Christopher Willits",
+          "type": "artist",
+          "uri": "spotify:artist:0XHtezS69NYZ51SEFh8WEA"
+        }
+      ],
+      "external_urls": {
+        "spotify": "https://open.spotify.com/album/4KaTPJYTLZWQqXHWtFhCxs"
+      },
+      "href": "https://api.spotify.com/v1/albums/4KaTPJYTLZWQqXHWtFhCxs",
+      "id": "4KaTPJYTLZWQqXHWtFhCxs",
+      "images": [
+        {
+          "height": 640,
+          "url": "https://i.scdn.co/image/ab67616d0000b273d5a97ac1ecfec9a221e353e4",
+          "width": 640
+        },
+        {
+          "height": 300,
+          "url": "https://i.scdn.co/image/ab67616d00001e02d5a97ac1ecfec9a221e353e4",
+          "width": 300
+        },
+        {
+          "height": 64,
+          "url": "https://i.scdn.co/image/ab67616d00004851d5a97ac1ecfec9a221e353e4",
+          "width": 64
+        }
+      ],
+      "name": "Into The Woods (Christopher Willits Remix)",
+      "release_date": "2020-12-01",
+      "release_date_precision": "day",
+      "total_tracks": 2,
+      "type": "album",
+      "uri": "spotify:album:4KaTPJYTLZWQqXHWtFhCxs"
+    },
+    {
+      "album_group": "single",
+      "album_type": "single",
+      "artists": [
+        {
+          "external_urls": {
+            "spotify": "https://open.spotify.com/artist/5oOhM2DFWab8XhSdQiITry"
+          },
+          "href": "https://api.spotify.com/v1/artists/5oOhM2DFWab8XhSdQiITry",
+          "id": "5oOhM2DFWab8XhSdQiITry",
+          "name": "Tycho",
+          "type": "artist",
+          "uri": "spotify:artist:5oOhM2DFWab8XhSdQiITry"
+        },
+        {
+          "external_urls": {
+            "spotify": "https://open.spotify.com/artist/0DoWlk1NzQp1VWVFtZOb8Y"
+          },
+          "href": "https://api.spotify.com/v1/artists/0DoWlk1NzQp1VWVFtZOb8Y",
+          "id": "0DoWlk1NzQp1VWVFtZOb8Y",
+          "name": "Saint Sinner",
+          "type": "artist",
+          "uri": "spotify:artist:0DoWlk1NzQp1VWVFtZOb8Y"
+        },
+        {
+          "external_urls": {
+            "spotify": "https://open.spotify.com/artist/4CxFlJDif0atTK3gZebcEf"
+          },
+          "href": "https://api.spotify.com/v1/artists/4CxFlJDif0atTK3gZebcEf",
+          "id": "4CxFlJDif0atTK3gZebcEf",
+          "name": "Harvey Sutherland",
+          "type": "artist",
+          "uri": "spotify:artist:4CxFlJDif0atTK3gZebcEf"
+        }
+      ],
+      "external_urls": {
+        "spotify": "https://open.spotify.com/album/0amdrc0rubaAT4Dlrpn358"
+      },
+      "href": "https://api.spotify.com/v1/albums/0amdrc0rubaAT4Dlrpn358",
+      "id": "0amdrc0rubaAT4Dlrpn358",
+      "images": [
+        {
+          "height": 640,
+          "url": "https://i.scdn.co/image/ab67616d0000b273ec385b953373056d61584be7",
+          "width": 640
+        },
+        {
+          "height": 300,
+          "url": "https://i.scdn.co/image/ab67616d00001e02ec385b953373056d61584be7",
+          "width": 300
+        },
+        {
+          "height": 64,
+          "url": "https://i.scdn.co/image/ab67616d00004851ec385b953373056d61584be7",
+          "width": 64
+        }
+      ],
+      "name": "For How Long (Harvey Sutherland Remix)",
+      "release_date": "2020-11-24",
+      "release_date_precision": "day",
+      "total_tracks": 3,
+      "type": "album",
+      "uri": "spotify:album:0amdrc0rubaAT4Dlrpn358"
+    },
+    {
+      "album_group": "single",
+      "album_type": "single",
+      "artists": [
+        {
+          "external_urls": {
+            "spotify": "https://open.spotify.com/artist/5oOhM2DFWab8XhSdQiITry"
+          },
+          "href": "https://api.spotify.com/v1/artists/5oOhM2DFWab8XhSdQiITry",
+          "id": "5oOhM2DFWab8XhSdQiITry",
+          "name": "Tycho",
+          "type": "artist",
+          "uri": "spotify:artist:5oOhM2DFWab8XhSdQiITry"
+        },
+        {
+          "external_urls": {
+            "spotify": "https://open.spotify.com/artist/3Ka3k9K2WStR52UJVtbJZW"
+          },
+          "href": "https://api.spotify.com/v1/artists/3Ka3k9K2WStR52UJVtbJZW",
+          "id": "3Ka3k9K2WStR52UJVtbJZW",
+          "name": "Mild Minds",
+          "type": "artist",
+          "uri": "spotify:artist:3Ka3k9K2WStR52UJVtbJZW"
+        }
+      ],
+      "external_urls": {
+        "spotify": "https://open.spotify.com/album/1wPZA3sgmTciBOhylvZNmv"
+      },
+      "href": "https://api.spotify.com/v1/albums/1wPZA3sgmTciBOhylvZNmv",
+      "id": "1wPZA3sgmTciBOhylvZNmv",
+      "images": [
+        {
+          "height": 640,
+          "url": "https://i.scdn.co/image/ab67616d0000b273ac520d236a46943e9be79278",
+          "width": 640
+        },
+        {
+          "height": 300,
+          "url": "https://i.scdn.co/image/ab67616d00001e02ac520d236a46943e9be79278",
+          "width": 300
+        },
+        {
+          "height": 64,
+          "url": "https://i.scdn.co/image/ab67616d00004851ac520d236a46943e9be79278",
+          "width": 64
+        }
+      ],
+      "name": "Easy (Mild Minds Remix)",
+      "release_date": "2020-11-17",
+      "release_date_precision": "day",
+      "total_tracks": 2,
+      "type": "album",
+      "uri": "spotify:album:1wPZA3sgmTciBOhylvZNmv"
+    },
+    {
+      "album_group": "single",
+      "album_type": "single",
+      "artists": [
+        {
+          "external_urls": {
+            "spotify": "https://open.spotify.com/artist/5oOhM2DFWab8XhSdQiITry"
+          },
+          "href": "https://api.spotify.com/v1/artists/5oOhM2DFWab8XhSdQiITry",
+          "id": "5oOhM2DFWab8XhSdQiITry",
+          "name": "Tycho",
+          "type": "artist",
+          "uri": "spotify:artist:5oOhM2DFWab8XhSdQiITry"
+        },
+        {
+          "external_urls": {
+            "spotify": "https://open.spotify.com/artist/0DoWlk1NzQp1VWVFtZOb8Y"
+          },
+          "href": "https://api.spotify.com/v1/artists/0DoWlk1NzQp1VWVFtZOb8Y",
+          "id": "0DoWlk1NzQp1VWVFtZOb8Y",
+          "name": "Saint Sinner",
+          "type": "artist",
+          "uri": "spotify:artist:0DoWlk1NzQp1VWVFtZOb8Y"
+        },
+        {
+          "external_urls": {
+            "spotify": "https://open.spotify.com/artist/5Gn7NoCZvbVlGgtZMILRcv"
+          },
+          "href": "https://api.spotify.com/v1/artists/5Gn7NoCZvbVlGgtZMILRcv",
+          "id": "5Gn7NoCZvbVlGgtZMILRcv",
+          "name": "Satin Jackets",
+          "type": "artist",
+          "uri": "spotify:artist:5Gn7NoCZvbVlGgtZMILRcv"
+        }
+      ],
+      "external_urls": {
+        "spotify": "https://open.spotify.com/album/2T986R8R8ftbIEKIs1WWv1"
+      },
+      "href": "https://api.spotify.com/v1/albums/2T986R8R8ftbIEKIs1WWv1",
+      "id": "2T986R8R8ftbIEKIs1WWv1",
+      "images": [
+        {
+          "height": 640,
+          "url": "https://i.scdn.co/image/ab67616d0000b273f800efa432360f4084615b6f",
+          "width": 640
+        },
+        {
+          "height": 300,
+          "url": "https://i.scdn.co/image/ab67616d00001e02f800efa432360f4084615b6f",
+          "width": 300
+        },
+        {
+          "height": 64,
+          "url": "https://i.scdn.co/image/ab67616d00004851f800efa432360f4084615b6f",
+          "width": 64
+        }
+      ],
+      "name": "Japan (Satin Jackets Remix)",
+      "release_date": "2020-11-10",
+      "release_date_precision": "day",
+      "total_tracks": 3,
+      "type": "album",
+      "uri": "spotify:album:2T986R8R8ftbIEKIs1WWv1"
+    },
+    {
+      "album_group": "single",
+      "album_type": "single",
+      "artists": [
+        {
+          "external_urls": {
+            "spotify": "https://open.spotify.com/artist/5oOhM2DFWab8XhSdQiITry"
+          },
+          "href": "https://api.spotify.com/v1/artists/5oOhM2DFWab8XhSdQiITry",
+          "id": "5oOhM2DFWab8XhSdQiITry",
+          "name": "Tycho",
+          "type": "artist",
+          "uri": "spotify:artist:5oOhM2DFWab8XhSdQiITry"
+        },
+        {
+          "external_urls": {
+            "spotify": "https://open.spotify.com/artist/4mErKO4g29SXtBwj4S80aB"
+          },
+          "href": "https://api.spotify.com/v1/artists/4mErKO4g29SXtBwj4S80aB",
+          "id": "4mErKO4g29SXtBwj4S80aB",
+          "name": "rum.gold",
+          "type": "artist",
+          "uri": "spotify:artist:4mErKO4g29SXtBwj4S80aB"
+        }
+      ],
+      "external_urls": {
+        "spotify": "https://open.spotify.com/album/0TUxwnkbBEjBhriA5aTOL8"
+      },
+      "href": "https://api.spotify.com/v1/albums/0TUxwnkbBEjBhriA5aTOL8",
+      "id": "0TUxwnkbBEjBhriA5aTOL8",
+      "images": [
+        {
+          "height": 640,
+          "url": "https://i.scdn.co/image/ab67616d0000b27352c3185771678d9782ab225a",
+          "width": 640
+        },
+        {
+          "height": 300,
+          "url": "https://i.scdn.co/image/ab67616d00001e0252c3185771678d9782ab225a",
+          "width": 300
+        },
+        {
+          "height": 64,
+          "url": "https://i.scdn.co/image/ab67616d0000485152c3185771678d9782ab225a",
+          "width": 64
+        }
+      ],
+      "name": "Run Away",
+      "release_date": "2020-09-30",
+      "release_date_precision": "day",
+      "total_tracks": 2,
+      "type": "album",
+      "uri": "spotify:album:0TUxwnkbBEjBhriA5aTOL8"
+    },
+    {
+      "album_group": "single",
+      "album_type": "single",
+      "artists": [
+        {
+          "external_urls": {
+            "spotify": "https://open.spotify.com/artist/2x7EATekOPhFGRx3syMGEC"
+          },
+          "href": "https://api.spotify.com/v1/artists/2x7EATekOPhFGRx3syMGEC",
+          "id": "2x7EATekOPhFGRx3syMGEC",
+          "name": "The Knocks",
+          "type": "artist",
+          "uri": "spotify:artist:2x7EATekOPhFGRx3syMGEC"
+        },
+        {
+          "external_urls": {
+            "spotify": "https://open.spotify.com/artist/6xdRb2GypJ7DqnWAI2mHGn"
+          },
+          "href": "https://api.spotify.com/v1/artists/6xdRb2GypJ7DqnWAI2mHGn",
+          "id": "6xdRb2GypJ7DqnWAI2mHGn",
+          "name": "MUNA",
+          "type": "artist",
+          "uri": "spotify:artist:6xdRb2GypJ7DqnWAI2mHGn"
+        },
+        {
+          "external_urls": {
+            "spotify": "https://open.spotify.com/artist/5oOhM2DFWab8XhSdQiITry"
+          },
+          "href": "https://api.spotify.com/v1/artists/5oOhM2DFWab8XhSdQiITry",
+          "id": "5oOhM2DFWab8XhSdQiITry",
+          "name": "Tycho",
+          "type": "artist",
+          "uri": "spotify:artist:5oOhM2DFWab8XhSdQiITry"
+        }
+      ],
+      "external_urls": {
+        "spotify": "https://open.spotify.com/album/4aGg3jOAVh69f2RXQA1dui"
+      },
+      "href": "https://api.spotify.com/v1/albums/4aGg3jOAVh69f2RXQA1dui",
+      "id": "4aGg3jOAVh69f2RXQA1dui",
+      "images": [
+        {
+          "height": 640,
+          "url": "https://i.scdn.co/image/ab67616d0000b27362afdc46387b3dd504c3e1f1",
+          "width": 640
+        },
+        {
+          "height": 300,
+          "url": "https://i.scdn.co/image/ab67616d00001e0262afdc46387b3dd504c3e1f1",
+          "width": 300
+        },
+        {
+          "height": 64,
+          "url": "https://i.scdn.co/image/ab67616d0000485162afdc46387b3dd504c3e1f1",
+          "width": 64
+        }
+      ],
+      "name": "Bodies (Tycho Remix)",
+      "release_date": "2020-09-10",
+      "release_date_precision": "day",
+      "total_tracks": 1,
+      "type": "album",
+      "uri": "spotify:album:4aGg3jOAVh69f2RXQA1dui"
+    },
+    {
+      "album_group": "single",
+      "album_type": "single",
+      "artists": [
+        {
+          "external_urls": {
+            "spotify": "https://open.spotify.com/artist/5oOhM2DFWab8XhSdQiITry"
+          },
+          "href": "https://api.spotify.com/v1/artists/5oOhM2DFWab8XhSdQiITry",
+          "id": "5oOhM2DFWab8XhSdQiITry",
+          "name": "Tycho",
+          "type": "artist",
+          "uri": "spotify:artist:5oOhM2DFWab8XhSdQiITry"
+        }
+      ],
+      "external_urls": {
+        "spotify": "https://open.spotify.com/album/19RdBnqS6ACXnzOpxhFtbu"
+      },
+      "href": "https://api.spotify.com/v1/albums/19RdBnqS6ACXnzOpxhFtbu",
+      "id": "19RdBnqS6ACXnzOpxhFtbu",
+      "images": [
+        {
+          "height": 640,
+          "url": "https://i.scdn.co/image/ab67616d0000b2732998412cdd508e45f86d5be0",
+          "width": 640
+        },
+        {
+          "height": 300,
+          "url": "https://i.scdn.co/image/ab67616d00001e022998412cdd508e45f86d5be0",
+          "width": 300
+        },
+        {
+          "height": 64,
+          "url": "https://i.scdn.co/image/ab67616d000048512998412cdd508e45f86d5be0",
+          "width": 64
+        }
+      ],
+      "name": "Ghost of Kodoku (Tycho Remix)",
+      "release_date": "2020-07-07",
+      "release_date_precision": "day",
+      "total_tracks": 1,
+      "type": "album",
+      "uri": "spotify:album:19RdBnqS6ACXnzOpxhFtbu"
+    }
+  ],
+  "limit": 20,
+  "next": "https://api.spotify.com/v1/artists/5oOhM2DFWab8XhSdQiITry/albums?offset=20&limit=20&include_groups=album,single,compilation,appears_on&market=US",
+  "offset": 0,
+  "previous": null,
+  "total": 67
+}

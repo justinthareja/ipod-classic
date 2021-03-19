@@ -2,7 +2,7 @@
   font-family: "Chicago";
   font-style: normal;
   font-weight: normal;
-  src: url("./assets/Chicago.woff") format("woff");
+  src: url("../assets/Chicago.woff") format("woff");
 }
 
 * {
@@ -24,14 +24,19 @@ body {
   background-color: black;
 }
 
-.login {
+.login-container {
+  height: 30px;
+  width: 30px;
   position: absolute;
   top: 12px;
   left: 12px;
 }
 
-.spotify-logo {
-  height: 30px;
+.login-buton,
+.login-pic {
+  display: block;
+  width: 100%;
+  border-radius: 50%;
 }
 
 .spotify-logo:hover {
@@ -93,6 +98,10 @@ body {
   width: 10px;
   margin-left: 5px;
   margin-top: 4px;
+}
+
+.screen-content {
+  height: 114px;
 }
 
 .screen-menu-container {

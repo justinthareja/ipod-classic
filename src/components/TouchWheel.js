@@ -1,19 +1,15 @@
 import { throttle } from "lodash";
-import { useEffect, createContext, useContext, useState, useMemo } from "react";
+import { useState } from "react";
+import { useTouchWheel, TICK_STEP } from "../context/TouchWheelContext";
 
-// degrees needed to scroll before a tick
-const TICK_STEP = 35;
-const TouchWheelContext = createContext();
-
-export default function TouchWheel() {
-  const context = useContext(TouchWheelContext);
+function TouchWheel() {
   const {
     setAngleChange,
     setNextTick,
     totalRotation,
     setTotalRotation,
     handleClick,
-  } = context;
+  } = useTouchWheel();
 
   const [mouseDown, setMouseDown] = useState(false);
   const [lastCoords, setLastCoords] = useState([0, 0]);
@@ -108,49 +104,4 @@ export default function TouchWheel() {
   );
 }
 
-export function TouchWheelProvider(props) {
-  const [angleChange, setAngleChange] = useState(0);
-  const [totalRotation, setTotalRotation] = useState(0);
-  const [nextTick, setNextTick] = useState(TICK_STEP);
-  const [handleClick, setHandleClick] = useState(null);
-  const value = useMemo(
-    () => ({
-      angleChange,
-      setAngleChange,
-      totalRotation,
-      setTotalRotation,
-      nextTick,
-      setNextTick,
-      handleClick,
-      setHandleClick,
-    }),
-    [angleChange, totalRotation, nextTick, handleClick]
-  );
-
-  return <TouchWheelContext.Provider value={value} {...props} />;
-}
-
-export function useTouchWheelTick(onTick) {
-  // this needs to call onTick at the appropriate time
-  const context = useContext(TouchWheelContext);
-  const { angleChange, totalRotation, nextTick, setNextTick } = context;
-
-  useEffect(() => {
-    if (angleChange < 0 && totalRotation <= nextTick) {
-      onTick({ direction: "anticlockwise" });
-      setNextTick(totalRotation - TICK_STEP);
-    } else if (angleChange > 0 && totalRotation >= nextTick) {
-      onTick({ direction: "clockwise" });
-      setNextTick(totalRotation + TICK_STEP);
-    }
-  }, [angleChange, totalRotation, nextTick, setNextTick, onTick]);
-}
-
-export function useTouchWheelClick(onClick) {
-  const context = useContext(TouchWheelContext);
-  const { setHandleClick } = context;
-
-  useEffect(() => {
-    setHandleClick(() => onClick);
-  }, [onClick, setHandleClick]);
-}
+export default TouchWheel;

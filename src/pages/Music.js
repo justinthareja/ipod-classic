@@ -1,6 +1,6 @@
-import ScreenMenu from "../ScreenMenu";
-import Screen from "../Screen";
-import ScreenHeader from "../ScreenHeader";
+import ScreenMenu from "../components/ScreenMenu";
+import Screen from "../components/Screen";
+import ScreenHeader from "../components/ScreenHeader";
 
 function Music(props) {
   return (
@@ -9,10 +9,10 @@ function Music(props) {
       <ScreenMenu
         menuItems={[
           { name: "Playlists", path: "/playlists", showArrow: true },
+          { name: "Artists", path: "/artists", showArrow: true },
           { name: "Albums", path: "/albums", showArrow: true },
-          { name: "Songs", path: "/songs", showArrow: true },
           { name: "Shows", path: "/shows", showArrow: true },
-          { name: "Episodes", path: "/episodes", showArrow: true },
+          { name: "Songs", path: "/songs", showArrow: true },
         ]}
       />
     </Screen>

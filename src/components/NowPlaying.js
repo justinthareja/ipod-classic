@@ -1,21 +1,10 @@
-import { useCallback } from "react";
-import { useNavigate } from "@reach/router";
-import { useMenu } from "./Controls";
-import msToHuman from "./utils/msToHuman";
+import msToHuman from "../utils/msToHuman";
 import Screen from "./Screen";
 import ScreenHeader from "./ScreenHeader";
 import PauseIcon from "./PauseIcon";
-import result from "./stubs/track.json";
+import result from "../stubs/track.json";
 
 function NowPlaying() {
-  const navigate = useNavigate();
-
-  const handleMenu = useCallback(() => {
-    navigate(-1);
-  }, [navigate]);
-
-  useMenu(handleMenu);
-
   return (
     <Screen>
       <ScreenHeader header={result.album.name} statusIcon={<PauseIcon />} />

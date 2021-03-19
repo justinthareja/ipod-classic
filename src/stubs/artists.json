@@ -1,0 +1,736 @@
+{
+  "items": [
+    {
+      "external_urls": {
+        "spotify": "https://open.spotify.com/artist/5oOhM2DFWab8XhSdQiITry"
+      },
+      "followers": {
+        "href": null,
+        "total": 602682
+      },
+      "genres": [
+        "chillwave",
+        "downtempo",
+        "electronica",
+        "indietronica",
+        "intelligent dance music"
+      ],
+      "href": "https://api.spotify.com/v1/artists/5oOhM2DFWab8XhSdQiITry",
+      "id": "5oOhM2DFWab8XhSdQiITry",
+      "images": [
+        {
+          "height": 640,
+          "url": "https://i.scdn.co/image/460f8dd62e2cfb4df17e05bf97471a596a28eeda",
+          "width": 640
+        },
+        {
+          "height": 320,
+          "url": "https://i.scdn.co/image/80ba51f8c16442d839a0ed99d6c3e40730fe8c81",
+          "width": 320
+        },
+        {
+          "height": 160,
+          "url": "https://i.scdn.co/image/cc3f07038fe794f40523bc19fedd181ff48e2f78",
+          "width": 160
+        }
+      ],
+      "name": "Tycho",
+      "popularity": 65,
+      "type": "artist",
+      "uri": "spotify:artist:5oOhM2DFWab8XhSdQiITry"
+    },
+    {
+      "external_urls": {
+        "spotify": "https://open.spotify.com/artist/6fSNDuge2fLINdnCCbpZx6"
+      },
+      "followers": {
+        "href": null,
+        "total": 44411
+      },
+      "genres": ["canadian hip hop", "indie pop rap"],
+      "href": "https://api.spotify.com/v1/artists/6fSNDuge2fLINdnCCbpZx6",
+      "id": "6fSNDuge2fLINdnCCbpZx6",
+      "images": [
+        {
+          "height": 640,
+          "url": "https://i.scdn.co/image/4661d7950d80dadffd74230a03f2d1445d501c5e",
+          "width": 640
+        },
+        {
+          "height": 320,
+          "url": "https://i.scdn.co/image/9cb5c77164f709305dc9ea61175ae2762d95cda4",
+          "width": 320
+        },
+        {
+          "height": 160,
+          "url": "https://i.scdn.co/image/abc6289c5d7208ec1e3d1b108bdf3e2738f59081",
+          "width": 160
+        }
+      ],
+      "name": "Omar LinX",
+      "popularity": 54,
+      "type": "artist",
+      "uri": "spotify:artist:6fSNDuge2fLINdnCCbpZx6"
+    },
+    {
+      "external_urls": {
+        "spotify": "https://open.spotify.com/artist/64KEffDW9EtZ1y2vBYgq8T"
+      },
+      "followers": {
+        "href": null,
+        "total": 29866344
+      },
+      "genres": [
+        "brostep",
+        "edm",
+        "pop",
+        "pop dance",
+        "progressive electro house"
+      ],
+      "href": "https://api.spotify.com/v1/artists/64KEffDW9EtZ1y2vBYgq8T",
+      "id": "64KEffDW9EtZ1y2vBYgq8T",
+      "images": [
+        {
+          "height": 640,
+          "url": "https://i.scdn.co/image/f12d2ee255b86011feb5c8759dc05cc698623a20",
+          "width": 640
+        },
+        {
+          "height": 320,
+          "url": "https://i.scdn.co/image/1d83340f9822d1aad1873687ec3748ff13102531",
+          "width": 320
+        },
+        {
+          "height": 160,
+          "url": "https://i.scdn.co/image/0787bb8f9248bae276148136951be580cdae40cb",
+          "width": 160
+        }
+      ],
+      "name": "Marshmello",
+      "popularity": 90,
+      "type": "artist",
+      "uri": "spotify:artist:64KEffDW9EtZ1y2vBYgq8T"
+    },
+    {
+      "external_urls": {
+        "spotify": "https://open.spotify.com/artist/15lOM8PWY9pXQoURZwSZlK"
+      },
+      "followers": {
+        "href": null,
+        "total": 30884
+      },
+      "genres": [
+        "alternative hip hop",
+        "canadian hip hop",
+        "canadian old school hip hop",
+        "conscious hip hop"
+      ],
+      "href": "https://api.spotify.com/v1/artists/15lOM8PWY9pXQoURZwSZlK",
+      "id": "15lOM8PWY9pXQoURZwSZlK",
+      "images": [
+        {
+          "height": 640,
+          "url": "https://i.scdn.co/image/df7f9ec8b3267395de360ac93f6965d60060189d",
+          "width": 640
+        },
+        {
+          "height": 320,
+          "url": "https://i.scdn.co/image/0a655694f25b3b1c766100a856c72b682e3d8fe9",
+          "width": 320
+        },
+        {
+          "height": 160,
+          "url": "https://i.scdn.co/image/a850e294ddec341d5aded4fb9e7f856525ec5c5b",
+          "width": 160
+        }
+      ],
+      "name": "Shad",
+      "popularity": 39,
+      "type": "artist",
+      "uri": "spotify:artist:15lOM8PWY9pXQoURZwSZlK"
+    },
+    {
+      "external_urls": {
+        "spotify": "https://open.spotify.com/artist/1vCWHaC5f2uS3yhpwWbIA6"
+      },
+      "followers": {
+        "href": null,
+        "total": 19328183
+      },
+      "genres": ["dance pop", "edm", "pop", "pop dance"],
+      "href": "https://api.spotify.com/v1/artists/1vCWHaC5f2uS3yhpwWbIA6",
+      "id": "1vCWHaC5f2uS3yhpwWbIA6",
+      "images": [
+        {
+          "height": 640,
+          "url": "https://i.scdn.co/image/81b19a403109c4fe528ee3972137127b85be9519",
+          "width": 640
+        },
+        {
+          "height": 320,
+          "url": "https://i.scdn.co/image/9c0d8fa969a9f5db6ff860203d6880a125e501d2",
+          "width": 320
+        },
+        {
+          "height": 160,
+          "url": "https://i.scdn.co/image/c55bc6f57b6bb297425c3ae694f92672dcf0e2c2",
+          "width": 160
+        }
+      ],
+      "name": "Avicii",
+      "popularity": 86,
+      "type": "artist",
+      "uri": "spotify:artist:1vCWHaC5f2uS3yhpwWbIA6"
+    },
+    {
+      "external_urls": {
+        "spotify": "https://open.spotify.com/artist/09hVIj6vWgoCDtT03h8ZCa"
+      },
+      "followers": {
+        "href": null,
+        "total": 1413918
+      },
+      "genres": [
+        "alternative hip hop",
+        "conscious hip hop",
+        "east coast hip hop",
+        "gangster rap",
+        "hardcore hip hop",
+        "hip hop",
+        "jazz rap",
+        "queens hip hop",
+        "rap"
+      ],
+      "href": "https://api.spotify.com/v1/artists/09hVIj6vWgoCDtT03h8ZCa",
+      "id": "09hVIj6vWgoCDtT03h8ZCa",
+      "images": [
+        {
+          "height": 640,
+          "url": "https://i.scdn.co/image/6f987ab74c72f0c50b19b05ea775bc4033c57706",
+          "width": 640
+        },
+        {
+          "height": 320,
+          "url": "https://i.scdn.co/image/6781371e793ab66c6775e97b96dbf1dd127b83c1",
+          "width": 320
+        },
+        {
+          "height": 160,
+          "url": "https://i.scdn.co/image/98a7bb2194747b049668d58591d8ac2628543ea4",
+          "width": 160
+        }
+      ],
+      "name": "A Tribe Called Quest",
+      "popularity": 72,
+      "type": "artist",
+      "uri": "spotify:artist:09hVIj6vWgoCDtT03h8ZCa"
+    },
+    {
+      "external_urls": {
+        "spotify": "https://open.spotify.com/artist/3JhNCzhSMTxs9WLGJJxWOY"
+      },
+      "followers": {
+        "href": null,
+        "total": 1694999
+      },
+      "genres": ["pop", "pop rap", "seattle hip hop"],
+      "href": "https://api.spotify.com/v1/artists/3JhNCzhSMTxs9WLGJJxWOY",
+      "id": "3JhNCzhSMTxs9WLGJJxWOY",
+      "images": [
+        {
+          "height": 640,
+          "url": "https://i.scdn.co/image/548c808ed49b59bf73155e0e4de76f74406a778e",
+          "width": 640
+        },
+        {
+          "height": 320,
+          "url": "https://i.scdn.co/image/04cbb38931436ebef28c5be46007d8c7a37b799c",
+          "width": 320
+        },
+        {
+          "height": 160,
+          "url": "https://i.scdn.co/image/df658d6ffaf00d9e9d6c2f2bd64cfccdd50f1c6a",
+          "width": 160
+        }
+      ],
+      "name": "Macklemore",
+      "popularity": 80,
+      "type": "artist",
+      "uri": "spotify:artist:3JhNCzhSMTxs9WLGJJxWOY"
+    },
+    {
+      "external_urls": {
+        "spotify": "https://open.spotify.com/artist/7sgWBYtJpblXpJl2lU5WVs"
+      },
+      "followers": {
+        "href": null,
+        "total": 283434
+      },
+      "genres": [
+        "indie pop",
+        "indie rock",
+        "indietronica",
+        "la indie",
+        "modern rock",
+        "shimmer pop",
+        "vapor soul"
+      ],
+      "href": "https://api.spotify.com/v1/artists/7sgWBYtJpblXpJl2lU5WVs",
+      "id": "7sgWBYtJpblXpJl2lU5WVs",
+      "images": [
+        {
+          "height": 640,
+          "url": "https://i.scdn.co/image/031af08abb50cc365ab48d03f3f4a2a4abe48b84",
+          "width": 640
+        },
+        {
+          "height": 320,
+          "url": "https://i.scdn.co/image/cf4cbcaa4cde888b603abae6ae0a6ed06a8744eb",
+          "width": 320
+        },
+        {
+          "height": 160,
+          "url": "https://i.scdn.co/image/a4d8aa68d8971c57ca7e44eb2ef9ce6414b4eebd",
+          "width": 160
+        }
+      ],
+      "name": "Electric Guest",
+      "popularity": 63,
+      "type": "artist",
+      "uri": "spotify:artist:7sgWBYtJpblXpJl2lU5WVs"
+    },
+    {
+      "external_urls": {
+        "spotify": "https://open.spotify.com/artist/4QQgXkCYTt3BlENzhyNETg"
+      },
+      "followers": {
+        "href": null,
+        "total": 2796737
+      },
+      "genres": ["disco", "funk", "jazz funk", "motown", "quiet storm", "soul"],
+      "href": "https://api.spotify.com/v1/artists/4QQgXkCYTt3BlENzhyNETg",
+      "id": "4QQgXkCYTt3BlENzhyNETg",
+      "images": [
+        {
+          "height": 678,
+          "url": "https://i.scdn.co/image/9fd0a9822140cce668ee15263e1f73730152dff0",
+          "width": 999
+        },
+        {
+          "height": 434,
+          "url": "https://i.scdn.co/image/82b1b00bee789f4fefb07756f4d54c411a899e76",
+          "width": 640
+        },
+        {
+          "height": 136,
+          "url": "https://i.scdn.co/image/cde8bbe95db0ede933e3b081c3bc359898f5ce9e",
+          "width": 200
+        },
+        {
+          "height": 43,
+          "url": "https://i.scdn.co/image/e8cfe44ad187da7e0d4a9699e02039b0dcf6aa66",
+          "width": 63
+        }
+      ],
+      "name": "Earth, Wind & Fire",
+      "popularity": 77,
+      "type": "artist",
+      "uri": "spotify:artist:4QQgXkCYTt3BlENzhyNETg"
+    },
+    {
+      "external_urls": {
+        "spotify": "https://open.spotify.com/artist/6Wr3hh341P84m3EI8qdn9O"
+      },
+      "followers": {
+        "href": null,
+        "total": 2303494
+      },
+      "genres": [
+        "chicago hardcore",
+        "chicago punk",
+        "hardcore punk",
+        "pop punk",
+        "punk"
+      ],
+      "href": "https://api.spotify.com/v1/artists/6Wr3hh341P84m3EI8qdn9O",
+      "id": "6Wr3hh341P84m3EI8qdn9O",
+      "images": [
+        {
+          "height": 640,
+          "url": "https://i.scdn.co/image/bf4cbbaa55e76f8313821ff104dae72e8823c932",
+          "width": 640
+        },
+        {
+          "height": 320,
+          "url": "https://i.scdn.co/image/66bf088bf69bb12fdff7ad0170045fad67a05d08",
+          "width": 320
+        },
+        {
+          "height": 160,
+          "url": "https://i.scdn.co/image/5226e3815fff0e3f43650ce5fa941f5b47e86656",
+          "width": 160
+        }
+      ],
+      "name": "Rise Against",
+      "popularity": 76,
+      "type": "artist",
+      "uri": "spotify:artist:6Wr3hh341P84m3EI8qdn9O"
+    },
+    {
+      "external_urls": {
+        "spotify": "https://open.spotify.com/artist/3fMbdgg4jU18AjLCKBhRSm"
+      },
+      "followers": {
+        "href": null,
+        "total": 17790139
+      },
+      "genres": ["pop", "r&b", "soul"],
+      "href": "https://api.spotify.com/v1/artists/3fMbdgg4jU18AjLCKBhRSm",
+      "id": "3fMbdgg4jU18AjLCKBhRSm",
+      "images": [
+        {
+          "height": 640,
+          "url": "https://i.scdn.co/image/51dad9aaabe5643818840207a9a8957c2ad91bf2",
+          "width": 640
+        },
+        {
+          "height": 320,
+          "url": "https://i.scdn.co/image/2e6f35b90c131c137669d06e3c36b1a5d3172864",
+          "width": 320
+        },
+        {
+          "height": 160,
+          "url": "https://i.scdn.co/image/4ba613bd55b4954a027377b70b8c6d48639fd70b",
+          "width": 160
+        }
+      ],
+      "name": "Michael Jackson",
+      "popularity": 86,
+      "type": "artist",
+      "uri": "spotify:artist:3fMbdgg4jU18AjLCKBhRSm"
+    },
+    {
+      "external_urls": {
+        "spotify": "https://open.spotify.com/artist/4iVhFmG8YCCEHANGeUUS9q"
+      },
+      "followers": {
+        "href": null,
+        "total": 523397
+      },
+      "genres": ["edm", "glitch hop", "jam band", "jazztronica", "livetronica"],
+      "href": "https://api.spotify.com/v1/artists/4iVhFmG8YCCEHANGeUUS9q",
+      "id": "4iVhFmG8YCCEHANGeUUS9q",
+      "images": [
+        {
+          "height": 640,
+          "url": "https://i.scdn.co/image/ce3d98b2501c6fbc125139797a82d94b2c4ae41b",
+          "width": 640
+        },
+        {
+          "height": 320,
+          "url": "https://i.scdn.co/image/9e6011b0ed4380194247d70abd008e2ad1119ef3",
+          "width": 320
+        },
+        {
+          "height": 160,
+          "url": "https://i.scdn.co/image/4640943f07b93ab96f56148aac62f65f08d77cfb",
+          "width": 160
+        }
+      ],
+      "name": "Pretty Lights",
+      "popularity": 59,
+      "type": "artist",
+      "uri": "spotify:artist:4iVhFmG8YCCEHANGeUUS9q"
+    },
+    {
+      "external_urls": {
+        "spotify": "https://open.spotify.com/artist/7vk5e3vY1uw9plTHJAMwjN"
+      },
+      "followers": {
+        "href": null,
+        "total": 27530717
+      },
+      "genres": ["electro house"],
+      "href": "https://api.spotify.com/v1/artists/7vk5e3vY1uw9plTHJAMwjN",
+      "id": "7vk5e3vY1uw9plTHJAMwjN",
+      "images": [
+        {
+          "height": 640,
+          "url": "https://i.scdn.co/image/0ab918e81e59378d6f7368a10f392be54020472d",
+          "width": 640
+        },
+        {
+          "height": 320,
+          "url": "https://i.scdn.co/image/b6b05de5ee2906ad3ac6c7c3d7f61d7990dbff16",
+          "width": 320
+        },
+        {
+          "height": 160,
+          "url": "https://i.scdn.co/image/ed6eab1a3153f87eff30660327e801279f27893b",
+          "width": 160
+        }
+      ],
+      "name": "Alan Walker",
+      "popularity": 87,
+      "type": "artist",
+      "uri": "spotify:artist:7vk5e3vY1uw9plTHJAMwjN"
+    },
+    {
+      "external_urls": {
+        "spotify": "https://open.spotify.com/artist/6l3HvQ5sa6mXTsMTB19rO5"
+      },
+      "followers": {
+        "href": null,
+        "total": 12856526
+      },
+      "genres": [
+        "conscious hip hop",
+        "hip hop",
+        "north carolina hip hop",
+        "rap"
+      ],
+      "href": "https://api.spotify.com/v1/artists/6l3HvQ5sa6mXTsMTB19rO5",
+      "id": "6l3HvQ5sa6mXTsMTB19rO5",
+      "images": [
+        {
+          "height": 640,
+          "url": "https://i.scdn.co/image/c58beb81196bbdda378b6746c51a10aace2f63a6",
+          "width": 640
+        },
+        {
+          "height": 320,
+          "url": "https://i.scdn.co/image/83ca0c5fcb501018a41994f8778772240c3a4cac",
+          "width": 320
+        },
+        {
+          "height": 160,
+          "url": "https://i.scdn.co/image/ff24214a2e41e0d0a4621b35c53e0573c2c6a65e",
+          "width": 160
+        }
+      ],
+      "name": "J. Cole",
+      "popularity": 89,
+      "type": "artist",
+      "uri": "spotify:artist:6l3HvQ5sa6mXTsMTB19rO5"
+    },
+    {
+      "external_urls": {
+        "spotify": "https://open.spotify.com/artist/21egYD1eInY6bGFcniCRT1"
+      },
+      "followers": {
+        "href": null,
+        "total": 987185
+      },
+      "genres": ["stomp and holler", "swedish americana", "swedish country"],
+      "href": "https://api.spotify.com/v1/artists/21egYD1eInY6bGFcniCRT1",
+      "id": "21egYD1eInY6bGFcniCRT1",
+      "images": [
+        {
+          "height": 640,
+          "url": "https://i.scdn.co/image/ef411bb65f8f8748abef774b155b3ba75a14955c",
+          "width": 640
+        },
+        {
+          "height": 320,
+          "url": "https://i.scdn.co/image/0eaef7f84bd9712787e4d21c20028ce75bc45e37",
+          "width": 320
+        },
+        {
+          "height": 160,
+          "url": "https://i.scdn.co/image/8cf2cb67e0e730ce557899f663b4b7773b282df7",
+          "width": 160
+        }
+      ],
+      "name": "First Aid Kit",
+      "popularity": 67,
+      "type": "artist",
+      "uri": "spotify:artist:21egYD1eInY6bGFcniCRT1"
+    },
+    {
+      "external_urls": {
+        "spotify": "https://open.spotify.com/artist/2MGL4XU2LCJC47c7VvSwuE"
+      },
+      "followers": {
+        "href": null,
+        "total": 8516
+      },
+      "genres": ["lo-fi beats"],
+      "href": "https://api.spotify.com/v1/artists/2MGL4XU2LCJC47c7VvSwuE",
+      "id": "2MGL4XU2LCJC47c7VvSwuE",
+      "images": [
+        {
+          "height": 640,
+          "url": "https://i.scdn.co/image/0dc3dc7a5fed15414c7c3a196eff83978f714bb2",
+          "width": 640
+        },
+        {
+          "height": 320,
+          "url": "https://i.scdn.co/image/1593183479ac58c9a776126a79a303cfce89e750",
+          "width": 320
+        },
+        {
+          "height": 160,
+          "url": "https://i.scdn.co/image/dce7d5890c07ed6ee4bc5ffb41c808da79db7a2a",
+          "width": 160
+        }
+      ],
+      "name": "Jobii",
+      "popularity": 63,
+      "type": "artist",
+      "uri": "spotify:artist:2MGL4XU2LCJC47c7VvSwuE"
+    },
+    {
+      "external_urls": {
+        "spotify": "https://open.spotify.com/artist/1anyVhU62p31KFi8MEzkbf"
+      },
+      "followers": {
+        "href": null,
+        "total": 5230735
+      },
+      "genres": [
+        "chicago rap",
+        "conscious hip hop",
+        "hip hop",
+        "pop rap",
+        "rap"
+      ],
+      "href": "https://api.spotify.com/v1/artists/1anyVhU62p31KFi8MEzkbf",
+      "id": "1anyVhU62p31KFi8MEzkbf",
+      "images": [
+        {
+          "height": 640,
+          "url": "https://i.scdn.co/image/5eb8a2168ab01111c7020738ee0354e4042e64df",
+          "width": 640
+        },
+        {
+          "height": 320,
+          "url": "https://i.scdn.co/image/671406c15bc7259b61f6c84f5c681d950536d68d",
+          "width": 320
+        },
+        {
+          "height": 160,
+          "url": "https://i.scdn.co/image/8a788a1b9d4b798a159206800ae3e828a0a5c003",
+          "width": 160
+        }
+      ],
+      "name": "Chance the Rapper",
+      "popularity": 85,
+      "type": "artist",
+      "uri": "spotify:artist:1anyVhU62p31KFi8MEzkbf"
+    },
+    {
+      "external_urls": {
+        "spotify": "https://open.spotify.com/artist/4DkYxtaASIKQnk4Gj0TB7k"
+      },
+      "followers": {
+        "href": null,
+        "total": 96717
+      },
+      "genres": ["american post-rock"],
+      "href": "https://api.spotify.com/v1/artists/4DkYxtaASIKQnk4Gj0TB7k",
+      "id": "4DkYxtaASIKQnk4Gj0TB7k",
+      "images": [
+        {
+          "height": 640,
+          "url": "https://i.scdn.co/image/0a549265f478d83958e1e45e1cec5d83b9a832db",
+          "width": 640
+        },
+        {
+          "height": 320,
+          "url": "https://i.scdn.co/image/8c127e73b33d4ff4c4418f7a382b87dc583eaa68",
+          "width": 320
+        },
+        {
+          "height": 160,
+          "url": "https://i.scdn.co/image/30c7e71c2481a50f020762174f9c269a838e2188",
+          "width": 160
+        }
+      ],
+      "name": "City of the Sun",
+      "popularity": 53,
+      "type": "artist",
+      "uri": "spotify:artist:4DkYxtaASIKQnk4Gj0TB7k"
+    },
+    {
+      "external_urls": {
+        "spotify": "https://open.spotify.com/artist/4ztOXfl03SlHkzRIsrvWmX"
+      },
+      "followers": {
+        "href": null,
+        "total": 9276
+      },
+      "genres": ["lo-fi beats"],
+      "href": "https://api.spotify.com/v1/artists/4ztOXfl03SlHkzRIsrvWmX",
+      "id": "4ztOXfl03SlHkzRIsrvWmX",
+      "images": [
+        {
+          "height": 640,
+          "url": "https://i.scdn.co/image/e145d12b669314962dd04d5698aadc8d046de3b2",
+          "width": 640
+        },
+        {
+          "height": 320,
+          "url": "https://i.scdn.co/image/698c0653969d872de6b450ac9e82739345bcd6ac",
+          "width": 320
+        },
+        {
+          "height": 160,
+          "url": "https://i.scdn.co/image/5e09217bed454e046cb47d4eb50eabb4a2011fc7",
+          "width": 160
+        }
+      ],
+      "name": "Guustavv",
+      "popularity": 65,
+      "type": "artist",
+      "uri": "spotify:artist:4ztOXfl03SlHkzRIsrvWmX"
+    },
+    {
+      "external_urls": {
+        "spotify": "https://open.spotify.com/artist/0jNDKefhfSbLR9sFvcPLHo"
+      },
+      "followers": {
+        "href": null,
+        "total": 617972
+      },
+      "genres": [
+        "edm",
+        "electro house",
+        "electronic trap",
+        "electropop",
+        "future bass",
+        "pop dance",
+        "pop edm",
+        "vapor twitch"
+      ],
+      "href": "https://api.spotify.com/v1/artists/0jNDKefhfSbLR9sFvcPLHo",
+      "id": "0jNDKefhfSbLR9sFvcPLHo",
+      "images": [
+        {
+          "height": 640,
+          "url": "https://i.scdn.co/image/65ac17c15f49dbd226f321e986a874471df303da",
+          "width": 640
+        },
+        {
+          "height": 320,
+          "url": "https://i.scdn.co/image/250f36133e876c3c9d9fdb18cfc65abcb5181517",
+          "width": 320
+        },
+        {
+          "height": 160,
+          "url": "https://i.scdn.co/image/05fdbc52f91c2038e3c29d1995347d1b29cf7d70",
+          "width": 160
+        }
+      ],
+      "name": "San Holo",
+      "popularity": 67,
+      "type": "artist",
+      "uri": "spotify:artist:0jNDKefhfSbLR9sFvcPLHo"
+    }
+  ],
+  "total": 50,
+  "limit": 20,
+  "offset": 0,
+  "previous": null,
+  "href": "https://api.spotify.com/v1/me/top/artists",
+  "next": "https://api.spotify.com/v1/me/top/artists?limit=20&offset=20"
+}

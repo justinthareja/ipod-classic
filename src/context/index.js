@@ -1,7 +1,8 @@
 import { QueryClient, QueryClientProvider } from "react-query";
 import { AuthProvider } from "./AuthContext";
-import { TouchWheelProvider } from "../TouchWheel";
-import { ControlsProvider } from "../Controls";
+import { UserProvider } from "./UserContext";
+import { TouchWheelProvider } from "./TouchWheelContext";
+import { ControlsProvider } from "./ControlsContext";
 
 const queryClient = new QueryClient();
 
@@ -9,9 +10,11 @@ function AppProvider({ children }) {
   return (
     <QueryClientProvider client={queryClient}>
       <AuthProvider>
-        <TouchWheelProvider>
-          <ControlsProvider>{children}</ControlsProvider>
-        </TouchWheelProvider>
+        <UserProvider>
+          <TouchWheelProvider>
+            <ControlsProvider>{children}</ControlsProvider>
+          </TouchWheelProvider>
+        </UserProvider>
       </AuthProvider>
     </QueryClientProvider>
   );
