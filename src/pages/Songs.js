@@ -1,9 +1,12 @@
+import { useUser } from "../context/UserContext";
+import spotifyApi from "../api/spotifyApi";
 import ScreenMenu from "../ScreenMenu";
 import Screen from "../Screen";
 import ScreenHeader from "../ScreenHeader";
-import result from "../stubs/tracks.json";
+import LoadComponent from "../LoadComponent";
+import stub from "../stubs/tracks.json";
 
-function Songs(props) {
+function Songs({ result }) {
   return (
     <Screen>
       <ScreenHeader header="Songs" />
@@ -17,4 +20,20 @@ function Songs(props) {
   );
 }
 
-export default Songs;
+function LoadSongs(props) {
+  const { user } = useUser();
+
+  return user ? (
+    <LoadComponent
+      Component={Songs}
+      query={{
+        queryKey: "songs",
+        queryFn: () => spotifyApi.getMySavedTracks(),
+      }}
+    />
+  ) : (
+    <Songs result={stub} />
+  );
+}
+
+export default LoadSongs;

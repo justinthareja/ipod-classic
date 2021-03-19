@@ -3,7 +3,7 @@ import Screen from "../Screen";
 import ScreenHeader from "../ScreenHeader";
 import result from "../stubs/episodes.json";
 
-function Shows(props) {
+function Episodes(props) {
   return (
     <Screen>
       <ScreenHeader header="Episodes" />
@@ -17,4 +17,4 @@ function Shows(props) {
   );
 }
 
-export default Shows;
+export default Episodes;

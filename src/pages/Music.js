@@ -10,9 +10,8 @@ function Music(props) {
         menuItems={[
           { name: "Playlists", path: "/playlists", showArrow: true },
           { name: "Albums", path: "/albums", showArrow: true },
-          { name: "Songs", path: "/songs", showArrow: true },
           { name: "Shows", path: "/shows", showArrow: true },
-          { name: "Episodes", path: "/episodes", showArrow: true },
+          { name: "Songs", path: "/songs", showArrow: true },
         ]}
       />
     </Screen>

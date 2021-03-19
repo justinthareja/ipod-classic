@@ -20,8 +20,8 @@ import "./App.css";
 function App() {
   return (
     <AppProvider>
-      <LoginButton />
       <div className="ipod">
+        <LoginButton />
         <Router>
           <Music path="/" />
           <Playlists path="/playlists" />
@@ -32,7 +32,7 @@ function App() {
           <NowPlaying path="/songs/:id" />
           <Shows path="/shows" />
           <ShowDetails path="/shows/:id" />
-          <Episodes path="/episodes" />
+          <NowPlaying path="/episodes/:id" />
           <AuthCallback path="/callback" />
           <NotFound default />
         </Router>

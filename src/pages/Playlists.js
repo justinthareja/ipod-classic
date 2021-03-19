@@ -1,9 +1,9 @@
 import { useUser } from "../context/UserContext";
-import spotifyApi from "../api/spotifyApi";
+import LoadComponent from "../LoadComponent";
 import ScreenMenu from "../ScreenMenu";
 import Screen from "../Screen";
 import ScreenHeader from "../ScreenHeader";
-import LoadComponent from "../LoadComponent";
+import spotifyApi from "../api/spotifyApi";
 import stub from "../stubs/playlists.json";
 
 function Playlists({ result }) {

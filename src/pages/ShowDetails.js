@@ -1,9 +1,12 @@
+import { useUser } from "../context/UserContext";
+import LoadComponent from "../LoadComponent";
 import ScreenMenu from "../ScreenMenu";
 import Screen from "../Screen";
 import ScreenHeader from "../ScreenHeader";
-import result from "../stubs/show.json";
+import spotifyApi from "../api/spotifyApi";
+import stub from "../stubs/show.json";
 
-function ShowDetails(props) {
+function ShowDetails({ result }) {
   return (
     <Screen>
       <ScreenHeader header={result.name} />
@@ -17,4 +20,20 @@ function ShowDetails(props) {
   );
 }
 
-export default ShowDetails;
+function LoadShowDetails({ id }) {
+  const { user } = useUser();
+
+  return user ? (
+    <LoadComponent
+      Component={ShowDetails}
+      query={{
+        queryKey: ["shows", id],
+        queryFn: () => spotifyApi.getShow(id),
+      }}
+    />
+  ) : (
+    <ShowDetails result={stub} />
+  );
+}
+
+export default LoadShowDetails;
