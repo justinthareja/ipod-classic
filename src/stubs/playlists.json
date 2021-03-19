@@ -3,42 +3,6 @@
   "items": [
     {
       "collaborative": false,
-      "description": "The perfect study beats, twenty four seven.",
-      "external_urls": {
-        "spotify": "https://open.spotify.com/playlist/37i9dQZF1DX8Uebhn9wzrS"
-      },
-      "href": "https://api.spotify.com/v1/playlists/37i9dQZF1DX8Uebhn9wzrS",
-      "id": "37i9dQZF1DX8Uebhn9wzrS",
-      "images": [
-        {
-          "height": null,
-          "url": "https://i.scdn.co/image/ab67706f000000033ca17b400e47bb8a61ab73a1",
-          "width": null
-        }
-      ],
-      "name": "Chill Lofi Study Beats",
-      "owner": {
-        "display_name": "Spotify",
-        "external_urls": {
-          "spotify": "https://open.spotify.com/user/spotify"
-        },
-        "href": "https://api.spotify.com/v1/users/spotify",
-        "id": "spotify",
-        "type": "user",
-        "uri": "spotify:user:spotify"
-      },
-      "primary_color": null,
-      "public": false,
-      "snapshot_id": "MTYxNTkwMjMzMiwwMDAwMDA0YjAwMDAwMTc4M2I0OGQ3NmQwMDAwMDE3MGE0ZjU2OWYx",
-      "tracks": {
-        "href": "https://api.spotify.com/v1/playlists/37i9dQZF1DX8Uebhn9wzrS/tracks",
-        "total": 317
-      },
-      "type": "playlist",
-      "uri": "spotify:playlist:37i9dQZF1DX8Uebhn9wzrS"
-    },
-    {
-      "collaborative": false,
       "description": "",
       "external_urls": {
         "spotify": "https://open.spotify.com/playlist/0UJnJV9pe9aCyHXYKW8U1E"
