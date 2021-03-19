@@ -5,13 +5,18 @@ import { useEffect } from "react";
 
 function AuthCallback(props) {
   const params = parseHash(props.location.hash);
-  const [, setToken] = useAuth();
+  const { storeToken } = useAuth();
 
   // TODO: check sent state === received state
-
   useEffect(() => {
-    setToken(params.access_token);
-  }, [params.access_token, setToken]);
+    if (!params.access_token) {
+      throw new Error(
+        "<AuthCallback/> mounted without access token in query params"
+      );
+    }
+
+    storeToken(params.access_token);
+  }, []); //eslint-disable-line react-hooks/exhaustive-deps
 
   return <Redirect to="/" noThrow />;
 }

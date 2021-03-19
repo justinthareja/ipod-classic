@@ -1,24 +1,21 @@
-import * as React from "react";
+import { createContext, useState, useContext } from "react";
 import spotifyApi from "../api/spotifyApi";
 
-const AuthContext = React.createContext();
+const AuthContext = createContext();
 
 function AuthProvider(props) {
-  const [token, setToken] = React.useState(null);
-  const value = React.useMemo(() => [token, setToken], [token]);
+  const [token, setToken] = useState(null);
 
-  React.useEffect(() => {
-    if (token !== null) {
-      spotifyApi.setAccessToken(token);
-      console.log("client has token, ready to rock");
-    }
-  }, [token]);
+  const storeToken = (token) => {
+    setToken(token);
+    spotifyApi.setAccessToken(token);
+  };
 
-  return <AuthContext.Provider value={value} {...props} />;
+  return <AuthContext.Provider value={{ token, storeToken }} {...props} />;
 }
 
 function useAuth() {
-  const context = React.useContext(AuthContext);
+  const context = useContext(AuthContext);
   if (!context) {
     throw new Error("useAuth() must be used within <AuthProvider>");
   }
