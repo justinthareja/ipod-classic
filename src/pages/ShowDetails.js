@@ -15,6 +15,7 @@ function ShowDetails({ result }) {
         menuItems={result.episodes.items.map((item) => ({
           name: item.name,
           path: `/episodes/${item.id}`,
+          id: item.id,
         }))}
       />
     </Screen>

@@ -1,13 +1,17 @@
-import msToHuman from "../utils/msToHuman";
+import { useUser } from "../context/UserContext";
+import LoadComponent from "../components/LoadComponent";
 import Screen from "./Screen";
 import ScreenHeader from "./ScreenHeader";
-import PauseIcon from "./PauseIcon";
-import result from "../stubs/track.json";
+import ErrorScreen from "../components/ErrorScreen";
+import PlayIcon from "./PlayIcon";
+import msToHuman from "../utils/msToHuman";
+import spotifyApi from "../api/spotifyApi";
+import stub from "../stubs/track.json";
 
-function NowPlaying() {
+function NowPlaying({ result }) {
   return (
     <Screen>
-      <ScreenHeader header={result.album.name} statusIcon={<PauseIcon />} />
+      <ScreenHeader header={result.album.name} statusIcon={<PlayIcon />} />
       <div className="now-playing">
         <small className="track-count">
           {result.track_number} of {result.album.total_tracks}
@@ -29,4 +33,23 @@ function NowPlaying() {
   );
 }
 
-export default NowPlaying;
+function LoadNowPlaying(props) {
+  const { user } = useUser();
+
+  return user ? (
+    <LoadComponent
+      renderSuccess={({ body }) => <NowPlaying result={body.item} />}
+      renderError={({ body }) => (
+        <ErrorScreen status={body.error.status} message={body.error.message} />
+      )}
+      query={{
+        queryKey: "current",
+        queryFn: () => spotifyApi.getMyCurrentPlayingTrack(),
+      }}
+    />
+  ) : (
+    <NowPlaying result={stub} />
+  );
+}
+
+export default LoadNowPlaying;

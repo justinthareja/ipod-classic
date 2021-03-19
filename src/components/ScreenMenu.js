@@ -10,6 +10,7 @@ import {
   useTouchWheelTick,
   useTouchWheelClick,
 } from "../context/TouchWheelContext";
+import spotifyApi from "../api/spotifyApi";
 
 function ScreenMenu({ menuItems }) {
   const NUM_ITEMS = 6;
@@ -35,8 +36,32 @@ function ScreenMenu({ menuItems }) {
   );
 
   const handleClick = useCallback(() => {
-    const path = menuItems[activeIndex].path;
-    navigate(path);
+    async function callback() {
+      const item = menuItems[activeIndex];
+      // if the item doesn't have an arrow, it means this partiuclar screen navigates to the
+      // now playing screen when clicked
+      // let spotify know to play the song before navigating
+      if (!item.showArrow) {
+        try {
+          const result = await spotifyApi.play({
+            uris: [`spotify:track:${item.id}`],
+          });
+
+          if (result.statusCode === 204) {
+            navigate(item.path);
+          }
+        } catch (error) {
+          // TODO: Render an unable to play song component
+          console.log(error);
+        }
+      } else {
+        // if the item does have an arrow, it means the next component is just anoher
+        // list component so navigate straight to it
+        navigate(item.path);
+      }
+    }
+
+    callback();
   }, [menuItems, activeIndex, navigate]);
 
   useTouchWheelTick(handleTick);

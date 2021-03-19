@@ -16,6 +16,7 @@ function Albums({ result }) {
           name: item.album.name,
           path: `/albums/${item.album.id}`,
           showArrow: true,
+          id: item.album.id,
         }))}
       />
     </Screen>
@@ -27,7 +28,7 @@ function LoadAlbums(props) {
 
   return user ? (
     <LoadComponent
-      renderSuccess={({ body }) => <Albums result={body} />}
+      renderSuccess={({ body }) => <Albums result={body.item} />}
       renderError={({ body }) => (
         <ErrorScreen status={body.error.status} message={body.error.message} />
       )}

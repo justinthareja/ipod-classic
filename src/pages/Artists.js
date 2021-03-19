@@ -15,6 +15,8 @@ function Artists({ result }) {
         menuItems={result.items.map((item) => ({
           name: item.name,
           path: `/artists/${item.id}/albums`,
+          id: item.id,
+          showArrow: true,
         }))}
       />
     </Screen>

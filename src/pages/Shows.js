@@ -16,6 +16,7 @@ function Shows({ result }) {
           name: item.show.name,
           path: `/shows/${item.show.id}`,
           showArrow: true,
+          id: item.show.id,
         }))}
       />
     </Screen>

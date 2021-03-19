@@ -15,6 +15,7 @@ function AlbumDetails({ result }) {
         menuItems={result.tracks.items.map((item) => ({
           name: item.name,
           path: `/songs/${item.id}`,
+          id: item.id,
         }))}
       />
     </Screen>

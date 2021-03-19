@@ -16,6 +16,7 @@ function Playlists({ result }) {
           name: playlist.name,
           path: `/playlists/${playlist.id}`,
           showArrow: true,
+          id: playlist.id,
         }))}
       />
     </Screen>

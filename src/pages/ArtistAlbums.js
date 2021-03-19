@@ -8,7 +8,6 @@ import spotifyApi from "../api/spotifyApi";
 import stub from "../stubs/artist-albums.json";
 
 function ArtistAlbums({ result }) {
-  console.log(result);
   return (
     <Screen>
       <ScreenHeader header={result.items[0].artists[0].name} />
@@ -16,6 +15,8 @@ function ArtistAlbums({ result }) {
         menuItems={result.items.map((item) => ({
           name: item.name,
           path: `/albums/${item.id}`,
+          id: item.id,
+          showArrow: true,
         }))}
       />
     </Screen>
