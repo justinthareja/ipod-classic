@@ -5,6 +5,8 @@ import Controls from "./Controls";
 import Music from "../pages/Music";
 import Playlists from "../pages/Playlists";
 import PlaylistDetails from "../pages/PlaylistDetails";
+import Artists from "../pages/Artists";
+import ArtistAlbums from "../pages/ArtistAlbums";
 import Albums from "../pages/Albums";
 import AlbumDetails from "../pages/AlbumDetails";
 import Songs from "../pages/Songs";
@@ -25,6 +27,8 @@ function App() {
           <Music path="/" />
           <Playlists path="/playlists" />
           <PlaylistDetails path="/playlists/:id" />
+          <Artists path="/artists" />
+          <ArtistAlbums path="/artists/:id/albums" />
           <Albums path="/albums" />
           <AlbumDetails path="/albums/:id" />
           <Songs path="/songs" />

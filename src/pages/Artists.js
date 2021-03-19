@@ -1,45 +1,43 @@
 import { useUser } from "../context/UserContext";
-import LoadComponent from "../components/LoadComponent";
-import ScreenMenu from "../components/ScreenMenu";
 import Screen from "../components/Screen";
 import ScreenHeader from "../components/ScreenHeader";
+import ScreenMenu from "../components/ScreenMenu";
 import ErrorScreen from "../components/ErrorScreen";
+import LoadComponent from "../components/LoadComponent";
 import spotifyApi from "../api/spotifyApi";
-import stub from "../stubs/albums.json";
+import stub from "../stubs/artists";
 
-function Albums({ result }) {
+function Artists({ result }) {
   return (
     <Screen>
-      <ScreenHeader header="Albums" />
+      <ScreenHeader header="Artists" />
       <ScreenMenu
         menuItems={result.items.map((item) => ({
-          name: item.album.name,
-          path: `/albums/${item.album.id}`,
-          showArrow: true,
+          name: item.name,
+          path: `/artists/${item.id}/albums`,
         }))}
       />
     </Screen>
   );
 }
 
-function LoadAlbums(props) {
+function LoadArtists(props) {
   const { user } = useUser();
 
   return user ? (
     <LoadComponent
-      renderSuccess={({ body }) => <Albums result={body} />}
+      renderSuccess={({ body }) => <Artists result={body} />}
       renderError={({ body }) => (
         <ErrorScreen status={body.error.status} message={body.error.message} />
       )}
       query={{
-        queryKey: "albums",
-        queryFn: () => spotifyApi.getMySavedAlbums(),
+        queryKey: "artists",
+        queryFn: () => spotifyApi.getMyTopArtists(),
       }}
     />
   ) : (
-    <Albums result={stub} />
+    <Artists result={stub} />
   );
 }
 
-export { Albums };
-export default LoadAlbums;
+export default LoadArtists;
