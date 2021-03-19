@@ -6,7 +6,10 @@ import {
   useCallback,
 } from "react";
 import { useNavigate } from "@reach/router";
-import { useTouchWheelTick, useTouchWheelClick } from "./TouchWheel";
+import {
+  useTouchWheelTick,
+  useTouchWheelClick,
+} from "../context/TouchWheelContext";
 
 function ScreenMenu({ menuItems }) {
   const NUM_ITEMS = 6;

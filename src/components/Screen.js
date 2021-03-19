@@ -1,6 +1,6 @@
 import { useCallback } from "react";
 import { useNavigate, useLocation } from "@reach/router";
-import { useMenu } from "./Controls";
+import { useMenu } from "../context/ControlsContext";
 
 function Screen({ children }) {
   const navigate = useNavigate();

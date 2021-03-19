@@ -1,10 +1,7 @@
-import { useContext, createContext, useState, useEffect, useMemo } from "react";
+import { useControls } from "../context/ControlsContext";
 
-const ControlsContext = createContext();
-
-export default function Controls(props) {
-  const context = useContext(ControlsContext);
-  const { handleMenu } = context;
+function Controls(props) {
+  const { handleMenu } = useControls();
   return (
     <div className="controls">
       <button className="control">
@@ -49,24 +46,4 @@ export default function Controls(props) {
   );
 }
 
-export function ControlsProvider(props) {
-  const [handleMenu, setHandleMenu] = useState(null);
-  const value = useMemo(
-    () => ({
-      handleMenu,
-      setHandleMenu,
-    }),
-    [handleMenu]
-  );
-
-  return <ControlsContext.Provider value={value} {...props} />;
-}
-
-export function useMenu(handleMenu) {
-  const context = useContext(ControlsContext);
-  const { setHandleMenu } = context;
-
-  useEffect(() => {
-    setHandleMenu(() => handleMenu);
-  }, [handleMenu, setHandleMenu]);
-}
+export default Controls;
