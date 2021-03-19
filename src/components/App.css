@@ -244,6 +244,7 @@ body {
   align-items: center;
   box-shadow: 1px 1px 4px hsla(0, 0%, 0%, 0.2) inset;
   border-radius: 50%;
+  cursor: pointer;
 }
 
 .wheel-inner {
