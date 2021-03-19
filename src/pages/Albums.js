@@ -1,9 +1,12 @@
+import { useUser } from "../context/UserContext";
+import LoadComponent from "../LoadComponent";
 import ScreenMenu from "../ScreenMenu";
 import Screen from "../Screen";
 import ScreenHeader from "../ScreenHeader";
-import result from "../stubs/albums.json";
+import spotifyApi from "../api/spotifyApi";
+import stub from "../stubs/albums.json";
 
-function Albums(props) {
+function Albums({ result }) {
   return (
     <Screen>
       <ScreenHeader header="Albums" />
@@ -18,4 +21,20 @@ function Albums(props) {
   );
 }
 
-export default Albums;
+function LoadAlbums(props) {
+  const { user } = useUser();
+
+  return user ? (
+    <LoadComponent
+      Component={Albums}
+      query={{
+        queryKey: "albums",
+        queryFn: () => spotifyApi.getMySavedAlbums(),
+      }}
+    />
+  ) : (
+    <Albums result={stub} />
+  );
+}
+
+export default LoadAlbums;
