@@ -5,9 +5,8 @@ import {
   useLayoutEffect,
   useCallback,
 } from "react";
-import { useNavigate, useLocation } from "@reach/router";
+import { useNavigate } from "@reach/router";
 import { useTouchWheelTick, useTouchWheelClick } from "./TouchWheel";
-import { useMenu } from "./Controls";
 
 function ScreenMenu({ menuItems }) {
   const NUM_ITEMS = 6;
@@ -16,7 +15,6 @@ function ScreenMenu({ menuItems }) {
   const [activeIndex, setActiveIndex] = useState(0);
   const [visibleRange, setVisibleRange] = useState([0, NUM_ITEMS - 1]);
   const navigate = useNavigate();
-  const location = useLocation();
 
   const handleTick = useCallback(
     ({ direction }) => {
@@ -38,17 +36,8 @@ function ScreenMenu({ menuItems }) {
     navigate(path);
   }, [menuItems, activeIndex, navigate]);
 
-  const handleMenuClick = useCallback(() => {
-    if (location.pathname === "/") {
-      return;
-    }
-
-    navigate(-1);
-  }, [navigate, location]);
-
   useTouchWheelTick(handleTick);
   useTouchWheelClick(handleClick);
-  useMenu(handleMenuClick);
 
   useEffect(() => {
     const $content = contentRef.current;
