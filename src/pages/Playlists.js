@@ -29,7 +29,7 @@ function LoadPlaylists(props) {
       Component={Playlists}
       query={{
         queryKey: "playlists",
-        queryFn: () => spotifyApi.getUserPlaylists("adsifjasdflsdfjsdkhfk"),
+        queryFn: () => spotifyApi.getUserPlaylists(),
       }}
     />
   ) : (
