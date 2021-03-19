@@ -1,9 +1,9 @@
 import { useUser } from "../context/UserContext";
-import LoadComponent from "../LoadComponent";
-import ScreenMenu from "../ScreenMenu";
-import Screen from "../Screen";
-import ScreenHeader from "../ScreenHeader";
-import ErrorScreen from "../ErrorScreen";
+import LoadComponent from "../components/LoadComponent";
+import ScreenMenu from "../components/ScreenMenu";
+import Screen from "../components/Screen";
+import ScreenHeader from "../components/ScreenHeader";
+import ErrorScreen from "../components/ErrorScreen";
 import spotifyApi from "../api/spotifyApi";
 import stub from "../stubs/playlists.json";
 

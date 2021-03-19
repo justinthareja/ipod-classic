@@ -1,8 +1,8 @@
 import { QueryClient, QueryClientProvider } from "react-query";
 import { AuthProvider } from "./AuthContext";
 import { UserProvider } from "./UserContext";
-import { TouchWheelProvider } from "../TouchWheel";
-import { ControlsProvider } from "../Controls";
+import { TouchWheelProvider } from "../components/TouchWheel";
+import { ControlsProvider } from "../components/Controls";
 
 const queryClient = new QueryClient();
 

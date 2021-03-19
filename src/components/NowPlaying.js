@@ -1,8 +1,8 @@
-import msToHuman from "./utils/msToHuman";
+import msToHuman from "../utils/msToHuman";
 import Screen from "./Screen";
 import ScreenHeader from "./ScreenHeader";
 import PauseIcon from "./PauseIcon";
-import result from "./stubs/track.json";
+import result from "../stubs/track.json";
 
 function NowPlaying() {
   return (

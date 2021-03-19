@@ -1,6 +1,6 @@
-import { useUser } from "./context/UserContext";
-import { authorizeURL } from "./api/spotifyApi";
-import spotifyLogo from "./assets/spotify-logo.png";
+import { useUser } from "../context/UserContext";
+import { authorizeURL } from "../api/spotifyApi";
+import spotifyLogo from "../assets/spotify-logo.png";
 
 function LoginButton() {
   const { user } = useUser();

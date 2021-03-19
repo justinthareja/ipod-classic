@@ -1,10 +1,10 @@
 import { useUser } from "../context/UserContext";
 import spotifyApi from "../api/spotifyApi";
-import ScreenMenu from "../ScreenMenu";
-import Screen from "../Screen";
-import ScreenHeader from "../ScreenHeader";
-import ErrorScreen from "../ErrorScreen";
-import LoadComponent from "../LoadComponent";
+import ScreenMenu from "../components/ScreenMenu";
+import Screen from "../components/Screen";
+import ScreenHeader from "../components/ScreenHeader";
+import ErrorScreen from "../components/ErrorScreen";
+import LoadComponent from "../components/LoadComponent";
 import stub from "../stubs/tracks.json";
 
 function Songs({ result }) {

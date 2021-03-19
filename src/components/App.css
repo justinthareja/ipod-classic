@@ -2,7 +2,7 @@
   font-family: "Chicago";
   font-style: normal;
   font-weight: normal;
-  src: url("./assets/Chicago.woff") format("woff");
+  src: url("../assets/Chicago.woff") format("woff");
 }
 
 * {

@@ -1,6 +1,6 @@
-import ScreenMenu from "../ScreenMenu";
-import Screen from "../Screen";
-import ScreenHeader from "../ScreenHeader";
+import ScreenMenu from "../components/ScreenMenu";
+import Screen from "../components/Screen";
+import ScreenHeader from "../components/ScreenHeader";
 
 function Music(props) {
   return (
