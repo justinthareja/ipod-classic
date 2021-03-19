@@ -3,6 +3,7 @@ import spotifyApi from "../api/spotifyApi";
 import ScreenMenu from "../ScreenMenu";
 import Screen from "../Screen";
 import ScreenHeader from "../ScreenHeader";
+import ErrorScreen from "../ErrorScreen";
 import LoadComponent from "../LoadComponent";
 import stub from "../stubs/tracks.json";
 
@@ -25,7 +26,10 @@ function LoadSongs(props) {
 
   return user ? (
     <LoadComponent
-      Component={Songs}
+      renderSuccess={({ body }) => <Songs result={body} />}
+      renderError={({ body }) => (
+        <ErrorScreen status={body.error.status} message={body.error.message} />
+      )}
       query={{
         queryKey: "songs",
         queryFn: () => spotifyApi.getMySavedTracks(),

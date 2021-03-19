@@ -1,8 +1,7 @@
 import { useQuery } from "react-query";
 import LoadingScreen from "./LoadingScreen";
-import ErrorScreen from "./ErrorScreen";
 
-function LoadComponent({ Component, query }) {
+function LoadComponent({ query, renderSuccess, renderError }) {
   const { isLoading, isError, data, error } = useQuery(query);
 
   if (isLoading) {
@@ -10,11 +9,10 @@ function LoadComponent({ Component, query }) {
   }
 
   if (isError) {
-    const { status, message } = error.body.error;
-    return <ErrorScreen status={status} message={message} />;
+    return renderError(error);
   }
 
-  return <Component result={data.body} />;
+  return renderSuccess(data);
 }
 
 export default LoadComponent;

@@ -3,6 +3,7 @@ import LoadComponent from "../LoadComponent";
 import ScreenMenu from "../ScreenMenu";
 import Screen from "../Screen";
 import ScreenHeader from "../ScreenHeader";
+import ErrorScreen from "../ErrorScreen";
 import spotifyApi from "../api/spotifyApi";
 import stub from "../stubs/show.json";
 
@@ -25,7 +26,10 @@ function LoadShowDetails({ id }) {
 
   return user ? (
     <LoadComponent
-      Component={ShowDetails}
+      renderSuccess={({ body }) => <ShowDetails result={body} />}
+      renderError={({ body }) => (
+        <ErrorScreen status={body.error.status} message={body.error.message} />
+      )}
       query={{
         queryKey: ["shows", id],
         queryFn: () => spotifyApi.getShow(id),

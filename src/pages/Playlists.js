@@ -3,6 +3,7 @@ import LoadComponent from "../LoadComponent";
 import ScreenMenu from "../ScreenMenu";
 import Screen from "../Screen";
 import ScreenHeader from "../ScreenHeader";
+import ErrorScreen from "../ErrorScreen";
 import spotifyApi from "../api/spotifyApi";
 import stub from "../stubs/playlists.json";
 
@@ -26,7 +27,10 @@ function LoadPlaylists(props) {
 
   return user ? (
     <LoadComponent
-      Component={Playlists}
+      renderSuccess={({ body }) => <Playlists result={body} />}
+      renderError={({ body }) => (
+        <ErrorScreen status={body.error.status} message={body.error.message} />
+      )}
       query={{
         queryKey: "playlists",
         queryFn: () => spotifyApi.getUserPlaylists(),
