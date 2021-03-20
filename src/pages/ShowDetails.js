@@ -1,18 +1,30 @@
-import { useUser } from "../context/UserContext";
-import LoadComponent from "../components/LoadComponent";
+import { useShowById } from "../hooks/useShowById";
 import ScreenMenu from "../components/ScreenMenu";
 import Screen from "../components/Screen";
 import ScreenHeader from "../components/ScreenHeader";
+import LoadingScreen from "../components/LoadingScreen";
 import ErrorScreen from "../components/ErrorScreen";
-import spotifyApi from "../api/spotifyApi";
-import stub from "../stubs/show.json";
 
-function ShowDetails({ result }) {
+function ShowDetails(props) {
+  const { isLoading, isError, data, error } = useShowById(props.id);
+
+  if (isLoading) {
+    return <LoadingScreen />;
+  }
+
+  if (isError) {
+    return (
+      <ErrorScreen
+        status={error.body.error.status}
+        message={error.body.error.message}
+      />
+    );
+  }
   return (
     <Screen>
-      <ScreenHeader header={result.name} />
+      <ScreenHeader header={data.body.name} />
       <ScreenMenu
-        menuItems={result.episodes.items.map((item) => ({
+        menuItems={data.body.episodes.items.map((item) => ({
           name: item.name,
           path: `/episodes/${item.id}`,
           id: item.id,
@@ -22,23 +34,4 @@ function ShowDetails({ result }) {
   );
 }
 
-function LoadShowDetails({ id }) {
-  const { user } = useUser();
-
-  return user ? (
-    <LoadComponent
-      renderSuccess={({ body }) => <ShowDetails result={body} />}
-      renderError={({ body }) => (
-        <ErrorScreen status={body.error.status} message={body.error.message} />
-      )}
-      query={{
-        queryKey: ["shows", id],
-        queryFn: () => spotifyApi.getShow(id),
-      }}
-    />
-  ) : (
-    <ShowDetails result={stub} />
-  );
-}
-
-export default LoadShowDetails;
+export default ShowDetails;

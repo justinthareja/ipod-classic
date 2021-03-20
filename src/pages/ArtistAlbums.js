@@ -1,18 +1,30 @@
-import { useUser } from "../context/UserContext";
+import { useAlbumsByArtist } from "../hooks/useAlbumsByArtist";
+import ScreenMenu from "../components/ScreenMenu";
 import Screen from "../components/Screen";
 import ScreenHeader from "../components/ScreenHeader";
-import ScreenMenu from "../components/ScreenMenu";
+import LoadingScreen from "../components/LoadingScreen";
 import ErrorScreen from "../components/ErrorScreen";
-import LoadComponent from "../components/LoadComponent";
-import spotifyApi from "../api/spotifyApi";
-import stub from "../stubs/artist-albums.json";
 
-function ArtistAlbums({ result }) {
+function ArtistAlbums(props) {
+  const { isLoading, isError, data, error } = useAlbumsByArtist(props.id);
+
+  if (isLoading) {
+    return <LoadingScreen />;
+  }
+
+  if (isError) {
+    return (
+      <ErrorScreen
+        status={error.body.error.status}
+        message={error.body.error.message}
+      />
+    );
+  }
   return (
     <Screen>
-      <ScreenHeader header={result.items[0].artists[0].name} />
+      <ScreenHeader header={data.body.items[0].artists[0].name} />
       <ScreenMenu
-        menuItems={result.items.map((item) => ({
+        menuItems={data.body.items.map((item) => ({
           name: item.name,
           path: `/albums/${item.id}`,
           id: item.id,
@@ -23,23 +35,4 @@ function ArtistAlbums({ result }) {
   );
 }
 
-function LoadArtistAlbums({ id: artistId }) {
-  const { user } = useUser();
-
-  return user ? (
-    <LoadComponent
-      renderSuccess={({ body }) => <ArtistAlbums result={body} />}
-      renderError={({ body }) => (
-        <ErrorScreen status={body.error.status} message={body.error.message} />
-      )}
-      query={{
-        queryKey: ["artists", artistId, "albums"],
-        queryFn: () => spotifyApi.getArtistAlbums(artistId),
-      }}
-    />
-  ) : (
-    <ArtistAlbums result={stub} />
-  );
-}
-
-export default LoadArtistAlbums;
+export default ArtistAlbums;
