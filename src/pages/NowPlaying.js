@@ -21,8 +21,12 @@ function NowPlaying(props) {
     );
   }
 
-  const { item } = data.body;
+  if (!data || !data.body || !data.body.item) {
+    console.error(data);
+    return <ErrorScreen status="500" message="Client error." />;
+  }
 
+  const { item } = data.body;
   return (
     <Screen>
       <ScreenHeader header={item.album.name} statusIcon={<PlayIcon />} />

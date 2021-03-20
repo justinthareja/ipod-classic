@@ -85,7 +85,7 @@ body {
 }
 
 .header-icon {
-  width: 20px;
+  min-width: 20px;
   height: 20px;
 }
 
@@ -172,7 +172,9 @@ body {
 }
 
 .now-playing .track-info {
+  width: 100%;
   margin-bottom: 8px;
+  text-align: center;
 }
 
 .now-playing .playback {

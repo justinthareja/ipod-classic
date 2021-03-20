@@ -5,12 +5,12 @@ import {
   useLayoutEffect,
   useCallback,
 } from "react";
-import { useNavigate } from "@reach/router";
+import { Redirect, useNavigate } from "@reach/router";
 import {
   useTouchWheelTick,
   useTouchWheelClick,
 } from "../context/TouchWheelContext";
-import spotifyApi from "../api/spotifyApi";
+import Play from "../components/Play";
 
 function ScreenMenu({ menuItems }) {
   const NUM_ITEMS = 6;
@@ -18,6 +18,8 @@ function ScreenMenu({ menuItems }) {
   const contentRef = useRef(null);
   const [activeIndex, setActiveIndex] = useState(0);
   const [visibleRange, setVisibleRange] = useState([0, NUM_ITEMS - 1]);
+  const [shouldPlay, setShouldPlay] = useState(false);
+
   const navigate = useNavigate();
 
   const handleTick = useCallback(
@@ -42,18 +44,7 @@ function ScreenMenu({ menuItems }) {
       // now playing screen when clicked
       // let spotify know to play the song before navigating
       if (!item.showArrow) {
-        try {
-          const result = await spotifyApi.play({
-            uris: [`spotify:track:${item.id}`],
-          });
-
-          if (result.statusCode === 204) {
-            navigate(item.path);
-          }
-        } catch (error) {
-          // TODO: Render an unable to play song component
-          console.log(error);
-        }
+        setShouldPlay(true);
       } else {
         // if the item does have an arrow, it means the next component is just anoher
         // list component so navigate straight to it
@@ -94,6 +85,17 @@ function ScreenMenu({ menuItems }) {
       $content.scrollTop = $content.scrollTop - ITEM_HEIGHT;
     }
   }, [activeIndex, visibleRange]);
+
+  if (shouldPlay) {
+    const item = menuItems[activeIndex];
+    // the <Play> component will render any children after successfully telling spotify to play
+    // the next track. in this case, a redirect will happen to the Now Playing component
+    return (
+      <Play trackId={item.id}>
+        <Redirect to={item.path} noThrow />
+      </Play>
+    );
+  }
 
   return (
     <div className="screen-menu-container" ref={contentRef}>
