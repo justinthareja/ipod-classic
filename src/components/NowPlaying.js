@@ -1,55 +1,59 @@
-import { useUser } from "../context/UserContext";
-import LoadComponent from "../components/LoadComponent";
-import Screen from "./Screen";
-import ScreenHeader from "./ScreenHeader";
+import { useCurrentlyPlaying } from "../hooks/useCurrentlyPlaying";
+import Screen from "../components/Screen";
+import ScreenHeader from "../components/ScreenHeader";
+import LoadingScreen from "../components/LoadingScreen";
 import ErrorScreen from "../components/ErrorScreen";
-import PlayIcon from "./PlayIcon";
-import msToHuman from "../utils/msToHuman";
-import spotifyApi from "../api/spotifyApi";
-import stub from "../stubs/track.json";
+import PlayIcon from "../components/PlayIcon";
 
-function NowPlaying({ result }) {
+function NowPlaying(props) {
+  const { isLoading, isError, data, error } = useCurrentlyPlaying();
+
+  if (isLoading) {
+    return <LoadingScreen />;
+  }
+
+  if (isError) {
+    return (
+      <ErrorScreen
+        status={error.body.error.status}
+        message={error.body.error.message}
+      />
+    );
+  }
+
+  const { item } = data.body;
+
   return (
     <Screen>
-      <ScreenHeader header={result.album.name} statusIcon={<PlayIcon />} />
+      <ScreenHeader header={item.album.name} statusIcon={<PlayIcon />} />
       <div className="now-playing">
         <small className="track-count">
-          {result.track_number} of {result.album.total_tracks}
+          {item.track_number} of {item.album.total_tracks}
         </small>
         <div className="track-info">
-          <p className="track-name truncate">{result.name}</p>
-          <p className="track-artist truncate">{result.artists[0].name}</p>
-          <p className="track-album truncate">{result.album.name}</p>
+          <p className="track-name truncate">{item.name}</p>
+          <p className="track-artist truncate">{item.artists[0].name}</p>
+          <p className="track-album truncate">{item.album.name}</p>
         </div>
         <div className="playback">
           <div className="playback-progress"></div>
         </div>
         <div className="timestamps">
           <p className="time-played">1:00</p>
-          <p className="time-remaining">{msToHuman(result.duration_ms)}</p>
+          <p className="time-remaining">{msToHuman(item.duration_ms)}</p>
         </div>
       </div>
     </Screen>
   );
 }
 
-function LoadNowPlaying(props) {
-  const { user } = useUser();
+function msToHuman(ms) {
+  const date = new Date(ms);
+  const minutes = date.getMinutes();
+  const seconds =
+    date.getSeconds() < 10 ? `0${date.getSeconds()}` : date.getSeconds();
 
-  return user ? (
-    <LoadComponent
-      renderSuccess={({ body }) => <NowPlaying result={body.item} />}
-      renderError={({ body }) => (
-        <ErrorScreen status={body.error.status} message={body.error.message} />
-      )}
-      query={{
-        queryKey: "current",
-        queryFn: () => spotifyApi.getMyCurrentPlayingTrack(),
-      }}
-    />
-  ) : (
-    <NowPlaying result={stub} />
-  );
+  return `${minutes}:${seconds}`;
 }
 
-export default LoadNowPlaying;
+export default NowPlaying;
