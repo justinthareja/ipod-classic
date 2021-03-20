@@ -1,18 +1,30 @@
-import { useUser } from "../context/UserContext";
+import { usePlaylistById } from "../hooks/usePlaylistById";
 import ScreenMenu from "../components/ScreenMenu";
 import Screen from "../components/Screen";
 import ScreenHeader from "../components/ScreenHeader";
+import LoadingScreen from "../components/LoadingScreen";
 import ErrorScreen from "../components/ErrorScreen";
-import LoadComponent from "../components/LoadComponent";
-import stub from "../stubs/playlist.json";
-import spotifyApi from "../api/spotifyApi";
 
-function PlaylistDetails({ result }) {
+function PlaylistDetails(props) {
+  const { isLoading, isError, data, error } = usePlaylistById(props.id);
+
+  if (isLoading) {
+    return <LoadingScreen />;
+  }
+
+  if (isError) {
+    return (
+      <ErrorScreen
+        status={error.body.error.status}
+        message={error.body.error.message}
+      />
+    );
+  }
   return (
     <Screen>
-      <ScreenHeader header={result.name} />
+      <ScreenHeader header={data.body.name} />
       <ScreenMenu
-        menuItems={result.tracks.items.map((item) => ({
+        menuItems={data.body.tracks.items.map((item) => ({
           name: item.track.name,
           path: `/songs/${item.track.id}`,
           id: item.track.id,
@@ -22,23 +34,4 @@ function PlaylistDetails({ result }) {
   );
 }
 
-function LoadPlaylistDetails({ id }) {
-  const { user } = useUser();
-
-  return user ? (
-    <LoadComponent
-      renderSuccess={({ body }) => <PlaylistDetails result={body} />}
-      renderError={({ body }) => (
-        <ErrorScreen status={body.error.status} message={body.error.message} />
-      )}
-      query={{
-        queryKey: ["playlist", id],
-        queryFn: () => spotifyApi.getPlaylist(id),
-      }}
-    />
-  ) : (
-    <PlaylistDetails result={stub} />
-  );
-}
-
-export default LoadPlaylistDetails;
+export default PlaylistDetails;
