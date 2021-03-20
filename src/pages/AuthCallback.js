@@ -1,5 +1,4 @@
 import { Redirect } from "@reach/router";
-import parseHash from "../utils/parseHash";
 import { useAuth } from "../context/AuthContext";
 import { useEffect } from "react";
 
@@ -19,6 +18,18 @@ function AuthCallback(props) {
   }, []); //eslint-disable-line react-hooks/exhaustive-deps
 
   return <Redirect to="/" noThrow />;
+}
+
+function parseHash(hash = "") {
+  let params = hash.replace(/#/, "");
+  params = params.split("&");
+  params = params.reduce((result, param) => {
+    const [key, value] = param.split("=");
+    result[decodeURIComponent(key)] = decodeURIComponent(value);
+    return result;
+  }, {});
+
+  return params;
 }
 
 export default AuthCallback;

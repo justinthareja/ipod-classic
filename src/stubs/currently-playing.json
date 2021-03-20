@@ -1,0 +1,89 @@
+{
+  "timestamp": 1616264923551,
+  "context": null,
+  "progress_ms": 35266,
+  "item": {
+    "album": {
+      "album_type": "compilation",
+      "artists": [
+        {
+          "external_urls": {
+            "spotify": "https://open.spotify.com/artist/4QQgXkCYTt3BlENzhyNETg"
+          },
+          "href": "https://api.spotify.com/v1/artists/4QQgXkCYTt3BlENzhyNETg",
+          "id": "4QQgXkCYTt3BlENzhyNETg",
+          "name": "Earth, Wind & Fire",
+          "type": "artist",
+          "uri": "spotify:artist:4QQgXkCYTt3BlENzhyNETg"
+        }
+      ],
+      "external_urls": {
+        "spotify": "https://open.spotify.com/album/4MgtwNYjD89Oj2km6eFRYd"
+      },
+      "href": "https://api.spotify.com/v1/albums/4MgtwNYjD89Oj2km6eFRYd",
+      "id": "4MgtwNYjD89Oj2km6eFRYd",
+      "images": [
+        {
+          "height": 640,
+          "url": "https://i.scdn.co/image/ab67616d0000b2736e5689a9d09ac1fc2cba2ab0",
+          "width": 640
+        },
+        {
+          "height": 300,
+          "url": "https://i.scdn.co/image/ab67616d00001e026e5689a9d09ac1fc2cba2ab0",
+          "width": 300
+        },
+        {
+          "height": 64,
+          "url": "https://i.scdn.co/image/ab67616d000048516e5689a9d09ac1fc2cba2ab0",
+          "width": 64
+        }
+      ],
+      "name": "September",
+      "release_date": "2018-04-17",
+      "release_date_precision": "day",
+      "total_tracks": 15,
+      "type": "album",
+      "uri": "spotify:album:4MgtwNYjD89Oj2km6eFRYd"
+    },
+    "artists": [
+      {
+        "external_urls": {
+          "spotify": "https://open.spotify.com/artist/4QQgXkCYTt3BlENzhyNETg"
+        },
+        "href": "https://api.spotify.com/v1/artists/4QQgXkCYTt3BlENzhyNETg",
+        "id": "4QQgXkCYTt3BlENzhyNETg",
+        "name": "Earth, Wind & Fire",
+        "type": "artist",
+        "uri": "spotify:artist:4QQgXkCYTt3BlENzhyNETg"
+      }
+    ],
+    "disc_number": 1,
+    "duration_ms": 215080,
+    "explicit": false,
+    "external_ids": {
+      "isrc": "USSM17800845"
+    },
+    "external_urls": {
+      "spotify": "https://open.spotify.com/track/7Cuk8jsPPoNYQWXK9XRFvG"
+    },
+    "href": "https://api.spotify.com/v1/tracks/7Cuk8jsPPoNYQWXK9XRFvG",
+    "id": "7Cuk8jsPPoNYQWXK9XRFvG",
+    "is_local": false,
+    "is_playable": true,
+    "name": "September",
+    "popularity": 70,
+    "preview_url": "https://p.scdn.co/mp3-preview/ae4aa51502978e1a866375fd9c397007c546d12a?cid=774b29d4f13844c495f206cafdad9c86",
+    "track_number": 1,
+    "type": "track",
+    "uri": "spotify:track:7Cuk8jsPPoNYQWXK9XRFvG"
+  },
+  "currently_playing_type": "track",
+  "actions": {
+    "disallows": {
+      "resuming": true,
+      "skipping_prev": true
+    }
+  },
+  "is_playing": true
+}

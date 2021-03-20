@@ -85,7 +85,7 @@ body {
 }
 
 .header-icon {
-  width: 20px;
+  min-width: 20px;
   height: 20px;
 }
 
@@ -172,7 +172,9 @@ body {
 }
 
 .now-playing .track-info {
+  width: 100%;
   margin-bottom: 8px;
+  text-align: center;
 }
 
 .now-playing .playback {
@@ -244,6 +246,7 @@ body {
   align-items: center;
   box-shadow: 1px 1px 4px hsla(0, 0%, 0%, 0.2) inset;
   border-radius: 50%;
+  cursor: pointer;
 }
 
 .wheel-inner {
