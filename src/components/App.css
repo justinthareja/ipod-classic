@@ -187,7 +187,6 @@ body {
 
 .now-playing .playback-progress {
   height: 100%;
-  width: 50%;
   background-color: var(--screen-color);
 }
 
