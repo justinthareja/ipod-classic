@@ -1,4 +1,4 @@
-import { useEffect, createContext, useContext, useState, useMemo } from "react";
+import { createContext, useContext, useState, useMemo } from "react";
 
 const TouchWheelContext = createContext();
 
@@ -37,34 +37,4 @@ function useTouchWheel() {
   return context;
 }
 
-function useTouchWheelTick(onTick) {
-  // this needs to call onTick at the appropriate time
-  const { angleChange, totalRotation, nextTick, setNextTick } = useTouchWheel();
-
-  useEffect(() => {
-    if (angleChange < 0 && totalRotation <= nextTick) {
-      onTick({ direction: "anticlockwise" });
-      setNextTick(totalRotation - TICK_STEP);
-    } else if (angleChange > 0 && totalRotation >= nextTick) {
-      onTick({ direction: "clockwise" });
-      setNextTick(totalRotation + TICK_STEP);
-    }
-  }, [angleChange, totalRotation, nextTick, setNextTick, onTick]);
-}
-
-function useTouchWheelClick(onClick) {
-  const context = useContext(TouchWheelContext);
-  const { setHandleClick } = context;
-
-  useEffect(() => {
-    setHandleClick(() => onClick);
-  }, [onClick, setHandleClick]);
-}
-
-export {
-  TouchWheelProvider,
-  useTouchWheel,
-  useTouchWheelClick,
-  useTouchWheelTick,
-  TICK_STEP,
-};
+export { TouchWheelProvider, useTouchWheel, TICK_STEP };

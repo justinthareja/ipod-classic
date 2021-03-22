@@ -1,4 +1,4 @@
-import { useContext, createContext, useState, useEffect, useMemo } from "react";
+import { useContext, createContext, useState, useMemo } from "react";
 
 const ControlsContext = createContext();
 
@@ -20,12 +20,4 @@ export function useControls() {
     throw new Error("Must useControls within <ControlsProvider>");
   }
   return context;
-}
-
-export function useMenu(handleMenu) {
-  const { setHandleMenu } = useControls();
-
-  useEffect(() => {
-    setHandleMenu(() => handleMenu);
-  }, [handleMenu, setHandleMenu]);
 }
