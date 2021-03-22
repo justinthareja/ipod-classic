@@ -1,19 +1,20 @@
 import { useCallback } from "react";
-import { useNavigate, useLocation } from "@reach/router";
-import { useMenu } from "../context/ControlsContext";
+import { navigate, useLocation } from "@reach/router";
+import { useMenu } from "../hooks/useMenu";
 
 function Screen({ children }) {
-  const navigate = useNavigate();
   const location = useLocation();
 
-  const handleMenu = useCallback(() => {
+  const handleMenuClick = useCallback(() => {
     if (location.pathname === "/") {
       return;
     }
-    navigate(-1);
-  }, [location.pathname, navigate]);
 
-  useMenu(handleMenu);
+    navigate(-1);
+  }, [location.pathname]);
+
+  useMenu(handleMenuClick);
+
   return (
     <div className="screen-container">
       <div className="screen">{children}</div>

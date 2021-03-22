@@ -10,7 +10,7 @@ import ArtistAlbums from "../pages/ArtistAlbums";
 import Albums from "../pages/Albums";
 import AlbumDetails from "../pages/AlbumDetails";
 import Songs from "../pages/Songs";
-import NowPlaying from "../pages/NowPlaying";
+import NowPlaying from "../pages/NowPlayingPage";
 import Shows from "../pages/Shows";
 import ShowDetails from "../pages/ShowDetails";
 import AuthCallback from "../pages/AuthCallback";

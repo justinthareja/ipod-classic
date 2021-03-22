@@ -5,11 +5,9 @@ import {
   useLayoutEffect,
   useCallback,
 } from "react";
-import { Redirect, useNavigate } from "@reach/router";
-import {
-  useTouchWheelTick,
-  useTouchWheelClick,
-} from "../context/TouchWheelContext";
+import { Redirect, navigate } from "@reach/router";
+import { useTouchWheelClick } from "../hooks/useTouchWheelClick";
+import { useTouchWheelTick } from "../hooks/useTouchWheelTick";
 import Play from "../components/Play";
 
 function ScreenMenu({ menuItems }) {
@@ -19,44 +17,34 @@ function ScreenMenu({ menuItems }) {
   const [activeIndex, setActiveIndex] = useState(0);
   const [visibleRange, setVisibleRange] = useState([0, NUM_ITEMS - 1]);
   const [shouldPlay, setShouldPlay] = useState(false);
+  const activeItem = menuItems[activeIndex];
 
-  const navigate = useNavigate();
-
-  const handleTick = useCallback(
-    ({ direction }) => {
-      if (direction === "clockwise") {
-        if (activeIndex < menuItems.length - 1) {
-          setActiveIndex(activeIndex + 1);
-        }
-      } else if (direction === "anticlockwise") {
-        if (activeIndex > 0) {
-          setActiveIndex(activeIndex - 1);
-        }
+  useTouchWheelTick(({ direction }) => {
+    if (direction === "clockwise") {
+      if (activeIndex < menuItems.length - 1) {
+        setActiveIndex(activeIndex + 1);
       }
-    },
-    [menuItems.length, activeIndex]
-  );
-
-  const handleClick = useCallback(() => {
-    async function callback() {
-      const item = menuItems[activeIndex];
-      // if the item doesn't have an arrow, it means this partiuclar screen navigates to the
-      // now playing screen when clicked
-      // let spotify know to play the song before navigating
-      if (!item.showArrow) {
-        setShouldPlay(true);
-      } else {
-        // if the item does have an arrow, it means the next component is just anoher
-        // list component so navigate straight to it
-        navigate(item.path);
+    } else if (direction === "anticlockwise") {
+      if (activeIndex > 0) {
+        setActiveIndex(activeIndex - 1);
       }
     }
+  });
 
-    callback();
-  }, [menuItems, activeIndex, navigate]);
+  const handleTouchWheelClick = useCallback(() => {
+    // if the item doesn't have an arrow, it means this partiuclar screen navigates to the
+    // now playing screen when clicked
+    // let spotify know to play the song before navigating
+    if (!activeItem.showArrow) {
+      setShouldPlay(true);
+    } else {
+      // if the item does have an arrow, it means the next component is just anoher
+      // list component so navigate straight to it
+      navigate(activeItem.path);
+    }
+  }, [activeItem.showArrow, activeItem.path]);
 
-  useTouchWheelTick(handleTick);
-  useTouchWheelClick(handleClick);
+  useTouchWheelClick(handleTouchWheelClick);
 
   useEffect(() => {
     const $content = contentRef.current;
@@ -87,12 +75,11 @@ function ScreenMenu({ menuItems }) {
   }, [activeIndex, visibleRange]);
 
   if (shouldPlay) {
-    const item = menuItems[activeIndex];
     // the <Play> component will render any children after successfully telling spotify to play
     // the next track. in this case, a redirect will happen to the Now Playing component
     return (
-      <Play trackId={item.id}>
-        <Redirect to={item.path} noThrow />
+      <Play trackId={activeItem.id}>
+        <Redirect to={activeItem.path} noThrow />
       </Play>
     );
   }
