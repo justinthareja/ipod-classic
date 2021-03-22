@@ -1,17 +1,20 @@
-import { useEffect, useCallback } from "react";
+import { useEffect } from "react";
 import { useTouchWheel } from "../context/TouchWheelContext";
 
+// this hook is used to register a click handler to the touch wheel button
+// the onClick function passed a parameter likely depends on local component
+// state. in order to avoid an infinite re-render cycle, the onClick function
+// must be memoized using React.useCallback before being passed in
 function useTouchWheelClick(onClick) {
   const { setHandleClick } = useTouchWheel();
-  const clickHandler = useCallback(() => onClick, []); // eslint-disable-line react-hooks/exhaustive-deps
 
   useEffect(() => {
-    setHandleClick(clickHandler);
+    setHandleClick(() => onClick);
 
     return function cleanup() {
       setHandleClick(() => {});
     };
-  }, []); // eslint-disable-line react-hooks/exhaustive-deps
+  }, [setHandleClick, onClick]);
 }
 
 export { useTouchWheelClick };

@@ -1,4 +1,10 @@
-import { useState, useEffect, useRef, useLayoutEffect } from "react";
+import {
+  useState,
+  useEffect,
+  useRef,
+  useLayoutEffect,
+  useCallback,
+} from "react";
 import { Redirect, navigate } from "@reach/router";
 import { useTouchWheelClick } from "../hooks/useTouchWheelClick";
 import { useTouchWheelTick } from "../hooks/useTouchWheelTick";
@@ -25,7 +31,7 @@ function ScreenMenu({ menuItems }) {
     }
   });
 
-  useTouchWheelClick(() => {
+  const handleTouchWheelClick = useCallback(() => {
     // if the item doesn't have an arrow, it means this partiuclar screen navigates to the
     // now playing screen when clicked
     // let spotify know to play the song before navigating
@@ -36,7 +42,9 @@ function ScreenMenu({ menuItems }) {
       // list component so navigate straight to it
       navigate(activeItem.path);
     }
-  });
+  }, [activeItem.showArrow, activeItem.path]);
+
+  useTouchWheelClick(handleTouchWheelClick);
 
   useEffect(() => {
     const $content = contentRef.current;
