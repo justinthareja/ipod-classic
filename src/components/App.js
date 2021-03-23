@@ -36,6 +36,7 @@ function App() {
           <Shows path="/shows" />
           <ShowDetails path="/shows/:id" />
           <NowPlaying path="/episodes/:id" />
+          <NowPlaying path="now-playing" />
           <AuthCallback path="/callback" />
           <NotFound default />
         </Router>
