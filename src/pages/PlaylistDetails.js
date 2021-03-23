@@ -1,7 +1,5 @@
 import { usePlaylistById } from "../hooks/usePlaylistById";
 import ScreenMenu from "../components/ScreenMenu";
-import Screen from "../components/Screen";
-import ScreenHeader from "../components/ScreenHeader";
 import LoadingScreen from "../components/LoadingScreen";
 import ErrorScreen from "../components/ErrorScreen";
 
@@ -21,16 +19,14 @@ function PlaylistDetails(props) {
     );
   }
   return (
-    <Screen>
-      <ScreenHeader header={data.body.name} />
-      <ScreenMenu
-        menuItems={data.body.tracks.items.map((item) => ({
-          name: item.track.name,
-          path: `/songs/${item.track.id}`,
-          id: item.track.id,
-        }))}
-      />
-    </Screen>
+    <ScreenMenu
+      header={data.body.name}
+      menuItems={data.body.tracks.items.map((item) => ({
+        name: item.track.name,
+        path: `/songs/${item.track.id}`,
+        id: item.track.id,
+      }))}
+    />
   );
 }
 

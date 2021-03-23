@@ -1,8 +1,10 @@
 import { useEffect } from "react";
 import { usePlay } from "../hooks/usePlay";
+import LoadingScreen from "./LoadingScreen";
+import ErrorScreen from "./ErrorScreen";
 
 function Play({ trackId, children }) {
-  const { isError, isSuccess, mutate } = usePlay();
+  const { isError, isSuccess, error, mutate } = usePlay();
 
   useEffect(() => {
     mutate &&
@@ -16,10 +18,15 @@ function Play({ trackId, children }) {
   }
 
   if (isError) {
-    return <h1>Error...</h1>;
+    return (
+      <ErrorScreen
+        status={error.body.error.status}
+        message={error.body.error.message}
+      />
+    );
   }
 
-  return <h1>Loading...</h1>;
+  return <LoadingScreen />;
 }
 
 export default Play;

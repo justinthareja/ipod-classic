@@ -1,7 +1,5 @@
 import { useTracks } from "../hooks/useTracks";
 import ScreenMenu from "../components/ScreenMenu";
-import Screen from "../components/Screen";
-import ScreenHeader from "../components/ScreenHeader";
 import LoadingScreen from "../components/LoadingScreen";
 import ErrorScreen from "../components/ErrorScreen";
 
@@ -22,16 +20,14 @@ function Songs(props) {
   }
 
   return (
-    <Screen>
-      <ScreenHeader header="Songs" />
-      <ScreenMenu
-        menuItems={data.body.items.map((item) => ({
-          name: item.track.name,
-          path: `/songs/${item.track.id}`,
-          id: item.track.id,
-        }))}
-      />
-    </Screen>
+    <ScreenMenu
+      header="Songs"
+      menuItems={data.body.items.map((item) => ({
+        name: item.track.name,
+        path: `/songs/${item.track.id}`,
+        id: item.track.id,
+      }))}
+    />
   );
 }
 

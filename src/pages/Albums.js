@@ -1,7 +1,5 @@
 import { useAlbums } from "../hooks/useAlbums";
 import ScreenMenu from "../components/ScreenMenu";
-import Screen from "../components/Screen";
-import ScreenHeader from "../components/ScreenHeader";
 import LoadingScreen from "../components/LoadingScreen";
 import ErrorScreen from "../components/ErrorScreen";
 
@@ -22,17 +20,15 @@ function Albums(props) {
   }
 
   return (
-    <Screen>
-      <ScreenHeader header="Albums" />
-      <ScreenMenu
-        menuItems={data.body.items.map((item) => ({
-          name: item.album.name,
-          path: `/albums/${item.album.id}`,
-          showArrow: true,
-          id: item.album.id,
-        }))}
-      />
-    </Screen>
+    <ScreenMenu
+      header="Albums"
+      menuItems={data.body.items.map((item) => ({
+        name: item.album.name,
+        path: `/albums/${item.album.id}`,
+        showArrow: true,
+        id: item.album.id,
+      }))}
+    />
   );
 }
 

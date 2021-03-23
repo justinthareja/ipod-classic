@@ -1,15 +1,7 @@
-import Screen from "../components/Screen";
-import ScreenHeader from "../components/ScreenHeader";
+import ErrorScreen from "../components/ErrorScreen";
 
 function NotFound(props) {
-  return (
-    <Screen>
-      <ScreenHeader header="404" />
-      <div className="not-found">
-        <p>Page Not Found</p>
-      </div>
-    </Screen>
-  );
+  return <ErrorScreen status="404" message="Page Not Found" />;
 }
 
 export default NotFound;
