@@ -5,12 +5,14 @@ import {
   useLayoutEffect,
   useCallback,
 } from "react";
-import { Redirect, navigate } from "@reach/router";
+import { navigate } from "@reach/router";
 import { useTouchWheelClick } from "../hooks/useTouchWheelClick";
 import { useTouchWheelTick } from "../hooks/useTouchWheelTick";
 import Play from "../components/Play";
+import Screen from "../components/Screen";
+import ScreenHeader from "../components/ScreenHeader";
 
-function ScreenMenu({ menuItems }) {
+function ScreenMenu({ menuItems, header }) {
   const NUM_ITEMS = 6;
   const ITEM_HEIGHT = 19; // px
   const contentRef = useRef(null);
@@ -74,41 +76,44 @@ function ScreenMenu({ menuItems }) {
     }
   }, [activeIndex, visibleRange]);
 
+  const onPlaySuccess = useCallback(() => navigate(activeItem.path), [
+    activeItem.path,
+  ]);
+
   if (shouldPlay) {
     // the <Play> component will render any children after successfully telling spotify to play
-    // the next track. in this case, a redirect will happen to the Now Playing component
-    return (
-      <Play trackId={activeItem.id}>
-        <Redirect to={activeItem.path} noThrow />
-      </Play>
-    );
+    // the next track. in this case, a navigate will happen to the Now Playing component
+    return <Play trackId={activeItem.id} onPlaySuccess={onPlaySuccess} />;
   }
 
   return (
-    <div className="screen-menu-container" ref={contentRef}>
-      <ul className="screen-menu">
-        {menuItems.map(({ name, showArrow }, i) => (
-          <li
-            key={`${name}-${i}`}
-            className={`menu-item ${i === activeIndex ? "is-active" : ""}`}
-          >
-            <span className="truncate">{name}</span>
-            {showArrow && (
-              <svg
-                className="icon cheveron-right"
-                viewBox="0 0 5.8859 9.8"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  className="primary"
-                  d="m0.2 8.2a1 1 0 0 0 1.4 1.4l4-4a1 1 0 0 0 0-1.4l-4-4a1 1 0 0 0-1.4 1.4l3.29 3.3-3.3 3.3z"
-                />
-              </svg>
-            )}
-          </li>
-        ))}
-      </ul>
-    </div>
+    <Screen>
+      <ScreenHeader header={header} />
+      <div className="screen-menu-container" ref={contentRef}>
+        <ul className="screen-menu">
+          {menuItems.map(({ name, showArrow }, i) => (
+            <li
+              key={`${name}-${i}`}
+              className={`menu-item ${i === activeIndex ? "is-active" : ""}`}
+            >
+              <span className="truncate">{name}</span>
+              {showArrow && (
+                <svg
+                  className="icon cheveron-right"
+                  viewBox="0 0 5.8859 9.8"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    className="primary"
+                    d="m0.2 8.2a1 1 0 0 0 1.4 1.4l4-4a1 1 0 0 0 0-1.4l-4-4a1 1 0 0 0-1.4 1.4l3.29 3.3-3.3 3.3z"
+                  />
+                </svg>
+              )}
+            </li>
+          ))}
+        </ul>
+      </div>
+    </Screen>
   );
 }
 

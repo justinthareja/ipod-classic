@@ -1,22 +1,38 @@
 import { useEffect } from "react";
 import { usePlay } from "../hooks/usePlay";
+import LoadingScreen from "./LoadingScreen";
+import ErrorScreen from "./ErrorScreen";
 
-function Play({ trackId, children }) {
-  const { isError, isSuccess, mutate } = usePlay();
+function Play({ trackId, onPlaySuccess }) {
+  const { isError, error, mutate, data = {}, isLoading, isSuccess } = usePlay();
 
   useEffect(() => {
-    mutate && mutate(trackId);
+    mutate &&
+      mutate({
+        uris: [`spotify:track:${trackId}`],
+      });
   }, []); //eslint-disable-line react-hooks/exhaustive-deps
 
-  if (isSuccess) {
-    return children;
-  }
+  useEffect(() => {
+    if (isSuccess && data.statusCode === 204) {
+      onPlaySuccess();
+    }
+  }, [onPlaySuccess, data.statusCode, isSuccess]);
 
   if (isError) {
-    return <h1>Error...</h1>;
+    return (
+      <ErrorScreen
+        status={error.body.error.status}
+        message={error.body.error.message}
+      />
+    );
   }
 
-  return <h1>Loading...</h1>;
+  if (isLoading || data.statusCode !== 204) {
+    return <LoadingScreen />;
+  }
+
+  return null;
 }
 
 export default Play;
