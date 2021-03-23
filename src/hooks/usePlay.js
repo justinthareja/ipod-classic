@@ -1,5 +1,6 @@
 import { useMutation } from "react-query";
 import { useUser } from "../context/UserContext";
+import { useStatus } from "../context/StatusContext";
 import spotifyApi from "../api/spotifyApi";
 
 /* 
@@ -10,9 +11,15 @@ the next song will just do nothing.
 */
 function usePlay() {
   const { user } = useUser();
-  const mutation = useMutation((options) => spotifyApi.play(options));
+  const { play } = useStatus();
+  const mutation = useMutation((options) => spotifyApi.play(options), {
+    onSuccess: () => {
+      // updates app state to reflect spotify status
+      play();
+    },
+  });
 
-  return user ? mutation : { isSuccess: true };
+  return user ? mutation : { isSuccess: true, mutate: () => {} };
 }
 
 export { usePlay };

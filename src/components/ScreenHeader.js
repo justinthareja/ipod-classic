@@ -1,12 +1,16 @@
+import { useStatus } from "../context/StatusContext";
 import BatteryIcon from "./BatteryIcon";
 import PlayIcon from "./PlayIcon";
 import PauseIcon from "./PauseIcon";
 
-function ScreenHeader({ header, isPlaying }) {
+function ScreenHeader({ header }) {
+  const status = useStatus();
+
   return (
     <div className="screen-header">
       <div className="header-icon">
-        {isPlaying ? <PlayIcon /> : <PauseIcon />}
+        {status.state === "playing" && <PlayIcon />}
+        {status.state === "paused" && <PauseIcon />}
       </div>
       <div className="title truncate">{header}</div>
       <div className="header-icon">

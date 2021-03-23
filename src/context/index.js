@@ -3,6 +3,7 @@ import { AuthProvider } from "./AuthContext";
 import { UserProvider } from "./UserContext";
 import { TouchWheelProvider } from "./TouchWheelContext";
 import { ControlsProvider } from "./ControlsContext";
+import { StatusProvider } from "./StatusContext";
 
 const queryClient = new QueryClient();
 
@@ -11,9 +12,11 @@ function AppProvider({ children }) {
     <QueryClientProvider client={queryClient}>
       <AuthProvider>
         <UserProvider>
-          <TouchWheelProvider>
-            <ControlsProvider>{children}</ControlsProvider>
-          </TouchWheelProvider>
+          <StatusProvider>
+            <TouchWheelProvider>
+              <ControlsProvider>{children}</ControlsProvider>
+            </TouchWheelProvider>
+          </StatusProvider>
         </UserProvider>
       </AuthProvider>
     </QueryClientProvider>

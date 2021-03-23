@@ -8,7 +8,6 @@ import {
 import { Redirect, navigate } from "@reach/router";
 import { useTouchWheelClick } from "../hooks/useTouchWheelClick";
 import { useTouchWheelTick } from "../hooks/useTouchWheelTick";
-import { useCurrentlyPlaying } from "../hooks/useCurrentlyPlaying";
 import Play from "../components/Play";
 import Screen from "../components/Screen";
 import ScreenHeader from "../components/ScreenHeader";
@@ -21,7 +20,6 @@ function ScreenMenu({ menuItems, header }) {
   const [visibleRange, setVisibleRange] = useState([0, NUM_ITEMS - 1]);
   const [shouldPlay, setShouldPlay] = useState(false);
   const activeItem = menuItems[activeIndex];
-  const { data } = useCurrentlyPlaying();
 
   useTouchWheelTick(({ direction }) => {
     if (direction === "clockwise") {
@@ -90,10 +88,7 @@ function ScreenMenu({ menuItems, header }) {
 
   return (
     <Screen>
-      <ScreenHeader
-        header={header}
-        isPlaying={data && data.body && data.body.is_playing}
-      />
+      <ScreenHeader header={header} />
       <div className="screen-menu-container" ref={contentRef}>
         <ul className="screen-menu">
           {menuItems.map(({ name, showArrow }, i) => (
