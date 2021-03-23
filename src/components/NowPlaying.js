@@ -1,10 +1,16 @@
-import { useEffect, useState } from "react";
+import { useCallback, useEffect, useState } from "react";
+import { usePlayPauseClick } from "../hooks/usePlayPauseClick";
+import { usePause } from "../hooks/usePause";
+import { usePlay } from "../hooks/usePlay";
 import Screen from "./Screen";
 import ScreenHeader from "./ScreenHeader";
 
 function NowPlaying({ item, progress_ms, is_playing }) {
   const [progress, setProgress] = useState(progress_ms);
+  const [isPlaying, setIsPlaying] = useState(is_playing);
   const interval = 1000;
+  const pause = usePause();
+  const play = usePlay();
 
   // this is only necessary because for some reason when a song is played
   // this component is rendered initially with the previous tracks' progress
@@ -17,16 +23,32 @@ function NowPlaying({ item, progress_ms, is_playing }) {
       setProgress((currentProgress) => currentProgress + interval);
     }, interval);
 
-    if (!is_playing) {
+    if (!isPlaying) {
       return clearInterval(intervalId);
     }
 
     return () => clearInterval(intervalId);
-  }, [is_playing]);
+  }, [isPlaying]);
+
+  const playPauseHandler = useCallback(() => {
+    if (isPlaying) {
+      setIsPlaying(false);
+      pause.mutate();
+    } else {
+      setIsPlaying(true);
+      // update the api
+      play.mutate({
+        uris: [`spotify:track:${item.id}`],
+        position_ms: progress,
+      });
+    }
+  }, [isPlaying, item.id]); // TODO: figure out how to properly add the dependencies
+
+  usePlayPauseClick(playPauseHandler);
 
   return (
     <Screen>
-      <ScreenHeader header={item.album.name} />
+      <ScreenHeader header={item.album.name} isPlaying={isPlaying} />
       <div className="now-playing">
         <small className="track-count">
           {item.track_number} of {item.album.total_tracks}

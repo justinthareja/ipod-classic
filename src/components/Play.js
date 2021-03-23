@@ -5,7 +5,10 @@ function Play({ trackId, children }) {
   const { isError, isSuccess, mutate } = usePlay();
 
   useEffect(() => {
-    mutate && mutate(trackId);
+    mutate &&
+      mutate({
+        uris: [`spotify:track:${trackId}`],
+      });
   }, []); //eslint-disable-line react-hooks/exhaustive-deps
 
   if (isSuccess) {

@@ -2,7 +2,6 @@ import { useEffect } from "react";
 import { useTouchWheel, TICK_STEP } from "../context/TouchWheelContext";
 
 function useTouchWheelTick(onTick) {
-  // this needs to call onTick at the appropriate time
   const { angleChange, totalRotation, nextTick, setNextTick } = useTouchWheel();
 
   useEffect(() => {

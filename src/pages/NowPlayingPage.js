@@ -4,7 +4,14 @@ import LoadingScreen from "../components/LoadingScreen";
 import ErrorScreen from "../components/ErrorScreen";
 
 function NowPlayingPage(props) {
-  const { isLoading, isError, data, error } = useCurrentlyPlaying();
+  const {
+    isLoading,
+    isError,
+    data,
+    error,
+    refetch,
+    isFetching,
+  } = useCurrentlyPlaying();
 
   if (isLoading) {
     return <LoadingScreen />;
@@ -19,9 +26,14 @@ function NowPlayingPage(props) {
     );
   }
 
+  // sometimes the currently-playing response will be 200 but have no track
+  // when this is the case, refetch
   if (!data || !data.body || !data.body.item) {
-    console.error(data);
-    return <ErrorScreen status="500" message="Client error." />;
+    if (!isFetching) {
+      refetch();
+    }
+
+    return <LoadingScreen />;
   }
 
   return (

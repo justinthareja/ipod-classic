@@ -10,11 +10,7 @@ the next song will just do nothing.
 */
 function usePlay() {
   const { user } = useUser();
-  const mutation = useMutation((trackId) =>
-    spotifyApi.play({
-      uris: [`spotify:track:${trackId}`],
-    })
-  );
+  const mutation = useMutation((options) => spotifyApi.play(options));
 
   return user ? mutation : { isSuccess: true };
 }
