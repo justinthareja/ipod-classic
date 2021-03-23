@@ -5,7 +5,7 @@ import {
   useLayoutEffect,
   useCallback,
 } from "react";
-import { Redirect, navigate } from "@reach/router";
+import { navigate } from "@reach/router";
 import { useTouchWheelClick } from "../hooks/useTouchWheelClick";
 import { useTouchWheelTick } from "../hooks/useTouchWheelTick";
 import Play from "../components/Play";
@@ -76,14 +76,14 @@ function ScreenMenu({ menuItems, header }) {
     }
   }, [activeIndex, visibleRange]);
 
+  const onPlaySuccess = useCallback(() => navigate(activeItem.path), [
+    activeItem.path,
+  ]);
+
   if (shouldPlay) {
     // the <Play> component will render any children after successfully telling spotify to play
-    // the next track. in this case, a redirect will happen to the Now Playing component
-    return (
-      <Play trackId={activeItem.id}>
-        <Redirect to={activeItem.path} noThrow />
-      </Play>
-    );
+    // the next track. in this case, a navigate will happen to the Now Playing component
+    return <Play trackId={activeItem.id} onPlaySuccess={onPlaySuccess} />;
   }
 
   return (

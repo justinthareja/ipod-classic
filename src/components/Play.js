@@ -3,8 +3,8 @@ import { usePlay } from "../hooks/usePlay";
 import LoadingScreen from "./LoadingScreen";
 import ErrorScreen from "./ErrorScreen";
 
-function Play({ trackId, children }) {
-  const { isError, error, mutate, data, isLoading } = usePlay();
+function Play({ trackId, onPlaySuccess }) {
+  const { isError, error, mutate, data = {}, isLoading, isSuccess } = usePlay();
 
   useEffect(() => {
     mutate &&
@@ -12,6 +12,12 @@ function Play({ trackId, children }) {
         uris: [`spotify:track:${trackId}`],
       });
   }, []); //eslint-disable-line react-hooks/exhaustive-deps
+
+  useEffect(() => {
+    if (isSuccess && data.statusCode === 204) {
+      onPlaySuccess();
+    }
+  }, [onPlaySuccess, data.statusCode, isSuccess]);
 
   if (isError) {
     return (
@@ -22,11 +28,11 @@ function Play({ trackId, children }) {
     );
   }
 
-  if (isLoading || !(data && data.statusCode && data.statusCode === 204)) {
+  if (isLoading || data.statusCode !== 204) {
     return <LoadingScreen />;
   }
 
-  return children;
+  return null;
 }
 
 export default Play;

@@ -19,7 +19,9 @@ function usePlay() {
     },
   });
 
-  return user ? mutation : { isSuccess: true, mutate: () => {} };
+  return user
+    ? mutation
+    : { isSuccess: true, mutate: () => {}, data: { statusCode: 204 } };
 }
 
 export { usePlay };
