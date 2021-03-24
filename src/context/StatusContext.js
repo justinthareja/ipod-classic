@@ -1,4 +1,10 @@
-import { createContext, useContext, useReducer } from "react";
+import {
+  createContext,
+  useCallback,
+  useContext,
+  useMemo,
+  useReducer,
+} from "react";
 
 const STATUS_PLAY = "StatusContext.play";
 const STATUS_PAUSE = "StatusContext.pause";
@@ -23,13 +29,21 @@ const StatusContext = createContext();
 export function StatusProvider(props) {
   const [state, dispatch] = useReducer(reducer, initialState);
 
-  const play = () => dispatch(STATUS_PLAY);
-  const pause = () => dispatch(STATUS_PAUSE);
-  const stop = () => dispatch(STATUS_STOP);
+  const play = useCallback(() => dispatch(STATUS_PLAY), []);
+  const pause = useCallback(() => dispatch(STATUS_PAUSE), []);
+  const stop = useCallback(() => dispatch(STATUS_STOP), []);
 
-  return (
-    <StatusContext.Provider value={{ state, play, pause, stop }} {...props} />
+  const value = useMemo(
+    () => ({
+      state,
+      play,
+      pause,
+      stop,
+    }),
+    [state, play, pause, stop]
   );
+
+  return <StatusContext.Provider value={value} {...props} />;
 }
 
 export function useStatus() {

@@ -7,12 +7,7 @@ import Screen from "./Screen";
 import ScreenHeader from "./ScreenHeader";
 
 function NowPlaying({ item, progress_ms, is_playing }) {
-  const [progress, setProgress] = useState(progress_ms);
-  const interval = 1000;
-  const pause = usePause();
-  const play = usePlay();
   const status = useStatus();
-
   // syncs app status with spotify's state
   useEffect(() => {
     if (is_playing) {
@@ -20,8 +15,10 @@ function NowPlaying({ item, progress_ms, is_playing }) {
     } else {
       status.pause();
     }
-  }, [is_playing]); // eslint-disable-line react-hooks/exhaustive-deps
+  }, [is_playing, status]);
 
+  const [progress, setProgress] = useState(progress_ms);
+  const interval = 1000;
   // this is only necessary because for some reason when a song is played
   // this component is rendered initially with the previous tracks' progress
   useEffect(() => {
@@ -40,16 +37,18 @@ function NowPlaying({ item, progress_ms, is_playing }) {
     return () => clearInterval(intervalId);
   }, [status.state]);
 
+  const { mutate: pause } = usePause();
+  const { mutate: play } = usePlay();
   const playPauseHandler = useCallback(() => {
     if (status.state === "playing") {
-      pause.mutate();
+      pause();
     } else {
-      play.mutate({
+      play({
         uris: [`spotify:track:${item.id}`],
         position_ms: progress,
       });
     }
-  }, [item.id, status.state]); // eslint-disable-line react-hooks/exhaustive-deps
+  }, [item.id, status.state, progress]); //eslint-disable-line react-hooks/exhaustive-deps
 
   usePlayPauseClick(playPauseHandler);
 
