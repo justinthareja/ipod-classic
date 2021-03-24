@@ -7,11 +7,10 @@ function Play({ trackId, onPlaySuccess }) {
   const { isError, error, mutate, data = {}, isLoading, isSuccess } = usePlay();
 
   useEffect(() => {
-    mutate &&
-      mutate({
-        uris: [`spotify:track:${trackId}`],
-      });
-  }, []); //eslint-disable-line react-hooks/exhaustive-deps
+    mutate({
+      uris: [`spotify:track:${trackId}`],
+    });
+  }, [trackId]); //eslint-disable-line react-hooks/exhaustive-deps
 
   useEffect(() => {
     if (isSuccess && data.statusCode === 204) {

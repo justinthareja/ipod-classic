@@ -81,8 +81,6 @@ function ScreenMenu({ menuItems, header }) {
   ]);
 
   if (shouldPlay) {
-    // the <Play> component will render any children after successfully telling spotify to play
-    // the next track. in this case, a navigate will happen to the Now Playing component
     return <Play trackId={activeItem.id} onPlaySuccess={onPlaySuccess} />;
   }
 
