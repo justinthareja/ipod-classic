@@ -1,0 +1,107 @@
+{
+  "device": {
+    "id": "88387605f1b0710735445101800cde7126b4b342",
+    "is_active": true,
+    "is_private_session": false,
+    "is_restricted": false,
+    "name": "Justin’s MacBook Air",
+    "type": "Computer",
+    "volume_percent": 45
+  },
+  "shuffle_state": true,
+  "repeat_state": "off",
+  "timestamp": 1616556021509,
+  "context": {
+    "external_urls": {
+      "spotify": "https://open.spotify.com/playlist/0UJnJV9pe9aCyHXYKW8U1E"
+    },
+    "href": "https://api.spotify.com/v1/playlists/0UJnJV9pe9aCyHXYKW8U1E",
+    "type": "playlist",
+    "uri": "spotify:user:1240637656:playlist:0UJnJV9pe9aCyHXYKW8U1E"
+  },
+  "progress_ms": 60512,
+  "item": {
+    "album": {
+      "album_type": "single",
+      "artists": [
+        {
+          "external_urls": {
+            "spotify": "https://open.spotify.com/artist/3VNITwohbvU5Wuy5PC6dsI"
+          },
+          "href": "https://api.spotify.com/v1/artists/3VNITwohbvU5Wuy5PC6dsI",
+          "id": "3VNITwohbvU5Wuy5PC6dsI",
+          "name": "Kool & The Gang",
+          "type": "artist",
+          "uri": "spotify:artist:3VNITwohbvU5Wuy5PC6dsI"
+        }
+      ],
+      "external_urls": {
+        "spotify": "https://open.spotify.com/album/02ez6TRQvxsxdA2LaCK5BU"
+      },
+      "href": "https://api.spotify.com/v1/albums/02ez6TRQvxsxdA2LaCK5BU",
+      "id": "02ez6TRQvxsxdA2LaCK5BU",
+      "images": [
+        {
+          "height": 640,
+          "url": "https://i.scdn.co/image/ab67616d0000b2738a69fee00426f311d0056151",
+          "width": 640
+        },
+        {
+          "height": 300,
+          "url": "https://i.scdn.co/image/ab67616d00001e028a69fee00426f311d0056151",
+          "width": 300
+        },
+        {
+          "height": 64,
+          "url": "https://i.scdn.co/image/ab67616d000048518a69fee00426f311d0056151",
+          "width": 64
+        }
+      ],
+      "name": "Celebration / Morning Star",
+      "release_date": "2009-01-01",
+      "release_date_precision": "day",
+      "total_tracks": 2,
+      "type": "album",
+      "uri": "spotify:album:02ez6TRQvxsxdA2LaCK5BU"
+    },
+    "artists": [
+      {
+        "external_urls": {
+          "spotify": "https://open.spotify.com/artist/3VNITwohbvU5Wuy5PC6dsI"
+        },
+        "href": "https://api.spotify.com/v1/artists/3VNITwohbvU5Wuy5PC6dsI",
+        "id": "3VNITwohbvU5Wuy5PC6dsI",
+        "name": "Kool & The Gang",
+        "type": "artist",
+        "uri": "spotify:artist:3VNITwohbvU5Wuy5PC6dsI"
+      }
+    ],
+    "disc_number": 1,
+    "duration_ms": 215653,
+    "explicit": false,
+    "external_ids": {
+      "isrc": "USPR38007166"
+    },
+    "external_urls": {
+      "spotify": "https://open.spotify.com/track/6CSLNGruNhqpb5zhfs5n3i"
+    },
+    "href": "https://api.spotify.com/v1/tracks/6CSLNGruNhqpb5zhfs5n3i",
+    "id": "6CSLNGruNhqpb5zhfs5n3i",
+    "is_local": false,
+    "is_playable": true,
+    "name": "Celebration - Single Version",
+    "popularity": 67,
+    "preview_url": "https://p.scdn.co/mp3-preview/94eb2a3a4f926ea49bda1822e5fe917ad7ae5202?cid=774b29d4f13844c495f206cafdad9c86",
+    "track_number": 1,
+    "type": "track",
+    "uri": "spotify:track:6CSLNGruNhqpb5zhfs5n3i"
+  },
+  "currently_playing_type": "track",
+  "actions": {
+    "disallows": {
+      "resuming": true,
+      "skipping_prev": true
+    }
+  },
+  "is_playing": true
+}
