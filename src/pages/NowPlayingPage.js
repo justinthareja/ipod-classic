@@ -1,17 +1,12 @@
-import { useCurrentlyPlaying } from "../hooks/useCurrentlyPlaying";
+import { usePlayer } from "../hooks/usePlayer";
 import NowPlaying from "../components/NowPlaying";
 import LoadingScreen from "../components/LoadingScreen";
 import ErrorScreen from "../components/ErrorScreen";
 
 function NowPlayingPage(props) {
-  const {
-    isLoading,
-    isError,
-    data,
-    error,
-    refetch,
-    isFetching,
-  } = useCurrentlyPlaying();
+  const { isLoading, isError, data, error, refetch, isFetching } = usePlayer(
+    props.id
+  );
 
   if (isLoading) {
     return <LoadingScreen />;

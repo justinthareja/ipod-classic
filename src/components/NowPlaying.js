@@ -1,4 +1,5 @@
 import { useCallback, useEffect, useState } from "react";
+import useInterval from "@use-it/interval";
 import { usePlayPauseClick } from "../hooks/usePlayPauseClick";
 import { usePause } from "../hooks/usePause";
 import { usePlay } from "../hooks/usePlay";
@@ -25,17 +26,12 @@ function NowPlaying({ item, progress_ms, is_playing }) {
     setProgress(progress_ms);
   }, [progress_ms]);
 
-  useEffect(() => {
-    const intervalId = setInterval(() => {
-      setProgress((currentProgress) => currentProgress + interval);
-    }, interval);
-
-    if (status.state !== "playing") {
-      return clearInterval(intervalId);
-    }
-
-    return () => clearInterval(intervalId);
-  }, [status.state]);
+  useInterval(
+    () => {
+      setProgress(progress + interval);
+    },
+    status.state === "playing" ? interval : null
+  );
 
   const { mutate: pause } = usePause();
   const { mutate: play } = usePlay();
@@ -68,7 +64,9 @@ function NowPlaying({ item, progress_ms, is_playing }) {
         <div className="playback">
           <div
             className="playback-progress"
-            style={{ width: `${(progress / item.duration_ms) * 100}%` }}
+            style={{
+              width: `${Math.min(100, (progress / item.duration_ms) * 100)}%`,
+            }}
           ></div>
         </div>
         <div className="timestamps">
