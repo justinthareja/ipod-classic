@@ -7,21 +7,11 @@ import { useStatus } from "../context/StatusContext";
 import Screen from "./Screen";
 import ScreenHeader from "./ScreenHeader";
 
-function NowPlaying({ item, progress_ms, is_playing }) {
+function NowPlaying({ item, progress_ms }) {
   const status = useStatus();
-  // syncs app status with spotify's state
-  useEffect(() => {
-    if (is_playing) {
-      status.play();
-    } else {
-      status.pause();
-    }
-  }, [is_playing, status]);
-
   const [progress, setProgress] = useState(progress_ms);
   const interval = 1000;
-  // this is only necessary because for some reason when a song is played
-  // this component is rendered initially with the previous tracks' progress
+
   useEffect(() => {
     setProgress(progress_ms);
   }, [progress_ms]);
@@ -33,13 +23,13 @@ function NowPlaying({ item, progress_ms, is_playing }) {
     status.state === "playing" ? interval : null
   );
 
-  const { mutate: pause } = usePause();
-  const { mutate: play } = usePlay();
+  const pause = usePause();
+  const play = usePlay();
   const playPauseHandler = useCallback(() => {
     if (status.state === "playing") {
-      pause();
+      pause.mutate();
     } else {
-      play({
+      play.mutate({
         uris: [`spotify:track:${item.id}`],
         position_ms: progress,
       });
@@ -70,7 +60,9 @@ function NowPlaying({ item, progress_ms, is_playing }) {
           ></div>
         </div>
         <div className="timestamps">
-          <p className="time-played">{msToHuman(progress)}</p>
+          <p className="time-played">
+            {msToHuman(Math.min(progress, item.duration_ms))}
+          </p>
           <p className="time-remaining">{msToHuman(item.duration_ms)}</p>
         </div>
       </div>
