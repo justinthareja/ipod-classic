@@ -1,13 +1,13 @@
 import { useUser } from "../context/UserContext";
 import { useQuery } from "react-query";
 import spotifyApi from "../api/spotifyApi";
-import stub from "../stubs/currently-playing.json";
+import stub from "../stubs/player.json";
 
-function useCurrentlyPlaying(trackId) {
+function usePlayer(trackId) {
   const { user } = useUser();
   const query = useQuery(
-    ["currently-playing", trackId],
-    () => spotifyApi.getMyCurrentPlayingTrack(),
+    ["player", trackId],
+    () => spotifyApi.getMyCurrentPlaybackState(),
     {
       enabled: !!user,
     }
@@ -16,4 +16,4 @@ function useCurrentlyPlaying(trackId) {
   return query.isIdle ? { data: { body: stub }, refetch: () => {} } : query;
 }
 
-export { useCurrentlyPlaying };
+export { usePlayer };
