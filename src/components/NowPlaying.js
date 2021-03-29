@@ -1,11 +1,13 @@
 import { useCallback, useEffect, useState } from "react";
 import useInterval from "@use-it/interval";
 import { usePlayPauseClick } from "../hooks/usePlayPauseClick";
+import { useNextClick } from "../hooks";
 import { usePause } from "../hooks/usePause";
 import { usePlay } from "../hooks/usePlay";
 import Screen from "./Screen";
 import ScreenHeader from "./ScreenHeader";
 import { formatTime } from "../utils/helpers";
+import { useSkipToNext } from "../hooks/useSkipToNext";
 
 function NowPlaying({ item, progress_ms, isPlaying }) {
   const [progress, setProgress] = useState(progress_ms);
@@ -24,6 +26,7 @@ function NowPlaying({ item, progress_ms, isPlaying }) {
 
   const { mutate: pause } = usePause();
   const { mutate: play } = usePlay();
+  const { mutate: skipToNext } = useSkipToNext();
 
   const playPauseHandler = useCallback(() => {
     if (isPlaying) {
@@ -34,6 +37,12 @@ function NowPlaying({ item, progress_ms, isPlaying }) {
   }, [isPlaying, pause, play]);
 
   usePlayPauseClick(playPauseHandler);
+
+  const nextHandler = useCallback(() => {
+    skipToNext();
+  }, [skipToNext]);
+
+  useNextClick(nextHandler);
 
   return (
     <Screen>
