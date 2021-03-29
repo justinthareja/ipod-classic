@@ -1,19 +1,19 @@
-import { useMutation } from "react-query";
+import { useMutation, useQueryClient } from "react-query";
 import { useUser } from "../context/UserContext";
-import { useStatus } from "../context/StatusContext";
 import spotifyApi from "../api/spotifyApi";
+import { useNoop } from "../utils/helpers";
 
 function usePause() {
   const { user } = useUser();
-  const { pause } = useStatus();
+  const queryClient = useQueryClient();
   const mutation = useMutation(() => spotifyApi.pause(), {
-    onSuccess: () => {
-      // updates app state to reflect api updates
-      pause();
+    onSettled: () => {
+      queryClient.invalidateQueries("player");
     },
   });
+  const fakeMutate = useNoop();
 
-  return user ? mutation : { isSuccess: true, mutate: () => {} };
+  return user ? mutation : { isSuccess: true, mutate: fakeMutate };
 }
 
 export { usePause };

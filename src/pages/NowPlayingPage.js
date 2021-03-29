@@ -4,9 +4,7 @@ import LoadingScreen from "../components/LoadingScreen";
 import ErrorScreen from "../components/ErrorScreen";
 
 function NowPlayingPage(props) {
-  const { isLoading, isError, data, error, refetch, isFetching } = usePlayer(
-    props.id
-  );
+  const { isLoading, isError, data, error } = usePlayer();
 
   if (isLoading) {
     return <LoadingScreen />;
@@ -21,21 +19,20 @@ function NowPlayingPage(props) {
     );
   }
 
-  // sometimes the currently-playing response will be 200 but have no track
-  // when this is the case, refetch
-  if (!data || !data.body || !data.body.item) {
-    if (!isFetching) {
-      refetch();
-    }
+  if (!data.body.item) {
+    console.log(
+      "Error in <NowPlayingPage /> Cannot render <NowPlaying> without an item",
+      data.body.item
+    );
 
-    return <LoadingScreen />;
+    return <ErrorScreen status="Client Error" message="Invalid Item." />;
   }
 
   return (
     <NowPlaying
       item={data.body.item}
       progress_ms={data.body.progress_ms}
-      is_playing={data.body.is_playing}
+      isPlaying={data.body.is_playing}
     />
   );
 }

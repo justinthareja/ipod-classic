@@ -3,14 +3,13 @@ import useInterval from "@use-it/interval";
 import { usePlayPauseClick } from "../hooks/usePlayPauseClick";
 import { usePause } from "../hooks/usePause";
 import { usePlay } from "../hooks/usePlay";
-import { useStatus } from "../context/StatusContext";
 import Screen from "./Screen";
 import ScreenHeader from "./ScreenHeader";
+import { formatTime } from "../utils/helpers";
 
-function NowPlaying({ item, progress_ms }) {
-  const status = useStatus();
+function NowPlaying({ item, progress_ms, isPlaying }) {
   const [progress, setProgress] = useState(progress_ms);
-  const interval = 1000;
+  const delay = 1000;
 
   useEffect(() => {
     setProgress(progress_ms);
@@ -18,23 +17,21 @@ function NowPlaying({ item, progress_ms }) {
 
   useInterval(
     () => {
-      setProgress(progress + interval);
+      setProgress(progress + delay);
     },
-    status.state === "playing" ? interval : null
+    isPlaying ? delay : null
   );
 
-  const pause = usePause();
-  const play = usePlay();
+  const { mutate: pause } = usePause();
+  const { mutate: play } = usePlay();
+
   const playPauseHandler = useCallback(() => {
-    if (status.state === "playing") {
-      pause.mutate();
+    if (isPlaying) {
+      pause();
     } else {
-      play.mutate({
-        uris: [`spotify:track:${item.id}`],
-        position_ms: progress,
-      });
+      play();
     }
-  }, [item.id, status.state, progress]); //eslint-disable-line react-hooks/exhaustive-deps
+  }, [isPlaying, pause, play]);
 
   usePlayPauseClick(playPauseHandler);
 
@@ -61,22 +58,13 @@ function NowPlaying({ item, progress_ms }) {
         </div>
         <div className="timestamps">
           <p className="time-played">
-            {msToHuman(Math.min(progress, item.duration_ms))}
+            {formatTime(Math.min(progress, item.duration_ms))}
           </p>
-          <p className="time-remaining">{msToHuman(item.duration_ms)}</p>
+          <p className="time-remaining">{formatTime(item.duration_ms)}</p>
         </div>
       </div>
     </Screen>
   );
-}
-
-function msToHuman(ms) {
-  const date = new Date(ms);
-  const minutes = date.getMinutes();
-  const seconds =
-    date.getSeconds() < 10 ? `0${date.getSeconds()}` : date.getSeconds();
-
-  return `${minutes}:${seconds}`;
 }
 
 export default NowPlaying;
