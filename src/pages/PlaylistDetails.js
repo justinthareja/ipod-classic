@@ -20,6 +20,7 @@ function PlaylistDetails(props) {
   }
   return (
     <ScreenMenu
+      contextURI={`spotify:playlist:${props.id}`}
       header={data.body.name}
       menuItems={data.body.tracks.items.map((item) => ({
         name: item.track.name,

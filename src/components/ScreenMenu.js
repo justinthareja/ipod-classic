@@ -4,6 +4,7 @@ import {
   useRef,
   useLayoutEffect,
   useCallback,
+  useMemo,
 } from "react";
 import { navigate } from "@reach/router";
 import { useTouchWheelClick } from "../hooks/useTouchWheelClick";
@@ -12,7 +13,7 @@ import Play from "../components/Play";
 import Screen from "../components/Screen";
 import ScreenHeader from "../components/ScreenHeader";
 
-function ScreenMenu({ menuItems, header }) {
+function ScreenMenu({ menuItems, header, contextURI, URIs }) {
   const NUM_ITEMS = 6;
   const ITEM_HEIGHT = 19; // px
   const contentRef = useRef(null);
@@ -80,8 +81,21 @@ function ScreenMenu({ menuItems, header }) {
     activeItem.path,
   ]);
 
+  // only playOptions should be
+  const playOptions = useMemo(
+    () => ({
+      context_uri: contextURI,
+      uris: URIs,
+      offset: {
+        position: activeIndex,
+      },
+      position_ms: 0,
+    }),
+    [activeIndex, contextURI, URIs]
+  );
+
   if (shouldPlay) {
-    return <Play trackId={activeItem.id} onPlaySuccess={onPlaySuccess} />;
+    return <Play playOptions={playOptions} onPlaySuccess={onPlaySuccess} />;
   }
 
   return (

@@ -21,6 +21,7 @@ function AlbumDetails(props) {
 
   return (
     <ScreenMenu
+      contextURI={`spotify:album:${props.id}`}
       header={data.body.name}
       menuItems={data.body.tracks.items.map((item) => ({
         name: item.name,

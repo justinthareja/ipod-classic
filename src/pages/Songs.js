@@ -19,16 +19,15 @@ function Songs(props) {
     );
   }
 
-  return (
-    <ScreenMenu
-      header="Songs"
-      menuItems={data.body.items.map((item) => ({
-        name: item.track.name,
-        path: `/songs/${item.track.id}`,
-        id: item.track.id,
-      }))}
-    />
-  );
+  const menuItems = data.body.items.map((item) => ({
+    name: item.track.name,
+    path: `/songs/${item.track.id}`,
+    id: item.track.id,
+  }));
+
+  const URIs = menuItems.map(({ id }) => `spotify:track:${id}`);
+
+  return <ScreenMenu header="Songs" menuItems={menuItems} URIs={URIs} />;
 }
 
 export default Songs;
