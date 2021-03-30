@@ -13,7 +13,7 @@ function NowPlayingPage(props) {
     return () => remove();
   }, []); //eslint-disable-line react-hooks/exhaustive-deps
 
-  if (isLoading || !data.body.item) {
+  if (isLoading) {
     return <LoadingScreen />;
   }
 
@@ -24,6 +24,14 @@ function NowPlayingPage(props) {
         message={error.body.error.message}
       />
     );
+  }
+
+  if (data.statusCode === 204) {
+    return <ErrorScreen status="204" message="No song found." />;
+  }
+
+  if (!data.body.item) {
+    return <LoadingScreen />;
   }
 
   return (
