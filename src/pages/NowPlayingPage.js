@@ -2,9 +2,16 @@ import { usePlayer } from "../hooks/usePlayer";
 import NowPlaying from "../components/NowPlaying";
 import LoadingScreen from "../components/LoadingScreen";
 import ErrorScreen from "../components/ErrorScreen";
+import { useEffect } from "react";
 
 function NowPlayingPage(props) {
-  const { isLoading, isError, data, error } = usePlayer();
+  const { isLoading, isError, data, error, remove } = usePlayer();
+
+  // remove query from the cache on unmount. this allows for isLoading
+  // to display true when transitioning between songs.
+  useEffect(() => {
+    return () => remove();
+  }, []); //eslint-disable-line react-hooks/exhaustive-deps
 
   if (isLoading) {
     return <LoadingScreen />;
@@ -20,11 +27,6 @@ function NowPlayingPage(props) {
   }
 
   if (!data.body.item) {
-    console.log(
-      "Error in <NowPlayingPage /> Cannot render <NowPlaying> without an item",
-      data.body.item
-    );
-
     return <ErrorScreen status="Client Error" message="Invalid Item." />;
   }
 
