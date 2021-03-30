@@ -13,7 +13,7 @@ function NowPlayingPage(props) {
     return () => remove();
   }, []); //eslint-disable-line react-hooks/exhaustive-deps
 
-  if (isLoading) {
+  if (isLoading || !data.body.item) {
     return <LoadingScreen />;
   }
 
@@ -24,10 +24,6 @@ function NowPlayingPage(props) {
         message={error.body.error.message}
       />
     );
-  }
-
-  if (!data.body.item) {
-    return <ErrorScreen status="Client Error" message="Invalid Item." />;
   }
 
   return (
