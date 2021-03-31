@@ -5,6 +5,8 @@ const ControlsContext = createContext();
 export function ControlsProvider(props) {
   const [handleMenu, setHandleMenu] = useState(null);
   const [handlePlayPause, setHandlePlayPause] = useState(null);
+  const [handleNext, setHandleNext] = useState(null);
+  const [handlePrevious, setHandlePrevious] = useState(null);
 
   const value = useMemo(
     () => ({
@@ -12,8 +14,12 @@ export function ControlsProvider(props) {
       setHandleMenu,
       handlePlayPause,
       setHandlePlayPause,
+      handleNext,
+      setHandleNext,
+      handlePrevious,
+      setHandlePrevious,
     }),
-    [handleMenu, handlePlayPause]
+    [handleMenu, handlePlayPause, handleNext, handlePrevious]
   );
 
   return <ControlsContext.Provider value={value} {...props} />;

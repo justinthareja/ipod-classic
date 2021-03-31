@@ -3,50 +3,54 @@ import useInterval from "@use-it/interval";
 import { usePlayPauseClick } from "../hooks/usePlayPauseClick";
 import { usePause } from "../hooks/usePause";
 import { usePlay } from "../hooks/usePlay";
-import { useStatus } from "../context/StatusContext";
+import { useSkipToNext } from "../hooks/useSkipToNext";
+import { useNextClick, usePreviousClick } from "../hooks";
 import Screen from "./Screen";
 import ScreenHeader from "./ScreenHeader";
+import { formatTime } from "../utils/helpers";
+import { useSkipToPrevious } from "../hooks/useSkipToPrevious";
 
-function NowPlaying({ item, progress_ms, is_playing }) {
-  const status = useStatus();
-  // syncs app status with spotify's state
-  useEffect(() => {
-    if (is_playing) {
-      status.play();
-    } else {
-      status.pause();
-    }
-  }, [is_playing, status]);
-
+function NowPlaying({ item, progress_ms, isPlaying }) {
   const [progress, setProgress] = useState(progress_ms);
-  const interval = 1000;
-  // this is only necessary because for some reason when a song is played
-  // this component is rendered initially with the previous tracks' progress
+  const delay = 1000;
+
   useEffect(() => {
     setProgress(progress_ms);
   }, [progress_ms]);
 
   useInterval(
     () => {
-      setProgress(progress + interval);
+      setProgress(progress + delay);
     },
-    status.state === "playing" ? interval : null
+    isPlaying ? delay : null
   );
 
   const { mutate: pause } = usePause();
   const { mutate: play } = usePlay();
+  const { mutate: skipToNext } = useSkipToNext();
+  const { mutate: skipToPrevious } = useSkipToPrevious();
+
   const playPauseHandler = useCallback(() => {
-    if (status.state === "playing") {
+    if (isPlaying) {
       pause();
     } else {
-      play({
-        uris: [`spotify:track:${item.id}`],
-        position_ms: progress,
-      });
+      play();
     }
-  }, [item.id, status.state, progress]); //eslint-disable-line react-hooks/exhaustive-deps
+  }, [isPlaying, pause, play]);
 
   usePlayPauseClick(playPauseHandler);
+
+  const nextHandler = useCallback(() => {
+    skipToNext();
+  }, [skipToNext]);
+
+  useNextClick(nextHandler);
+
+  const previousHandler = useCallback(() => {
+    skipToPrevious();
+  }, [skipToPrevious]);
+
+  usePreviousClick(previousHandler);
 
   return (
     <Screen>
@@ -70,21 +74,14 @@ function NowPlaying({ item, progress_ms, is_playing }) {
           ></div>
         </div>
         <div className="timestamps">
-          <p className="time-played">{msToHuman(progress)}</p>
-          <p className="time-remaining">{msToHuman(item.duration_ms)}</p>
+          <p className="time-played">
+            {formatTime(Math.min(progress, item.duration_ms))}
+          </p>
+          <p className="time-remaining">{formatTime(item.duration_ms)}</p>
         </div>
       </div>
     </Screen>
   );
-}
-
-function msToHuman(ms) {
-  const date = new Date(ms);
-  const minutes = date.getMinutes();
-  const seconds =
-    date.getSeconds() < 10 ? `0${date.getSeconds()}` : date.getSeconds();
-
-  return `${minutes}:${seconds}`;
 }
 
 export default NowPlaying;

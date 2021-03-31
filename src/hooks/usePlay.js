@@ -1,27 +1,71 @@
-import { useMutation } from "react-query";
+import { useState } from "react";
+import { useMutation, useQuery } from "react-query";
 import { useUser } from "../context/UserContext";
-import { useStatus } from "../context/StatusContext";
 import spotifyApi from "../api/spotifyApi";
+import { useNoop } from "../utils/helpers";
 
-/* 
-TODO: update this with the correct context. right now play
-seems to remove any sort of queue and creates its own context
-where only that song plays in a `1 of 1` situation. playing
-the next song will just do nothing.
-*/
 function usePlay() {
   const { user } = useUser();
-  const { play } = useStatus();
+  const [isEnabled, setIsEnabled] = useState(false);
+  const [isSuccess, setIsSuccess] = useState(false);
+  const [isLoading, setIsLoading] = useState(false);
+  const [isError, setIsError] = useState(false);
+  const [error, setError] = useState(null);
+
   const mutation = useMutation((options) => spotifyApi.play(options), {
+    onMutate: () => {
+      setIsLoading(true);
+      setIsSuccess(false);
+    },
     onSuccess: () => {
-      // updates app state to reflect spotify status
-      play();
+      setIsEnabled(true);
+    },
+    onError: (error) => {
+      setIsError(true);
+      setError(error);
     },
   });
 
+  // eslint-disable-next-line no-unused-vars
+  const playerQuery = useQuery(
+    "player",
+    async () => {
+      const data = await spotifyApi.getMyCurrentPlaybackState();
+
+      // Sometimes spotify returns without an item
+      // this will trigger react-query's retry behavior
+      if (data.statusCode === 200 && !data.body.item) {
+        throw new Error("Current playback state responded with invalid item");
+      }
+
+      // when refetching the playback state immediately after playing a song,
+      // sometimes the playback state will return with the old playing status
+      if (!data.body.is_playing) {
+        throw new Error("Current playback state still reflects previous track");
+      }
+
+      return data;
+    },
+    {
+      enabled: !!user && isEnabled,
+      onSuccess: () => {
+        setIsEnabled(false);
+        setIsSuccess(true);
+      },
+      onSettled: () => {
+        setIsLoading(false);
+      },
+      onError: (error) => {
+        setError(error);
+      },
+    }
+  );
+
+  const fakeMutate = useNoop();
+
   return user
-    ? mutation
-    : { isSuccess: true, mutate: () => {}, data: { statusCode: 204 } };
+    ? { ...mutation, isSuccess, isLoading, isError, error }
+    : { isSuccess: true, mutate: fakeMutate, data: { statusCode: 204 } };
 }
 
 export { usePlay };

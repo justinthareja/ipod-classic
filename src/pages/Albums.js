@@ -1,12 +1,33 @@
+import { useCallback, useLayoutEffect } from "react";
+import { navigate } from "@reach/router";
 import { useAlbums } from "../hooks/useAlbums";
+import { usePlay } from "../hooks/usePlay";
 import ScreenMenu from "../components/ScreenMenu";
 import LoadingScreen from "../components/LoadingScreen";
 import ErrorScreen from "../components/ErrorScreen";
 
 function Albums(props) {
   const { isLoading, isError, data, error } = useAlbums();
+  const { mutate: play, isSuccess, isLoading: isLoadingPlay } = usePlay({
+    isNewTrack: true,
+  });
 
-  if (isLoading) {
+  const onPlayPause = useCallback(
+    (activeItem) => {
+      play({
+        context_uri: `spotify:album:${activeItem.id}`,
+      });
+    },
+    [play]
+  );
+
+  useLayoutEffect(() => {
+    if (isSuccess) {
+      navigate("/now-playing");
+    }
+  }, [isSuccess]);
+
+  if (isLoading || isLoadingPlay) {
     return <LoadingScreen />;
   }
 
@@ -28,6 +49,7 @@ function Albums(props) {
         showArrow: true,
         id: item.album.id,
       }))}
+      onPlayPause={onPlayPause}
     />
   );
 }

@@ -1,10 +1,15 @@
 import { useControls } from "../context/ControlsContext";
 
 function Controls(props) {
-  const { handleMenu, handlePlayPause } = useControls();
+  const {
+    handleMenu,
+    handlePlayPause,
+    handleNext,
+    handlePrevious,
+  } = useControls();
   return (
     <div className="controls">
-      <button className="control">
+      <button className="control" onClick={handlePrevious}>
         <svg
           xmlns="http://www.w3.org/2000/svg"
           className="icon rewind"
@@ -30,7 +35,7 @@ function Controls(props) {
           <rect x="80.77" y="21.713" width="15.48" height="56.573" />
         </svg>
       </button>
-      <button className="control">
+      <button className="control" onClick={handleNext}>
         <svg
           className="icon fast-forward"
           xmlns="http://www.w3.org/2000/svg"

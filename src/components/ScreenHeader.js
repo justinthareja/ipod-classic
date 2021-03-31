@@ -1,16 +1,21 @@
-import { useStatus } from "../context/StatusContext";
+import { useQueryClient } from "react-query";
 import BatteryIcon from "./BatteryIcon";
 import PlayIcon from "./PlayIcon";
 import PauseIcon from "./PauseIcon";
 
 function ScreenHeader({ header }) {
-  const status = useStatus();
+  const queryClient = useQueryClient();
+  const player = queryClient.getQueryData("player");
 
   return (
     <div className="screen-header">
       <div className="header-icon">
-        {status.state === "playing" && <PlayIcon />}
-        {status.state === "paused" && <PauseIcon />}
+        {/* TODO: figure out how to derive a "stopped" status and display no icon */}
+        {player && player.body && player.body.is_playing ? (
+          <PlayIcon />
+        ) : (
+          <PauseIcon />
+        )}
       </div>
       <div className="title truncate">{header}</div>
       <div className="header-icon">

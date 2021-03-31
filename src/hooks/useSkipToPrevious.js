@@ -1,14 +1,15 @@
-import { useMutation, useQuery } from "react-query";
+import { useState } from "react";
+import { useMutation, useQueryClient, useQuery } from "react-query";
 import { useUser } from "../context/UserContext";
 import spotifyApi from "../api/spotifyApi";
 import { useNoop } from "../utils/helpers";
-import { useState } from "react";
 
-function usePause() {
+function useSkipToPrevious() {
   const { user } = useUser();
+  const queryClient = useQueryClient();
   const [isEnabled, setIsEnabled] = useState(false);
 
-  const mutation = useMutation(() => spotifyApi.pause(), {
+  const mutation = useMutation(() => spotifyApi.skipToPrevious(), {
     onSuccess: () => {
       setIsEnabled(true);
     },
@@ -18,6 +19,7 @@ function usePause() {
   const playerQuery = useQuery(
     "player",
     async () => {
+      const previousData = queryClient.getQueryData("player");
       const data = await spotifyApi.getMyCurrentPlaybackState();
 
       // Sometimes spotify returns without an item
@@ -26,9 +28,10 @@ function usePause() {
         throw new Error("Current playback state responded with invalid item");
       }
 
-      // when refetching the playback state immediately after playing a song,
-      // sometimes the playback state will return with the old playing status
-      if (data.body.is_playing) {
+      // when refetching the playback state immediately after going to a previous song,
+      // sometimes the playback state will return with the old song
+      // in this case trigger retry
+      if (data.body.item.id === previousData.body.item.id) {
         throw new Error("Current playback state still reflects previous track");
       }
 
@@ -44,7 +47,9 @@ function usePause() {
 
   const fakeMutate = useNoop();
 
-  return user ? mutation : { isSuccess: true, mutate: fakeMutate };
+  return user
+    ? mutation
+    : { isSuccess: true, mutate: fakeMutate, data: { statusCode: 204 } };
 }
 
-export { usePause };
+export { useSkipToPrevious };

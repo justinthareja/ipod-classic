@@ -2,7 +2,7 @@ import Screen from "./Screen";
 import ScreenHeader from "./ScreenHeader";
 import ScreenContent from "./ScreenContent";
 
-function ErrorScreen({ status, message }) {
+function ErrorScreen({ status = "500", message = "Something went wrong." }) {
   return (
     <Screen>
       <ScreenHeader header={status} />
