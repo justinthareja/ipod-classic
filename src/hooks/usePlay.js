@@ -7,10 +7,22 @@ import { useNoop } from "../utils/helpers";
 function usePlay() {
   const { user } = useUser();
   const [isEnabled, setIsEnabled] = useState(false);
+  const [isSuccess, setIsSuccess] = useState(false);
+  const [isLoading, setIsLoading] = useState(false);
+  const [isError, setIsError] = useState(false);
+  const [error, setError] = useState(null);
 
   const mutation = useMutation((options) => spotifyApi.play(options), {
+    onMutate: () => {
+      setIsLoading(true);
+      setIsSuccess(false);
+    },
     onSuccess: () => {
       setIsEnabled(true);
+    },
+    onError: (error) => {
+      setIsError(true);
+      setError(error);
     },
   });
 
@@ -36,8 +48,15 @@ function usePlay() {
     },
     {
       enabled: !!user && isEnabled,
-      onSettled: () => {
+      onSuccess: () => {
         setIsEnabled(false);
+        setIsSuccess(true);
+      },
+      onSettled: () => {
+        setIsLoading(false);
+      },
+      onError: (error) => {
+        setError(error);
       },
     }
   );
@@ -45,7 +64,7 @@ function usePlay() {
   const fakeMutate = useNoop();
 
   return user
-    ? mutation
+    ? { ...mutation, isSuccess, isLoading, isError, error }
     : { isSuccess: true, mutate: fakeMutate, data: { statusCode: 204 } };
 }
 

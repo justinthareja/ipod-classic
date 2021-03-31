@@ -1,3 +1,4 @@
+import get from "lodash/get";
 import { usePlayer } from "../hooks/usePlayer";
 import NowPlaying from "../components/NowPlaying";
 import LoadingScreen from "../components/LoadingScreen";
@@ -13,8 +14,8 @@ function NowPlayingPage(props) {
   if (isError) {
     return (
       <ErrorScreen
-        status={error.body.error.status}
-        message={error.body.error.message}
+        status={get(error, "body.error.status")}
+        message={get(error, "body.error.message")}
       />
     );
   }

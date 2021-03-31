@@ -4,17 +4,17 @@ import LoadingScreen from "./LoadingScreen";
 import ErrorScreen from "./ErrorScreen";
 
 function Play({ playOptions, onPlaySuccess }) {
-  const { isError, error, mutate, data = {}, isLoading, isSuccess } = usePlay();
+  const { isError, error, mutate, isSuccess } = usePlay();
 
   useEffect(() => {
     mutate(playOptions);
   }, [playOptions]); //eslint-disable-line react-hooks/exhaustive-deps
 
   useEffect(() => {
-    if (isSuccess && data.statusCode === 204) {
+    if (isSuccess) {
       onPlaySuccess();
     }
-  }, [onPlaySuccess, data.statusCode, isSuccess]);
+  }, [onPlaySuccess, isSuccess]);
 
   if (isError) {
     return (
@@ -25,11 +25,7 @@ function Play({ playOptions, onPlaySuccess }) {
     );
   }
 
-  if (isLoading || data.statusCode !== 204) {
-    return <LoadingScreen />;
-  }
-
-  return null;
+  return <LoadingScreen />;
 }
 
 export default Play;
