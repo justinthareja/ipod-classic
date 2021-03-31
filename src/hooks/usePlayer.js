@@ -2,7 +2,6 @@ import { useUser } from "../context/UserContext";
 import { useQuery } from "react-query";
 import spotifyApi from "../api/spotifyApi";
 import stub from "../stubs/player.json";
-import { useNoop } from "../utils/helpers";
 
 function usePlayer() {
   const { user } = useUser();
@@ -22,9 +21,8 @@ function usePlayer() {
       enabled: !!user,
     }
   );
-  const fakeRemove = useNoop();
 
-  return query.isIdle ? { data: { body: stub }, remove: fakeRemove } : query;
+  return query.isIdle ? { data: { body: stub } } : query;
 }
 
 export { usePlayer };
