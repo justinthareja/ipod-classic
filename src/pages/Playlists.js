@@ -1,12 +1,33 @@
+import { useCallback, useLayoutEffect } from "react";
+import { navigate } from "@reach/router";
 import { usePlaylists } from "../hooks/usePlaylists";
+import { usePlay } from "../hooks/usePlay";
 import ScreenMenu from "../components/ScreenMenu";
 import LoadingScreen from "../components/LoadingScreen";
 import ErrorScreen from "../components/ErrorScreen";
 
 function Playlists(props) {
   const { isLoading, isError, data, error } = usePlaylists();
+  const { mutate: play, isSuccess, isLoading: isLoadingPlay } = usePlay({
+    isNewTrack: true,
+  });
 
-  if (isLoading) {
+  const onPlayPause = useCallback(
+    (activeItem) => {
+      play({
+        context_uri: `spotify:playlist:${activeItem.id}`,
+      });
+    },
+    [play]
+  );
+
+  useLayoutEffect(() => {
+    if (isSuccess) {
+      navigate("/now-playing");
+    }
+  }, [isSuccess]);
+
+  if (isLoading || isLoadingPlay) {
     return <LoadingScreen />;
   }
 
@@ -28,6 +49,7 @@ function Playlists(props) {
         showArrow: true,
         id: playlist.id,
       }))}
+      onPlayPause={onPlayPause}
     />
   );
 }
