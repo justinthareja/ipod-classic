@@ -77,7 +77,9 @@ function NowPlaying({ item, progress_ms, isPlaying }) {
           <p className="time-played">
             {formatTime(Math.min(progress, item.duration_ms))}
           </p>
-          <p className="time-remaining">{formatTime(item.duration_ms)}</p>
+          <p className="time-remaining">
+            -{formatTime(Math.max(0, item.duration_ms - progress))}
+          </p>
         </div>
       </div>
     </Screen>
