@@ -18,6 +18,7 @@ function NowPlaying({ item, progress_ms, isPlaying }) {
     setProgress(progress_ms);
   }, [progress_ms]);
 
+  // TODO: implement usePlayPauseClick like this
   useInterval(
     () => {
       setProgress(progress + delay);
@@ -25,6 +26,8 @@ function NowPlaying({ item, progress_ms, isPlaying }) {
     isPlaying ? delay : null
   );
 
+  // TODO: register these handlers outside of this component. right now
+  // they are all getting re-registered every second
   const { mutate: pause } = usePause();
   const { mutate: play } = usePlay();
   const { mutate: skipToNext } = useSkipToNext();
