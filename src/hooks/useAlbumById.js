@@ -6,7 +6,7 @@ import stub from "../stubs/album.json";
 function useAlbumById(albumId) {
   const { user } = useUser();
   const query = useQuery(
-    ["albums", albumId],
+    ["album", albumId],
     () => spotifyApi.getAlbum(albumId),
     { enabled: !!user }
   );

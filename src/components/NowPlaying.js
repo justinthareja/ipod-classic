@@ -14,7 +14,14 @@ import { formatTime } from "../utils/helpers";
 import VolumeUpIcon from "./VolumeUpIcon";
 import VolumeDownIcon from "./VolumeDownIcon";
 
-function NowPlaying({ item, progress_ms, isPlaying, volume }) {
+function NowPlaying({
+  item,
+  progress_ms,
+  isPlaying,
+  volume,
+  trackNumber,
+  totalTracks,
+}) {
   const [progress, setProgress] = useState(progress_ms);
   const delay = 1000;
 
@@ -109,7 +116,7 @@ function NowPlaying({ item, progress_ms, isPlaying, volume }) {
       <ScreenHeader header={item.album.name} />
       <div className="now-playing">
         <small className="track-count">
-          {item.track_number} of {item.album.total_tracks}
+          {trackNumber} of {totalTracks}
         </small>
         <div className="track-info">
           <p className="track-name truncate">{item.name}</p>
