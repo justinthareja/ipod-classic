@@ -16,6 +16,10 @@
   --screen-color: hsl(219deg 89% 18%);
 }
 
+.icon {
+  fill: var(--screen-color);
+}
+
 body {
   height: 100vh;
   display: flex;
@@ -185,12 +189,29 @@ body {
   border-radius: 4px;
 }
 
-.now-playing .playback-progress {
+.now-playing .playback-progress,
+.now-playing .playback-volume {
   height: 100%;
   background-color: var(--screen-color);
 }
 
-.now-playing .timestamps {
+.now-playing .volume-wrapper {
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.now-playing .playback.is-volume {
+  margin: 0 4px;
+  border-radius: 0px;
+}
+
+.now-playing .playback-volume {
+  border-radius: 0px;
+}
+
+.now-playing .timestamps,
+.now-playing .volume-icons {
   align-self: stretch;
   display: flex;
   justify-content: space-between;

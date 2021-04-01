@@ -30,6 +30,7 @@ function NowPlayingPage(props) {
 
   return (
     <NowPlaying
+      volume={data.body.device.volume_percent}
       item={data.body.item}
       progress_ms={data.body.progress_ms}
       isPlaying={data.body.is_playing}
