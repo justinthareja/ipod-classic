@@ -8,7 +8,7 @@ function useAlbumById(albumId) {
   const query = useQuery(
     ["album", albumId],
     () => spotifyApi.getAlbum(albumId),
-    { enabled: !!user }
+    { enabled: !!user && !!albumId }
   );
 
   return query.isIdle ? { data: { body: stub } } : query;

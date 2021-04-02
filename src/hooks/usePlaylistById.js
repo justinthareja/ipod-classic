@@ -8,7 +8,7 @@ function usePlaylistById(playlistId) {
   const query = useQuery(
     ["playlist", playlistId],
     () => spotifyApi.getPlaylist(playlistId),
-    { enabled: !!user }
+    { enabled: !!user && !!playlistId }
   );
 
   return query.isIdle ? { data: { body: stub } } : query;
