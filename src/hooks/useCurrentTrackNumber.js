@@ -41,7 +41,7 @@ function useCurrentTrackNumber() {
       const albumId = uri.split(":")[2];
       const album = queryClient.getQueryData([type, albumId]);
       if (!album) {
-        // there will be no list available if the user plays straight from artists
+        // there will be no list available if the user plays straight from an album
         // TODO: fetch appropriate list
         return trackIndex;
       }
@@ -52,7 +52,7 @@ function useCurrentTrackNumber() {
       const playlistId = uri.split(":")[2];
       const playlist = queryClient.getQueryData([type, playlistId]);
       if (!playlist) {
-        // there will be no list available if the user plays straight from artists
+        // there will be no list available if the user plays straight from a playlist
         // TODO: fetch appropriate list
         return trackIndex;
       }
