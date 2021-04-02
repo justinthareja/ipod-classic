@@ -1,4 +1,6 @@
-import { useMutation, useQuery } from "react-query";
+import set from "lodash/set";
+import cloneDeep from "lodash/cloneDeep";
+import { useMutation, useQuery, useQueryClient } from "react-query";
 import { useUser } from "../context/UserContext";
 import spotifyApi from "../api/spotifyApi";
 import { useNoop } from "../utils/helpers";
@@ -6,10 +8,28 @@ import { useState } from "react";
 
 function usePause() {
   const { user } = useUser();
+  const queryClient = useQueryClient();
+  const player = queryClient.getQueryData("player");
   const [isEnabled, setIsEnabled] = useState(false);
 
   const mutation = useMutation(() => spotifyApi.pause(), {
-    onSuccess: () => {
+    onMutate: async () => {
+      await queryClient.cancelQueries("player");
+
+      const previousPlayer = queryClient.getQueryData("player");
+
+      queryClient.setQueryData("player", (old) => {
+        const newPlayer = cloneDeep(old);
+        set(newPlayer, "body.is_playing", false);
+        return newPlayer;
+      });
+
+      return { previousPlayer };
+    },
+    onError: (err, variables, context) => {
+      queryClient.setQueryData("player", context.previousPlayer);
+    },
+    onSettled: () => {
       setIsEnabled(true);
     },
   });
@@ -42,9 +62,16 @@ function usePause() {
     }
   );
 
-  const fakeMutate = useNoop();
-
-  return user ? mutation : { isSuccess: true, mutate: fakeMutate };
+  const noop = useNoop();
+  const unAuthorizedMutation = { isSuccess: true, mutate: noop };
+  const authorizedMutation = {
+    ...mutation,
+    mutate:
+      player && player.statusCode === 200 && player.body.is_playing
+        ? mutation.mutate
+        : noop,
+  };
+  return user ? authorizedMutation : unAuthorizedMutation;
 }
 
 export { usePause };
