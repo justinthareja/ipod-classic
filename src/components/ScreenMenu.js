@@ -14,14 +14,26 @@ import Screen from "../components/Screen";
 import ScreenHeader from "../components/ScreenHeader";
 import { usePlayPauseClick } from "../hooks/usePlayPauseClick";
 
-function ScreenMenu({ menuItems, header, contextURI, URIs, onPlayPause }) {
+function ScreenMenu({
+  menuItems,
+  header,
+  contextURI,
+  URIs,
+  onPlayPause,
+  parentIndex,
+}) {
   const NUM_ITEMS = 6;
   const ITEM_HEIGHT = 19; // px
   const contentRef = useRef(null);
   const [activeIndex, setActiveIndex] = useState(0);
   const [visibleRange, setVisibleRange] = useState([0, NUM_ITEMS - 1]);
   const [shouldPlay, setShouldPlay] = useState(false);
-  const activeItem = menuItems[activeIndex];
+
+  useEffect(() => {
+    if (typeof parentIndex === "number") {
+      setActiveIndex(parentIndex);
+    }
+  }, [parentIndex]);
 
   useTouchWheelTick(({ direction }) => {
     if (direction === "clockwise") {
@@ -36,6 +48,7 @@ function ScreenMenu({ menuItems, header, contextURI, URIs, onPlayPause }) {
   });
 
   const handleTouchWheelClick = useCallback(() => {
+    const activeItem = menuItems[activeIndex];
     // if the item doesn't have an arrow, it means this partiuclar screen navigates to the
     // now playing screen when clicked
     // let spotify know to play the song before navigating
@@ -46,13 +59,14 @@ function ScreenMenu({ menuItems, header, contextURI, URIs, onPlayPause }) {
       // list component so navigate straight to it
       navigate(activeItem.path);
     }
-  }, [activeItem.showArrow, activeItem.path]);
+  }, [activeIndex, menuItems]);
 
   useTouchWheelClick(handleTouchWheelClick);
 
   const handlePlayPauseClick = useCallback(() => {
+    const activeItem = menuItems[activeIndex];
     onPlayPause && onPlayPause(activeItem);
-  }, [onPlayPause, activeItem]);
+  }, [onPlayPause, menuItems, activeIndex]);
 
   usePlayPauseClick(handlePlayPauseClick);
 
@@ -84,9 +98,10 @@ function ScreenMenu({ menuItems, header, contextURI, URIs, onPlayPause }) {
     }
   }, [activeIndex, visibleRange]);
 
-  const onPlaySuccess = useCallback(() => navigate(activeItem.path), [
-    activeItem.path,
-  ]);
+  const onPlaySuccess = useCallback(() => {
+    const activeItem = menuItems[activeIndex];
+    navigate(activeItem.path);
+  }, [menuItems, activeIndex]);
 
   // only playOptions should be
   const playOptions = useMemo(

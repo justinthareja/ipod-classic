@@ -1,5 +1,7 @@
 import { useState, useEffect, useMemo } from "react";
 import { usePlayer } from "../hooks";
+import { useTouchWheelTick } from "../hooks/useTouchWheelTick";
+import { useMusicStore } from "../store";
 import ScreenMenu from "../components/ScreenMenu";
 
 function Music(props) {
@@ -16,6 +18,19 @@ function Music(props) {
 
   const { data: player } = usePlayer();
   const [menuItems, setMenuItems] = useState(initialMenuItems);
+  const { activeIndex, goUp, goDown } = useMusicStore((state) => state);
+
+  useTouchWheelTick(({ direction }) => {
+    if (direction === "clockwise") {
+      if (activeIndex < menuItems.length - 1) {
+        goUp();
+      }
+    } else if (direction === "anticlockwise") {
+      if (activeIndex > 0) {
+        goDown();
+      }
+    }
+  });
 
   useEffect(() => {
     if (!player || !player.body) {
@@ -27,7 +42,13 @@ function Music(props) {
     }
   }, [player, initialMenuItems]);
 
-  return <ScreenMenu header="Music" menuItems={menuItems} />;
+  return (
+    <ScreenMenu
+      header="Music"
+      menuItems={menuItems}
+      parentIndex={activeIndex}
+    />
+  );
 }
 
 export default Music;

@@ -11,3 +11,4 @@ export * from "./useMyDevices";
 export * from "./useMe";
 export * from "./useToken";
 export * from "./usePlayer";
+export * from "./useTouchWheelTick";
