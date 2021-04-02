@@ -1,4 +1,3 @@
-import get from "lodash/get";
 import { useUser } from "../context/UserContext";
 import { useQueryClient } from "react-query";
 
@@ -6,61 +5,66 @@ function useCurrentTrackNumber() {
   const { user } = useUser();
   const queryClient = useQueryClient();
   const player = queryClient.getQueryData("player");
+  let trackIndex = -1;
 
-  // placeholder for unauthenticated apps
+  // only use this if authenticated
   if (!user) {
-    return 1;
+    return trackIndex;
   }
 
+  // player doesn't have any initialized data
   if (!(player && player.body)) {
-    // player doesn't have any initialized data
-    return null;
+    return trackIndex;
   }
 
   const { context, item } = player.body;
-  // determine where the song came from
+
+  // use spotify context of currenly playing song to determine
+  // what track number is playing
   if (!context) {
-    // its from <Songs />
+    // there is no spotify context, so it's a list of songs.
+    // assume its from our most recently cached list of tracks
     const tracks = queryClient.getQueryData("tracks");
     if (!tracks) {
-      return null;
+      // ???
+      return trackIndex;
     }
 
-    const trackIndex = tracks.body.items.findIndex(
+    trackIndex = tracks.body.items.findIndex(
       ({ track }) => track.id === item.id
     );
-
-    return trackIndex + 1;
   } else {
     // context types are either "artist" "playlist" or "album"
     const { type, uri } = context;
 
-    // uri is now a spotify context uri with signature like
-    // spotify:album:D1GJK94ABW26ZVWVI6
-    const listId = uri.split(":")[2];
-
-    // get list from cache
-    const list = queryClient.getQueryData([type, listId]);
-    if (!list) {
-      // there will be no list available if the user plays straight from artists
-      // TODO: fetch appropriate list
-      return null;
-    }
-
-    const items = get(list, "body.tracks.items");
-
-    // each context type is a little different to get to the track position
-    let trackIndex;
     if (type === "album") {
-      trackIndex = items.findIndex(({ id }) => id === item.id);
-    } else if (type === "playlist") {
-      trackIndex = items.findIndex(({ track }) => track.id === item.id);
-    } else {
-      trackIndex = -1;
-    }
+      const albumId = uri.split(":")[2];
+      const album = queryClient.getQueryData([type, albumId]);
+      if (!album) {
+        // there will be no list available if the user plays straight from artists
+        // TODO: fetch appropriate list
+        return trackIndex;
+      }
 
-    return trackIndex + 1;
+      const tracks = album.body.tracks.items;
+      trackIndex = tracks.findIndex(({ id }) => id === item.id);
+    } else if (type === "playlist") {
+      const playlistId = uri.split(":")[2];
+      const playlist = queryClient.getQueryData([type, playlistId]);
+      if (!playlist) {
+        // there will be no list available if the user plays straight from artists
+        // TODO: fetch appropriate list
+        return trackIndex;
+      }
+
+      const tracks = playlist.body.tracks.items;
+      trackIndex = tracks.findIndex(({ track }) => track.id === item.id);
+    } else if (type === "artist") {
+      // TODO: how does artist context work?
+    }
   }
+
+  return trackIndex + 1;
 }
 
 export { useCurrentTrackNumber };
