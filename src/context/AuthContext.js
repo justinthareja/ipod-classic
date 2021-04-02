@@ -1,5 +1,6 @@
 import { createContext, useContext, useEffect, useCallback } from "react";
 import { useQueryClient } from "react-query";
+import { navigate } from "@reach/router";
 import { useToken } from "../hooks";
 import spotifyApi from "../api/spotifyApi";
 
@@ -16,6 +17,7 @@ function AuthProvider(props) {
   const logout = useCallback(() => {
     removeToken();
     queryClient.clear();
+    navigate("/");
   }, []); // eslint-disable-line react-hooks/exhaustive-deps
 
   useEffect(() => {

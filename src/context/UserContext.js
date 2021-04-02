@@ -13,10 +13,10 @@ function UserProvider(props) {
   });
 
   useEffect(() => {
-    if (
-      get(userQuery, "error.body.status") === 401 ||
-      get(devicesQuery, "error.body.status") === 401
-    ) {
+    const userError = get(userQuery, "error.body.error.status");
+    const devicesError = get(devicesQuery, "error.body.error.status");
+
+    if (userError === 401 || devicesError === 401) {
       logout();
     }
   }, [userQuery, devicesQuery, logout]);
