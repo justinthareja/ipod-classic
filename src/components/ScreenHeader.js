@@ -10,8 +10,7 @@ function ScreenHeader({ header }) {
   return (
     <div className="screen-header">
       <div className="header-icon">
-        {/* TODO: figure out how to derive a "stopped" status and display no icon */}
-        {player && player.body && player.body.is_playing ? (
+        {!player || !player.body ? null : player.body.is_playing ? (
           <PlayIcon />
         ) : (
           <PauseIcon />
