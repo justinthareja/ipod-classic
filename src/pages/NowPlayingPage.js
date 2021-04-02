@@ -1,3 +1,4 @@
+import { useCallback } from "react";
 import get from "lodash/get";
 import { usePlayer } from "../hooks/usePlayer";
 import { useTotalTracks, useCurrentTrackNumber } from "../hooks";
@@ -6,9 +7,10 @@ import LoadingScreen from "../components/LoadingScreen";
 import ErrorScreen from "../components/ErrorScreen";
 
 function NowPlayingPage(props) {
-  const { isLoading, isError, data, error } = usePlayer();
+  const { isLoading, isError, data, error, refetch } = usePlayer();
   const totalTracks = useTotalTracks();
   const currentTrackNumber = useCurrentTrackNumber();
+  const onSongEnd = useCallback(() => refetch(), []); // eslint-disable-line react-hooks/exhaustive-deps
 
   if (isLoading) {
     return <LoadingScreen />;
@@ -39,6 +41,7 @@ function NowPlayingPage(props) {
       item={data.body.item}
       progress_ms={data.body.progress_ms}
       isPlaying={data.body.is_playing}
+      onSongEnd={onSongEnd}
     />
   );
 }

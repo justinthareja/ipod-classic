@@ -21,6 +21,7 @@ function NowPlaying({
   volume,
   trackNumber,
   totalTracks,
+  onSongEnd,
 }) {
   const [progress, setProgress] = useState(progress_ms);
   const delay = 1000;
@@ -28,6 +29,12 @@ function NowPlaying({
   useEffect(() => {
     setProgress(progress_ms);
   }, [progress_ms]);
+
+  useEffect(() => {
+    if (progress >= item.duration_ms) {
+      onSongEnd();
+    }
+  }, [progress, item.duration_ms, onSongEnd]);
 
   // TODO: implement usePlayPauseClick like this
   useInterval(
