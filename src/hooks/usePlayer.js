@@ -6,7 +6,7 @@ import stub from "../stubs/player.json";
 function usePlayer() {
   const { user } = useUser();
   const query = useQuery(
-    ["player"],
+    "player",
     async () => {
       const data = await spotifyApi.getMyCurrentPlaybackState();
       // Sometimes spotify returns without an item
