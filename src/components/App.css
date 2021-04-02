@@ -26,6 +26,10 @@ body {
   align-items: center;
   justify-content: center;
   background-color: black;
+  color: white;
+  font-family: "Chicago", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
 .login-container {

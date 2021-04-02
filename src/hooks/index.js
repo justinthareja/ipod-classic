@@ -7,3 +7,5 @@ export * from "./usePlaylistById";
 export * from "./useAlbumById";
 export * from "./usePlay";
 export * from "./useAlbumsByArtist";
+export * from "./useMyDevices";
+export * from "./useMe";
