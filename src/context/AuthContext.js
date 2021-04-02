@@ -1,4 +1,5 @@
-import { createContext, useContext, useEffect } from "react";
+import { createContext, useContext, useEffect, useCallback } from "react";
+import { useQueryClient } from "react-query";
 import { useToken } from "../hooks";
 import spotifyApi from "../api/spotifyApi";
 
@@ -6,9 +7,16 @@ const AuthContext = createContext();
 
 function AuthProvider(props) {
   const [token, setToken, removeToken] = useToken();
+  const queryClient = useQueryClient();
 
-  const storeToken = (token) => setToken(token);
-  const logout = () => removeToken();
+  const storeToken = (token) => {
+    setToken(token);
+  };
+
+  const logout = useCallback(() => {
+    removeToken();
+    queryClient.clear();
+  }, []); // eslint-disable-line react-hooks/exhaustive-deps
 
   useEffect(() => {
     if (!!token) {

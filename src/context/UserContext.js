@@ -1,4 +1,4 @@
-import { createContext, useContext } from "react";
+import { createContext, useContext, useEffect } from "react";
 import get from "lodash/get";
 import { useAuth } from "./AuthContext";
 import { useMyDevices, useMe } from "../hooks";
@@ -6,11 +6,20 @@ import { useMyDevices, useMe } from "../hooks";
 const UserContext = createContext();
 
 function UserProvider(props) {
-  const { token } = useAuth();
+  const { token, logout } = useAuth();
   const { data: user, ...userQuery } = useMe({ enabled: !!token });
   const { data: devices, ...devicesQuery } = useMyDevices({
     enabled: !!token,
   });
+
+  useEffect(() => {
+    if (
+      get(userQuery, "error.body.status") === 401 ||
+      get(devicesQuery, "error.body.status") === 401
+    ) {
+      logout();
+    }
+  }, [userQuery, devicesQuery, logout]);
 
   if (devicesQuery.isLoading || userQuery.isLoading) {
     return <h1>Loading...</h1>;
