@@ -1,17 +1,24 @@
-import { createContext, useState, useContext } from "react";
+import { createContext, useContext, useEffect } from "react";
+import { useToken } from "../hooks";
 import spotifyApi from "../api/spotifyApi";
 
 const AuthContext = createContext();
 
 function AuthProvider(props) {
-  const [token, setToken] = useState(null);
+  const [token, setToken, removeToken] = useToken();
 
-  const storeToken = (token) => {
-    setToken(token);
-    spotifyApi.setAccessToken(token);
-  };
+  const storeToken = (token) => setToken(token);
+  const logout = () => removeToken();
 
-  return <AuthContext.Provider value={{ token, storeToken }} {...props} />;
+  useEffect(() => {
+    if (!!token) {
+      spotifyApi.setAccessToken(token);
+    }
+  }, [token]);
+
+  return (
+    <AuthContext.Provider value={{ token, storeToken, logout }} {...props} />
+  );
 }
 
 function useAuth() {

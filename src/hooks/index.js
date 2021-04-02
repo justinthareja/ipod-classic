@@ -9,3 +9,4 @@ export * from "./usePlay";
 export * from "./useAlbumsByArtist";
 export * from "./useMyDevices";
 export * from "./useMe";
+export * from "./useToken";
