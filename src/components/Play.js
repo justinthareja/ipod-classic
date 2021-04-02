@@ -1,26 +1,27 @@
+import get from "lodash/get";
 import { useEffect } from "react";
 import { usePlay } from "../hooks/usePlay";
 import LoadingScreen from "./LoadingScreen";
 import ErrorScreen from "./ErrorScreen";
 
 function Play({ playOptions, onPlaySuccess }) {
-  const { isError, error, mutate, isSuccess } = usePlay();
+  const { isError, error, mutate, isSuccess, isOffline } = usePlay();
 
   useEffect(() => {
     mutate(playOptions);
-  }, [playOptions]); //eslint-disable-line react-hooks/exhaustive-deps
+  }, [playOptions, mutate]);
 
   useEffect(() => {
-    if (isSuccess) {
+    if (isSuccess || isOffline) {
       onPlaySuccess();
     }
-  }, [onPlaySuccess, isSuccess]);
+  }, [onPlaySuccess, isSuccess, isOffline]);
 
   if (isError) {
     return (
       <ErrorScreen
-        status={error.body.error.status}
-        message={error.body.error.message}
+        status={get(error, "body.error.status")}
+        message={get(error, "body.error.message")}
       />
     );
   }

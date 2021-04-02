@@ -1,11 +1,14 @@
 import get from "lodash/get";
 import { usePlayer } from "../hooks/usePlayer";
+import { useTotalTracks, useCurrentTrackNumber } from "../hooks";
 import NowPlaying from "../components/NowPlaying";
 import LoadingScreen from "../components/LoadingScreen";
 import ErrorScreen from "../components/ErrorScreen";
 
 function NowPlayingPage(props) {
   const { isLoading, isError, data, error } = usePlayer();
+  const totalTracks = useTotalTracks();
+  const currentTrackNumber = useCurrentTrackNumber();
 
   if (isLoading) {
     return <LoadingScreen />;
@@ -30,6 +33,9 @@ function NowPlayingPage(props) {
 
   return (
     <NowPlaying
+      trackNumber={currentTrackNumber}
+      totalTracks={totalTracks}
+      volume={data.body.device.volume_percent}
       item={data.body.item}
       progress_ms={data.body.progress_ms}
       isPlaying={data.body.is_playing}

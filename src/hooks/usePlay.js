@@ -61,11 +61,23 @@ function usePlay() {
     }
   );
 
-  const fakeMutate = useNoop();
+  const noop = useNoop();
+  const authorizedMutation = {
+    isOffline: true,
+    isSuccess: false,
+    data: { statusCode: 204 },
+    mutate: noop,
+  };
 
-  return user
-    ? { ...mutation, isSuccess, isLoading, isError, error }
-    : { isSuccess: true, mutate: fakeMutate, data: { statusCode: 204 } };
+  const unauthorizedMutation = {
+    ...mutation,
+    isSuccess,
+    isLoading,
+    isError,
+    error,
+  };
+
+  return user ? unauthorizedMutation : authorizedMutation;
 }
 
 export { usePlay };
