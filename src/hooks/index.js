@@ -5,3 +5,5 @@ export * from "./useTotalTracks";
 export * from "./useCurrentTrackNumber";
 export * from "./usePlaylistById";
 export * from "./useAlbumById";
+export * from "./usePlay";
+export * from "./useAlbumsByArtist";

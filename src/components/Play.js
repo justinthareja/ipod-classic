@@ -5,17 +5,17 @@ import LoadingScreen from "./LoadingScreen";
 import ErrorScreen from "./ErrorScreen";
 
 function Play({ playOptions, onPlaySuccess }) {
-  const { isError, error, mutate, isSuccess } = usePlay();
+  const { isError, error, mutate, isSuccess, isOffline } = usePlay();
 
   useEffect(() => {
     mutate(playOptions);
-  }, [playOptions]); //eslint-disable-line react-hooks/exhaustive-deps
+  }, [playOptions, mutate]);
 
   useEffect(() => {
-    if (isSuccess) {
+    if (isSuccess || isOffline) {
       onPlaySuccess();
     }
-  }, [onPlaySuccess, isSuccess]);
+  }, [onPlaySuccess, isSuccess, isOffline]);
 
   if (isError) {
     return (
