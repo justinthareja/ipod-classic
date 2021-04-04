@@ -1,4 +1,5 @@
 import { QueryClient, QueryClientProvider } from "react-query";
+import { ReactQueryDevtools } from "react-query/devtools";
 import { AuthProvider } from "./AuthContext";
 import { UserProvider } from "./UserContext";
 import { TouchWheelProvider } from "./TouchWheelContext";
@@ -16,6 +17,7 @@ function AppProvider({ children }) {
           </TouchWheelProvider>
         </UserProvider>
       </AuthProvider>
+      <ReactQueryDevtools initialIsOpen={false} />
     </QueryClientProvider>
   );
 }

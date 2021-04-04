@@ -5,12 +5,17 @@ import { usePlay } from "../hooks/usePlay";
 import ScreenMenu from "../components/ScreenMenu";
 import LoadingScreen from "../components/LoadingScreen";
 import ErrorScreen from "../components/ErrorScreen";
+
 function Artists(props) {
   const { isLoading, isError, data, error } = useArtists();
-  const { mutate: play, isSuccess, isLoading: isLoadingPlay } = usePlay({
+  const {
+    mutate: play,
+    isLoading: isLoadingPlay,
+    isSuccess,
+    ...playQuery
+  } = usePlay({
     isNewTrack: true,
   });
-
   const onPlayPause = useCallback(
     (activeItem) => {
       play({
@@ -29,6 +34,7 @@ function Artists(props) {
   if (isLoading || isLoadingPlay) {
     return <LoadingScreen />;
   }
+
   if (isError) {
     return (
       <ErrorScreen
@@ -38,6 +44,14 @@ function Artists(props) {
     );
   }
 
+  if (playQuery.isError) {
+    return (
+      <ErrorScreen
+        status={playQuery.error.body.error.status}
+        message={playQuery.error.body.error.message}
+      />
+    );
+  }
   return (
     <ScreenMenu
       header="Artists"

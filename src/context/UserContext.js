@@ -1,25 +1,47 @@
-import { createContext, useContext, useEffect, useState } from "react";
+import { createContext, useContext, useEffect } from "react";
+import get from "lodash/get";
 import { useAuth } from "./AuthContext";
-import spotifyApi from "../api/spotifyApi";
+import { useMyDevices, useMe } from "../hooks";
 
 const UserContext = createContext();
 
 function UserProvider(props) {
-  const [user, setUser] = useState(null);
-  const { token } = useAuth();
+  const { token, logout } = useAuth();
+  const { data: user, ...userQuery } = useMe({ enabled: !!token });
+  const { data: devices, ...devicesQuery } = useMyDevices({
+    enabled: !!token,
+  });
 
   useEffect(() => {
-    if (!token) return;
+    const userError = get(userQuery, "error.body.error.status");
+    const devicesError = get(devicesQuery, "error.body.error.status");
 
-    async function fetchUser() {
-      const response = await spotifyApi.getMe();
-      setUser(response.body);
+    if (userError === 401 || devicesError === 401) {
+      logout();
     }
+  }, [userQuery, devicesQuery, logout]);
 
-    fetchUser();
-  }, [token]);
+  if (devicesQuery.isLoading || userQuery.isLoading) {
+    return <h1>Loading...</h1>;
+  }
 
-  return <UserContext.Provider value={{ user }} {...props} />;
+  if (userQuery.isError) {
+    return <h1>{JSON.stringify(userQuery.error, null, 2)}</h1>;
+  }
+
+  if (devicesQuery.isError) {
+    return <h1>{JSON.stringify(userQuery.error, null, 2)}</h1>;
+  }
+
+  return (
+    <UserContext.Provider
+      value={{
+        user: get(user, "body"),
+        devices: get(devices, "body.devices") || [],
+      }}
+      {...props}
+    />
+  );
 }
 
 function useUser() {

@@ -11,14 +11,14 @@ function VolumeUpIcon({ height, width }) {
       <g transform="translate(-147.03 -20.3)">
         <g
           transform="matrix(.33076 0 0 .2931 146.37 19.419)"
-          stroke-width=".84976"
+          strokeWidth=".84976"
         >
           <path
-            class="primary"
+            className="primary"
             d="m6.59 16h-3.59a1 1 0 0 1-1-1v-6a1 1 0 0 1 1-1h3.59l4.7-4.7a1 1 0 0 1 1.71 0.7v16a1 1 0 0 1-1.7 0.7l-4.72-4.7z"
           />
           <path
-            class="secondary"
+            className="secondary"
             d="m17.66 6.34a1 1 0 0 1 1.41-1.41 10 10 0 0 1 0 14.14 1 1 0 0 1-1.41-1.41 8 8 0 0 0 0-11.32zm-2.83 2.83a1 1 0 1 1 1.41-1.41 6 6 0 0 1 0 8.48 1 1 0 0 1-1.41-1.41 4 4 0 0 0 0-5.66z"
           />
         </g>

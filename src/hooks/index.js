@@ -7,3 +7,8 @@ export * from "./usePlaylistById";
 export * from "./useAlbumById";
 export * from "./usePlay";
 export * from "./useAlbumsByArtist";
+export * from "./useMyDevices";
+export * from "./useMe";
+export * from "./useToken";
+export * from "./usePlayer";
+export * from "./useTouchWheelTick";

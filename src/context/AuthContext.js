@@ -1,17 +1,34 @@
-import { createContext, useState, useContext } from "react";
+import { createContext, useContext, useEffect, useCallback } from "react";
+import { useQueryClient } from "react-query";
+import { navigate } from "@reach/router";
+import { useToken } from "../hooks";
 import spotifyApi from "../api/spotifyApi";
 
 const AuthContext = createContext();
 
 function AuthProvider(props) {
-  const [token, setToken] = useState(null);
+  const [token, setToken, removeToken] = useToken();
+  const queryClient = useQueryClient();
 
   const storeToken = (token) => {
     setToken(token);
-    spotifyApi.setAccessToken(token);
   };
 
-  return <AuthContext.Provider value={{ token, storeToken }} {...props} />;
+  const logout = useCallback(() => {
+    removeToken();
+    queryClient.clear();
+    navigate("/");
+  }, []); // eslint-disable-line react-hooks/exhaustive-deps
+
+  useEffect(() => {
+    if (!!token) {
+      spotifyApi.setAccessToken(token);
+    }
+  }, [token]);
+
+  return (
+    <AuthContext.Provider value={{ token, storeToken, logout }} {...props} />
+  );
 }
 
 function useAuth() {

@@ -5,26 +5,56 @@ import spotifyApi from "../api/spotifyApi";
 import { useNoop } from "../utils/helpers";
 
 function usePlay() {
-  const { user } = useUser();
+  const { user, devices } = useUser();
   const [isEnabled, setIsEnabled] = useState(false);
   const [isSuccess, setIsSuccess] = useState(false);
   const [isLoading, setIsLoading] = useState(false);
   const [isError, setIsError] = useState(false);
   const [error, setError] = useState(null);
 
-  const mutation = useMutation((options) => spotifyApi.play(options), {
-    onMutate: () => {
-      setIsLoading(true);
-      setIsSuccess(false);
+  const mutation = useMutation(
+    async (options) => {
+      let err;
+      try {
+        // Try to play using the device already playing
+        await spotifyApi.play(options);
+      } catch (e) {
+        err = e;
+      }
+
+      if (err) {
+        if (
+          err.body.error.status === 404 &&
+          err.body.error.reason === "NO_ACTIVE_DEVICE" &&
+          devices.length > 0
+        ) {
+          // Try to start playing on the first device available
+          // TODO: make a "devices available" selector
+          const deviceId = devices[0].id;
+          return spotifyApi.play({
+            ...options,
+            device_id: deviceId,
+          });
+        } else {
+          throw err;
+        }
+      }
     },
-    onSuccess: () => {
-      setIsEnabled(true);
-    },
-    onError: (error) => {
-      setIsError(true);
-      setError(error);
-    },
-  });
+    {
+      onMutate: () => {
+        setIsLoading(true);
+        setIsSuccess(false);
+      },
+      onSuccess: () => {
+        setIsEnabled(true);
+      },
+      onError: (error) => {
+        setIsError(true);
+        setError(error);
+        setIsLoading(false);
+      },
+    }
+  );
 
   // eslint-disable-next-line no-unused-vars
   const playerQuery = useQuery(
@@ -56,6 +86,7 @@ function usePlay() {
         setIsLoading(false);
       },
       onError: (error) => {
+        setIsError(error);
         setError(error);
       },
     }

@@ -14,9 +14,9 @@ function useCurrentTrackNumber() {
   const [albumId, setAlbumId] = useState(null);
   const album = useAlbumById(albumId);
 
-  // only use this if authenticated
+  // only use this if un-authenticated
   if (!user) {
-    return -1;
+    return 1;
   }
 
   // player doesn't have any initialized data

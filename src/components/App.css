@@ -26,6 +26,10 @@ body {
   align-items: center;
   justify-content: center;
   background-color: black;
+  color: white;
+  font-family: "Chicago", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
 .login-container {
@@ -36,11 +40,23 @@ body {
   left: 12px;
 }
 
-.login-buton,
+.login-button,
 .login-pic {
   display: block;
   width: 100%;
   border-radius: 50%;
+}
+
+.logout-button {
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-radius: 50%;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  background-color: black;
 }
 
 .spotify-logo:hover {

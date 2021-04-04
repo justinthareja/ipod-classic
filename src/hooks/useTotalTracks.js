@@ -14,9 +14,11 @@ function useTotalTracks(props) {
   const [albumId, setAlbumId] = useState(null);
   const album = useAlbumById(albumId);
 
+  // un-authenticated placeholder
   if (!user) {
-    return 0;
+    return 12;
   }
+
   if (!(player && player.body)) {
     return 0;
   }
