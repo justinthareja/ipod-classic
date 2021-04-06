@@ -12,3 +12,6 @@ export * from "./useMe";
 export * from "./useToken";
 export * from "./usePlayer";
 export * from "./useTouchWheelTick";
+export * from "./useTouchWheelClick";
+export * from "./usePlayPauseClick";
+export * from "./useRedirectToNowPlayingOnInactive";
