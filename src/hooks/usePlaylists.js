@@ -9,7 +9,7 @@ function usePlaylists() {
     "playlists",
     async () => {
       const data = await spotifyApi.getUserPlaylists();
-      return data;
+      return mapDataToProps(data);
     },
     {
       enabled: !!user,
@@ -17,6 +17,15 @@ function usePlaylists() {
   );
 
   return query.isIdle ? { data: { body: stub } } : query;
+}
+
+function mapDataToProps(data) {
+  return data.body.items.map((playlist) => ({
+    name: playlist.name,
+    path: `/playlists/${playlist.id}`,
+    showArrow: true,
+    id: playlist.id,
+  }));
 }
 
 export { usePlaylists };
