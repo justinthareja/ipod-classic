@@ -7,12 +7,15 @@ import {
   useMemo,
 } from "react";
 import { navigate } from "@reach/router";
-import { useTouchWheelClick } from "../hooks/useTouchWheelClick";
-import { useTouchWheelTick } from "../hooks/useTouchWheelTick";
+import {
+  useRedirectToNowPlayingOnInactive,
+  useTouchWheelTick,
+  useTouchWheelClick,
+  usePlayPauseClick,
+} from "../hooks";
 import Play from "../components/Play";
 import Screen from "../components/Screen";
 import ScreenHeader from "../components/ScreenHeader";
-import { usePlayPauseClick } from "../hooks/usePlayPauseClick";
 
 function ScreenMenu({
   menuItems,
@@ -120,6 +123,8 @@ function ScreenMenu({
     }),
     [activeIndex, contextURI, URIs]
   );
+
+  useRedirectToNowPlayingOnInactive();
 
   if (shouldPlay) {
     return <Play playOptions={playOptions} onPlaySuccess={onPlaySuccess} />;

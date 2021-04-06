@@ -5,9 +5,10 @@ import { usePlay } from "../hooks/usePlay";
 import ScreenMenu from "../components/ScreenMenu";
 import LoadingScreen from "../components/LoadingScreen";
 import ErrorScreen from "../components/ErrorScreen";
+import { useArtistsStore } from "../store";
 
 function Artists(props) {
-  const { isLoading, isError, data, error } = useArtists();
+  const { isLoading, isError, data: artists, error } = useArtists();
   const {
     mutate: play,
     isLoading: isLoadingPlay,
@@ -16,6 +17,7 @@ function Artists(props) {
   } = usePlay({
     isNewTrack: true,
   });
+
   const onPlayPause = useCallback(
     (activeItem) => {
       play({
@@ -30,6 +32,23 @@ function Artists(props) {
       navigate("/now-playing");
     }
   }, [isSuccess]);
+
+  const { activeIndex, goUp, goDown } = useArtistsStore();
+
+  const onTick = useCallback(
+    ({ direction }) => {
+      if (direction === "clockwise") {
+        if (activeIndex < artists.body.items.length - 1) {
+          goUp();
+        }
+      } else if (direction === "anticlockwise") {
+        if (activeIndex > 0) {
+          goDown();
+        }
+      }
+    },
+    [activeIndex, goUp, goDown, artists]
+  );
 
   if (isLoading || isLoadingPlay) {
     return <LoadingScreen />;
@@ -55,13 +74,15 @@ function Artists(props) {
   return (
     <ScreenMenu
       header="Artists"
-      menuItems={data.body.items.map((item) => ({
+      menuItems={artists.body.items.map((item) => ({
         name: item.name,
         path: `/artists/${item.id}/albums`,
         id: item.id,
         showArrow: true,
       }))}
       onPlayPause={onPlayPause}
+      onTick={onTick}
+      parentIndex={activeIndex}
     />
   );
 }
