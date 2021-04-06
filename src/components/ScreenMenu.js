@@ -21,31 +21,36 @@ function ScreenMenu({
   URIs,
   onPlayPause,
   parentIndex,
+  onTick,
 }) {
   const NUM_ITEMS = 6;
   const ITEM_HEIGHT = 19; // px
   const contentRef = useRef(null);
-  const [activeIndex, setActiveIndex] = useState(0);
+  const [activeIndex, setActiveIndex] = useState(parentIndex || 0);
   const [visibleRange, setVisibleRange] = useState([0, NUM_ITEMS - 1]);
   const [shouldPlay, setShouldPlay] = useState(false);
 
   useEffect(() => {
-    if (typeof parentIndex === "number") {
+    if (typeof parentIndex === "number" && parentIndex !== activeIndex) {
       setActiveIndex(parentIndex);
     }
-  }, [parentIndex]);
+  }, [parentIndex, activeIndex]);
 
-  useTouchWheelTick(({ direction }) => {
-    if (direction === "clockwise") {
-      if (activeIndex < menuItems.length - 1) {
-        setActiveIndex(activeIndex + 1);
-      }
-    } else if (direction === "anticlockwise") {
-      if (activeIndex > 0) {
-        setActiveIndex(activeIndex - 1);
-      }
-    }
-  });
+  useTouchWheelTick(
+    typeof onTick === "function"
+      ? onTick
+      : ({ direction }) => {
+          if (direction === "clockwise") {
+            if (activeIndex < menuItems.length - 1) {
+              setActiveIndex(activeIndex + 1);
+            }
+          } else if (direction === "anticlockwise") {
+            if (activeIndex > 0) {
+              setActiveIndex(activeIndex - 1);
+            }
+          }
+        }
+  );
 
   const handleTouchWheelClick = useCallback(() => {
     const activeItem = menuItems[activeIndex];

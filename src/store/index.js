@@ -1,2 +1,2 @@
-export * from "./music";
-export * from "./playlists";
+export * from "./musicStore";
+export * from "./playlistsStore";
