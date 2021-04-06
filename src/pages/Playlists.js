@@ -2,7 +2,6 @@ import { useCallback, useLayoutEffect } from "react";
 import { navigate } from "@reach/router";
 import { usePlaylists } from "../hooks/usePlaylists";
 import { usePlay } from "../hooks/usePlay";
-import { useTouchWheelTick } from "../hooks";
 import { usePlaylistsStore } from "../store";
 import ScreenMenu from "../components/ScreenMenu";
 import LoadingScreen from "../components/LoadingScreen";
@@ -36,17 +35,20 @@ function Playlists(props) {
 
   const { activeIndex, goUp, goDown } = usePlaylistsStore((state) => state);
 
-  useTouchWheelTick(({ direction }) => {
-    if (direction === "clockwise") {
-      if (activeIndex < playlists.length - 1) {
-        goUp();
+  const onTick = useCallback(
+    ({ direction }) => {
+      if (direction === "clockwise") {
+        if (activeIndex < playlists.body.items.length - 1) {
+          goUp();
+        }
+      } else if (direction === "anticlockwise") {
+        if (activeIndex > 0) {
+          goDown();
+        }
       }
-    } else if (direction === "anticlockwise") {
-      if (activeIndex > 0) {
-        goDown();
-      }
-    }
-  });
+    },
+    [activeIndex, goUp, goDown, playlists]
+  );
 
   if (isLoading || isLoadingPlay) {
     return <LoadingScreen />;
@@ -73,8 +75,14 @@ function Playlists(props) {
   return (
     <ScreenMenu
       header="Playlists"
-      menuItems={playlists}
+      menuItems={playlists.body.items.map((playlist) => ({
+        name: playlist.name,
+        path: `/playlists/${playlist.id}`,
+        showArrow: true,
+        id: playlist.id,
+      }))}
       onPlayPause={onPlayPause}
+      onTick={onTick}
       parentIndex={activeIndex}
     />
   );
