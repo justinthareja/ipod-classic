@@ -16,12 +16,13 @@
   --screen-color: hsl(219deg 89% 18%);
 }
 
-.icon {
-  fill: var(--screen-color);
+html {
+  height: -webkit-fill-available;
 }
 
 body {
-  height: 100vh;
+  min-height: 100vh;
+  min-height: -webkit-fill-available;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -303,4 +304,8 @@ body {
   border-radius: 50%;
   box-shadow: 1px 1px 4px hsla(0, 0%, 0%, 0.2) inset;
   cursor: pointer;
+}
+
+.icon {
+  fill: var(--screen-color);
 }
