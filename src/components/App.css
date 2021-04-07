@@ -203,6 +203,7 @@ body {
   margin-bottom: 2px;
   border: 1px solid var(--screen-color);
   border-radius: 4px;
+  position: relative;
 }
 
 .now-playing .playback-progress,
@@ -232,6 +233,15 @@ body {
   display: flex;
   justify-content: space-between;
   font-size: 0.8rem;
+}
+
+.now-playing .playback-seek {
+  position: absolute;
+  top: -7px;
+}
+
+.now-playing .timestamps-seek {
+  margin-top: 6px;
 }
 
 .controls {
