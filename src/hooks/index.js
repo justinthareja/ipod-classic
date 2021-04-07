@@ -16,3 +16,4 @@ export * from "./useTouchWheelClick";
 export * from "./usePlayPauseClick";
 export * from "./useRedirectToNowPlayingOnInactive";
 export * from "./useShuffle";
+export * from "./useSeek";

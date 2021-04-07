@@ -7,7 +7,13 @@ import { usePlay } from "../hooks/usePlay";
 import { useSkipToNext } from "../hooks/useSkipToNext";
 import { useSkipToPrevious } from "../hooks/useSkipToPrevious";
 import { useTouchWheelTick } from "../hooks/useTouchWheelTick";
-import { useNextClick, usePreviousClick, useVolume } from "../hooks";
+import {
+  useNextClick,
+  usePreviousClick,
+  useVolume,
+  useTouchWheelClick,
+  useSeek,
+} from "../hooks";
 import Screen from "./Screen";
 import ScreenHeader from "./ScreenHeader";
 import { formatTime } from "../utils/helpers";
@@ -88,8 +94,9 @@ function NowPlaying({
   };
   const toggleVolumeBar = toggleBarType("volume");
   const toggleProgressBar = toggleBarType("progress");
+  const toggleSeekBar = toggleBarType("seek");
 
-  const [barTimeout] = useState(2000);
+  const [barTimeout, setBarTimeout] = useState(2000);
   const [, cancelBarTimeout, resetBarTimeout] = useTimeoutFn(
     toggleProgressBar,
     barTimeout
@@ -100,23 +107,50 @@ function NowPlaying({
   }, []); // eslint-disable-line react-hooks/exhaustive-deps
 
   const { mutate: mutateVolume } = useVolume();
+  const { mutate: mutateSeek } = useSeek();
   const [volumeStep] = useState(5);
+  const [seekStepMs] = useState(5 * 1000);
 
   useTouchWheelTick(({ direction }) => {
-    // switch to volume bar if it's not already toggled
-    toggleVolumeBar();
     resetBarTimeout();
 
-    // make the api call to turn up
-    if (direction === "clockwise" && volume < 100) {
-      mutateVolume(volume + volumeStep);
-    }
+    if (barType !== "seek") {
+      setBarTimeout(2000);
+      // switch to volume bar if it's not already toggled
+      toggleVolumeBar();
 
-    // make the api call to turn down
-    if (direction === "anticlockwise" && volume > 0) {
-      mutateVolume(volume - volumeStep);
+      // make the api call to turn up
+      if (direction === "clockwise" && volume < 100) {
+        mutateVolume(volume + volumeStep);
+      }
+
+      // make the api call to turn down
+      if (direction === "anticlockwise" && volume > 0) {
+        mutateVolume(volume - volumeStep);
+      }
+    } else {
+      if (direction === "clockwise" && progress < item.duration_ms) {
+        mutateSeek(Math.min(progress + seekStepMs, item.duration_ms));
+      }
+
+      if (direction === "anticlockwise" && progress > 0) {
+        mutateSeek(Math.max(progress - seekStepMs, 0));
+      }
     }
   });
+
+  const handleTouchWheelClick = useCallback(() => {
+    if (barType !== "seek") {
+      setBarTimeout(4000);
+      toggleSeekBar();
+    } else {
+      toggleProgressBar();
+    }
+
+    resetBarTimeout();
+  }, [barType]); // eslint-disable-line react-hooks/exhaustive-deps
+
+  useTouchWheelClick(handleTouchWheelClick);
 
   return (
     <Screen>
@@ -161,6 +195,26 @@ function NowPlaying({
               ></div>
             </div>
             <VolumeUpIcon height="12" />
+          </div>
+        )}
+        {barType === "seek" && (
+          <div className="playback">
+            <div
+              className="playback-seek"
+              style={{
+                left: `${Math.min(94, (progress / item.duration_ms) * 94)}%`,
+              }}
+            >
+              &#9670;
+            </div>
+            <div className="timestamps timestamps-seek">
+              <p className="time-played">
+                {formatTime(Math.min(progress, item.duration_ms))}
+              </p>
+              <p className="time-remaining">
+                -{formatTime(Math.max(0, item.duration_ms - progress))}
+              </p>
+            </div>
           </div>
         )}
       </div>
