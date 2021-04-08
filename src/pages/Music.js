@@ -1,5 +1,5 @@
 import { useState, useEffect, useMemo } from "react";
-import { usePlayer } from "../hooks";
+import { usePlayer, usePause } from "../hooks";
 import { useTouchWheelTick } from "../hooks/useTouchWheelTick";
 import { useMusicStore } from "../store";
 import ScreenMenu from "../components/ScreenMenu";
@@ -42,11 +42,19 @@ function Music(props) {
     }
   }, [player, initialMenuItems]);
 
+  const pause = usePause();
+  const onPlayPause = () => {
+    if (player && player.body && player.body.is_playing) {
+      pause.mutate();
+    }
+  };
+
   return (
     <ScreenMenu
       header="Music"
       menuItems={menuItems}
       parentIndex={activeIndex}
+      onPlayPause={onPlayPause}
     />
   );
 }

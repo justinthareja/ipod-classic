@@ -5,16 +5,14 @@ import { useTimeoutFn } from "react-use";
 import { usePlayPauseClick } from "../hooks/usePlayPauseClick";
 import { usePause } from "../hooks/usePause";
 import { usePlay } from "../hooks/usePlay";
-import { useSkipToNext } from "../hooks/useSkipToNext";
-import { useSkipToPrevious } from "../hooks/useSkipToPrevious";
 import { useTouchWheelTick } from "../hooks/useTouchWheelTick";
 import {
-  useNextClick,
-  usePreviousClick,
   useVolume,
   useTouchWheelClick,
   useSeek,
   useMenu,
+  useNextControl,
+  usePreviousControl,
 } from "../hooks";
 import Screen from "./Screen";
 import ScreenHeader from "./ScreenHeader";
@@ -56,8 +54,6 @@ function NowPlaying({
   // they are all getting re-registered every second
   const { mutate: pause } = usePause();
   const { mutate: play } = usePlay();
-  const { mutate: skipToNext } = useSkipToNext();
-  const { mutate: skipToPrevious } = useSkipToPrevious();
 
   const playPauseHandler = useCallback(() => {
     if (isPlaying) {
@@ -69,17 +65,8 @@ function NowPlaying({
 
   usePlayPauseClick(playPauseHandler);
 
-  const nextHandler = useCallback(() => {
-    skipToNext();
-  }, [skipToNext]);
-
-  useNextClick(nextHandler);
-
-  const previousHandler = useCallback(() => {
-    skipToPrevious();
-  }, [skipToPrevious]);
-
-  usePreviousClick(previousHandler);
+  useNextControl();
+  usePreviousControl();
 
   const [barType, setBarType] = useState("progress");
   const toggleBarType = (type) => {

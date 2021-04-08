@@ -13,6 +13,8 @@ import {
   useTouchWheelClick,
   usePlayPauseClick,
   useMenu,
+  useNextControl,
+  usePreviousControl,
 } from "../hooks";
 import Play from "../components/Play";
 import Screen from "../components/Screen";
@@ -74,6 +76,13 @@ function ScreenMenu({
 
   const handlePlayPauseClick = useCallback(() => {
     const activeItem = menuItems[activeIndex];
+    if (typeof onPlayPause === "function") {
+      onPlayPause(activeItem);
+    } else {
+      if (!activeItem.showArrow) {
+        setShouldPlay(true);
+      }
+    }
     onPlayPause && onPlayPause(activeItem);
   }, [onPlayPause, menuItems, activeIndex]);
 
@@ -138,6 +147,9 @@ function ScreenMenu({
   }, [location.pathname]);
 
   useMenu(handleMenuClick);
+
+  useNextControl();
+  usePreviousControl();
 
   if (shouldPlay) {
     return <Play playOptions={playOptions} onPlaySuccess={onPlaySuccess} />;
