@@ -5,9 +5,11 @@ import ScreenMenu from "../components/ScreenMenu";
 import LoadingScreen from "../components/LoadingScreen";
 import ErrorScreen from "../components/ErrorScreen";
 import { usePlayer } from "../hooks/usePlayer";
+import { useUser } from "../context/UserContext";
 
 function PlaylistDetails(props) {
   const { data: player } = usePlayer();
+  const { user } = useUser();
   const { isLoading, isError, data: playlist, error } = usePlaylistById(
     props.id
   );
@@ -34,7 +36,13 @@ function PlaylistDetails(props) {
   // this is used to update the index if the song plays through on the
   // now playing screen
   useEffect(() => {
-    if (player && player.body && player.body.item && player.body.item.id) {
+    if (
+      user &&
+      player &&
+      player.body &&
+      player.body.item &&
+      player.body.item.id
+    ) {
       if (
         playlist &&
         playlist.body &&
@@ -45,12 +53,15 @@ function PlaylistDetails(props) {
           ({ track }) => track.id === player.body.item.id
         );
 
-        if (currentlyPlayingTrackIndex !== -1) {
+        if (
+          currentlyPlayingTrackIndex !== -1 &&
+          currentlyPlayingTrackIndex !== activeIndex
+        ) {
           setActiveIndex(currentlyPlayingTrackIndex);
         }
       }
     }
-  }, [player, playlist, setActiveIndex]);
+  }, [player, playlist, setActiveIndex, activeIndex, user]);
 
   const onTick = useCallback(
     ({ direction }) => {
