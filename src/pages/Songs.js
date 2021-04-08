@@ -50,12 +50,7 @@ function Songs(props) {
   }
 
   if (isError) {
-    return (
-      <ErrorScreen
-        status={error.body.error.status}
-        message={error.body.error.message}
-      />
-    );
+    return <ErrorScreen error={error} />;
   }
 
   const menuItems = tracks.body.items.map((item) => ({

@@ -17,3 +17,7 @@ export * from "./usePlayPauseClick";
 export * from "./useRedirectToNowPlayingOnInactive";
 export * from "./useShuffle";
 export * from "./useSeek";
+export * from "./useMenu";
+export * from "./useNextControl";
+export * from "./usePreviousControl";
+export * from "./usePause";

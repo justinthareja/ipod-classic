@@ -1,4 +1,3 @@
-import get from "lodash/get";
 import { useEffect } from "react";
 import { usePlay } from "../hooks/usePlay";
 import LoadingScreen from "./LoadingScreen";
@@ -18,12 +17,7 @@ function Play({ playOptions, onPlaySuccess }) {
   }, [onPlaySuccess, isSuccess, isOffline]);
 
   if (isError) {
-    return (
-      <ErrorScreen
-        status={get(error, "body.error.status")}
-        message={get(error, "body.error.message")}
-      />
-    );
+    return <ErrorScreen error={error} />;
   }
 
   return <LoadingScreen />;

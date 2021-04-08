@@ -33,6 +33,54 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
+div#root {
+  padding: 10px;
+  display: flex;
+  align-items: center;
+}
+
+.banner {
+  display: none;
+  padding: 20px;
+  max-width: 500px;
+  font-family: "Poppins", sans-serif;
+  line-height: 1.75;
+}
+
+.banner h1 {
+  margin: 3rem 0 1.38rem;
+  font-weight: 400;
+  line-height: 1.3;
+}
+
+.banner p {
+  margin-bottom: 1rem;
+  font-weight: 400;
+  line-height: 1.75;
+}
+
+@media only screen and (min-width: 750px) {
+  .banner {
+    display: block;
+  }
+
+  .banner-login:link,
+  .banner-login:visited {
+    display: inline-block;
+    padding: 10px 48px;
+    background-color: #1db954;
+    color: white;
+    text-decoration: none;
+    text-align: center;
+    border-radius: 4px;
+    font-weight: bold;
+  }
+
+  .banner-login:hover {
+    background-color: #1aa049;
+  }
+}
+
 .login-container {
   height: 30px;
   width: 30px;
@@ -308,4 +356,13 @@ body {
 
 .icon {
   fill: var(--screen-color);
+}
+
+.Toastify__toast--success {
+  background: #1db954;
+}
+
+.Toastify__toast {
+  font-family: "Poppins";
+  font-weight: 400;
 }
