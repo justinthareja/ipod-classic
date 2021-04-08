@@ -17,13 +17,18 @@ import AuthCallback from "../pages/AuthCallback";
 import NotFound from "../pages/NotFound";
 import LoginButton from "./LoginButton";
 import ErrorBoundary from "./ErrorBoundary";
+import Banner from "./Banner";
+import { ToastContainer, Slide } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 import "./App.css";
 
 function App() {
   return (
     <AppProvider>
+      <Banner />
+      <LoginButton />
+      <ToastContainer transition={Slide} autoClose={3000} hideProgressBar />
       <div className="ipod">
-        <LoginButton />
         <ErrorBoundary>
           <Router>
             <Music path="/" />
