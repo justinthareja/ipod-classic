@@ -18,7 +18,7 @@ function usePlayer() {
       }
 
       // turn off shuffle by default
-      if (data.body.shuffle_state === true) {
+      if (data && data.body && data.shuffle_state === true) {
         await shuffle.mutate(false);
       }
 
