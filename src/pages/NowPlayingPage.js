@@ -1,5 +1,4 @@
 import { useCallback } from "react";
-import get from "lodash/get";
 import { usePlayer } from "../hooks/usePlayer";
 import { useTotalTracks, useCurrentTrackNumber } from "../hooks";
 import NowPlaying from "../components/NowPlaying";
@@ -17,12 +16,7 @@ function NowPlayingPage(props) {
   }
 
   if (isError) {
-    return (
-      <ErrorScreen
-        status={get(error, "body.error.status")}
-        message={get(error, "body.error.message")}
-      />
-    );
+    return <ErrorScreen error={error} />;
   }
 
   if (data.statusCode === 204) {

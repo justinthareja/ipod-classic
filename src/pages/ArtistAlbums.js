@@ -72,21 +72,11 @@ function ArtistAlbums(props) {
   }
 
   if (isError) {
-    return (
-      <ErrorScreen
-        status={error.body.error.status}
-        message={error.body.error.message}
-      />
-    );
+    return <ErrorScreen error={error} />;
   }
 
   if (playQuery.isError) {
-    return (
-      <ErrorScreen
-        status={playQuery.error.body.error.status}
-        message={playQuery.error.body.error.message}
-      />
-    );
+    return <ErrorScreen error={playQuery.error} />;
   }
   return (
     <ScreenMenu

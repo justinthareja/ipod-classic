@@ -1,4 +1,5 @@
 import { useCallback, useEffect, useState } from "react";
+import { navigate, useLocation } from "@reach/router";
 import useInterval from "@use-it/interval";
 import { useTimeoutFn } from "react-use";
 import { usePlayPauseClick } from "../hooks/usePlayPauseClick";
@@ -13,6 +14,7 @@ import {
   useVolume,
   useTouchWheelClick,
   useSeek,
+  useMenu,
 } from "../hooks";
 import Screen from "./Screen";
 import ScreenHeader from "./ScreenHeader";
@@ -151,6 +153,18 @@ function NowPlaying({
   }, [barType]); // eslint-disable-line react-hooks/exhaustive-deps
 
   useTouchWheelClick(handleTouchWheelClick);
+
+  const location = useLocation();
+
+  const handleMenuClick = useCallback(() => {
+    if (location.pathname === "/") {
+      return;
+    }
+
+    navigate(-1);
+  }, [location.pathname]);
+
+  useMenu(handleMenuClick);
 
   return (
     <Screen>

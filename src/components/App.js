@@ -16,6 +16,7 @@ import ShowDetails from "../pages/ShowDetails";
 import AuthCallback from "../pages/AuthCallback";
 import NotFound from "../pages/NotFound";
 import LoginButton from "./LoginButton";
+import ErrorBoundary from "./ErrorBoundary";
 import "./App.css";
 
 function App() {
@@ -23,23 +24,25 @@ function App() {
     <AppProvider>
       <div className="ipod">
         <LoginButton />
-        <Router>
-          <Music path="/" />
-          <Playlists path="/playlists" />
-          <PlaylistDetails path="/playlists/:id" />
-          <Artists path="/artists" />
-          <ArtistAlbums path="/artists/:id/albums" />
-          <Albums path="/albums" />
-          <AlbumDetails path="/albums/:id" />
-          <Songs path="/songs" />
-          <NowPlaying path="/songs/:id" />
-          <Shows path="/shows" />
-          <ShowDetails path="/shows/:id" />
-          <NowPlaying path="/episodes/:id" />
-          <NowPlaying path="now-playing" />
-          <AuthCallback path="/callback" />
-          <NotFound default />
-        </Router>
+        <ErrorBoundary>
+          <Router>
+            <Music path="/" />
+            <Playlists path="/playlists" />
+            <PlaylistDetails path="/playlists/:id" />
+            <Artists path="/artists" />
+            <ArtistAlbums path="/artists/:id/albums" />
+            <Albums path="/albums" />
+            <AlbumDetails path="/albums/:id" />
+            <Songs path="/songs" />
+            <NowPlaying path="/songs/:id" />
+            <Shows path="/shows" />
+            <ShowDetails path="/shows/:id" />
+            <NowPlaying path="/episodes/:id" />
+            <NowPlaying path="now-playing" />
+            <AuthCallback path="/callback" />
+            <NotFound default />
+          </Router>
+        </ErrorBoundary>
         <Controls />
         <TouchWheel />
       </div>

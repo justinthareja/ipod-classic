@@ -6,12 +6,13 @@ import {
   useCallback,
   useMemo,
 } from "react";
-import { navigate } from "@reach/router";
+import { navigate, useLocation } from "@reach/router";
 import {
   useRedirectToNowPlayingOnInactive,
   useTouchWheelTick,
   useTouchWheelClick,
   usePlayPauseClick,
+  useMenu,
 } from "../hooks";
 import Play from "../components/Play";
 import Screen from "../components/Screen";
@@ -125,6 +126,18 @@ function ScreenMenu({
   );
 
   useRedirectToNowPlayingOnInactive();
+
+  const location = useLocation();
+
+  const handleMenuClick = useCallback(() => {
+    if (location.pathname === "/") {
+      return;
+    }
+
+    navigate(-1);
+  }, [location.pathname]);
+
+  useMenu(handleMenuClick);
 
   if (shouldPlay) {
     return <Play playOptions={playOptions} onPlaySuccess={onPlaySuccess} />;

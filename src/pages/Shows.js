@@ -11,12 +11,7 @@ function Shows(props) {
   }
 
   if (isError) {
-    return (
-      <ErrorScreen
-        status={error.body.error.status}
-        message={error.body.error.message}
-      />
-    );
+    return <ErrorScreen error={error} />;
   }
 
   return (
