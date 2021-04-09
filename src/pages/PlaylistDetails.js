@@ -53,15 +53,12 @@ function PlaylistDetails(props) {
           ({ track }) => track.id === player.body.item.id
         );
 
-        if (
-          currentlyPlayingTrackIndex !== -1 &&
-          currentlyPlayingTrackIndex !== activeIndex
-        ) {
+        if (currentlyPlayingTrackIndex !== -1) {
           setActiveIndex(currentlyPlayingTrackIndex);
         }
       }
     }
-  }, [player, playlist, setActiveIndex, activeIndex, user]);
+  }, [player, playlist, setActiveIndex, user]);
 
   const onTick = useCallback(
     ({ direction }) => {
