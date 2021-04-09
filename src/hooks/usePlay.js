@@ -1,16 +1,18 @@
 import { useState } from "react";
-import { useMutation, useQuery } from "react-query";
+import { useMutation, useQuery, useQueryClient } from "react-query";
 import { useUser } from "../context/UserContext";
 import spotifyApi from "../api/spotifyApi";
 import { useNoop } from "../utils/helpers";
 
-function usePlay() {
+function usePlay(options = {}) {
+  const { changeTrack = false } = options;
   const { user, devices } = useUser();
   const [isEnabled, setIsEnabled] = useState(false);
   const [isSuccess, setIsSuccess] = useState(false);
   const [isLoading, setIsLoading] = useState(false);
   const [isError, setIsError] = useState(false);
   const [error, setError] = useState(null);
+  const queryClient = useQueryClient();
 
   const mutation = useMutation(
     async (options) => {
@@ -60,6 +62,7 @@ function usePlay() {
   const playerQuery = useQuery(
     "player",
     async () => {
+      const previousData = queryClient.getQueryData("player");
       const data = await spotifyApi.getMyCurrentPlaybackState();
 
       // Sometimes spotify returns without an item
@@ -71,7 +74,13 @@ function usePlay() {
       // when refetching the playback state immediately after playing a song,
       // sometimes the playback state will return with the old playing status
       if (!data.body.is_playing) {
-        throw new Error("Current playback state still reflects previous track");
+        throw new Error("Current playback state is not playing");
+      }
+
+      if (changeTrack) {
+        if (previousData.body.item.id === data.body.item.id) {
+          throw new Error("Current playback state reflects previous track");
+        }
       }
 
       return data;

@@ -4,7 +4,9 @@ import LoadingScreen from "./LoadingScreen";
 import ErrorScreen from "./ErrorScreen";
 
 function Play({ playOptions, onPlaySuccess }) {
-  const { isError, error, mutate, isSuccess, isOffline } = usePlay();
+  const { isError, error, mutate, isSuccess, isOffline } = usePlay({
+    changeTrack: true,
+  });
 
   useEffect(() => {
     mutate(playOptions);
