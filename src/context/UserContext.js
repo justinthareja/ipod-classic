@@ -2,7 +2,6 @@ import { createContext, useContext, useEffect } from "react";
 import get from "lodash/get";
 import { useAuth } from "./AuthContext";
 import { useMyDevices, useMe } from "../hooks";
-import { toast } from "react-toastify";
 
 const UserContext = createContext();
 
@@ -18,15 +17,12 @@ function UserProvider(props) {
     const devicesError = get(devicesQuery, "error.body.error.status");
 
     if (userError === 401 || devicesError === 401) {
-      logout();
+      logout({
+        message:
+          "Access token expired. Please log in again to resume playback control. ",
+      });
     }
   }, [userQuery, devicesQuery, logout]);
-
-  useEffect(() => {
-    if (userQuery.isSuccess && devicesQuery.isSuccess) {
-      toast.success("Successfully logged in");
-    }
-  }, [userQuery.isSuccess, devicesQuery.isSuccess]);
 
   if (devicesQuery.isLoading || userQuery.isLoading) {
     return <h1>Loading...</h1>;
