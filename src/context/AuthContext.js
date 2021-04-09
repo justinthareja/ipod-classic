@@ -15,11 +15,12 @@ function AuthProvider(props) {
     setToken(token);
   };
 
-  const logout = useCallback(() => {
+  const logout = useCallback((options = {}) => {
+    const { message = "Successfully logged out!" } = options;
     removeToken();
     queryClient.clear();
     navigate("/");
-    toast.success("Successfully logged out");
+    toast.success(message);
   }, []); // eslint-disable-line react-hooks/exhaustive-deps
 
   useEffect(() => {

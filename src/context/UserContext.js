@@ -17,7 +17,10 @@ function UserProvider(props) {
     const devicesError = get(devicesQuery, "error.body.error.status");
 
     if (userError === 401 || devicesError === 401) {
-      logout();
+      logout({
+        message:
+          "Access token expired. Please log in again to resume playback control. ",
+      });
     }
   }, [userQuery, devicesQuery, logout]);
 
